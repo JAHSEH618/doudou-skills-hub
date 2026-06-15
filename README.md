@@ -38,6 +38,32 @@
 
 详细文档：[ai-backend-resume-screening/SKILL.md](ai-backend-resume-screening/SKILL.md)
 
+### viral-ai-blog-writing
+
+撰写爆火AI技术博文的多agent workflow。基于TDD方法论开发，完全内化 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)。
+
+**核心特点：**
+- 🤖 强制多agent workflow（Research → Writing → Review → Polish）
+- 🌐 5-8次网络搜索收集2026年最新爆文模式
+- ✨ 完全内化Humanizer-zh（24种AI模式 + 5维评分）
+- 📊 双重质量验证（内容≥70分 + humanizer-zh≥45分）
+- 🔄 自动迭代润色直到达标
+
+**使用方式：**
+```bash
+请用 viral-ai-blog-writing 撰写关于"AI Agent在代码审查中的应用"的博文
+```
+
+**输出质量：**
+- X平台适配（12-16词标题、2.7秒hook、易扫描）
+- 微信适配（去AI味、自然表达、口语化）
+- 技术深度（实战案例 + 可运行代码 + WHY解释）
+- Humanizer-zh≥45分（50分制）
+
+**耗时：**15-25分钟（自动执行）
+
+详细文档：[viral-ai-blog-writing/README.md](viral-ai-blog-writing/README.md)
+
 ## 怎么用
 
 克隆到 Claude Code 的技能目录：
