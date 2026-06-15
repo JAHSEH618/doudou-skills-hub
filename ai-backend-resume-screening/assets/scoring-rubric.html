@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 后端开发工程师 · 简历评分表（从严版）</title>
+<style>
+  :root{
+    --bg:#faf9f5; --surface:#fff; --border:rgba(0,0,0,0.12); --border-strong:rgba(0,0,0,0.22);
+    --text:#1d1d1b; --muted:#6b6a64; --hint:#9b9a92;
+    --danger:#a32d2d; --success:#0f6e56; --warning:#854f0b;
+    --danger-bg:#fceaea; --success-bg:#e1f5ee; --warning-bg:#faeeda;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.6; padding:28px 16px;}
+  .wrap{max-width:760px; margin:0 auto;}
+  h1{font-size:21px; font-weight:600; margin:0 0 4px;}
+  .sub{color:var(--muted); font-size:14px; margin:0 0 22px;}
+  .head{display:flex; gap:12px; margin-bottom:24px; flex-wrap:wrap;}
+  .stat{background:var(--surface); border:0.5px solid var(--border); border-radius:var(--radius); padding:14px 16px;}
+  .stat.score{flex:1; min-width:120px; text-align:center;}
+  .stat.verdict{flex:2; min-width:220px; display:flex; flex-direction:column; justify-content:center;}
+  .stat .label{font-size:13px; color:var(--muted); margin-bottom:4px;}
+  #score-out{font-size:30px; font-weight:600;}
+  #verdict-out{font-size:15px; font-weight:600;}
+  #grade-out{font-size:14px; margin-top:3px; color:var(--muted); font-weight:500;}
+  .sec{margin-bottom:22px;}
+  .sec-title{font-size:13px; font-weight:600; color:var(--muted); margin-bottom:10px;}
+  .sec-title.neg{color:var(--danger);}
+  label.row{display:flex; align-items:flex-start; gap:11px; padding:10px 13px;
+    background:var(--surface); border:0.5px solid var(--border); border-radius:var(--radius);
+    margin-bottom:7px; cursor:pointer; font-size:14.5px; transition:border-color .12s;}
+  label.row:hover{border-color:var(--border-strong);}
+  label.row input{margin-top:3px; width:17px; height:17px; flex-shrink:0; accent-color:#534ab7; cursor:pointer;}
+  label.row .txt{flex:1;}
+  label.row .pts{font-size:12px; flex-shrink:0; min-width:38px; text-align:right; color:var(--muted);}
+  label.row .pts.neg{color:var(--danger);}
+  label.row .pts.req{color:var(--hint);}
+  .foot{margin-top:24px; font-size:12.5px; color:var(--hint); border-top:0.5px solid var(--border); padding-top:14px;}
+  .reset{margin-top:16px; background:transparent; border:0.5px solid var(--border-strong); color:var(--text);
+    border-radius:var(--radius); padding:8px 16px; font-size:13.5px; cursor:pointer;}
+  .reset:hover{background:rgba(0,0,0,0.04);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AI 后端开发工程师 · 简历评分表（从严版）</h1>
+  <p class="sub">勾选简历中符合的条件，下方实时计算总分与录用建议。从严版判定：硬门槛中<b>工龄 ≤10 年</b>、<b>本科及以上</b>为一票否决（不可放宽）；<b>AI coding 工具、SDD/TDD</b> 两大能力门槛缺一即淘汰；<b>Agent 应用落地</b>为最高优先加分（+10，复杂度再 +6，仅 Demo 不算）；全部门槛通过 → <b>60 分起评</b>，score 超过 60（≥61）进推荐池、裸 60 不推，并按项目经验选定<b>等级（初级开发 / 中级 / 高级）</b>。<b>大厂 / 强 AI 落地</b>只放宽年龄与非 211 劣势。「真实性核验」用于识别 AI 灌水——🔴 高风险扣 12 分并提示重点核验。</p>
+
+  <div class="head">
+    <div class="stat score">
+      <div class="label">当前得分</div>
+      <div id="score-out">—</div>
+    </div>
+    <div class="stat verdict">
+      <div class="label">录用建议</div>
+      <div id="verdict-out">请勾选符合的条件</div>
+      <div id="grade-out"></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="sec-title">一、硬门槛（须全部满足；工龄 / 学历为一票否决，不可放宽）</div><div class="grp" data-grp="gate"></div></div>
+  <div class="sec"><div class="sec-title">二、能力门槛 ①：AI coding 工具实证（必过）</div><div class="grp" data-grp="coding"></div></div>
+  <div class="sec"><div class="sec-title">三、能力门槛 ②：SDD / TDD 工程化（必过）</div><div class="grp" data-grp="sdd"></div></div>
+  <div class="sec"><div class="sec-title">四、优先方向（加分项，非门槛；Agent 落地为最高优先加分）</div><div class="grp" data-grp="pri"></div></div>
+  <div class="sec"><div class="sec-title">五、加分项</div><div class="grp" data-grp="bonus"></div></div>
+  <div class="sec"><div class="sec-title neg">六、淘汰信号（前三项一票否决）</div><div class="grp" data-grp="neg"></div></div>
+  <div class="sec"><div class="sec-title">七、AI 灌水 / 真实性核验（humanizer-zh，单选一档）</div><div class="grp" data-grp="integrity"></div></div>
+  <div class="sec"><div class="sec-title">八、等级评定（通过者按项目经验单选）</div><div class="grp" data-grp="grade"></div></div>
+
+  <button class="reset" onclick="document.querySelectorAll('input').forEach(b=>b.checked=false);recompute();">重置</button>
+
+  <div class="foot">分值为从严版初始建议：硬门槛 + 两大能力门槛全部通过 → 起评 60 分，推荐线为「超过 60」（裸 60 不推，至少再命中一项强度 / 加分），强度 / 优先方向 / 背景加分向上累加，上限 100。Agent 应用落地为最高优先加分（真实落地 +10、复杂度 / 规模再 +6，仅 Demo 不算、不能替代门槛①）。年龄 ≤30 可被大厂 / 强 AI 落地放宽至约 35，但<b>工龄 &gt;10、专科及以下、两大能力门槛、淘汰信号、🔴 灌水一律不放宽</b>。第一学历 211/985/海外名校 → 优先推荐（+6，非 211 本科不扣分）。等级评定独立于分数：按项目经验（复杂度、独立负责程度、落地深度）选档，高级＝主导架构 + SDD/TDD 成体系（如有 Agent：生产稳定运行有量化效果），中级＝独立负责模块级落地，初级开发＝以参与为主、门槛达标但深度有限；不要由分数倒推等级。真实性核验：用 AI 写简历不扣分，要揪的是用 AI 编造 / 夸大经历——高 AI 痕迹但硬细节充分（真系统名 / GitHub / 精确指标）选 🟢；空泛无凭、时间线矛盾、拼接错字选 🔴（−12 并重点核验）。可按团队松紧自行调整，分层否决逻辑优先于分数。</div>
+</div>
+
+<script>
+const items = {
+  gate: [
+    {t:"后端 / 全栈开发方向，2–5 年经验为理想区间", p:0},
+    {t:"工龄 ≤ 10 年（> 10 一票否决，不可放宽）", p:0, sub:"tenure"},
+    {t:"年龄 ≤ 30 岁（超 30 须触发放宽：大厂 / 强 AI 落地）", p:0, sub:"age"},
+    {t:"第一学历本科及以上（专科及以下一票否决，不可放宽）", p:0, sub:"edufloor"},
+    {t:"技术栈属于：全栈 / 会 Python / 会 Java 之一", p:0},
+    {t:"熟练掌握 MySQL、Redis", p:0},
+    {t:"是 AI 编程工具的重度使用者（非偶尔尝鲜）", p:0},
+  ],
+  coding: [
+    {t:"使用 Cursor / Claude Code / Codex 等专业编程工具写代码（非网页聊天）", p:0, core:"coding"},
+    {t:"AI 生成代码进过真实生产环境（非 Demo / 仅本地）", p:8, prod:true},
+    {t:"AI 代码占比 ≥ 70%，人理逻辑、AI 出代码", p:6, ratio:true},
+  ],
+  sdd: [
+    {t:"了解 SDD/TDD 且使用过相关工具 / skill（OpenSpec / Superpowers / spec-kit 等，或明确的先规格 / 测试后代码工作流）", p:0, core:"sdd"},
+    {t:"方法论深度：规格 / 测试先行完整工作流跑通 + 提效数据 / 团队规范", p:6},
+  ],
+  pri: [
+    {t:"Agent 应用真实落地（生产 / 真实用户在用；课程项目、本地 Demo、纯调 API 聊天页不算；不能替代门槛①）", p:10},
+    {t:"Agent 复杂度 / 规模：多智能体 / MCP / 工具链编排 / RAG+Agent / 量化业务效果", p:6},
+    {t:"金融 / 电商场景的 AI 核心业务开发经验（行业契合度）", p:8},
+    {t:"AI 全栈能力，独立完成前后端闭环", p:6},
+  ],
+  bonus: [
+    {t:"第一学历 211 / 985 / 海外名校（优先推荐信号；非 211 本科不扣分）", p:6, edu:true},
+    {t:"大厂经历（一线互联网 / 头部科技公司；放宽年龄与非 211 劣势）", p:5, relax:true},
+    {t:"有 AI 提效具体数据（如提效 2–3 倍）", p:4},
+    {t:"有可复用 Prompt 模板 / 团队 AI 提效规范沉淀", p:4},
+    {t:"持续追踪前沿工具（v0 / Bolt.new 等），有分享记录", p:3},
+    {t:"具备前端开发能力", p:3},
+    {t:"年限低但 AI 深度、自驱力显著优于同龄人", p:3},
+  ],
+  neg: [
+    {t:"AI 工具只提网页聊天类（豆包 / Kimi / 文心 / ChatGPT 网页）", p:0, veto:true},
+    {t:"明显传统纯手写倾向，排斥 AI 生成生产代码", p:0, veto:true},
+    {t:"简历全是传统开发，无任何 AI 工程化内容", p:0, veto:true},
+    {t:"对前沿工具信息闭塞（只知 GitHub Copilot 等老工具）", p:-6},
+  ],
+  integrity: [
+    {t:"🟢 低：AI 痕迹低，或痕迹重但硬细节充分（真系统名 / GitHub / 精确指标）= 仅润色", p:0, v:"low"},
+    {t:"🟡 中：痕迹中–高、硬细节部分缺失；关键数字 / 项目规模偏营销、来源存疑", p:0, v:"mid"},
+    {t:"🔴 高：痕迹重且空泛无凭 / 时间线矛盾 / 拼接错字 = 疑似 AI 灌水夸大", p:-12, v:"high"},
+  ],
+  grade: [
+    {t:"初级开发：以参与为主、在指导下开发；门槛达标但深度有限，Agent 缺失或仅 Demo", p:0, g:"初级开发"},
+    {t:"中级：独立负责模块级开发与上线；如有 Agent，落地但复杂度 / 规模一般", p:0, g:"中级"},
+    {t:"高级：主导系统 / 核心模块架构；SDD/TDD 成体系；如有 Agent，生产稳定运行有量化效果", p:0, g:"高级"},
+  ],
+};
+
+const RADIO_GRPS = ['integrity','grade'];
+document.querySelectorAll('.grp').forEach(g=>{
+  const key=g.dataset.grp;
+  const isRadio = RADIO_GRPS.includes(key);
+  items[key].forEach(it=>{
+    const row=document.createElement('label');
+    row.className='row';
+    let pl, plClass;
+    if(key==='grade'){ pl="评级"; plClass="pts req"; }
+    else if(key==='integrity'){ pl = it.p<0?(""+it.p):"标记"; plClass = it.p<0?"pts neg":"pts req"; }
+    else if(it.veto){ pl="否决"; plClass="pts neg"; }
+    else if(it.core){ pl="必过"; plClass="pts req"; }
+    else { pl = it.p>0?("+"+it.p):(it.p<0?(""+it.p):"必填"); plClass = it.p<0?"pts neg":(it.p>0?"pts":"pts req"); }
+    row.innerHTML='<input type="'+(isRadio?'radio':'checkbox')+'"'+(isRadio?' name="'+key+'"':'')+' data-key="'+key+'" data-p="'+it.p+'" data-v="'+(it.v||'')+'" data-g="'+(it.g||'')+'"'+(it.sub?' data-sub="'+it.sub+'"':'')+(it.relax?' data-relax="1"':'')+(it.prod?' data-prod="1"':'')+(it.ratio?' data-ratio="1"':'')+(it.edu?' data-edu="1"':'')+(it.core?' data-core="'+it.core+'"':'')+(it.veto?' data-veto="1"':'')+'>'
+      +'<span class="txt">'+it.t+'</span>'
+      +'<span class="'+plClass+'">'+pl+'</span>';
+    g.appendChild(row);
+  });
+});
+
+const scoreOut=document.getElementById('score-out');
+const verdictOut=document.getElementById('verdict-out');
+const gradeOut=document.getElementById('grade-out');
+
+function recompute(){
+  const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+  const radios=[...document.querySelectorAll('input[type=radio]')];
+
+  const tenureOk=boxes.find(b=>b.dataset.sub==='tenure')?.checked||false;
+  const ageOk=boxes.find(b=>b.dataset.sub==='age')?.checked||false;
+  const eduFloorOk=boxes.find(b=>b.dataset.sub==='edufloor')?.checked||false;
+  const otherGateOk=boxes.filter(b=>b.dataset.key==='gate'&&!b.dataset.sub).every(b=>b.checked);
+  const codingCore=boxes.some(b=>b.dataset.core==='coding'&&b.checked);
+  const sddCore=boxes.some(b=>b.dataset.core==='sdd'&&b.checked);
+  const vetoHit=boxes.some(b=>b.dataset.veto==='1'&&b.checked);
+
+  const prodHit=boxes.some(b=>b.dataset.prod==='1'&&b.checked);
+  const ratioHit=boxes.some(b=>b.dataset.ratio==='1'&&b.checked);
+  const bigTech=boxes.some(b=>b.dataset.relax==='1'&&b.checked);
+  const eduPri=boxes.some(b=>b.dataset.edu==='1'&&b.checked);
+  const integ=radios.find(b=>b.name==='integrity'&&b.checked);
+  const risk=integ?integ.dataset.v:null;
+  const gradeSel=radios.find(b=>b.name==='grade'&&b.checked);
+  const grade=gradeSel?gradeSel.dataset.g:null;
+
+  // 放宽机制：大厂 或 真实强 AI 落地（生产落地 + 高占比，且非 🔴）→ 只放宽年龄与非 211 劣势
+  const strongAI=prodHit&&ratioHit&&risk!=='high';
+  const relaxed=bigTech||strongAI;
+  const ageGatePass=ageOk||relaxed;
+
+  const missing=[];
+  if(!tenureOk) missing.push("工龄 ≤10（一票否决）");
+  if(!eduFloorOk) missing.push("本科及以上（一票否决）");
+  if(!ageGatePass) missing.push("年龄 ≤30（未触发放宽）");
+  if(!otherGateOk) missing.push("基础硬门槛");
+  if(!codingCore) missing.push("门槛① AI coding 工具");
+  if(!sddCore) missing.push("门槛② SDD/TDD");
+
+  const passed=!vetoHit&&missing.length===0;
+
+  let score=null;
+  if(passed){
+    score=60;
+    boxes.forEach(b=>{ if(b.checked) score+=parseInt(b.dataset.p); });
+    if(integ) score+=parseInt(integ.dataset.p);
+    score=Math.max(0,Math.min(100,Math.round(score)));
+  }
+  scoreOut.textContent=passed?score:"—";
+
+  let v,c,gline="";
+  if(vetoHit){
+    v="命中一票否决淘汰信号，建议淘汰"; c="var(--danger)";
+  } else if(missing.length){
+    v="未达标 · 缺："+missing.join("、"); c="var(--danger)";
+  } else {
+    if(score>60){ v="✅ 通过全部门槛，进入推荐池（超过 60 推荐线）"; c="var(--success)"; }
+    else { v="通过门槛但 score ≤ 60（裸 60 无加分，或被扣分拉低），边缘：不入主推荐表"; c="var(--warning)"; }
+    if(relaxed&&!ageOk){ v+="　｜　已按大厂 / 强 AI 落地放宽年龄"; }
+    if(eduPri){ v+="　｜　第一学历 211+，同等优先"; }
+    if(risk==='high'){ v+="　｜　⚠️ 高 AI 灌水嫌疑，面试重点核验真实性"; c="var(--danger)"; }
+    else if(risk==='mid'){ v+="　｜　注意核验自报数字 / 项目真实性"; }
+    gline=grade?("结论行：score "+score+" · 等级 "+grade):"请在「九、等级评定」按项目经验选档（初级开发 / 中级 / 高级）";
+  }
+
+  verdictOut.textContent=v;
+  verdictOut.style.color=c;
+  gradeOut.textContent=gline;
+}
+
+document.querySelectorAll('input').forEach(b=>b.addEventListener('change',recompute));
+recompute();
+</script>
+</body>
+</html>
