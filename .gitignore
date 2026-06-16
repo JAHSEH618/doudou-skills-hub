@@ -1,6 +1,10 @@
 # Development files
 .skill-development/
 
+# Documentation and test articles
+docs/
+docs/articles/
+
 # OS files
 .DS_Store
 .DS_Store?
