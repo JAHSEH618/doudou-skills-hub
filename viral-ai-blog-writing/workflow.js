@@ -1,11 +1,11 @@
 export const meta = {
   name: 'viral-ai-blog-writing',
-  description: 'Multi-agent workflow for writing viral AI tech blog posts with research, writing, review, and humanizer-zh polish (≥45 score)',
+  description: 'Multi-agent workflow for viral AI tech blog posts: research (8-10 searches), writing (24 AI patterns avoided), review (content 100 + humanizer-zh 50), polish (independent agents per round, ≥45 required)',
   phases: [
-    { title: 'Research', detail: 'Web search for viral blog patterns' },
-    { title: 'Writing', detail: 'Draft based on research insights' },
-    { title: 'Review', detail: 'Independent quality evaluation' },
-    { title: 'Polish', detail: 'Humanizer-zh until ≥45 score' }
+    { title: 'Research', detail: '8-10 web searches + case verification' },
+    { title: 'Writing', detail: 'Draft with 24 AI patterns avoided' },
+    { title: 'Review', detail: 'Content score + humanizer-zh evaluation' },
+    { title: 'Polish', detail: 'Independent agents per round until ≥45' }
   ]
 }
 
@@ -18,59 +18,142 @@ const RESEARCH_SCHEMA = {
     x_platform: {
       type: 'object',
       properties: {
-        title_formulas: { type: 'array', items: { type: 'string' } },
-        hook_techniques: { type: 'array', items: { type: 'string' } },
-        algorithm_preferences: { type: 'object' }
-      }
+        title_formulas: {
+          type: 'array',
+          items: { type: 'string' },
+          description: '标题公式（12-16词，包含数字/动词/痛点）'
+        },
+        hook_techniques: {
+          type: 'array',
+          items: { type: 'string' },
+          description: 'Hook技巧（2.7秒规则）'
+        },
+        content_structure: {
+          type: 'array',
+          items: { type: 'string' },
+          description: '内容结构模式'
+        }
+      },
+      required: ['title_formulas', 'hook_techniques', 'content_structure']
     },
     wechat: {
       type: 'object',
       properties: {
-        popular_patterns: { type: 'array', items: { type: 'string' } },
-        deai_techniques: { type: 'array', items: { type: 'string' } }
-      }
+        ai_detection_mechanisms: {
+          type: 'array',
+          items: { type: 'string' },
+          description: 'AI检测机制和应对策略'
+        },
+        deai_techniques: {
+          type: 'array',
+          items: { type: 'string' },
+          description: '去AI味技巧'
+        }
+      },
+      required: ['ai_detection_mechanisms', 'deai_techniques']
     },
     topic_insights: {
       type: 'object',
       properties: {
-        latest_trends: { type: 'array', items: { type: 'string' } },
-        case_studies: { type: 'array', items: { type: 'string' } },
-        code_examples: { type: 'array', items: { type: 'string' } }
-      }
+        latest_trends: {
+          type: 'array',
+          items: { type: 'string' },
+          description: '最新趋势和进展'
+        },
+        verified_cases: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              name: { type: 'string', description: '公司/项目名称' },
+              description: { type: 'string', description: '案例描述' },
+              metric: { type: 'string', description: '具体数据/结果' },
+              source: { type: 'string', description: '来源（必须可查证）' }
+            },
+            required: ['name', 'description', 'metric', 'source']
+          },
+          description: '真实案例（必须有明确名称和来源）'
+        },
+        code_examples_sources: {
+          type: 'array',
+          items: { type: 'string' },
+          description: '代码示例来源'
+        }
+      },
+      required: ['latest_trends', 'verified_cases', 'code_examples_sources']
+    },
+    search_count: {
+      type: 'number',
+      minimum: 8,
+      description: '实际执行的搜索次数（必须≥8）'
     }
   },
-  required: ['x_platform', 'wechat', 'topic_insights']
+  required: ['x_platform', 'wechat', 'topic_insights', 'search_count']
 }
 
-log('Starting research phase - will perform 5-8 web searches')
+log('Starting research phase - will perform 8-10 web searches')
 
 const researchPrompt = `
-你是专业的AI技术调研员。
+你是专业的 AI 技术调研员。
 
-任务：调研"${args.topic}"相关内容，为撰写爆火博文做准备。
+任务：为撰写爆火博文进行深度调研。
 
-调研方向：
-1. **X平台2026年特点**
-   - 爆火AI博文的标题公式（12-16词最佳）
-   - Hook技巧（2.7秒规则）
-   - 算法偏好（认证账号、视频、7-9 PM EST）
+主题：${args.topic || '未指定主题'}
 
-2. **微信公众号2026年特点**
-   - 流行模式和内容结构
-   - 去AI味技巧（de-AI-ification）
-   - AI检测机制和应对方法
+## 调研方向（必须使用 WebSearch 工具 8-10 次）
 
-3. **${args.topic}主题insights**
-   - 2026年最新进展和热点
-   - 实战案例（真实项目）
-   - 可用的代码示例
+**1. X 平台 2026 年特点（2-3 次搜索）**
+- 爆火 AI 博文的标题公式（12-16 词最佳）
+- Hook 技巧（2.7 秒规则）
+- 内容结构模式（问题→痛点→方法→案例→结果）
+- 发布时机和算法偏好
 
-**要求**：
-- 必须使用WebSearch工具至少5-8次
-- 搜索不同角度：平台特点、主题热点、成功案例
-- 返回结构化JSON数据
+**2. 微信公众号 2026 年特点（1-2 次搜索）**
+- AI 检测机制（AIGC 率检测）
+- 限流惩罚机制
+- 去 AI 味策略（降 AI 率方法）
+- 双指标管理（查重 + AIGC）
 
-**输出格式**：严格按照schema返回
+**3. 主题最新进展（3-4 次搜索）**
+- ${args.topic || '目标主题'} 2026 年最新趋势
+- 技术热点讨论
+- 实际应用场景
+- 常见问题和解决方案
+
+**4. 真实案例验证（2-3 次搜索）**
+- 搜索真实项目案例
+- 验证公司/项目名称
+- 查证具体数据和结果
+- 确认来源可追溯
+
+## ⚠️ 真实案例验证标准（CRITICAL）
+
+✅ **可以使用的案例**：
+- 有明确公司/项目名称（如 "Stripe", "Anthropic Claude Code"）
+- 有具体可查证数据（如 "PR review 时间从 4 小时降到 45 分钟"）
+- 有明确来源（如 "Stripe 工程博客 2025"，"Anthropic 官方文档"）
+
+❌ **不可使用的案例**：
+- "某创业公司"、"一家科技公司"（无名称）
+- "效率提升 300%"（无具体场景和来源）
+- "Sarah from Marketing"（虚构角色）
+- 无法通过搜索验证的案例
+
+## 要求
+
+- 必须使用 WebSearch 工具至少 8 次（记录实际搜索次数）
+- 每次搜索针对不同角度
+- 所有案例必须可验证
+- 返回结构化 JSON
+
+## 输出格式
+
+严格按照 schema 返回，包含：
+- x_platform: 标题公式、Hook 技巧、内容结构
+- wechat: AI 检测机制、去 AI 味技巧
+- topic_insights: 最新趋势、真实案例（含名称/数据/来源）、代码示例来源
+- search_count: 实际执行的搜索次数（必须 ≥8）
+`
 `
 
 const researchInsights = await agent(researchPrompt, {
@@ -83,7 +166,7 @@ if (!researchInsights) {
   throw new Error('Research phase failed - agent returned null')
 }
 
-log(`Research completed - collected ${researchInsights.topic_insights.latest_trends.length} trends, ${researchInsights.topic_insights.case_studies.length} case studies`)
+log(`Research completed - collected ${researchInsights.topic_insights.latest_trends.length} trends, ${researchInsights.topic_insights.verified_cases.length} verified cases, ${researchInsights.search_count} searches performed`)
 
 // ===== PHASE 2: WRITING =====
 phase('Writing')
@@ -91,81 +174,106 @@ phase('Writing')
 log('Starting writing phase - drafting blog post based on research')
 
 const writingPrompt = `
-你是专业的AI技术博主。
+你是专业的 AI 技术博主。
 
-任务：基于以下调研insights撰写一篇爆火博文。
+任务：基于调研 insights 撰写爆火博文。
 
-**调研Insights**：
+**调研 Insights**：
 ${JSON.stringify(researchInsights, null, 2)}
 
-**主题**：${args.topic}
+**主题**：${args.topic || '未指定主题'}
 
 **结构要求**：
-1. **标题**：12-16词，包含数字/动词/痛点
-2. **开头**：2.7秒hook（问题/好奇/痛点），不要定义式开头
-3. **正文**：问题→痛点→局限→方法→案例→影响→行动
-4. **代码**：可运行、有注释、解释WHY
-5. **长度**：2500-4000字
+1. **标题**：12-16 词，包含数字/动词/痛点，标注年份 "(2026)"
+2. **开头**：2.7 秒 hook（问题先行/反直觉/成本量化）
+3. **正文**：Hook → 问题陈述 → 为什么重要 → 现有局限 → 你的方法（3-5 步，每步 <8 词）→ 实战案例（真实案例）→ 结果影响（转化对比）→ 行动号召
+4. **代码**：可运行、有注释、解释 WHY 不只是 HOW、来自真实场景
+5. **长度**：2500-4000 字
 
-**CRITICAL - 去除AI写作痕迹（24个模式）：**
+## 24 种 AI 写作模式 - 必须避免
 
-🚫 **内容模式 - 绝对禁止**：
-- 过度强调意义："作为...的证明"、"标志着"、"见证"
-- -ing式分析："展现出...的特征"、"体现了...的理念"
-- 宣传语言："无缝"、"直观"、"强大"、"赋能"、"驱动"
-- 模糊归因："专家认为"、"研究表明"（除非给出具体来源）
-- 提纲式结构：避免机械的"挑战与展望"
+### 内容模式（6 种）
 
-🚫 **语言模式 - 严格避免**：
-- AI高频词：此外、然而、至关重要、深入探讨、强调、持久的、增强、培养、获得、突出、复杂性、格局、关键性的、展示、织锦、证明、宝贵的、充满活力的
-- 系动词回避：直接用"是"，不用"作为"、"充当"
-- 否定排比："不仅仅是...而是..."、"不只是...更是..."
-- 三段式法则："无缝、直观和强大"（3项并列改为2项或4项）
-- 填充短语："值得注意的是"、"可以看到"
+1. **过度强调意义** - 避免："作为...的证明"、"标志着"、"见证了"、"至关重要的"、"为...奠定基础"
+2. **夸大知名度** - 避免过度列举媒体来源和粉丝数，无实质信息
+3. **-ing 式肤浅分析** - 避免："突出/强调...的特点"、"反映/象征...的理念"、"培养/促进..."
+4. **宣传式语言** - 避免："充满活力的"、"丰富的"、"令人叹为观止的"、"无缝"、"赋能"、"驱动"
+5. **模糊归因** - 避免："专家认为"、"研究表明"（除非给出具体来源）
+6. **提纲式结构** - 避免机械的"尽管其...面临若干挑战..."、"挑战与未来展望"
 
-🚫 **风格模式 - 控制使用**：
-- 破折号：少用，不做戏剧性停顿
-- 粗体：只用于必要强调，不用于"**此外**"这类连接词
-- 表情符号：技术文章慎用
+### 语言模式（6 种）
 
-✅ **人性化写作 - 积极做到**：
-1. **有观点** - 对技术做出判断，不只是罗列事实
-   - ❌ "这个技术提供了多种功能"
-   - ✅ "这个技术解决了X问题，但Y场景下仍然不够"
+7. **AI 高频词** - 避免：此外、然而、至关重要、深入探讨、强调、持久的、增强、培养、获得、突出、复杂性、格局、关键性的、展示、织锦、证明、宝贵的、充满活力的
+8. **系动词回避** - 直接用"是"，不用"作为/充当"代替
+9. **否定式排比** - 避免："不仅...而且..."、"这不仅仅是...而是..."
+10. **三段式过度使用** - 避免强行分成三组（改为 2 项或 4 项）
+11. **刻意换词** - 避免过度使用同义词避免重复
+12. **虚假范围** - 避免"从 X 到 Y"但两者不在有意义尺度上
 
-2. **变化节奏** - 长短句混合
-   - 短句制造冲击："我遇到了问题。"
-   - 长句展开细节："当时系统已经运行了三个月..."
+### 风格模式（6 种）
 
-3. **第一人称** - 适当使用"我"、"我们"
-   - ✅ "我在项目中发现..."
-   - ❌ "本文将探讨..."
+13. **破折号过度使用** - 少用 — 做戏剧性停顿
+14. **粗体过度使用** - 避免机械地用粗体强调（如 **此外**）
+15. **内联标题列表** - 避免项目符号以粗体标题 + 冒号开头
+16. **标题大小写** - 中文不适用
+17. **表情符号装饰** - 技术文章慎用
+18. **弯引号** - 中文用「」或 ""
 
-4. **具体细节** - 用真实数据替代抽象描述
-   - ❌ "显著提升了性能"
-   - ✅ "响应时间从2秒降到300ms"
+### 交流模式（6 种）
 
-5. **允许不完美** - 承认局限和复杂性
-   - ✅ "这个方案在大流量时会有问题"
-   - ❌ "这个方案完美解决了所有问题"
+19. **协作痕迹** - 避免："希望这对您有帮助"、"当然！"、"请告诉我"
+20. **知识截止免责** - 避免："截至 [日期]"、"基于可用信息"
+21. **谄媚语气** - 避免："好问题！"、"您说得完全正确"
+22. **填充短语** - 避免："为了实现这一目标"、"值得注意的是"、"可以看到"
+23. **过度限定** - 避免："可以潜在地可能被认为"
+24. **通用积极结论** - 避免："未来看起来光明"、"激动人心的时代"
 
-6. **口语化** - 像说话一样写
-   - ✅ "问题来了"、"这很麻烦"
-   - ❌ "值得注意的是"、"综上所述"
+## 人性化写作原则（积极做到）
 
-**实战示例对比**：
+✅ **有观点** - 对技术做判断
+- ❌ "这个技术提供了多种功能"
+- ✅ "这个技术解决了 X 问题，但 Y 场景下不够"
 
-❌ AI味重：
-"新功能作为技术创新的体现，此外提供了无缝、直观和强大的体验。这不仅仅是一次升级，而是我们思考问题方式的革命。"
+✅ **变化节奏** - 长短句混合
+- 短句制造冲击："问题来了。"
+- 长句展开细节："当时系统已经运行了三个月..."
 
-✅ 人性化：
-"新功能加了批处理、快捷键和离线模式。测试用户反馈不错，大多数人说任务完成快了。"
+✅ **第一人称** - 适当用"我"、"我们"
+- ✅ "我在项目中发现..."
+- ❌ "本文将探讨..."
 
-**平台适配**：
-- X：短句、有力、易扫描
-- 微信：自然表达、口语化、有个性
+✅ **具体细节** - 用真实数据替代抽象描述
+- ❌ "显著提升了性能"
+- ✅ "响应时间从 2 秒降到 300ms"
 
-**输出**：完整markdown博文（已去除所有AI痕迹）
+✅ **允许不完美** - 承认局限和复杂性
+- ✅ "这个方案在大流量时会有问题"
+- ❌ "这个方案完美解决了所有问题"
+
+✅ **口语化** - 像说话一样写
+- ✅ "问题来了"、"这很麻烦"
+- ❌ "值得注意的是"、"综上所述"
+
+## 真实案例使用
+
+⚠️ **只使用调研 insights 中的 verified_cases**
+- 每个案例必须有：name（公司/项目）、metric（具体数据）、source（来源）
+- 不要编造或虚构案例
+- 如果 verified_cases 为空，承认"暂无公开案例数据"
+
+## 平台适配
+
+**X 平台**：
+- 短句、有力、易扫描
+- 前置重点（Front-loaded）
+- 一针见血（Sharp, purposeful）
+
+**微信公众号**：
+- 自然表达，口语化
+- 有个性，有观点
+- 承认局限，不夸大
+
+**输出**：完整 markdown 博文（已去除所有 AI 痕迹）
 `
 
 const draftArticle = await agent(writingPrompt, {
@@ -347,83 +455,106 @@ if (humanizerScore < 45) {
     const polishPrompt = `
 你是专业的文本润色专家。
 
-任务：改写以下博文，去除AI痕迹，使其更自然、更像人类书写。
+任务：改写博文，针对性去除发现的 AI 痕迹。
 
-**当前问题（来自评审）**：
+**发现的 AI 模式（必须修复）**：
 ${reviewResult.humanizer_assessment.ai_patterns_found.join('\n')}
 
 **改进建议**：
 ${reviewResult.suggestions.join('\n')}
 
-**博文**：
+**当前博文**：
 ${finalArticle}
 
-**改写要求 - 基于Humanizer-zh 24种模式**：
+## 针对性改写指南
 
-1. **删除AI高频词**
-   - 此外、然而、至关重要、深入探讨、强调、持久的、增强、培养、获得、突出、复杂性、格局、关键性的、展示、织锦、证明、宝贵的、充满活力的
-   - 用简单词替换：但是、很重要、讨论、说、长久、加强等
+### 1. 删除 AI 高频词
+- **发现的词** → **替换方案**
+- 此外 → 同时、另外、删除
+- 然而 → 但是、不过
+- 至关重要 → 很重要、关键
+- 深入探讨 → 讨论、分析
+- 强调 → 说、指出
+- 持久的 → 长久的
+- 增强 → 加强、提升
+- 培养 → 建立、养成
+- 获得 → 得到、拿到
+- 突出 → 明显、重要
+- 复杂性 → 复杂
+- 格局 → 局面、情况
+- 关键性的 → 关键的
+- 展示 → 显示、表明
+- 织锦 → 删除（比喻过度）
+- 证明 → 说明、表明
+- 宝贵的 → 重要的、有价值的
+- 充满活力的 → 活跃的、有生气的
 
-2. **打破公式结构**
-   - 删除"不仅仅是...而是..."改为直接陈述
-   - 三段式（3项并列）改为2项或4项
-   - 删除"作为...的证明/标志"
+### 2. 打破公式结构
+- "不仅仅是 X，而是 Y" → 直接说 Y，或者"X，更重要的是 Y"
+- "这不仅...而且..." → 拆成两句
+- 三项并列（A、B 和 C）→ 改为两项或四项
 
-3. **简化系动词**
-   - "作为一个系统" → "这个系统是"
-   - "充当关键角色" → "很重要"
+### 3. 简化系动词
+- "作为一个 X" → "这个 X 是"
+- "充当 Y 的角色" → "是 Y"
+- "代表/标志着" → "是"
 
-4. **删除填充短语**
-   - "值得注意的是" → 直接说重点
-   - "可以看到" → 删除
-   - "显然" → 删除
+### 4. 删除填充短语
+- "值得注意的是" → 删除，直接说重点
+- "可以看到" → 删除
+- "显然" → 删除
+- "为了实现这一目标" → "为了做到这一点"
 
-5. **变化节奏**
-   - 加入短句制造冲击
-   - 长短句混合
+### 5. 变化句子节奏
+- 找出连续 3+ 个相似长度的句子
+- 将其中 1-2 个改为短句（<10 字）或长句（>30 字）
 
-6. **增加真实性**
-   - 用"我"、"我们"
-   - 加入个人观点和判断
-   - 承认局限和不完美
+### 6. 增加真实性
+- 加入第一人称："我发现"、"我们遇到"
+- 加入个人观点："我认为"、"在我看来"
+- 承认局限："这个方案在 X 场景下会有问题"
 
-7. **具体化**
-   - "显著提升" → 给出具体数字
-   - "优化性能" → 说明具体改进
+### 7. 具体化描述
+- "显著提升" → 给出具体数字
+- "优化性能" → 说明具体改进（如"从 2 秒降到 300ms"）
+- "大量" → 给出具体数量
 
-8. **精简表达**
-   - 删除重复强调
-   - 删除冗余解释
-   - 删除过多的连接词
+### 8. 精简表达
+- 删除重复强调的内容
+- 删除冗余解释
+- 合并意思相近的句子
 
-**重要**：
+## 重要原则
+
 - 保持技术准确性
 - 保留核心内容和结构
 - 保留代码示例
-- 只改写有AI痕迹的部分
+- 只改写有 AI 痕迹的部分
+- 不要添加新内容
 
 **输出**：改写后的完整博文
 `
 
-    const polishedText = await agent(polishPrompt, {
-      label: `polish-round-${polishIterations}`,
+    // 每轮创建独立的 polish agent，名称不同
+    const polished = await agent(polishPrompt, {
+      label: `polish-round-${polishIterations}`,  // 动态名称
       phase: 'Polish'
     })
 
-    if (!polishedText) {
+    if (!polished) {
       log(`Polish iteration ${polishIterations} failed`)
       break
     }
 
-    finalArticle = polishedText
+    finalArticle = polished
 
-    // 重新评估humanizer-zh分数（简化版评估）
+    // 重新评估 humanizer-zh 分数（每轮创建独立评估 agent）
     const reEvalPrompt = `
-快速评估以下文本的humanizer-zh分数（50分制）：
+快速评估以下文本的 humanizer-zh 分数（50 分制）：
 
-${polishedText}
+${polished}
 
-评分维度（各10分）：
+评分维度（各 10 分）：
 1. 直接性：直接陈述 vs 绕圈宣告
 2. 节奏：句子长度变化
 3. 信任度：尊重读者智慧
@@ -433,8 +564,9 @@ ${polishedText}
 只返回JSON：{"score": 数字, "remaining_issues": ["问题1", "问题2"]}
 `
 
+    // 每轮创建独立的评估 agent，名称不同
     const evalResult = await agent(reEvalPrompt, {
-      label: `eval-round-${polishIterations}`,
+      label: `eval-round-${polishIterations}`,  // 动态名称
       phase: 'Polish'
     })
 
@@ -463,15 +595,24 @@ ${polishedText}
 // ===== RETURN RESULT =====
 log('Workflow completed successfully')
 
+// 收集所有创建的 agent 名称（用于验证独立性）
+const agentsCreated = ['research-agent', 'writing-agent', 'review-agent']
+for (let i = 1; i <= polishIterations; i++) {
+  agentsCreated.push(`polish-round-${i}`)
+  agentsCreated.push(`eval-round-${i}`)
+}
+
 return {
   article: finalArticle,
   metadata: {
-    topic: args.topic,
-    workflow_version: '1.0.0',
+    topic: args.topic || '未指定主题',
+    workflow_version: '2.0.0',
     phases_completed: 4,
     research: {
+      search_count: researchInsights.search_count,
       trends_count: researchInsights.topic_insights.latest_trends.length,
-      cases_count: researchInsights.topic_insights.case_studies.length,
+      verified_cases_count: researchInsights.topic_insights.verified_cases.length,
+      verified_cases: researchInsights.topic_insights.verified_cases,
       x_platform_insights: researchInsights.x_platform,
       wechat_insights: researchInsights.wechat
     },
@@ -488,12 +629,14 @@ return {
       initial_score: humanizerScore,
       final_score: finalScore,
       iterations: polishIterations,
+      agents_created: agentsCreated.filter(name => name.startsWith('polish-') || name.startsWith('eval-')),
       passed: finalScore >= 45
     },
     quality_gates: {
-      content_quality: reviewResult.score >= 70 ? '✅ PASS' : '❌ FAIL',
-      humanizer_score: finalScore >= 45 ? '✅ PASS' : '❌ FAIL',
+      content_quality: reviewResult.score >= 70 ? `✅ PASS (${reviewResult.score}/100)` : `❌ FAIL (${reviewResult.score}/100)`,
+      humanizer_score: finalScore >= 45 ? `✅ PASS (${finalScore}/50)` : `❌ FAIL (${finalScore}/50)`,
       overall: (reviewResult.score >= 70 && finalScore >= 45) ? '✅ ALL PASS' : '❌ FAILED'
-    }
+    },
+    agents_created: agentsCreated
   }
 }
