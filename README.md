@@ -78,6 +78,38 @@ AI 后端开发简历筛选（从严版）。
 
 ---
 
+### init-scale
+
+大型代码库导航层配置(引导式)。原生 `/init` 之后的增量层——`/init` 让 Claude 知道项目,init-scale 让 Claude 在大仓里找得到东西。
+
+**能做什么**:
+- 引导式流程:无声体检 → 一次提问定范围 → 只读探索 → 一张总提案确认 → 连续执行
+- 搜索面收缩(permissions.deny,提案确认制,写后验证)
+- LSP 正确性层主动安装(三层体检:插件/二进制/后缀冲突)
+- codegraph 发现层条件安装(按仓库规模+间接层自动判定,试用期管制)
+- 模块分片 CLAUDE.md + 跨仓共性标记块分发(多仓并排工作区适用)
+- 折旧基线 + SessionStart 新鲜度 hook(配置是折旧资产,3-6 个月复审)
+
+**核心原则**:
+- 幂等:重跑即断点续跑,已就绪项自动跳过
+- 自动化边界在"出错是否可见":会报错的直接做,静默失明的必须确认
+- 三层导航铁律:发现用 codegraph(线索),判决用 LSP(事实),字面用 grep
+
+**用法**:
+```bash
+# 在大仓/monorepo/多仓工作区根目录
+/init-scale
+
+# 仅同步跨仓共性标记块
+/init-scale sync
+```
+
+适用场景:monorepo、多模块工程、多仓并排工作区、多语言仓库;或 Claude 定位代码慢、上下文烧得快、lint/test 超时的时候。
+
+详细文档:[init-scale/SKILL.md](init-scale/SKILL.md)(细节按阶段下沉在 [init-scale/references/](init-scale/references/))
+
+---
+
 ## 技能结构
 
 ```
