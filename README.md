@@ -110,6 +110,29 @@ AI 后端开发简历筛选（从严版）。
 
 ---
 
+### config-audit
+
+Claude Code 配置折旧复审。init-scale 的配套技能——核心论点:**配置是折旧资产**,为绕过旧模型限制写的规则会随模型变强从拐杖变成手铐。
+
+**能做什么**:
+- 机械校验先行(免费客观):baseline 陈旧度、模型换代、codebase map 失真、跨仓标记块手改检测、LSP/插件健康
+- 规则三分类:项目事实(保留)/ 已被模型能力覆盖(提议删)/ 无法判断(进 quarantine 隔离观察 2-4 周)
+- 试用期工具裁决(如 codegraph 的去留)
+- 用可逆的观察替代不可靠的单次 A/B 对比
+
+**触发时机**:重大模型发布后、SessionStart 新鲜度提醒出现时、或距上次审查 3-6 个月。仅限手动触发(`disable-model-invocation`)——改共享配置是有副作用的维护动作。
+
+**用法**:
+```bash
+/config-audit
+```
+
+依赖 init-scale 写入的 `claude-config-baseline` 块;没有 baseline 时会引导现场补建。
+
+详细文档:[config-audit/SKILL.md](config-audit/SKILL.md)
+
+---
+
 ## 技能结构
 
 ```
