@@ -24,3 +24,6 @@ Thumbs.db
 # Temp files
 *.log
 *.tmp
+
+# Packaged skills
+*.zip
