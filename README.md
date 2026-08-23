@@ -50,34 +50,6 @@ AI 后端开发简历筛选（从严版）。
 
 ---
 
-### viral-ai-blog-writing
-
-写爆火 AI 技术博文的多 agent workflow。基于 TDD 开发，完全内化 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)。
-
-**特点**：
-- 强制多 agent（Research → Writing → Review → Polish）
-- 5-8次网络搜索，收集2026年爆文模式
-- 内化 Humanizer-zh（24种AI模式 + 5维评分）
-- 双重验证（内容≥70分 + humanizer-zh≥45分）
-- 自动迭代润色到达标
-
-**用法**：
-```bash
-请用 viral-ai-blog-writing 撰写关于"AI Agent在代码审查中的应用"的博文
-```
-
-**效果**：
-- X平台：12-16词标题、2.7秒hook、易扫描
-- 微信：去AI味、自然表达、口语化
-- 技术深度：实战案例 + 可运行代码 + WHY解释
-- Humanizer-zh≥45分（50分制）
-
-耗时 15-25 分钟（自动执行）
-
-详细文档：[viral-ai-blog-writing/README.md](viral-ai-blog-writing/README.md)
-
----
-
 ### init-scale
 
 大型代码库导航层配置(引导式)。原生 `/init` 之后的增量层——`/init` 让 Claude 知道项目,init-scale 让 Claude 在大仓里找得到东西。
