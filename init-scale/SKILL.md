@@ -21,7 +21,7 @@ argument-hint: "[sync | 留空引导式全量]"
 
 - 工作区根 CLAUDE.md 存在?其中有 `claude-config-baseline` 块?(有 = 重跑场景)
 - `.claude/settings.json` 已有 deny 规则?
-- 各语言 LSP:插件启用 + 二进制在 PATH?(探测约束见 [references/lsp.md](references/lsp.md),jdtls 类只能 `which` 不能试运行)
+- 各语言 LSP:插件启用 + 二进制在 PATH + **依赖能否解析**?(探测约束见 [references/lsp.md](references/lsp.md);server 二进制一律只 `which` 不试运行;二进制在 PATH ≠ 判决层可用)
 - codegraph:`which codegraph` + 本工作区 `.codegraph/` 存在?
 - 模块分片 CLAUDE.md、shared-conventions.md、codebase-map、新鲜度 hook 各自存在?
 
@@ -73,7 +73,7 @@ argument-hint: "[sync | 留空引导式全量]"
 | 项 | 读 | 内含 |
 |---|---|---|
 | 排除 | [references/ignore.md](references/ignore.md) | deny 格式、剔除规则、分组确认、写后验证 |
-| LSP | [references/lsp.md](references/lsp.md) | 三层体检、运行时查 marketplace、探测坑、会话边界 |
+| LSP | [references/lsp.md](references/lsp.md) | 四层体检(含依赖层)、运行时查 marketplace、探测坑、假绿灯与铁律降级、会话边界 |
 | codegraph | [references/codegraph.md](references/codegraph.md) | 判定阈值、接线审计(必摘 prompt-hook)、试用期登记、铁律模板 |
 | 分片/map | [references/sharding.md](references/sharding.md) | 归并规则、冲突处理、标记块格式、sync、map 两半 |
 | 基线/hook | [references/baseline-hook.md](references/baseline-hook.md) | baseline 块格式、hook 脚本模板与安装 |
