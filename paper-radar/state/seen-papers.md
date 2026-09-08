@@ -4,10 +4,12 @@
 > 去重按内容不只按标题（同一工作可能改名重投，如 MAP → CAP）。
 > 「上次周扫」日期只由四线全幅周扫更新；定向/单篇验证不动它。
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
+> 非论文（工程实践节的详条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注；【快讯】不进本账本（硬规则 11）。
 
-**上次周扫：2026-08-17**（窗口 08-10 → 08-17，来自对话导出回填）
+**上次周扫：2026-08-24**（窗口 08-23 → 08-24；仅一天，实际覆盖 arXiv Mon 08-24 列表，抽样非全量）
 
 格式：`- [首推日期] 【溯源】标题 · 会议/机构 · arXiv ID 或会议页链接 —— 当时判词`
+（非论文条目：`- [首推日期] 【一方博客/工业博客/技术报告/上游变更】标题 · 来源方 · 原文链接 —— 当时判词`）
 （ID/链接为硬要求，无 arXiv ID 的会议论文用会议页链接；2026-08-20 前的旧条目缺 ID 属历史欠账，再次遇到该论文时顺手补上）
 
 ## 硬件
@@ -36,6 +38,10 @@
 - [2026-08-17] 【仅摘要】CAKE: Compiler–Agent Co-Design for Frontier Kernel Evolution —— agent 写 Cake IR + harness 回定位诊断且自身可演化；生成的 KDA kernel 比官方 FlashKDA 快 2.05×，已提 PR 到 FlashInfer
 - [2026-08-17] 【全文】Who Should Own the Expert Cache? · Waterloo —— E=896 万亿 MoE 上民间定理翻转：内核 LRU 与同域 oracle 打平（75.3% vs 74.6%），跨域 oracle 崩 LRU 稳；router 知识该做 admission/advice 不是重造 eviction。保留：依赖未公开 companion paper 的零拷贝读路径，证据集中 GH200
 - [2026-08-17] 【仅摘要】FlashMoE —— SSD 专家缓存用 ML 逼近 Belady，比 LRU 高 21% 命中；注意与 Expert Cache 篇结论矛盾——它测的是 E=128 侧，两篇对读看分野
+- [2026-08-23] 【全文】FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving · CASIA+UCAS+微信腾讯 · arXiv 2608.19758 —— 稀疏 prefill 从原型推到生产：mean correction 补极端稀疏精度、FA3/4 对齐 kernel（PackGQA/warp spec/pingpong/FP8）、原生 paged KV + continuous batching 可作 SGLang backend。全文验证：前作 FlashPrefill=arXiv 2603.06199（3 月），公开声明的 V2 非换壳；标题 47.26× 是对过时的 FA2，对 FA3/4 稠密基线 30.49×(FP8)/17.54×(BF16) 但那是稀疏 vs 稠密；**端到端 SGLang TTFT 只有 4.8×**——微基准与端到端差一个数量级。前作仓库是 vLLM 0.10.0/0.12.0 的 patch loader（同 EcoServe 形态，采用即背 rebase），V2 代码未见发布。**全部实测只在 H20**（特供 SKU，算力砍/带宽保留，系统性放大省算力类优化），H100/B200 收益预期缩水
+- [2026-08-23] 【仅摘要】PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX · Stanford(Olukotun)+CMU+RadixArk · arXiv 2608.17379 —— H100/B200 上测 LLM 写架构专属 PTX；方法论贡献是把「目标指令是否真被执行」与「性能是否有竞争力」拆开测，两者不等价；复杂 attention backward 成功率大幅下降；无任何模型稳定匹配前沿库。与 CAKE/KernelArc 连读，是这条线里唯一认真区分"看起来对"和"真的快"的
+- [2026-08-23] 【仅摘要】KernelArc: A Multi-Agent Framework for GPU Kernel Optimization · IMEC · arXiv 2608.17071 —— 落选池。多 agent 并行搜 kernel，SOL-ExecBench 若干任务榜首；与 CAKE 高度同构
+- [2026-08-23] 【仅摘要】rl-triton: High-Performance Triton GPU Kernels for RL Credit Assignment · arXiv 2608.17641 —— 落选池。七种 RL 信用分配算法统一成一个结合律 scan，比 torch-compile 快 1.6–5.70×；面向大规模并行仿真，LLM 后训练不直接受益
 
 ## 模型
 
@@ -51,6 +57,13 @@
 - [2026-08-17] 【仅摘要】LoRA in RAG Pareto 分析 —— Pareto 前沿全是 q/v-only adapter（结构性，非参数量）；最强 LoRA 3B ≈ 未适配 8B 但省 9GB 显存
 - [2026-08-17] 【仅摘要】LoRA 秩选择理论 —— 二分结论：约束 ERM 下 over-ranking 严格有害（r=128 崩到接近随机）；nuclear-norm 后截断下无害
 - [2026-08-17] 【仅摘要】SFT vs LoRA vs ICL 对照 —— SFT 16 样本学会新技能但灾难性遗忘；LoRA 遗忘少但要临界数据量；ICL 保旧知识但教不会复杂技能
+- [2026-08-23] 【仅摘要】Learning how to Forget: Fine-tuning for Long-Context Sparse Attention · AWS Labs · arXiv 2608.19920 —— 给稀疏注意力做微调，对任何 KV cache 策略适用，模型与策略协同适配；单张 A100 40GB 可跑；常超过用精确注意力（序列并行）训出的模型。H2O 为其实验中最强策略，配 SDPA kernel。开源库 KeysAndValues（github.com/awslabs/keys_values）
+- [2026-08-24] 【全文】TreeWY: Speculative Verification for Gated DeltaNet Hybrids · Thomson Reuters（单作者） · arXiv 2608.20961 —— GDN 混合模型的投机解码内存问题：循环状态是前缀有损摘要不能挪指针回滚，现行 full-state snapshotting 每个 draft 位置存一份完整快照且分支间不可共享。树结构 WY 变换把整棵 draft 树变成一次三角求解，commit 只重建被接受的那个状态，存小伪值矩阵（每头小 128×）。peak KV 低 2–3×，抢占 2531→1365，接受长度基本不变（175 配对点平均 |Δ|=0.039）。全文验证：**收益完全条件性**——gmu 0.6/并发 256 时吞吐 1.49×、p99 TTFT 约 40× 低，内存不紧时 0.97–0.99×（略输），gmu 0.9 拐点根本不出现；**vLLM main 的 fork、明说未上游、无仓库链接**（同 EcoServe/FlashPrefill V2 形态）；基线公平（对 vLLM 生产默认 storeall，附录 D 对 ReplaySSM 同 sweep），但**最接近的并发工作 Bole（arXiv 2608.01651）没做 head-to-head**（Bole 无代码，作者自陈）；边界 = B200 178GiB + Qwen3.5-35B-A3B(TP1)/397B-A17B(TP8) + 贪心 + prefix caching 全程关闭 + 深度 3 MTP。树「已启用且正确，不是提速」
+- [2026-08-24] 【仅摘要】Jacobian-guided Noise Injection for Quantization Robustness in LLMs · Amazon · arXiv 2608.20988 —— 把量化稳定性瓶颈指到 softmax（对离群值敏感 + Jacobian 依赖状态），理论上证明压 Jacobian 范数可给退化定界，据此往 pre-attention logits 注零均值高斯噪声、**方差由 Jacobian Frobenius 范数导出**（非拍脑袋、非直接惩罚 Jacobian）。低比特 WikiText 相对困惑度改善最多 40%，SigLIP ImageNet-1K Top-1 相对增益最多 +37%。与 J9 同一算子两端撞上：softmax 同时是性能墙和精度墙。注意是**训练期**策略不是 PTQ 插件
+- [2026-08-24] 【仅摘要】Is Multimodal Speculative Decoding Ready for Diffusion-Based Parallel Drafting? · 中国联通+南大 · arXiv 2608.20743 —— 落选池。综述+跨架构实证，结论「块并行/扩散式起草在多模态基本没被探索」。摘要里 3.6× 是 DFlash/DSpark 的**纯文本**数字不是多模态结果
+- [2026-08-24] 【仅摘要】Knowing but Not Saying: Preventing Factual Access Failures in LLM SFT via Recall-Anchored Distillation · arXiv 2608.20794 —— 落选池。把 SFT 域外事实退化从「灾难性遗忘」细化成 factual access failure：开放式事实回答失败≠底层事实被抹掉。若成立会改写账本里 SFT-遗忘那条的机制描述
+- [2026-08-24] 【仅摘要】Rethinking Expressivity and Efficiency in Test-Time Training (E2-TTT) · Fraunhofer IOSB+NUS+KIT 等 · arXiv 2608.21308 —— 未展开。TTT 靠推理期持续更权重处理长上下文，现有方法在 per-token 更新的表达力与 chunk-wise 近似的硬件效率之间取不好平衡
+- [2026-08-23] 【仅摘要】An Empirical Study of Reward Specification and Benchmark Reliability in GRPO-based LLM Unlearning · 瓦伦西亚大学 · arXiv 2608.17804 —— 四种奖励设计对比（LoRA-GRPO/RWKU）；核心是负面结论：优化成功≠行为改变，forget 分数/留出补全审计/终态 rollout 审计/训练动态四个视角互相矛盾；归因到奖励 hacking 端点、GRPO policy-support 限制、探针错配
 
 ## 软件系统
 
@@ -64,6 +77,7 @@
 - [2026-08-10] 【仅摘要】Lynx · arXiv 2607.01831 —— KV 按比特位切 Anchor/Residual 流渐进传输；INT4 的 TTFT + BF16 的精度
 - [2026-08-10] 【仅摘要】NetKV · arXiv 2606.03910 —— 网络感知调度：忽略网络项让「只看缓存」的调度任意次优；评分插件形式，TTFT 最多 -21.2%
 - [2026-08-10] 【仅摘要】SmoothAgent · arXiv 2607.00151 —— 上下文工程操作（offload/压缩/摘要）每次打翻 KV cache 触发重 prefill；异步预计算 TTFT 最多降 11.9×
+- [2026-08-23] 【全文】FleetSieve: Decision-Critical Profiling for SLO-Aware LLM Fleet Configuration · arXiv 2608.19659 —— 按「测量能多大程度改变下游分配决策」选 profiling 点。**真正值钱的是顺带测出的两个事实**：(1) Chat C128 上 TP4/TP8 都跑 11.27 req/s 但 completion-p99 46.4s vs 25.2s，只有 TP8 过 30s SLO——吞吐相同时可行 TP 仍不同；(2) 16 卡下错误配置在 1.3× 需求损失 1.93 req/s + 12.4pp，0.7× 需求被富余容量完全掩盖——低负载测不出配置错误。方法自身收益报得诚实：固定对比省 6.9%，200 次随机均值 5.4%(CI 3.5–7.2%)，Chat 省 21.5% 而 **Code 类它不是最省的**。全文验证：v1 无换壳；**未见代码仓库**（最大短板）；基线充分（8 种对照同起点同分配器）；边界=单节点 H100 + 31B + FP8 + vLLM + TP{2,4,8} + 关投机解码 + Azure trace，跨节点/MoE/开投机均未测
 
 ### RL 后训练基础设施
 - [2026-08-10] 【仅摘要】Laminar · EuroSys '26 · 港大+字节 —— 轨迹级异步 + relay worker 参数服务；1024 卡 5.48×；接受 staleness 换天花板
@@ -92,6 +106,10 @@
 - [2026-08-17] 【仅摘要】One Recipe, Many Harnesses —— 自演化 harness = 共享抽象 playbook + 不可迁移的生态边际（32–52%）；跨语言 bootstrap 可行（平均保留 0.63）
 - [2026-08-17] 【仅摘要】The Scaffolding Matters More Than the Interface —— MCP vs CLI 主导效应是 scaffolding；纯 CLI 便宜 5–28×；agent 经常无视分配的接口，不验证行为的对比测的是未知混合物
 - [2026-08-17] 【仅摘要】Trace: TRajectory Attribution for Automated Context Engineering · KDD 2026 —— 轨迹里的隐式不满信号定位失败的 context 源；CREATE vs UPDATE 决策需真读文件（33%→83%）
+- [2026-08-23] 【仅摘要】The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks · arXiv 2608.16630 —— 仓库级编码=重建耦合事实图，两条通道（近期上下文/参数记忆）都不覆盖的部分叫 coherence debt。7 模型×5 harness。154 次闭卷试验无一完成；facts 进 prompt 后 299/300 达 ≥9/12。改名版 Pydantic 迁移 70 次里 66 次七个模型停在同一分数、通过完全相同的 24/79 测试。**可用性决定结果，距离不决定**（128K 字符最远端与紧邻编辑处一样好用）。全通过测试的 harness 配置 token 差 >10×。**缺事实产生错的工作而非没有工作**——建立在「读了什么」上的观测看到的是已被填上的洞。标准与代码冲突时跟标准走：**过时 convention 文件比没有文件代价更高**。SWE-bench 上读取行为不再预测成功（参数记忆替代）
+
+- [2026-08-24] 【仅摘要】Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents (COTA) · 新加坡国立 · arXiv 2608.21027 —— 运行时干预光检测失败不够，还得给恢复方向；但 expert solver / 生成式 critic 两条路都要求干预侧**再具备一次任务求解能力**，与 actor 冗余且贵。COTA 把干预降格成「只做比较」：tiny comparator 判断采样备选是否带来更好后续，反复比较决定是否干预；训练信号来自**同前缀反事实分支**的成对监督；备选作**非绑定建议**返回，重规划仍由原 actor 做。WebShop/ALFWorld/τ³-Retail × 三 actor 九个设置全改善。核心结论：**辅助模型显著弱于 actor 时干预依然有效**——比较比求解便宜。与 J6 同族但更进一步（验证者不但要独立，还可以远弱于生成者）。全是学术环境，无生产轨迹
+- [2026-08-24] 【仅摘要】Structure for Reading, Prose for Writing: Asymmetric Structural Conditioning in Multi-Agent Document Authoring · ML Research Labs(Trellis Data) · arXiv 2608.20786 —— 已部署投标应答系统（主权约束下开源权重）对比同机构真实提交的人写标书。**评估方法发现**：评委在 55 节里判不劣 40 / 更优 4 / 无遗漏，但 gap 分类后 **68% 是系统信源里根本没有的内容**，15 个不利判决只有 6 个本可避免——「与 ground truth 有差异」多是信息可得性而非写作质量，不区分会系统性低估此类系统。**条件化不对称**：结构化标记改善抽取（三个阅读任务复现），但**不迁移到条件化**——指令材料从散文转嵌套 XML 使答案质量 74%→48%。另两条：**指名禁止某写法会让它集中而非消失**（96% 残留缺陷落在 prompt 点名的两种形式）；随机标注耦合确定性窗口函数使**字节相同文件**抽出需求数 68→51。一句话：结构放在读的地方，散文与自检放在写的地方
 
 ### Agent 记忆
 - [2026-08-10] 【仅摘要】Agent Memory: Characterization and System Implications —— 主导成本是构建不是检索，构建是 embedding/prefill 主导，应作独立后台负载；maintenance 环节普遍缺失
@@ -102,6 +120,8 @@
 - [2026-08-10] 【仅摘要】TiMem / MAGMA / GAM / MemWeaver —— LoCoMo/LongMemEval 刷分系，落地成本高，判为跳过
 - [2026-08-17] 【仅摘要】RippleMem —— 自适应联想回忆（锚点→沿关联扩展补证据）；LongMemEval-S 最高 +11.87%，图构建成本降 ~30×（比其他图记忆实用的关键）
 - [2026-08-17] 【仅摘要】ERSkill —— 检索行为表示成可执行 skill 与 router 共同演化 +31.3%；偏学术，判为跳过
+- [2026-08-23] 【仅摘要】Explicit State Elicitation Is Not Enough: A Controlled Audit of Memory-Policy Classification · arXiv 2608.17247 —— 落选池。显式定义记忆状态有帮助，但加「状态输出字段」几乎无增益；给状态标签只是让预测被标签条件化
+- [2026-08-23] 【仅摘要】Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents · arXiv 2608.19564 —— 落选池。记忆-澄清边界 140 场景基准，标注 κ=0.962；模型验证变化事实比向用户澄清歧义可靠得多。规模偏小
 
 ### RAG
 - [2026-08-10] 【仅摘要】A Systematic Analysis of Chunking Strategies —— overlap 无可测收益纯增成本设 0；sentence≈semantic>token≫code；context cliff ~2.5k；最优 context 取决于目标（语义 500 / EM 2.5k）
@@ -111,13 +131,31 @@
 - [2026-08-10] 【仅摘要】Retrieval Enhancements for RAG (Deployed Customer Support) · EACL 2026 Industry —— zero-shot LLM 识别高相关段落打败传统 cross-encoder
 - [2026-08-10] 【仅摘要】eBay: Optimizing RAG for E-Commerce How-To · ACL 2026 Industry —— 生产系统完整工作流含部署指标
 - [2026-08-10] 【仅摘要】SciRet —— MS MARCO 训练的 cross-encoder 在科学语料 P@5 0.600→0.404；重排上线前必须在自己域上测
+- [2026-08-23] 【仅摘要】When Is Complex Chunking Worth It? A Multi-Objective Evaluation of Chunking Methods at Scale · CIKM 2026 · 帕绍大学+IT:U Linz · arXiv 2608.16586 —— 8 策略×2 语料×3 embedding 模型×多规模，同时量检索效果与系统成本（文档吞吐/查询吞吐/峰值内存）。昂贵方法很少稳定胜出；最优解随 embedding 模型/数据集/语料规模/目标指标漂移，无普适赢家；效果相近的方法运行成本差很多。代码 github.com/casparil/chunking-eval
+- [2026-08-23] 【仅摘要】From Retrieved Context to Runtime Control: Adaptive Compression for Edge-based RAG · arXiv 2608.19535 —— 落选池。Jetson AGX Thor 实测 7B-8B 生成阶段吃约 90% 延迟/91% GPU 能耗；适中压缩率省 GPU 能耗 53.2%。只在边缘设备成立
+
+- [2026-08-24] 【全文】RAG Deserves an Index: Why Ingest-Time Compilation Beats Query-Time Interpretation · Endgame Labs+武藏野大学 · arXiv 2608.20845 —— 生产 RAG 每次查询让模型重推同一批原文含义再扔掉＝语义层全表扫描；解法是把贵活挪到写入时（ingest-time semantic compilation）。两层：增量维护 embedding + 编译期做过溯源校验的原子 claim。关键区分是**编译 payload 不是指针**（阅读模型直接消费带证据跨度与归属的 claim）。参考实现即普通 PostgreSQL，溯源是外键不是注释，校验门丢弃定位不到引文的候选（20 文档重放拒 1.1%，29 条里 28 条是「模型引用的其实是转述」）。全文验证：对三种分块基线 32 个格全胜（2.2k token 拿 85.2% vs 最好分块 16.3k 拿 72.5%，Holm 后 24 对比全存活），但对**最强基线**（上下文化分块+混合 RRF+重排，预注册）**统计打平**（88.0% vs 85.2%，p=0.202；16384 预算 87.4% vs 83.6%，p=0.076）**且方向在开发/留出集之间翻转**（作者主动报告不利的一半）——**真结论是成本不是精度：打平用约 21× 查询路径 token 买来（47.7k vs 2.2k），每查询再付一遍**；编译全语料 26.3M token/约 $32 ≈ 该语料 580–600 次查询，千次读内回本。三处打折：① 维护「增量比重建便宜 33.7×」是**合成 pilot**、作者自陈理想化属最好情况上界；② **抽取与评判共用 Kimi K2.6**（同族模型跨层，Measurement Without Validity 警告的相关失效，人工校准未落地）；③ 「完整协议与结果」在一份 **companion report** 里本文未承载。语料只有广播访谈转录——**对 claim 编译+溯源最占便宜的形态**，未测代码/技术文档/高频变更语料。独立佐证：分块阅读准确率随预算 81%→73%，fact payload 证据覆盖稳在 98–99%
 
 ## 工程方法
+
+- [2026-08-24] 【全文】UpgradeBench: A Decision-Centric Benchmark for Upgrading Fine-Tuned LLM Specialists · 阿里+长江商学院 · arXiv 2608.20918 —— **本周只读一篇**。沿 Qwen 7–8B 完整真实发布序列（1.5-7B-Chat 2024-02 → 2-7B 2024-06 → 2.5-7B 2024-09 → 3-8B 2025-04，14 个月）测九跳，六任务三类、两尺度，训练侧成本一等输出，量化 freeze/port/refresh/retrain 决策。三个常识没活下来：① **脆弱性分任务不普遍**——意图分类冻结跨九跳保留 99–101%、耐久 >14 个月（四代重训基线只动 0.2 分而 zero-shot 涨 21）；text-to-SQL 单跳丢最多 59%、三代归零、H50 短于一个发布间隔；组织变量是**底座绑定 vs 数据绑定**（横切判别/生成的表面区分）。② **裸抄 adapter 由权重连续性决定不由架构形状决定**——架构相同但独立预训练 run 之间 Banking77 92.8%→42.9%（**低于不挂 adapter 的 60.7%**），贴到同权重继续预训练后代则达重训参考水平；OLMo 预注册距离消融：46B token 保留 0.88–0.99、2.9T token 掉地板，退火与 model soup 不额外损伤。③ 权重空间迁移方法在这条真实血脉**三跳里两跳根本没定义**。可抄：预指定决策策略在 33 个 episode 上重放（决策门与打分用不相交两半）**平均质量后悔 0.37pp、零行为回退、只花永远重训 1/3 预算**；CKA 探针（256 prompt）排可移植性 Spearman 0.74。全文验证：v1 无换壳（早期草稿的「half-life」已拆成 H50/H0）；**数据窗口 vs 发表差约 16 个月**——血脉止于 Qwen3-8B(2025-04)，Qwen3.5(2026-02) 不在内，日历数字不可外推、可外推的是底座/数据绑定这个结构性论点；**声明释出全部产物但正文无仓库 URL、检索也没找到**（最大短板）；基线罕见扎实（固定 QLoRA 配方、底座恒定、配对 bootstrap CI、OLMo 三条预测预注册、R 只在 O−F 下界 >2pp 时展示）；边界＝**整个研究 98 次训练/193 评测格跑在一张 RTX 4090**，只覆盖 QLoRA 不覆盖全参，7–8B 与 1.5–1.8B，Qwen+OLMo，不涉 MoE；C4「权重资产优势约 prompt 资产 80×」是**附录 pilot 只测一个 task/hop**，强度远低于正文
+- [2026-08-24] 【仅摘要】No Judgment Without a Reason: Counterfactual Receipts for Versioned AI Evaluators · 阿里+长江商学院（与 UpgradeBench 同组作者同日两篇） · arXiv 2608.20938 —— 评委可以**保住正确标签却因错误理由改判**，而多数协议只记标签对不对。把评委状态拆成 grounds/norms/authority 三类有类型来源，替换任意子集得八格 judgment cube；judgment receipt = 能复现修订裁决的极小来源替换族。关键区分：**执行过的反事实才能认证 receipt，语言模型只能预测一张**。ReasonBench：845 独立切分来源单元→19,520 case + 7,200 配对对照，五种子研究开结果前用 content hash 冻结。Qwen3-1.7B 直接预测 receipt 达 **98.41%**；预测完整 cube 反降至 96.99%，配对差 −1.42pp[−2.87,−0.30]——**冻结前登记的「cube 监督会改善」假设被拒**，Qwen3-0.6B 三种子复现一致(−1.26pp)。**真正产出是高分掩盖了什么：保义置换来源顺序后同一 receipt 只有 54.8%(直接)/49.2%(cube) 能复现**。可抄：把评委版本迁移当需认证对象 + 上保义置换测试（把 98% 打回 55% 的低成本探针）
+- [2026-08-24] 【仅摘要】Beyond Endpoint Gains: A Weight-Delta Audit of Medical Specialization · IIT Kanpur+Oracle Health AI+MBZUAI · arXiv 2608.20768 —— 落选池。不看端点分差而审计「释出的权重更新本身」，配对 weight-delta path audit，用两对公开的通用→医疗专家 checkpoint。与 UpgradeBench 是同一问题的另一侧切法
+- [2026-08-24] 【仅摘要】When Trust Meets Truth: Trust–Truth Separability in LLM-as-Judge · NII+阿姆斯特丹大学等 · arXiv 2608.21097 —— 落选池。LLM 评委多维评估里「可信」与「为真」能否分开。与 No Judgment 同线，规模较小
+- [2026-08-24] 【仅摘要】Asymmetric Capacity Allocation in Self-Refinement Pipelines · UCI+Drexel · arXiv 2608.21345 —— 落选池。首个按阶段（生成/批判/修订）系统考察模型尺寸的工作，指出把模型尺寸当实现细节会浪费资源。方向对，数字待核
 
 - [2026-08-10] 【仅摘要】Measuring Agents in Production (MAP/CAP) · ICLR 2026 · arXiv 2512.04123 —— 生产 Agent 实证调研（20 访谈+306 问卷）；数据采集 2025 年 4–11 月：当论点读别当现状读，步数/框架/评估数字已过期；论点（能力换可靠性、系统级设计解可靠性）衰减慢。已改名 CAP 投 ICML 2026，数据未刷新
 - [2026-08-10] 【仅摘要】Where Does Agent Reliability Come From? · arXiv 2607.17044 —— 归因拆解：scaffolding+prompt +9.5pp、验证循环 +1.5pp（但卡在分布顶端）；验证者必须独立于生成者；厂商自评
 - [2026-08-10] 【仅摘要】Making Sense of AI Agents Hype —— 234 场从业者演讲的架构模式；样本是公开演讲有幸存者偏差，与 MAP 对读（新鲜度和真实度反着来）
 - [2026-08-10] 【仅摘要】Ao et al. 2026 non-identifiability 定理 —— 架构同时在工具/检索/transcript 长度上有差异时，性能差异无法归因「协调更好」；多 agent 论文的负面结论比正面更可信
+- [2026-08-23] 【全文】Phantom Gains: Auditing Self-Improvement Against a Measured Null · UCD+Georgia Tech+大连理工 · arXiv 2608.20290 —— **本周只读一篇**。Qwen3-8B 三轮 rank-32 LoRA 自训练 + 冻结 θ₀ 对照走同一管线，找出七个测量失效点，每个缺对照时都会反转结论。F1 单次贪心解码非状态：冻结模型自比得 6 学会/9 退化，clr=1.5（batching 伪影；串行去掉 3/4，但仍有 2% 贪心判定会变）。F2 expansion 统计量无 null：冻结模型 k=128 评两次「扩展」7/25 道 AIME，rate=0.280。F7 藏在 F2 的修复里：m≥2 阈值的 null 在 110 次冻结对比上是 0.058[0.038,0.078] 而非 0。另有 F3 固定 token 上限遇风格漂移把最有效臂判为最破坏、F4 transition 指标比 accuracy 少约 10× 功效、F5 种子方差 clr 跨 0.55–1.53、F6 欠功效探针造出 10 点幽灵安全下降。修正后：外部蒸馏改善 8–11/22 道稀达题，三种自训练 0–2 道（β=1.91, p<1e-8）；自训练破坏 88–106/1163 道 band 题 vs 地板 8。全文验证：v1 无换壳；仓库 github.com/chengxuphd/phantom-gains（Apache-2.0，2026-08-19 建，复现不需 GPU/网络，但 0 star/1 贡献者无第三方验证）；对照设计本身即论点（冻结对照同管线 + 蒸馏正对照三方面对齐）；边界=单模型族+仅 LoRA+3 轮，**具体数值别外推，可外推的是方法论**——多臂实验每条臂的 checkpoint 0 都是未训练模型的独立评测，null 几乎白送
+
+## 工程实践（非论文）
+
+> 工程博客 / 技术报告 / 上游变更的去重区（硬规则 5）。快讯不进这里。
+> 格式：`- [首推日期] 【来源标注】标题 · 来源方 · 原文链接 —— 当时判词`
+
+（2026-09-08 新设，尚无条目。）
 
 ## 提及未展开（窗口外或判为跳过，防止当新货重推）
 
