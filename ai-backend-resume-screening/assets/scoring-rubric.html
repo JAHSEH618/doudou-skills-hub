@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 后端开发工程师 · 简历评分表（从严版）</title>
+<title>AI 后端开发工程师（Java） · 简历评分表（从严版 · Java 收口）</title>
 <style>
   :root{
     --bg:#faf9f5; --surface:#fff; --border:rgba(0,0,0,0.12); --border-strong:rgba(0,0,0,0.22);
@@ -47,8 +47,8 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>AI 后端开发工程师 · 简历评分表（从严版）</h1>
-  <p class="sub">勾选简历中符合的条件，下方实时计算总分与录用建议。从严版判定：硬门槛中<b>工龄 ≤10 年</b>、<b>本科及以上（非全日制本科可接受）</b>为一票否决（不可放宽）；<b>AI coding 工具、SDD/TDD</b> 两大能力门槛缺一即淘汰，其中<b>门槛 ② 须按证据强度单选 A / B / C 档</b>：<b>C 档直接淘汰</b>，<b>B 档过但总分封顶 85</b>，深度 +6 仅 A 档可得。<b>Agent 应用落地</b>为最高优先加分（+10，复杂度再 +6，仅 Demo 不算），但<b>前提是简历主体为传统业务后端</b>——项目主体为 RAG / 大模型应用 / Agent 开发者按<b>画像错位一票否决</b>（岗位要传统项目借助 AI 提效，不是招人做智能体）；全部门槛通过 → <b>60 分起评</b>，score 超过 60（≥61）进推荐池、裸 60 不推，并按项目经验选定<b>等级（初级开发 / 中级 / 高级）</b>。<b>大厂 / 强 AI 落地</b>只放宽年龄与非 211 劣势，且自报占比须与正文互证。勾选前请先过一遍<b>证据规则</b>：每一分都要贴得出简历原句，禁止把「在某行业做过」＋「会用 AI」推成「用 AI 做了该行业系统」。「真实性核验」用于识别 AI 灌水：🔴 高风险扣 12 分并提示重点核验。</p>
+  <h1>AI 后端开发工程师（Java） · 简历评分表（从严版 · Java 收口）</h1>
+  <p class="sub">勾选简历中符合的条件，下方实时计算总分与录用建议。从严版判定：硬门槛中<b>Java 必须（无 Java 后端经验一票否决）</b>、<b>工龄 ≤10 年</b>、<b>本科及以上（非全日制本科可接受）</b>为一票否决（不可放宽）；硬门槛之后先做<b>画像分级（单选）</b>：<b>P1 首选＝纯 Java 后端</b>，<b>P2 次选＝Java ≥5 年打底后转型 AI 应用</b>（推荐排序恒在 P1 之后），<b>全栈定位、短年限 java+python 双栈、无长 Java 打底的 AI 应用主体一律淘汰</b>（勾「淘汰信号」对应项）；<b>AI coding 工具、SDD/TDD</b> 两大能力门槛缺一即淘汰，其中<b>门槛 ② 须按证据强度单选 A / B / C 档</b>：<b>C 档直接淘汰</b>，<b>B 档过但总分封顶 85</b>，深度 +6 仅 A 档可得。<b>Agent 应用落地</b>为优先加分（+5，复杂度再 +3，仅 Demo 不算；2026-08-28 降权），前提是画像过关（P1 或 P2）；全部门槛通过 → <b>60 分起评</b>，score 超过 60（≥61）进推荐池、裸 60 不推，并按项目经验选定<b>等级（初级开发 / 中级 / 高级）</b>。<b>大厂 / 强 AI 落地</b>只放宽年龄与非 211 劣势，且自报占比须与正文互证。勾选前请先过一遍<b>证据规则</b>：每一分都要贴得出简历原句，禁止把「在某行业做过」＋「会用 AI」推成「用 AI 做了该行业系统」。「真实性核验」用于识别 AI 灌水：🔴 高风险扣 12 分并提示重点核验。</p>
 
   <div class="head">
     <div class="stat score">
@@ -62,30 +62,35 @@
     </div>
   </div>
 
-  <div class="sec"><div class="sec-title">一、硬门槛（须全部满足；工龄 / 学历为一票否决，不可放宽）</div><div class="grp" data-grp="gate"></div></div>
-  <div class="sec"><div class="sec-title">二、能力门槛 ①：AI coding 工具实证（必过）</div><div class="grp" data-grp="coding"></div></div>
-  <div class="sec"><div class="sec-title">三、能力门槛 ②：SDD / TDD 工程化（必过 · 按证据强度单选一档）</div><div class="grp" data-grp="sdd"></div><div class="grp" data-grp="sdddepth"></div></div>
-  <div class="sec"><div class="sec-title">四、优先方向（加分项，非门槛；Agent 落地为最高优先加分）</div><div class="grp" data-grp="pri"></div></div>
-  <div class="sec"><div class="sec-title">五、加分项</div><div class="grp" data-grp="bonus"></div></div>
-  <div class="sec"><div class="sec-title neg">六、淘汰信号（前四项一票否决）</div><div class="grp" data-grp="neg"></div></div>
-  <div class="sec"><div class="sec-title">七、AI 灌水 / 真实性核验（humanizer-zh，单选一档）</div><div class="grp" data-grp="integrity"></div></div>
-  <div class="sec"><div class="sec-title">八、等级评定（通过者按项目经验单选）</div><div class="grp" data-grp="grade"></div></div>
+  <div class="sec"><div class="sec-title">一、硬门槛（须全部满足；Java / 工龄 / 学历为一票否决，不可放宽）</div><div class="grp" data-grp="gate"></div></div>
+  <div class="sec"><div class="sec-title">二、画像分级（单选：P1 首选 / P2 次选；全栈定位、短年限双栈、画像错位勾「七、淘汰信号」）</div><div class="grp" data-grp="profile"></div></div>
+  <div class="sec"><div class="sec-title">三、能力门槛 ①：AI coding 工具实证（必过）</div><div class="grp" data-grp="coding"></div></div>
+  <div class="sec"><div class="sec-title">四、能力门槛 ②：SDD / TDD 工程化（必过 · 按证据强度单选一档）</div><div class="grp" data-grp="sdd"></div><div class="grp" data-grp="sdddepth"></div></div>
+  <div class="sec"><div class="sec-title">五、优先方向（加分项，非门槛；Agent 落地为最高优先加分）</div><div class="grp" data-grp="pri"></div></div>
+  <div class="sec"><div class="sec-title">六、加分项</div><div class="grp" data-grp="bonus"></div></div>
+  <div class="sec"><div class="sec-title neg">七、淘汰信号（前六项一票否决）</div><div class="grp" data-grp="neg"></div></div>
+  <div class="sec"><div class="sec-title">八、AI 灌水 / 真实性核验（humanizer-zh，单选一档）</div><div class="grp" data-grp="integrity"></div></div>
+  <div class="sec"><div class="sec-title">九、等级评定（通过者按项目经验单选）</div><div class="grp" data-grp="grade"></div></div>
 
   <button class="reset" onclick="document.querySelectorAll('input').forEach(b=>b.checked=false);recompute();">重置</button>
 
-  <div class="foot">分值为从严版初始建议：硬门槛 + 两大能力门槛全部通过 → 起评 60 分，推荐线为「超过 60」（裸 60 不推，至少再命中一项强度 / 加分），强度 / 优先方向 / 背景加分向上累加，上限 100。<b>门槛 ② B 档封顶 85</b>，故 86–100 一定是 A 档（工具级实证 + 多项强加分）；但反过来不成立——<b>A 档大量落在 61–85</b>（实测 25 位 A 档仅 5 位 ≥86），A 档只保证有工具实证，无 Agent 落地 / 大厂 / 211 时拿 70 分很常见。<b>两档分数重叠是正常的，档位靠档位字段承载、不靠分数</b>；推荐表请按档位分区呈现，不要跨区按分数混排。唯一的硬错误是算出 B 档 &gt;85（忘了封顶）。<b>加分互斥与禁推断</b>：同一段证据只能支撑一个加分项；AI 全栈 +6 与前端 +3 取高者；「金融 / 电商 × AI 编码 +8」须在同一项目上同时具备行业属性与 AI 编码证据；自报占比若与正文零互证，生产落地 +8 与占比 +6 减半计入且不得触发放宽。Agent 应用落地为最高优先加分（真实落地 +10、复杂度 / 规模再 +6，仅 Demo 不算、不能替代门槛①），但只在<b>传统业务后端为主体</b>的简历上生效——项目主体为 RAG / 大模型应用 / Agent 开发、传统业务后端单薄者按<b>画像错位一票否决</b>，同一段经历不能既构成错位又拿落地加分。年龄 ≤33 可被大厂 / 强 AI 落地放宽至约 35，但<b>工龄 &gt;10、无本科（最高学历专科及以下）、两大能力门槛、淘汰信号、🔴 灌水一律不放宽</b>。第一学历 211/985/海外名校 → 优先推荐（+6，非 211 本科不扣分）。等级评定独立于分数：按项目经验（复杂度、独立负责程度、落地深度）选档，高级＝主导架构 + SDD/TDD 成体系（如有 Agent：生产稳定运行有量化效果），中级＝独立负责模块级落地，初级开发＝以参与为主、门槛达标但深度有限；不要由分数倒推等级。真实性核验：用 AI 写简历不扣分，要揪的是用 AI 编造 / 夸大经历——高 AI 痕迹但硬细节充分（真系统名 / GitHub / 精确指标）选 🟢；空泛无凭、时间线矛盾、拼接错字选 🔴（−12 并重点核验）。可按团队松紧自行调整，分层否决逻辑优先于分数。</div>
+  <div class="foot">分值为从严版初始建议：硬门槛 + 两大能力门槛全部通过 → 起评 60 分，推荐线为「超过 60」（裸 60 不推，至少再命中一项强度 / 加分），强度 / 优先方向 / 背景加分向上累加，上限 100。<b>门槛 ② B 档封顶 85</b>，故 86–100 一定是 A 档（工具级实证 + 多项强加分）；但反过来不成立——<b>A 档大量落在 61–85</b>（实测 25 位 A 档仅 5 位 ≥86），A 档只保证有工具实证，无 Agent 落地 / 大厂 / 211 时拿 70 分很常见。<b>两档分数重叠是正常的，档位靠档位字段承载、不靠分数</b>；推荐表请按档位分区呈现，不要跨区按分数混排。唯一的硬错误是算出 B 档 &gt;85（忘了封顶）。<b>加分互斥与禁推断</b>：同一段证据只能支撑一个加分项；「金融 / 电商 × AI 编码 +8」须在同一项目上同时具备行业属性与 AI 编码证据；自报占比若与正文零互证，生产落地 +8 与占比 +6 减半计入且不得触发放宽。<b>画像分级是硬序</b>：P1（纯 Java 后端）恒排 P2（Java ≥5 年打底转型 AI 应用）之前，推荐表不跨档混排；全栈定位、短年限 java+python 双栈（Java &lt;5 年且双栈并列）、无长 Java 打底的 AI 应用主体（画像错位，勾前先查 P2 豁免）一律一票否决。Agent 应用落地为优先加分（真实落地 +5、复杂度 / 规模再 +3，仅 Demo 不算、不能替代门槛①；2026-08-28 由 +10/+6 降权），只在画像过关（P1 或 P2）时生效——同一段经历不能既构成错位又拿落地加分。年龄 ≤33 可被大厂 / 强 AI 落地放宽至约 35，但<b>无 Java、工龄 &gt;10、无本科（最高学历专科及以下）、画像判淘汰、两大能力门槛、淘汰信号、🔴 灌水一律不放宽</b>。第一学历 211/985/海外名校 → 优先推荐（+6，非 211 本科不扣分）。等级评定独立于分数：按项目经验（复杂度、独立负责程度、落地深度）选档，高级＝主导架构 + SDD/TDD 成体系（如有 Agent：生产稳定运行有量化效果），中级＝独立负责模块级落地，初级开发＝以参与为主、门槛达标但深度有限；不要由分数倒推等级。真实性核验：用 AI 写简历不扣分，要揪的是用 AI 编造 / 夸大经历——高 AI 痕迹但硬细节充分（真系统名 / GitHub / 精确指标）选 🟢；空泛无凭、时间线矛盾、拼接错字选 🔴（−12 并重点核验）。可按团队松紧自行调整，分层否决逻辑优先于分数。</div>
 </div>
 
 <script>
 const items = {
   gate: [
-    {t:"后端 / 全栈开发方向，2–5 年经验为理想区间", p:0},
+    {t:"Java 后端开发方向，2–5 年经验为理想区间", p:0},
+    {t:"Java 必须：有可指认的 Java 后端开发经验（Spring 生态 / 业务系统；无 Java 一票否决，不可放宽）", p:0},
     {t:"工龄 ≤ 10 年（> 10 一票否决，不可放宽）", p:0, sub:"tenure"},
     {t:"年龄 ≤ 33 岁（超 33 须触发放宽：大厂 / 强 AI 落地）", p:0, sub:"age"},
     {t:"学历本科及以上，非全日制本科可（专升本 / 自考 / 成考 / 函授算过门槛；无本科一票否决，不可放宽）", p:0, sub:"edufloor"},
-    {t:"技术栈属于：全栈 / 会 Python / 会 Java 之一", p:0},
     {t:"熟练掌握 MySQL、Redis", p:0},
     {t:"是 AI 编程工具的重度使用者（非偶尔尝鲜）", p:0},
+  ],
+  profile: [
+    {t:"P1 首选 · 纯 Java 后端：近年项目主体为 Java 业务系统；Python 至多零星脚本 / 数据处理等辅助，不构成第二主栈", p:0, prof:"P1"},
+    {t:"P2 次选 · 长年限 Java 转型 AI 应用：Java 后端 ≥ 5 年（或占工龄主体）打底后转向 RAG / 大模型应用 / Agent 开发（须贴得出时间线证据；推荐排序恒在 P1 之后）", p:0, prof:"P2"},
   ],
   coding: [
     {t:"使用 Cursor / Claude Code / Codex 等专业编程工具写代码（非网页聊天）", p:0, core:"coding"},
@@ -101,10 +106,9 @@ const items = {
     {t:"方法论深度：完整工作流在真实项目跑通 ＋（提效数据 或 团队规范沉淀）　※ 仅 A 档可得", p:6, depth:true},
   ],
   pri: [
-    {t:"Agent 应用真实落地（生产 / 真实用户在用；课程项目、本地 Demo、纯调 API 聊天页不算；不能替代门槛①；前提：简历主体为传统业务后端，主体即 Agent/RAG/大模型开发者按画像错位否决、不适用本加分）", p:10},
-    {t:"Agent 复杂度 / 规模：多智能体 / MCP / 工具链编排 / RAG+Agent / 量化业务效果", p:6},
+    {t:"Agent 应用真实落地（生产 / 真实用户在用；课程项目、本地 Demo、纯调 API 聊天页不算；不能替代门槛①；前提：画像过关 P1 或 P2——画像判淘汰者不适用本加分；P2 转型后的 AI 应用落地按同一标准给分）", p:5},
+    {t:"Agent 复杂度 / 规模：多智能体 / MCP / 工具链编排 / RAG+Agent / 量化业务效果", p:3},
     {t:"金融 / 电商 × AI 编码：同一项目上「属该行业业务系统」＋「用 AI 工具产出其业务代码」（禁止跨项目合取推断）", p:8},
-    {t:"AI 全栈能力，独立完成前后端闭环（与「前端能力 +3」互斥）", p:6, fullstack:true},
   ],
   bonus: [
     {t:"第一学历 211 / 985 / 海外名校（优先推荐信号；非 211 本科不扣分）", p:6, edu:true},
@@ -112,14 +116,15 @@ const items = {
     {t:"有 AI 提效具体数据（返工率降 70%、提效 2–3 倍等；工程优化数据如「接口 5s→200ms」不算）", p:4},
     {t:"团队级 Prompt 模板 / AI 提效规范沉淀（他人在用 / 写进团队规范 / 已开源；纯个人 skills 库不算）", p:4},
     {t:"前沿工具追踪：除主力工具外另说得出 ≥2 个当年新工具 / 生态（v0、Bolt.new、OpenCode、OpenClaw、Qoder 等）", p:3},
-    {t:"具备前端开发能力（项目中有前端产出；培训证书不算。与「AI 全栈 +6」互斥）", p:3, frontend:true},
-    {t:"年限低但 AI 深度、自驱力显著优于同龄人", p:3},
+    {t:"年限低但 AI 深度、自驱力显著优于同龄人（仅 P1 纯 Java 适用）", p:3},
   ],
   neg: [
     {t:"AI 工具只提网页聊天类（豆包 / Kimi / 文心 / ChatGPT 网页）", p:0, veto:true},
     {t:"明显传统纯手写倾向，排斥 AI 生成生产代码", p:0, veto:true},
     {t:"简历全是传统开发，无任何 AI 工程化内容", p:0, veto:true},
-    {t:"画像错位：项目主体为 RAG / 大模型应用 / Agent 开发，传统业务后端单薄（岗位要传统项目借助 AI 提效，不是招人做智能体；判「主体」不判关键词——传统后端为主、穿插一两个 Agent/RAG 项目属正常加分，不勾本项）", p:0, veto:true},
+    {t:"画像错位：项目主体为 RAG / 大模型应用 / Agent 开发，且 Java 后端打底 < 5 年或缺失（勾本项前先查 P2 豁免：Java ≥ 5 年打底转型者收为 P2 次选、不勾；判「主体」不判关键词——Java 业务为主、穿插一两个 Agent/RAG 项目属正常加分，不勾本项）", p:0, veto:true},
+    {t:"全栈定位：求职意向 / 自我评价 / 简历主体为「全栈开发工程师」，或近年项目以前后端全栈交付为卖点（Java 后端主线＋附带前端能力不勾，但前端不加分）", p:0, veto:true},
+    {t:"短年限 java+python 双栈：Java 经验 < 5 年且 Java / Python 并列主栈、Java 主线不清晰（短年限纯 Java 不勾——2–5 年正是理想区间）", p:0, veto:true},
     {t:"对前沿工具信息闭塞（只知 GitHub Copilot 等老工具）", p:-6},
   ],
   integrity: [
@@ -134,7 +139,7 @@ const items = {
   ],
 };
 
-const RADIO_GRPS = ['integrity','grade','sdd'];
+const RADIO_GRPS = ['integrity','grade','sdd','profile'];
 document.querySelectorAll('.grp').forEach(g=>{
   const key=g.dataset.grp;
   const isRadio = RADIO_GRPS.includes(key);
@@ -145,10 +150,11 @@ document.querySelectorAll('.grp').forEach(g=>{
     if(key==='grade'){ pl="评级"; plClass="pts req"; }
     else if(key==='integrity'){ pl = it.p<0?(""+it.p):"标记"; plClass = it.p<0?"pts neg":"pts req"; }
     else if(key==='sdd'){ pl = it.tier+" 档"; plClass = it.tier==='C'?"pts neg":"pts req"; }
+    else if(key==='profile'){ pl = it.prof; plClass = "pts req"; }
     else if(it.veto){ pl="否决"; plClass="pts neg"; }
     else if(it.core){ pl="必过"; plClass="pts req"; }
     else { pl = it.p>0?("+"+it.p):(it.p<0?(""+it.p):"必填"); plClass = it.p<0?"pts neg":(it.p>0?"pts":"pts req"); }
-    row.innerHTML='<input type="'+(isRadio?'radio':'checkbox')+'"'+(isRadio?' name="'+key+'"':'')+' data-key="'+key+'" data-p="'+it.p+'" data-v="'+(it.v||'')+'" data-g="'+(it.g||'')+'"'+(it.sub?' data-sub="'+it.sub+'"':'')+(it.tier?' data-tier="'+it.tier+'"':'')+(it.depth?' data-depth="1"':'')+(it.fullstack?' data-fullstack="1"':'')+(it.frontend?' data-frontend="1"':'')+(it.relax?' data-relax="1"':'')+(it.prod?' data-prod="1"':'')+(it.ratio?' data-ratio="1"':'')+(it.edu?' data-edu="1"':'')+(it.core?' data-core="'+it.core+'"':'')+(it.veto?' data-veto="1"':'')+'>'
+    row.innerHTML='<input type="'+(isRadio?'radio':'checkbox')+'"'+(isRadio?' name="'+key+'"':'')+' data-key="'+key+'" data-p="'+it.p+'" data-v="'+(it.v||'')+'" data-g="'+(it.g||'')+'"'+(it.sub?' data-sub="'+it.sub+'"':'')+(it.tier?' data-tier="'+it.tier+'"':'')+(it.prof?' data-prof="'+it.prof+'"':'')+(it.depth?' data-depth="1"':'')+(it.relax?' data-relax="1"':'')+(it.prod?' data-prod="1"':'')+(it.ratio?' data-ratio="1"':'')+(it.edu?' data-edu="1"':'')+(it.core?' data-core="'+it.core+'"':'')+(it.veto?' data-veto="1"':'')+'>'
       +'<span class="txt">'+it.t+'</span>'
       +'<span class="'+plClass+'">'+pl+'</span>';
     g.appendChild(row);
@@ -171,6 +177,8 @@ function recompute(){
   const tierSel=radios.find(b=>b.name==='sdd'&&b.checked);
   const tier=tierSel?tierSel.dataset.tier:null;
   const sddCore=tier==='A'||tier==='B';
+  const profSel=radios.find(b=>b.name==='profile'&&b.checked);
+  const prof=profSel?profSel.dataset.prof:null;
   const vetoHit=boxes.some(b=>b.dataset.veto==='1'&&b.checked);
 
   const prodHit=boxes.some(b=>b.dataset.prod==='1'&&b.checked);
@@ -192,16 +200,16 @@ function recompute(){
   if(!eduFloorOk) missing.push("本科及以上（含非全日制；一票否决）");
   if(!ageGatePass) missing.push("年龄 ≤33（未触发放宽）");
   if(!otherGateOk) missing.push("基础硬门槛");
+  if(!prof) missing.push("画像未定档（P1 / P2 需选一；全栈定位 / 短年限双栈 / 画像错位请勾「七、淘汰信号」）");
   if(!codingCore) missing.push("门槛① AI coding 工具");
   if(!tier) missing.push("门槛② 未定档（A / B / C 需选一）");
   else if(tier==='C') missing.push("门槛② 判为 C 档（口头泛述 / 测试后置 / 概念混淆）");
 
   const passed=!vetoHit&&missing.length===0;
 
-  // 深度加分仅 A 档可得；AI 全栈与前端能力互斥，取高者
+  // 深度加分仅 A 档可得
   const depthBox=boxes.find(b=>b.dataset.depth==='1');
   const depthCounted=!!(depthBox&&depthBox.checked&&tier==='A');
-  const fsHit=boxes.some(b=>b.dataset.fullstack==='1'&&b.checked);
 
   let score=null, capped=false;
   if(passed){
@@ -209,7 +217,6 @@ function recompute(){
     boxes.forEach(b=>{
       if(!b.checked) return;
       if(b.dataset.depth==='1'&&tier!=='A') return;          // 深度加分仅 A 档
-      if(b.dataset.frontend==='1'&&fsHit) return;            // 与 AI 全栈互斥
       score+=parseInt(b.dataset.p);
     });
     if(integ) score+=parseInt(integ.dataset.p);
@@ -226,16 +233,16 @@ function recompute(){
   } else {
     if(score>60){ v="✅ 通过全部门槛，进入推荐池（超过 60 推荐线）"; c="var(--success)"; }
     else { v="通过门槛但 score ≤ 60（裸 60 无加分，或被扣分拉低），边缘：不入主推荐表"; c="var(--warning)"; }
-    v+="　｜　门槛② "+tier+" 档";
+    v+="　｜　门槛② "+tier+" 档　｜　画像 "+prof;
     if(capped){ v+="（B 档已封顶 85）"; }
+    if(prof==='P2'){ v+="　｜　次选：推荐排序恒在 P1 之后"; }
     if(tier==='B'){ v+="　｜　⚠️ 面试第 2 题答崩即按灌水处理"; }
     if(depthBox&&depthBox.checked&&tier!=='A'){ v+="　｜　深度 +6 已忽略（仅 A 档可得）"; }
-    if(fsHit){ v+="　｜　前端 +3 已并入 AI 全栈"; }
     if(relaxed&&!ageOk){ v+="　｜　已按大厂 / 强 AI 落地放宽年龄"; }
     if(eduPri){ v+="　｜　第一学历 211+，同等优先"; }
     if(risk==='high'){ v+="　｜　⚠️ 高 AI 灌水嫌疑，面试重点核验真实性"; c="var(--danger)"; }
     else if(risk==='mid'){ v+="　｜　注意核验自报数字 / 项目真实性"; }
-    gline=grade?("结论行：score "+score+" · 等级 "+grade+" · 门槛② "+tier+" 档"):"请在「八、等级评定」按项目经验选档（初级开发 / 中级 / 高级）";
+    gline=grade?("结论行：score "+score+" · 等级 "+grade+" · 门槛② "+tier+" 档 · 画像 "+prof):"请在「九、等级评定」按项目经验选档（初级开发 / 中级 / 高级）";
   }
 
   verdictOut.textContent=v;

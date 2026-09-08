@@ -25,6 +25,7 @@ KEYWORD_GROUPS = [
     ("AI占比", r"占比|百分之|\d{2,3}\s?%\s?(的)?(代码|编码|开发)|代码.{0,4}\d{2,3}\s?%"),
     ("Agent落地", r"Agent|智能体|LangChain|LangGraph|Dify|Coze|AutoGen|CrewAI|MCP|Function\s?Calling|RAG|多智能体"),
     ("C档危险信号", r"半成品|没有完全|不完全|了解过|尝试过|用得不多|还停留|系统设计文档|详细设计文档|开发完.{0,6}测试|补.{0,2}单测|先做.{0,4}原型"),
+    ("技术栈画像", r"Java|Spring|MyBatis|JVM|Python|Django|Flask|FastAPI|全栈|前后端|Vue|React|Node\.?js|Golang|\bGo\b"),
     ("硬门槛线索", r"年龄[:：]\s*\d+|\d+\s*年工作经验|专科|大专|专升本|本科|硕士|跨境|海关|多币种|保税"),
 ]
 
