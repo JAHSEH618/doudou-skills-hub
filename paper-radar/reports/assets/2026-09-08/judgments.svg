@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560.65" height="666" viewBox="0 0 560.65 666" role="img" aria-label="判断账本关系">
+
+  <style>
+    .bg   { fill: #ffffff; }
+    .fg   { fill: #24292f; }
+    .mut  { fill: #6b7280; }
+    .grid { stroke: #e5e7eb; }
+    .box  { fill: #f6f8fa; }
+    text  { font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #1e1f22; }
+      .fg   { fill: #e6e6e6; }
+      .mut  { fill: #9aa0a6; }
+      .grid { stroke: #3a3d42; }
+      .box  { fill: #2a2c31; }
+    }
+  </style>
+
+<rect class="bg" width="560.65" height="666" rx="6"/>
+<text class="fg" x="22" y="24" font-size="14" font-weight="600">判断账本动态 · 2026-09-08</text>
+<path d="M196.1,99.0 C271.1,99.0 271.1,127.0 346.1,127.0" fill="none" stroke="#c0392b" stroke-width="2.4" opacity="0.9"/>
+<path d="M196.1,155.0 C271.1,155.0 271.1,127.0 346.1,127.0" fill="none" stroke="#c0392b" stroke-width="2.4" opacity="0.9"/>
+<path d="M196.1,211.0 C271.1,211.0 271.1,127.0 346.1,127.0" fill="none" stroke="#c0392b" stroke-width="2.4" opacity="0.9"/>
+<path d="M196.1,99.0 C271.1,99.0 271.1,239.0 346.1,239.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,211.0 C271.1,211.0 271.1,239.0 346.1,239.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,379.0 C271.1,379.0 271.1,239.0 346.1,239.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,99.0 C271.1,99.0 271.1,71.0 346.1,71.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,267.0 C271.1,267.0 271.1,295.0 346.1,295.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,267.0 C271.1,267.0 271.1,351.0 346.1,351.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,323.0 C271.1,323.0 271.1,351.0 346.1,351.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,155.0 C271.1,155.0 271.1,183.0 346.1,183.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,435.0 C271.1,435.0 271.1,463.0 346.1,463.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,491.0 C271.1,491.0 271.1,519.0 346.1,519.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M196.1,547.0 C271.1,547.0 271.1,519.0 346.1,519.0" fill="none" stroke="#8a8a94" stroke-width="1.3" stroke-dasharray="2,3" opacity="0.9"/>
+<path d="M196.1,547.0 C271.1,547.0 271.1,575.0 346.1,575.0" fill="none" stroke="#8a8a94" stroke-width="1.3" stroke-dasharray="2,3" opacity="0.9"/>
+<path d="M196.1,379.0 C271.1,379.0 271.1,407.0 346.1,407.0" fill="none" stroke="#8a8a94" stroke-width="1.3" stroke-dasharray="2,3" opacity="0.9"/>
+<text class="mut" x="22" y="40" font-size="11">左列本期来源，右列被动到的判断；边的样式见图例</text>
+<rect class="box" x="22.0" y="78.0" width="174.1" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="97.0" font-size="11.5">Clean Engineering</text>
+<text class="fg" x="30.0" y="112.0" font-size="11.5">2609.04198</text>
+<text class="mut" x="188.1" y="115.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="134.0" width="174.1" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="153.0" font-size="11.5">Measure Before You Manage</text>
+<text class="fg" x="30.0" y="168.0" font-size="11.5">2608.31057</text>
+<text class="mut" x="188.1" y="171.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="190.0" width="174.1" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="209.0" font-size="11.5">Rubric Artifacts</text>
+<text class="fg" x="30.0" y="224.0" font-size="11.5">2609.02942</text>
+<text class="mut" x="188.1" y="227.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="246.0" width="174.1" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="265.0" font-size="11.5">FA4-FP4</text>
+<text class="fg" x="30.0" y="280.0" font-size="11.5">2609.04105</text>
+<text class="mut" x="188.1" y="283.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="302.0" width="174.1" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="321.0" font-size="11.5">OCGQuant</text>
+<text class="fg" x="30.0" y="336.0" font-size="11.5">2609.00066</text>
+<text class="mut" x="188.1" y="339.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="358.0" width="174.1" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="377.0" font-size="11.5">Post-Training Science</text>
+<text class="fg" x="30.0" y="392.0" font-size="11.5">2609.01244</text>
+<text class="mut" x="188.1" y="395.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="414.0" width="174.1" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="433.0" font-size="11.5">Plan Pointers</text>
+<text class="fg" x="30.0" y="448.0" font-size="11.5">2609.03450</text>
+<text class="mut" x="188.1" y="451.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="470.0" width="174.1" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="489.0" font-size="11.5">Vertumnus</text>
+<text class="fg" x="30.0" y="504.0" font-size="11.5">2609.04774</text>
+<text class="mut" x="188.1" y="507.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="526.0" width="174.1" height="42" rx="5" stroke="#c07830" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="545.0" font-size="11.5">Decagon 4.7× GPU 效率</text>
+<text class="mut" x="188.1" y="563.0" font-size="9" text-anchor="end">工业博客</text>
+<rect class="box" x="346.1" y="50.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="69.0" font-size="11.5" font-weight="600">J10 · 采集窗口与</text>
+<text class="fg" x="354.1" y="84.0" font-size="11.5">发表日期分开</text>
+<rect class="box" x="346.1" y="106.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="125.0" font-size="11.5" font-weight="600">J15 · 共享 endpoint</text>
+<text class="fg" x="354.1" y="140.0" font-size="11.5">不是冻结仪器</text>
+<rect class="box" x="346.1" y="162.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="181.0" font-size="11.5" font-weight="600">J3 · 记忆构建</text>
+<text class="fg" x="354.1" y="196.0" font-size="11.5">是主导成本</text>
+<rect class="box" x="346.1" y="218.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="237.0" font-size="11.5" font-weight="600">J13 · 差分指标</text>
+<text class="fg" x="354.1" y="252.0" font-size="11.5">需冻结对照臂</text>
+<rect class="box" x="346.1" y="274.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="293.0" font-size="11.5" font-weight="600">J9 · attention 已</text>
+<text class="fg" x="354.1" y="308.0" font-size="11.5">softmax-bound</text>
+<rect class="box" x="346.1" y="330.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="349.0" font-size="11.5" font-weight="600">J4 · NVFP4 优于 MXFP4</text>
+<rect class="box" x="346.1" y="386.0" width="192.5" height="42" rx="5" stroke="#c0392b" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="405.0" font-size="11.5" font-weight="600">J8【存疑】 · 微调对升级脆弱</text>
+<rect class="box" x="346.1" y="442.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="461.0" font-size="11.5" font-weight="600">J2 · 约束别写在</text>
+<text class="fg" x="354.1" y="476.0" font-size="11.5">工具描述里</text>
+<rect class="box" x="346.1" y="498.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="517.0" font-size="11.5" font-weight="600">J1 · 加速比要在</text>
+<text class="fg" x="354.1" y="532.0" font-size="11.5">真实并发下重测</text>
+<rect class="box" x="346.1" y="554.0" width="192.5" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="354.1" y="573.0" font-size="11.5" font-weight="600">J12 · 互联带宽</text>
+<text class="fg" x="354.1" y="588.0" font-size="11.5">反向约束架构</text>
+<line x1="22" y1="636" x2="48" y2="636" stroke="#c0392b" stroke-width="2.4"/>
+<text class="mut" x="54" y="640" font-size="11">新增</text>
+<line x1="98" y1="636" x2="124" y2="636" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="mut" x="130" y="640" font-size="11">印证</text>
+<line x1="174" y1="636" x2="200" y2="636" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="6,4"/>
+<text class="mut" x="206" y="640" font-size="11">存疑</text>
+<line x1="250" y1="636" x2="276" y2="636" stroke="#8a8a94" stroke-width="1.3" stroke-dasharray="2,3"/>
+<text class="mut" x="282" y="640" font-size="11">辅助</text>
+<rect x="326" y="629" width="12" height="12" rx="2" class="box" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="mut" x="343" y="640" font-size="11">论文</text>
+<rect x="381" y="629" width="12" height="12" rx="2" class="box" stroke="#c07830" stroke-width="1.6"/>
+<text class="mut" x="398" y="640" font-size="11">非论文</text>
+</svg>

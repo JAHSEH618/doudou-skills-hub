@@ -1,0 +1,16 @@
+{
+  "date": "2026-08-23",
+  "mode": "周扫",
+  "window": "08-17 → 08-23",
+  "paper_cap": 8,
+  "lines": {
+    "硬件":     {"full": 1, "abstract": 1},
+    "模型":     {"full": 0, "abstract": 2},
+    "软件系统": {"full": 1, "abstract": 2},
+    "工程方法": {"full": 1, "abstract": 0}
+  },
+  "practice": 0,
+  "news": 0,
+  "pool": 5,
+  "judgments": 12
+}

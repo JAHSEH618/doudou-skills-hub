@@ -1,0 +1,64 @@
+# paper-radar X 固定关注账号清单
+# `## 组名` 起一组，组名末尾带 ! 的组每期必搜（fetch_sources.py 按 AIHot q=<handle> 查；
+# AIHot 没收录的账号再走 exa 按账号名硬搜）。其余组被动收：只从 AIHot 返回里认。
+# 搜不到的 handle 直接删，别留着占查询。
+
+## 推理 / 训练基础设施 !
+@vllm_project
+@lmsysorg
+@flashinfer_ai
+@PyTorch
+@tri_dao
+@cHHillee
+@UnslothAI
+@danielhanchen
+@ray_project
+@togethercompute
+@fireworksai_hq
+@basetenco
+@modal_labs
+
+## 模型厂（国内） !
+@deepseek_ai
+@Alibaba_Qwen
+@Kimi_Moonshot
+@Zai_org
+@MiniMax__AI
+@OpenBMB
+@AntLingAGI
+@TencentHunyuan
+
+## 硬件 / 算力分析
+@SemiAnalysis_
+@dylan522p
+@NVIDIAAIDev
+@AMD
+@GroqInc
+@CerebrasSystems
+
+## 模型厂（海外）
+@AnthropicAI
+@OpenAI
+@GoogleDeepMind
+@AIatMeta
+@MistralAI
+@xai
+@cohere
+@allen_ai
+@huggingface
+
+## 论文速递
+@_akhaliq
+@arankomatsuzaki
+@iScienceLuvr
+@rohanpaul_ai
+@omarsar0
+
+## 个人
+@natolambert
+@karpathy
+@jxmnop
+@srush_nlp
+@DrJimFan
+@swyx
+@emollick

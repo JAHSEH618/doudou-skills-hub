@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-08",
+  "mode": "周扫",
+  "window": "08-24 → 09-08",
+  "paper_cap": 12,
+  "lines": {
+    "硬件":     {"full": 1, "abstract": 2},
+    "模型":     {"full": 1, "abstract": 1},
+    "软件系统": {"full": 1, "abstract": 3},
+    "工程方法": {"full": 1, "abstract": 2}
+  },
+  "practice_full": 3,
+  "practice_full_cap": 4,
+  "practice_abstract": null,
+  "news": null,
+  "flash": 3,
+  "flash_cap": 5,
+  "pool": 5,
+  "commentary": null,
+  "judgments": 15,
+  "graph": {
+    "sources": [
+      {"id": "CE",  "label": "Clean Engineering\n2609.04198", "type": "论文"},
+      {"id": "MBM", "label": "Measure Before You Manage\n2608.31057", "type": "论文"},
+      {"id": "RA",  "label": "Rubric Artifacts\n2609.02942", "type": "论文"},
+      {"id": "FA4", "label": "FA4-FP4\n2609.04105", "type": "论文"},
+      {"id": "OCG", "label": "OCGQuant\n2609.00066", "type": "论文"},
+      {"id": "PTS", "label": "Post-Training Science\n2609.01244", "type": "论文"},
+      {"id": "PP",  "label": "Plan Pointers\n2609.03450", "type": "论文"},
+      {"id": "VER", "label": "Vertumnus\n2609.04774", "type": "论文"},
+      {"id": "DEC", "label": "Decagon 4.7× GPU 效率", "type": "工业博客"}
+    ],
+    "judgments": [
+      {"id": "J15", "label": "共享 endpoint\n不是冻结仪器"},
+      {"id": "J13", "label": "差分指标\n需冻结对照臂"},
+      {"id": "J10", "label": "采集窗口与\n发表日期分开"},
+      {"id": "J9",  "label": "attention 已\nsoftmax-bound"},
+      {"id": "J4",  "label": "NVFP4 优于 MXFP4"},
+      {"id": "J3",  "label": "记忆构建\n是主导成本"},
+      {"id": "J2",  "label": "约束别写在\n工具描述里"},
+      {"id": "J1",  "label": "加速比要在\n真实并发下重测"},
+      {"id": "J12", "label": "互联带宽\n反向约束架构"},
+      {"id": "J8",  "label": "微调对升级脆弱", "status": "存疑"}
+    ],
+    "edges": [
+      {"from": "CE",  "to": "J15", "kind": "新增"},
+      {"from": "MBM", "to": "J15", "kind": "新增"},
+      {"from": "RA",  "to": "J15", "kind": "新增"},
+      {"from": "CE",  "to": "J13", "kind": "印证"},
+      {"from": "RA",  "to": "J13", "kind": "印证"},
+      {"from": "PTS", "to": "J13", "kind": "印证"},
+      {"from": "CE",  "to": "J10", "kind": "印证"},
+      {"from": "FA4", "to": "J9",  "kind": "印证"},
+      {"from": "FA4", "to": "J4",  "kind": "印证"},
+      {"from": "OCG", "to": "J4",  "kind": "印证"},
+      {"from": "MBM", "to": "J3",  "kind": "印证"},
+      {"from": "PP",  "to": "J2",  "kind": "印证"},
+      {"from": "VER", "to": "J1",  "kind": "印证"},
+      {"from": "DEC", "to": "J1",  "kind": "辅助"},
+      {"from": "DEC", "to": "J12", "kind": "辅助"},
+      {"from": "PTS", "to": "J8",  "kind": "辅助"}
+    ]
+  }
+}

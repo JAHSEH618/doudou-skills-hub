@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="634" height="292" viewBox="0 0 634 292" role="img" aria-label="跨期趋势">
+
+  <style>
+    .bg   { fill: #ffffff; }
+    .fg   { fill: #24292f; }
+    .mut  { fill: #6b7280; }
+    .grid { stroke: #e5e7eb; }
+    .box  { fill: #f6f8fa; }
+    text  { font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #1e1f22; }
+      .fg   { fill: #e6e6e6; }
+      .mut  { fill: #9aa0a6; }
+      .grid { stroke: #3a3d42; }
+      .box  { fill: #2a2c31; }
+    }
+  </style>
+
+<rect class="bg" width="634" height="292" rx="6"/>
+<text class="fg" x="16" y="24" font-size="14" font-weight="600">跨期趋势（共 4 期）</text>
+<text class="mut" x="16" y="40" font-size="11">断开处为该期未统计该项</text>
+<line class="grid" x1="46" y1="248.0" x2="516" y2="248.0" stroke-width="1"/>
+<text class="mut" x="38" y="252.0" font-size="10.5" text-anchor="end">0</text>
+<line class="grid" x1="46" y1="198.0" x2="516" y2="198.0" stroke-width="1"/>
+<text class="mut" x="38" y="202.0" font-size="10.5" text-anchor="end">5</text>
+<line class="grid" x1="46" y1="148.0" x2="516" y2="148.0" stroke-width="1"/>
+<text class="mut" x="38" y="152.0" font-size="10.5" text-anchor="end">10</text>
+<line class="grid" x1="46" y1="98.0" x2="516" y2="98.0" stroke-width="1"/>
+<text class="mut" x="38" y="102.0" font-size="10.5" text-anchor="end">15</text>
+<line class="grid" x1="46" y1="48.0" x2="516" y2="48.0" stroke-width="1"/>
+<text class="mut" x="38" y="52.0" font-size="10.5" text-anchor="end">20</text>
+<text class="mut" x="46.0" y="268.0" font-size="11" text-anchor="middle">08-23</text>
+<text class="mut" x="202.7" y="268.0" font-size="11" text-anchor="middle">08-24</text>
+<text class="mut" x="359.3" y="268.0" font-size="11" text-anchor="middle">09-08</text>
+<text class="mut" x="516.0" y="268.0" font-size="11" text-anchor="middle">09-10</text>
+<polyline points="46.0,168.0 202.7,178.0 359.3,128.0 516.0,168.0" fill="none" stroke="#3b6fd4" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="46.0" cy="168.0" r="3.4" fill="#3b6fd4"/>
+<text class="fg" x="46.0" y="159.0" font-size="10.5" text-anchor="middle">8</text>
+<circle cx="202.7" cy="178.0" r="3.4" fill="#3b6fd4"/>
+<text class="fg" x="202.7" y="169.0" font-size="10.5" text-anchor="middle">7</text>
+<circle cx="359.3" cy="128.0" r="3.4" fill="#3b6fd4"/>
+<text class="fg" x="359.3" y="119.0" font-size="10.5" text-anchor="middle">12</text>
+<circle cx="516.0" cy="168.0" r="3.4" fill="#3b6fd4"/>
+<text class="fg" x="516.0" y="159.0" font-size="10.5" text-anchor="middle">8</text>
+<polyline points="46.0,218.0 202.7,218.0 359.3,208.0 516.0,228.0" fill="none" stroke="#1f6f47" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="46.0" cy="218.0" r="3.4" fill="#1f6f47"/>
+<text class="fg" x="46.0" y="209.0" font-size="10.5" text-anchor="middle">3</text>
+<circle cx="202.7" cy="218.0" r="3.4" fill="#1f6f47"/>
+<text class="fg" x="202.7" y="209.0" font-size="10.5" text-anchor="middle">3</text>
+<circle cx="359.3" cy="208.0" r="3.4" fill="#1f6f47"/>
+<text class="fg" x="359.3" y="199.0" font-size="10.5" text-anchor="middle">4</text>
+<circle cx="516.0" cy="228.0" r="3.4" fill="#1f6f47"/>
+<text class="fg" x="516.0" y="219.0" font-size="10.5" text-anchor="middle">2</text>
+<polyline points="46.0,248.0 202.7,248.0 359.3,218.0 516.0,228.0" fill="none" stroke="#c07830" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="46.0" cy="248.0" r="3.4" fill="#c07830"/>
+<text class="fg" x="46.0" y="239.0" font-size="10.5" text-anchor="middle">0</text>
+<circle cx="202.7" cy="248.0" r="3.4" fill="#c07830"/>
+<text class="fg" x="202.7" y="239.0" font-size="10.5" text-anchor="middle">0</text>
+<circle cx="359.3" cy="218.0" r="3.4" fill="#c07830"/>
+<text class="fg" x="359.3" y="209.0" font-size="10.5" text-anchor="middle">3</text>
+<circle cx="516.0" cy="228.0" r="3.4" fill="#c07830"/>
+<text class="fg" x="516.0" y="219.0" font-size="10.5" text-anchor="middle">2</text>
+<circle cx="516.0" cy="228.0" r="3.4" fill="#2f8f5b"/>
+<text class="fg" x="516.0" y="219.0" font-size="10.5" text-anchor="middle">2</text>
+<polyline points="46.0,128.0 202.7,108.0 359.3,98.0 516.0,68.0" fill="none" stroke="#8a5fbf" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="46.0" cy="128.0" r="3.4" fill="#8a5fbf"/>
+<text class="fg" x="46.0" y="119.0" font-size="10.5" text-anchor="middle">12</text>
+<circle cx="202.7" cy="108.0" r="3.4" fill="#8a5fbf"/>
+<text class="fg" x="202.7" y="99.0" font-size="10.5" text-anchor="middle">14</text>
+<circle cx="359.3" cy="98.0" r="3.4" fill="#8a5fbf"/>
+<text class="fg" x="359.3" y="89.0" font-size="10.5" text-anchor="middle">15</text>
+<circle cx="516.0" cy="68.0" r="3.4" fill="#8a5fbf"/>
+<text class="fg" x="516.0" y="59.0" font-size="10.5" text-anchor="middle">18</text>
+<text x="525.0" y="72.0" font-size="11.5" fill="#8a5fbf">判断账本累计</text>
+<text x="525.0" y="172.0" font-size="11.5" fill="#3b6fd4">论文详条目</text>
+<text x="525.0" y="232.0" font-size="11.5" fill="#1f6f47">全文验证</text>
+<text x="525.0" y="247.0" font-size="11.5" fill="#c07830">实践·详</text>
+<text x="525.0" y="262.0" font-size="11.5" fill="#2f8f5b">资讯</text>
+</svg>
