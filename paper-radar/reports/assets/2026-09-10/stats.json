@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-10",
+  "mode": "定向",
+  "window": "08-10 → 09-10",
+  "paper_cap": 8,
+  "lines": {
+    "硬件":     {"full": 0, "abstract": 0},
+    "模型":     {"full": 0, "abstract": 0},
+    "软件系统": {"full": 0, "abstract": 3},
+    "工程方法": {"full": 2, "abstract": 3}
+  },
+  "practice_full": 2,
+  "practice_abstract": 5,
+  "news": 2,
+  "flash": 3,
+  "pool": 5,
+  "commentary": 4,
+  "judgments": 18,
+  "graph": {
+    "sources": [
+      {"id": "EV",  "label": "What Eviction Destroys\n2609.08279", "type": "论文"},
+      {"id": "SF",  "label": "Selective Forgetting\n2608.28978", "type": "论文"},
+      {"id": "HM",  "label": "Harness the Memory\n2608.15008", "type": "论文"},
+      {"id": "MTB", "label": "MemTrapBench\n2608.20202", "type": "论文"},
+      {"id": "MSU", "label": "Memory Survive Upgrade\n2609.05339", "type": "论文"},
+      {"id": "CR",  "label": "Catastrophic Remembering\n2608.11095", "type": "论文"},
+      {"id": "UA",  "label": "Utility Under Attack\n2608.21230", "type": "论文"},
+      {"id": "AL",  "label": "Authorization Laundering\n2609.01836（落选池）", "type": "论文"},
+      {"id": "MG",  "label": "MemGauge\n2608.30177（落选池）", "type": "论文"},
+      {"id": "CDX", "label": "Codex 记忆源码分析", "type": "上游变更"},
+      {"id": "FUN", "label": "HF funes", "type": "一方博客"}
+    ],
+    "judgments": [
+      {"id": "J16", "label": "更多检索不单调有益\n对比必须报读取机制"},
+      {"id": "J17", "label": "图记忆未证明优于平铺\n优势在可迁移不在召回"},
+      {"id": "J18", "label": "持久记忆是安全边界\n内容筛查挡不住假陈述"},
+      {"id": "J2",  "label": "约束别写在\n工具描述里"},
+      {"id": "J3",  "label": "记忆构建\n是主导成本"},
+      {"id": "J8",  "label": "微调对升级脆弱", "status": "存疑"},
+      {"id": "J15", "label": "共享 endpoint\n不是冻结仪器"}
+    ],
+    "edges": [
+      {"from": "EV",  "to": "J16", "kind": "新增"},
+      {"from": "HM",  "to": "J16", "kind": "新增"},
+      {"from": "MTB", "to": "J16", "kind": "新增"},
+      {"from": "SF",  "to": "J17", "kind": "新增"},
+      {"from": "HM",  "to": "J17", "kind": "新增"},
+      {"from": "MSU", "to": "J17", "kind": "新增"},
+      {"from": "UA",  "to": "J18", "kind": "新增"},
+      {"from": "AL",  "to": "J18", "kind": "新增"},
+      {"from": "MG",  "to": "J18", "kind": "新增"},
+      {"from": "CR",  "to": "J2",  "kind": "印证"},
+      {"from": "CDX", "to": "J3",  "kind": "辅助"},
+      {"from": "FUN", "to": "J3",  "kind": "辅助"},
+      {"from": "MSU", "to": "J8",  "kind": "印证"},
+      {"from": "EV",  "to": "J15", "kind": "印证"}
+    ]
+  }
+}

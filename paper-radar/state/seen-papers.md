@@ -4,7 +4,7 @@
 > 去重按内容不只按标题（同一工作可能改名重投，如 MAP → CAP）。
 > 「上次周扫」日期只由四线全幅周扫更新；定向/单篇验证不动它。
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
-> 非论文（工程实践节的详条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注；【快讯】不进本账本（硬规则 11）。
+> 非论文（工程实践节的详条目与简条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注，简条目再加【仅摘要】；【资讯】【快讯】不进本账本（硬规则 11），解说链接也不进。
 
 **上次周扫：2026-09-08**（窗口 08-24 → 09-08；15 天，已声明扩容至 12 篇）
 
@@ -135,6 +135,14 @@
 - [2026-08-23] 【仅摘要】Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents · arXiv 2608.19564 —— 落选池。记忆-澄清边界 140 场景基准，标注 κ=0.962；模型验证变化事实比向用户澄清歧义可靠得多。规模偏小
 - [2026-09-08] 【全文】Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents · Argonne+Columbia+休斯顿大学（AgenticOS workshop） · arXiv 2608.31057 —— 结论是「归因收益之前必须先量什么」：55 条归档轨迹的类型化对象记账显示语义不同的对象留存/压缩行为分化；两个语义感知策略的验证给出两条硬结论——标定期收益不一定迁移到留出任务、名义 token 预算相等不代表送达上下文与管理成本相等；四层框架 stored state/delivered context/management work/outcome。作者自标红线：样本不得相加当独立复现、检索追加实验复用开发集、评测非官方 SWE-bench、主要终点是过程指标、served revision 未钉死（自撞 J15）
 - [2026-09-08] 【仅摘要】KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU · arXiv 2609.04852 —— 不压缩不重 prefill：溢出工作区历史作分页 KV 状态存 GPU/主机/NVMe 三层，用模型原生注意力空间索引挑块、物化受原生窗口约束的查询相关执行视图；DeepSWE 长上下文 Qwen3.8-27B 成功率 43.8%→48.4%；本地 24GB RTX 5090 笔记本 GPU 虚拟化 1M token（原生窗口 256K 的 4 倍），单会话 50 tokens/s
+- [2026-09-10] 【仅摘要】Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding · Kushal Chakrabarti（单作者） · arXiv 2608.11095 —— 定向「agent 记忆」。1,867 仓库 247,694 条指令生命周期：指令文件一生 +226%，每提交净增 4.9 条，越老越删不掉（log-hazard −0.032/commit）；指令注释在反转 IFEval 里把多余增长从 +211.3% 压到 +1.4%，WildIFEval 指令跟随最多 +23.1%。边界：只测公开 GitHub 的 CLAUDE.md/AGENTS.md/copilot-instructions.md。印证 J2
+- [2026-09-10] 【仅摘要】Context as an Environment: Programmatic Context Management for Long-Horizon Agents（Scroll） · 阿里巴巴+哥伦比亚大学 · arXiv 2608.21690 —— 定向「agent 记忆」。append-only 事件日志 + 持久 Python kernel，模型写代码查历史；Qwen3.8-Max 上 LongMemEval_S 94.8%、BEAM_10M 73.1%、LOCA_256K 86.7%。水分：表 2 各行 reader 不同（作者自认非受控对比），弱骨干 LOCA 跌到 22.7%
+- [2026-09-10] 【仅摘要】Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking · Arulnidhi Karunanidhi（独立作者） · arXiv 2608.21230 —— 定向「agent 记忆」。1.2% 平白假陈述把 LongMemEval 精度 0.850→0.300；四段写入筛查拒 0/360；来源加权无可用设置（出厂权重 p=0.80 等于不设防，加大则合法不可信证据也被压，精度 0.0417）。水分：被测筛查是作者自家 Aegis Memory。新增 J18
+- [2026-09-10] 【仅摘要】Compact-Memory LLM Agents via Online Max-Member Clustering and Atom-Aware Packing（RSM-full） · arXiv 2609.04915 —— 落选池。4k 预算 83% 全上下文质量 / 32% token；RealMem 上与 BM25-RAG 打平。增量方法
+- [2026-09-10] 【仅摘要】Agent Memory Is a Surface for Endogenous Authorization Laundering · arXiv 2609.01836 —— 落选池。五个写入模型在增量更新下为最多 50.2% 未授权请求造出假权限，执行器 98.6% 照办；两种防护以拒合法请求为代价。新增 J18 的来源之一
+- [2026-09-10] 【仅摘要】Fresh Memory, Stale Plans: Dependency-Scoped Validation for Distributed LLM-Agent Memory（PlanFence） · Purdue+Exeter · arXiv 2609.03340 —— 落选池。30 个工作流里 freshness-only 执行器全按旧计划行动；协议让计划引用记录并在动作前校验。作者自限为受控安全结果
+- [2026-09-10] 【仅摘要】Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation · arXiv 2608.22215 —— 落选池。1.7B/8B 级联写入路由剪 68% 冗余、保 98% QA EM；高价值记忆定期 SFT 进参数
+- [2026-09-10] 【仅摘要】Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory（MemGauge） · arXiv 2608.30177 —— 落选池。11 模型分写入/管理/检索三阶段测投毒风险，写入阶段阈值式转变；摘要无数字。新增 J18 的来源之一
 
 ### RAG
 - [2026-08-10] 【仅摘要】A Systematic Analysis of Chunking Strategies —— overlap 无可测收益纯增成本设 0；sentence≈semantic>token≫code；context cliff ~2.5k；最优 context 取决于目标（语义 500 / EM 2.5k）
@@ -165,6 +173,11 @@
 - [2026-09-08] 【全文】Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints · 谢菲尔德大学+Ranplan Wireless/Cambridge AI+ · arXiv 2609.04198 —— **本周只读一篇**。两轮预注册战役都卡在仪器验证：同窗口重复排序 Spearman 0.400（要求 0.90）、逐字节隔日重放 0.78（要求 0.99），而投递/schema/请求哈希/metadata 全满格。三机制：标签-语义映射偏置强度与信号相当、候选分差低于噪声底七个数量级、逐字节相同输入返回不同排序被 exact-permutation 读数放大。换指标无用；748,000 次调用的模拟设计 500 次过 0 次。等一天无用（0.805 vs 0.800）、换厂商无用（四家三辖区共享噪声底 0.74–0.88，system_fingerprint 三种模式都不预测）、自建 batch-invariant kernel 只在空闲时有用（并发下分歧 8.4×）、读数区分度跟错误类型走不跟大小走。**52,988 是审计量不是样本量**（真实为 31 任务组/100 重放对/每臂 10 窗口/3,060 人造错误判定）；0.90 与 0.99 是作者自定阈值；作者自承任务族制造了自己的最坏情况；未核到公开仓库
 - [2026-09-08] 【仅摘要】Judging LLM-as-a-Judge: Concerning Rubric Artifacts in LLM-based Automated Text Generation Evaluation · EMNLP 2026 · arXiv 2609.02942 —— 只用 rubric 文本训练、完全看不到被评回答的分类器就能非平凡地预测 judge 输出；反事实扰动下把候选回答或 rubric 判据反转，judge 常不可靠地不更新决定。5 页短文，未给「非平凡」的数值区间。与 No Judgment Without a Reason 机制同族
 - [2026-09-08] 【仅摘要】Does task decomposition improve automatic NLG evaluation? · EMNLP 2026 · arXiv 2609.01139 —— 干净的负面结果：多个 NLG 数据集上找不到任何证据表明拆解带来提升，此前报告的收益来自把人类标注当训练数据用而非拆解本身；有人类标注时不拆解的 LLMaJ 即可与人类标注者打平。限 NLG 评估任务族
+- [2026-09-10] 【全文】What Eviction Destroys: A Restore-Counterfactual Audit of Forgetting in Agent Memory · Megagon Labs（Chen Shen，CBW@COLM 2026 workshop） · arXiv 2609.08279 —— **定向「agent 记忆」只读一篇**。restore counterfactual 把预算下的错误拆成不可逆/可恢复/残余：LongMemEval-S 80k 预算 FIFO/随机/去冗余的不可逆份额 0.67–0.73，8k 全部 1.00；精度匹配的策略间测不出不可逆率差异（分辨率 1.2–6pp）；预算-精度曲线不报读取机制不可跨论文比较。仓库 megagonlabs/restore-counterfactual 单次提交 0 星；reader/judge 同为 GPT-4o-mini（40 题校准自一致 1.0）。CC BY-NC-SA。新增 J16、印证 J15
+- [2026-09-10] 【全文】Selective Forgetting: A Graph-Based Memory Framework for Long-Term LLM Agents · 多伦多都会大学 · arXiv 2608.28978 —— 定向「agent 记忆」本线第二。匹配预算下图记忆 F1 0.417 对平铺 0.468（Δ=−0.050，CI [−0.085,−0.016]），助手轮回忆题判定 0.911→0.607；遗忘模块剪 9.8% 节点 F1 不变。水分：GPT-4o-mini 身兼抽取/回答/评判，每配置单次运行，无随机剪枝对照。CC BY。新增 J17
+- [2026-09-10] 【仅摘要】Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability · LinkedIn · arXiv 2609.05339 —— 定向「agent 记忆」。四种记忆换写入模型：固定 schema 图 +0.0004，压缩笔记 +9.91/−13.28 不对称，RAG 半迁移只拿 4.96/11.90；笔记损失 80% 在构建时丢，RAG 81% 在检索；只靠记忆库修复 48 例全败，留原始历史修回 34 例。边界：48 条合成历史，Llama-3.1-8B↔Qwen2.5-7B 单一跨族。J17 边界、J8 弱印证不解除存疑
+- [2026-09-10] 【仅摘要】Harness the Memory: A Holistic Evaluation of Memory Substrates in Memory Agents · arXiv 2608.15008 —— 定向「agent 记忆」。11 基底×3 骨干×4 基准×26 指标同 harness：无基底全面领先；结构化图对话 QA 领先但 agent 任务被帕累托支配且慢 10–100×；检索深度对 QA 有益对序列决策有害（注意力探针）。设计规则「用写入深度换读取广度」。代码「接收后开源」未见。新增 J16、J17
+- [2026-09-10] 【仅摘要】MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use · 浙大+NUS+东北大学 · arXiv 2608.20202 —— 定向「agent 记忆」。推理固化/信念扭曲两类陷阱，两模型族五记忆框架全部低于无记忆基线，最强也掉 >10%；一条推理时提示（AdaptiveMem）补回大部分。边界：任务专为诱发陷阱构造。新增 J16
 
 ## 工程实践（非论文）
 
@@ -174,6 +187,13 @@
 - [2026-09-08] 【工业博客】Fast autoscaling on GPUs · Feedly（Jash Dalvi） · https://feedly.com/engineering/posts/fast-autoscaling-on-gpus —— GPU 冷启动 15m21s→5m50s，方法是先拆三阶段（image pull/imports/replica init）再动手；含一条难得的负面数据：把权重与编译缓存烤进镜像在 Image Streaming 下并不本地，为省 28s 权重读付出 52s imports，净亏后拆掉。水分：无 GPU 型号/模型名/副本数/QPS，绝对值不可搬；VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS 未标 vLLM 版本
 - [2026-09-08] 【工业博客】How we made one of our largest inference workloads 4.7× more GPU-efficient · Decagon（Nick Liu） · https://decagon.ai/blog/gpu-efficient-inference-serving-stack —— PD 分离 + 突发准入控制 + 缩短扩容可用时间，全生命周期少用约 80% GPU-hour。水分大：同时换了更高显存 GPU，4.7× 不可归因；无 GPU 型号/模型/基线/并发/绝对吞吐；带招聘 CTA。硬证据是两条负面观察——首批 PD 分离不快、更大配置反而更慢（→J1）；一次构建静默从 NVLink 回退 TCP（→J12）
 - [2026-09-08] 【一方博客】【上游变更】Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin · vLLM 团队 · https://vllm.ai/blog/2026-09-07-vllm-tt-plugin —— 无 TP/PP rank（MESH_DEVICE 取代 --tensor-parallel-size，插件直接拒绝 -tp/-pp）、调度步只能 prefill-only/decode-only/empty、采样可在设备上完成。水分：**零性能数字**（原文明说不引用），只能当设计文档；当前需从源码构建 vLLM **0.26.0**，落后主线 v0.28.0 两个 minor；投机解码/LoRA/prompt logprobs/多机/DP+MoE 均不支持
+- [2026-09-10] 【上游变更】Codex Memory Internals: What It Remembers, Who Decides, and How It Compares to OpenCode · jczhu.com（个人，钉在 openai/codex 8444cf6） · https://jczhu.com/blog/codex-memory-internals/ —— 定向「agent 记忆」。两阶段后台流水线：抽取模型（10 天回看、6h 闲置门槛）→ SQLite → 全局租约 → 沙箱整合 agent 重写 MEMORY.md/memory_summary.md（≤256 输入、30 天未用可剪枝）；检索是渐进披露非向量 RAG；引用回写使用计数。stable 但默认关闭，无效果数字。J3 辅助证据
+- [2026-09-10] 【一方博客】【上游变更】Give Your Coding Agents a Memory You Own（funes） · Hugging Face（David Corvoysier） · https://huggingface.co/blog/funes —— 定向「agent 记忆」。本地会话记录切块嵌入进 Lance，向量+BM25 融合、交叉编码器重排、时间加权；写入零蒸馏，可发布为 HF 数据集。无质量/延迟数字；仓库 6 月建、v1.3.0 09-01、349 星。J3 边界（与「写入深度换读取广度」反向）
+- [2026-09-10] 【工业博客】【仅摘要】Agent memory as a file format · Cal Paterson（个人博客） · https://calpaterson.com/memoryfields.html —— 简条目。Markdown 页 + YAML 头 + SQLite 向量索引，语义跳转代替图遍历；无数字，HN 96 评论
+- [2026-09-10] 【工业博客】【仅摘要】Context Compaction for Agents · OpenNash · https://opennash.com/blog/context-compaction-for-agents-keeping-long-horizon-sessions/ —— 简条目。压缩当有目标函数的有损策略
+- [2026-09-10] 【工业博客】【仅摘要】Context compaction is silently destroying your LLM agent's memory · Shuo Liu（dev.to） · https://dev.to/linfordr/context-compaction-is-silently-destroying-your-llm-agents-memory-2pg2 —— 简条目。memory-anchor 库压缩前后快照对比，带推广
+- [2026-09-10] 【上游变更】【仅摘要】agentmemory v0.9.29 · rohitg00 · https://github.com/rohitg00/agentmemory/releases/tag/v0.9.29 —— 简条目。Cursor 插件、Devin/DeepSeek Harness 连接器
+- [2026-09-10] 【工业博客】【仅摘要】AI Agent Memory: How Production AI Agents Remember and Learn · Bhavishya Pandit（Substack） · https://bhavishyapandit9.substack.com/p/ai-agent-memory —— 简条目。写什么/存哪/怎么回来/何时删四决策
 
 ## 提及未展开（窗口外或判为跳过，防止当新货重推）
 
@@ -182,3 +202,7 @@
 - CoinRAG —— nugget 级 KV 复用（8 月初，窗口外）
 - MoE-Infinity —— 开源库非论文；落地首选，Expert Cache 篇说明其频率排序部分可能多余
 - InferenceX 官方预览 TPUv7 Ironwood vs Blackwell/Blackwell Ultra · SemiAnalysis · https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam —— 落选池。TPU 在 FP8 聚合服务上性能每美元最高优 50%、TPUv7 无原生 FP4；但基于私有 beta 的 TorchTPU 栈与其自有 fork，外部不可独立复现（预计 10 月中开源），且是付费产品预览稿，按硬规则 10 第 4 条降级
+- Invalidation Contracts for Cross-Episode Agent Memory · arXiv 2609.00243 —— 定向「agent 记忆」判为跳过。缓存的 API 错误修复建议加版本戳；7 模型 9,400 episode，合规率随模型翻转（Haiku 4.5 100% vs Sonnet 5 ≤11%）
+- What It Costs to Compose, Rebuild, and Correct Precomputed Memory · arXiv 2608.30647 —— 定向「agent 记忆」判为跳过。KV cache 级「预计算记忆」拼接退化、重建成本高、忽略旁置纠正；Llama-3.1-8B
+- What Makes Agent Memory Useful for Reliable Unanswerable Question Handling? · arXiv 2608.27924 —— 判为跳过。记忆对 UAQ 的收益选择性且跨数据集脆弱
+- Hindsight Memory-PRM · arXiv 2608.29605；MemGuard · arXiv 2608.21867；InjecMEM · arXiv 2608.23471；Towards a Formal Definition of Agent Memory · arXiv 2608.11654 —— 定向「agent 记忆」窗口内见过，判为跳过
