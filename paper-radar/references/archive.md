@@ -13,7 +13,7 @@
 ## 一次发布
 
 1. 写报告、图表、统计并更新两个账本；只提交与本次雷达相关的改动，保留其他在途工作。
-2. 安装依赖：`python3 -m pip install -r paper-radar/site/requirements.txt`。运行 `python3 paper-radar/scripts/build_site.py` 和 `python3 paper-radar/scripts/check_site.py _site`；生成目录 `_site/` 不入库。
+2. 先运行 `python3 paper-radar/scripts/audit_links.py`，复核目标标题、X 原帖与受限项，并更新仓库审计记录。再安装依赖：`python3 -m pip install -r paper-radar/site/requirements.txt`。运行 `python3 paper-radar/scripts/build_site.py` 和 `python3 paper-radar/scripts/check_site.py _site`；生成目录 `_site/` 不入库。
 3. 审查提交，确认没有密钥、私人资料或未经许可转载的全文。候选审计只保留必要来源元数据。
 4. 按用户已授权的发布范围提交并推送；仓库要求 PR 时走 PR，不绕过保护规则。PR 说明写清最终行为及验证。
 5. 默认分支 `master` 的报告变化触发 `.github/workflows/paper-radar-pages.yml`；PR 只构建检查，默认分支才发布。
@@ -24,6 +24,6 @@
 
 静态 HTML 从 Markdown 构建，无浏览器 JavaScript 依赖；索引自动扫描 reports 和 stats.json。文章保留目录与来源标注，支持手机、深色主题和打印。只发布报告目录及两个账本，不复制技能库其他模块。
 
-新报告建议 YAML frontmatter 保留 type、title、mode、window、paper_count、practice_count（详）、practice_abstract_count、news_count、created、updated、tags；旧报告无 frontmatter 也可构建。
+每次构建需有 `site/link-audit.json`，检查记录只随仓库提交，不输出到阅读站。完整研究笔记存于 `reports/assets/<日期>/research-notes.md`，构建时同样排除。新报告的 YAML frontmatter 保留 description、supplement_blogs、supplement_x，以及 type、title、mode、window、paper_count、practice_count（详）、practice_abstract_count、news_count、created、updated、tags；旧报告无 frontmatter 也可构建。
 
 不再扫描桌面 PDF 库或新增本机 PDF 路径，历史报告原有文本保留。
