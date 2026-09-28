@@ -27,3 +27,8 @@ Thumbs.db
 
 # Packaged skills
 *.zip
+
+# Radar generated site and Python caches
+_site/
+__pycache__/
+*.pyc

@@ -39,7 +39,7 @@ AI 工程化论文雷达，产出简报式报告。为个人技术认知服务�
 - **定向**（`/paper-radar agent记忆`）：按主题临时收窄，不改常驻范围
 - **单篇验证**（`/paper-radar 验证 <链接>`）：对指定论文走全文验证检查单，非论文走来源核验
 
-**报告是简报**：顶部 headline ≤5 条一屏看完发生了什么；每条论文 ≤5 行（发生了什么 / 边界 / 谁该读 / 解说）；首推的全文验证、实践的来源核验全部沉到文末附录。对话里只给落档路径，不贴全文。
+**报告是简报**：顶部 headline ≤5 条一屏看完发生了什么；每条论文 ≤5 行（发生了什么 / 边界 / 谁该读 / 解说）；首推的全文验证、实践的来源核验全部沉到文末附录。对话里给网页与 GitHub 原文链接，不贴全文。
 
 **论文附解说**：每篇都搜一次第三方解说——作者 thread（标「作者侧」）、HN 讨论串、人写的博客或中文解读——找到才附，首推必写结果。自动聚合站不收；解说只作导读，不进账本。
 
@@ -57,7 +57,9 @@ AI 工程化论文雷达，产出简报式报告。为个人技术认知服务�
 
 **表述**：报告定稿前整篇过 `humanizer-zh` 去 AI 痕迹，目标是好读好懂。条目头行格式、【】标注、固定小标题这些结构件保留不动。
 
-**落档**：每次运行同时写两个 Obsidian vault——桌面 `essays/radar/`（跟 PDF 库同处）和 iCloud `radar/`（手机能看）。两份正文加图表逐字一致，缺一处就算落档失败。
+**发布**：报告和账本提交到本 GitHub 仓库，GitHub Actions 自动构建并发布到 [Paper Radar 阅读站](https://jahseh618.github.io/doudou-skills-hub/)。支持历史索引、文章目录、手机与深色主题，不再依赖本地 Obsidian 归档。
+
+本地验证：`python3 -m pip install -r paper-radar/site/requirements.txt`，然后运行 `python3 paper-radar/scripts/build_site.py` 与 `python3 paper-radar/scripts/check_site.py _site`。
 
 **用法**：
 ```bash

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "mkernel",
+    "query": "mKernel: Fast Multi-GPU, Multi-Node Fused Kernels",
+    "returncode": 0,
+    "stdout": "lookup: mKernel: Fast Multi-GPU, Multi-Node Fused Kernels\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：\n",
+    "stderr": ""
+  },
+  {
+    "id": "bitwise",
+    "query": "Taming Bitwise Behavior in GPU Kernels",
+    "returncode": 0,
+    "stdout": "lookup: Taming Bitwise Behavior in GPU Kernels\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：\n",
+    "stderr": ""
+  },
+  {
+    "id": "sft",
+    "query": "Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs",
+    "returncode": 0,
+    "stdout": "lookup: Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）8 条：\n  [X：DAIR.AI (@dair_ai)] 小米 MiMo-V3 的 HySparse2 等本周 AI 论文  https://x.com/dair_ai/status/2104263416252625124\n  [Hacker News：AI 热帖] Lasso Security 研究：SynthID-Text 水印会改变 AI Agent 的拒绝与工具调用行为  https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior\n  [MarkTechPost（RSS）] Fastino 发布 GLiNER2.5-Decide：可在 CPU 上运行的 340M 开源权重决策模型  https://www.marktechpost.com/2026/09/24/fastino-releases-gliner2-5-decide-a-340m-open-weight-decision-model-that-runs-on-cpu\n  [X：Thariq (@trq212)] Claude 一次生成完整音乐视频  https://x.com/trq212/status/2102870353781641416\n  [NVIDIA Technical Blog：Agentic AI / Generative AI] NVIDIA 推出 NV-Reason-CT：面向放射科医生思维链推理的开放 3D CT VLM  https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning\n  [Ars Technica：AI（RSS）] XPRIZE Wildfire 揭晓获奖团队：太空探测10分钟发现野火，无人机灭火仍未能扑灭  https://arstechnica.com/gadgets/2026/09/xprize-wildfire-winners-spotted-fires-within-10-min-but-couldnt-stop-them\n  [NVIDIA Technical Blog：Agentic AI / Generative AI] SWE-Serve 如何揭示本地测试与实时服务之间的差距  https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving\n  [OpenAI：官网动态（RSS · 排除企业/客户案例）] OpenAI 与 Grab 推出 GO Forward with AI，为东南亚 3 万司机与商户提供 AI 技能培训  https://openai.com/index/grab-openai-ai-skills-southeast-asia\n",
+    "stderr": ""
+  },
+  {
+    "id": "lowbit",
+    "query": "Low-Bit Recurrent States in Hybrid Language Models",
+    "returncode": 0,
+    "stdout": "lookup: Low-Bit Recurrent States in Hybrid Language Models\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：\n",
+    "stderr": ""
+  },
+  {
+    "id": "agentkv",
+    "query": "AgentKV: Phase-Aware KV Eviction for Agentic LLMs",
+    "returncode": 0,
+    "stdout": "lookup: AgentKV: Phase-Aware KV Eviction for Agentic LLMs\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：\n",
+    "stderr": ""
+  },
+  {
+    "id": "dsec",
+    "query": "DeepSeek Elastic Compute",
+    "returncode": 0,
+    "stdout": "lookup: DeepSeek Elastic Compute\nHN（90 天内）2 条：\n   320 分  110 评  DeepSeek Elastic Compute (DSec)  https://news.ycombinator.com/item?id=49859112\n     5 分    0 评  DeepSeek Elastic Compute:A Sandbox Infrastructure for Effective Agenti  https://news.ycombinator.com/item?id=49806630\nAIHot（7 天内，mode=all）3 条：\n  [Hacker News 热门（buzzing.cc 中文翻译）] DeepSeek 发布 DSec 弹性计算沙箱平台技术报告，支撑大规模智能体 RL 训练  https://arxiv.org/abs/2609.22978\n  [X：X.PIN (@thexpin)] DeepSeek 推出 DSec 智能体测试平台  https://x.com/thexpin/status/2103036189871894922\n  [IT之家（RSS）] DeepSeek 发表 DSec 论文公开 Agent 训练沙盒基础设施，梁文锋署名  https://www.ithome.com/1/006/148.htm\n",
+    "stderr": ""
+  },
+  {
+    "id": "jevmem",
+    "query": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+    "returncode": 0,
+    "stdout": "lookup: Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents\nHN（90 天内）1 条：\n     1 分    0 评  Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents  https://news.ycombinator.com/item?id=49850669\nAIHot（7 天内，mode=all）1 条：\n  [HuggingFace Daily Papers（社区热门论文）] Jev-Mem：用 System-One 控制平面打造高效 AI 智能体记忆架构  https://arxiv.org/abs/2609.23986\n",
+    "stderr": ""
+  },
+  {
+    "id": "gauge",
+    "query": "GAUGE: When Not to Trust LLM-as-a-Judge",
+    "returncode": 0,
+    "stdout": "lookup: GAUGE: When Not to Trust LLM-as-a-Judge\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：\n",
+    "stderr": ""
+  },
+  {
+    "id": "consensus",
+    "query": "Agreement Overstates Evidence: Error Dependence in LLM Judge Consensus",
+    "returncode": 0,
+    "stdout": "lookup: Agreement Overstates Evidence: Error Dependence in LLM Judge Consensus\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：\n",
+    "stderr": ""
+  },
+  {
+    "id": "overclaim",
+    "query": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+    "returncode": 0,
+    "stdout": "lookup: Quantifying Overclaiming Propensity in Frontier LLM Agents\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：\n",
+    "stderr": ""
+  },
+  {
+    "id": "vllm",
+    "query": "Kimi K3 Performance Optimizations in vLLM: The Road to 2.8× Throughput",
+    "returncode": 0,
+    "stdout": "lookup: Kimi K3 Performance Optimizations in vLLM: The Road to 2.8× Throughput\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：\n",
+    "stderr": ""
+  }
+]

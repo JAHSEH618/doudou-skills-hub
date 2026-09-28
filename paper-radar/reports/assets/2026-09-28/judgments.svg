@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="524.45" height="442" viewBox="0 0 524.45 442" role="img" aria-label="判断账本关系">
+
+  <style>
+    .bg   { fill: #ffffff; }
+    .fg   { fill: #24292f; }
+    .mut  { fill: #6b7280; }
+    .grid { stroke: #e5e7eb; }
+    .box  { fill: #f6f8fa; }
+    text  { font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #1e1f22; }
+      .fg   { fill: #e6e6e6; }
+      .mut  { fill: #9aa0a6; }
+      .grid { stroke: #3a3d42; }
+      .box  { fill: #2a2c31; }
+    }
+  </style>
+
+<rect class="bg" width="524.45" height="442" rx="6"/>
+<text class="fg" x="22" y="24" font-size="14" font-weight="600">判断账本动态 · 2026-09-28</text>
+<path d="M172.0,71.0 C247.0,71.0 247.0,127.0 322.0,127.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M172.0,127.0 C247.0,127.0 247.0,127.0 322.0,127.0" fill="none" stroke="#8a8a94" stroke-width="1.3" stroke-dasharray="2,3" opacity="0.9"/>
+<path d="M172.0,183.0 C247.0,183.0 247.0,183.0 322.0,183.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M172.0,239.0 C247.0,239.0 247.0,239.0 322.0,239.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M172.0,295.0 C247.0,295.0 247.0,295.0 322.0,295.0" fill="none" stroke="#c0392b" stroke-width="2.4" opacity="0.9"/>
+<path d="M172.0,351.0 C247.0,351.0 247.0,295.0 322.0,295.0" fill="none" stroke="#c0392b" stroke-width="2.4" opacity="0.9"/>
+<text class="mut" x="22" y="40" font-size="11">左列本期来源，右列被动到的判断；边的样式见图例</text>
+<rect class="box" x="22.0" y="50.0" width="150.0" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="69.0" font-size="11.5">AgentKV</text>
+<text class="fg" x="30.0" y="84.0" font-size="11.5">2609.14872</text>
+<text class="mut" x="164.0" y="87.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="106.0" width="150.0" height="42" rx="5" stroke="#c07830" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="125.0" font-size="11.5">vLLM Kimi K3</text>
+<text class="fg" x="30.0" y="140.0" font-size="11.5">固定提交压测</text>
+<text class="mut" x="164.0" y="143.0" font-size="9" text-anchor="end">一方博客</text>
+<rect class="box" x="22.0" y="162.0" width="150.0" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="181.0" font-size="11.5">OverclaimBench</text>
+<text class="fg" x="30.0" y="196.0" font-size="11.5">2609.20812</text>
+<text class="mut" x="164.0" y="199.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="218.0" width="150.0" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="237.0" font-size="11.5">mKernel</text>
+<text class="fg" x="30.0" y="252.0" font-size="11.5">2609.13585</text>
+<text class="mut" x="164.0" y="255.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="274.0" width="150.0" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="293.0" font-size="11.5">GAUGE</text>
+<text class="fg" x="30.0" y="308.0" font-size="11.5">2609.12191</text>
+<text class="mut" x="164.0" y="311.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="330.0" width="150.0" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="349.0" font-size="11.5">Judge Consensus</text>
+<text class="fg" x="30.0" y="364.0" font-size="11.5">2609.22512</text>
+<text class="mut" x="164.0" y="367.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="322.0" y="106.0" width="180.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="330.0" y="125.0" font-size="11.5" font-weight="600">J1 · 真实负载下重测</text>
+<rect class="box" x="322.0" y="162.0" width="180.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="330.0" y="181.0" font-size="11.5" font-weight="600">J6 · 核查执行与产出</text>
+<rect class="box" x="322.0" y="218.0" width="180.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="330.0" y="237.0" font-size="11.5" font-weight="600">J12 · 互联限定架构</text>
+<rect class="box" x="322.0" y="274.0" width="180.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="330.0" y="293.0" font-size="11.5" font-weight="600">J20 · 评委错误相关性</text>
+<line x1="22" y1="412" x2="48" y2="412" stroke="#c0392b" stroke-width="2.4"/>
+<text class="mut" x="54" y="416" font-size="11">新增</text>
+<line x1="98" y1="412" x2="124" y2="412" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="mut" x="130" y="416" font-size="11">印证</text>
+<line x1="174" y1="412" x2="200" y2="412" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="6,4"/>
+<text class="mut" x="206" y="416" font-size="11">存疑</text>
+<line x1="250" y1="412" x2="276" y2="412" stroke="#8a8a94" stroke-width="1.3" stroke-dasharray="2,3"/>
+<text class="mut" x="282" y="416" font-size="11">辅助</text>
+<rect x="326" y="405" width="12" height="12" rx="2" class="box" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="mut" x="343" y="416" font-size="11">论文</text>
+<rect x="381" y="405" width="12" height="12" rx="2" class="box" stroke="#c07830" stroke-width="1.6"/>
+<text class="mut" x="398" y="416" font-size="11">非论文</text>
+</svg>
