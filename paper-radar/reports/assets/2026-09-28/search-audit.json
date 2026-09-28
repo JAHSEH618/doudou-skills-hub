@@ -1,0 +1,291 @@
+{
+  "date": "2026-09-28",
+  "searches": [
+    {
+      "id": "hardware-arxiv",
+      "query": "AI systems papers published September 10–28 2026 on arXiv GPU Blackwell FP4 CXL memory kernel cluster reliability",
+      "status": "fulfilled"
+    },
+    {
+      "id": "model-arxiv",
+      "query": "arXiv September 10–28 2026 papers hybrid linear attention gated delta net MoE LoRA supervised fine tuning quantization",
+      "status": "fulfilled"
+    },
+    {
+      "id": "systems-arxiv",
+      "query": "arXiv September 10–28 2026 LLM inference serving KV cache agent memory RAG retrieval reinforcement learning infrastructure",
+      "status": "fulfilled"
+    },
+    {
+      "id": "methods-arxiv",
+      "query": "arXiv September 10–28 2026 empirical evaluation negative results LLM agents benchmarks judge calibration harness reliability",
+      "status": "fulfilled"
+    },
+    {
+      "id": "hardware-conf",
+      "query": "OSDI MLSys ASPLOS EuroSys September 2026 new papers GPU kernels CXL cluster failure reliability FP4",
+      "status": "fulfilled"
+    },
+    {
+      "id": "model-conf",
+      "query": "EMNLP COLM ICLR September 2026 new papers hybrid linear attention LoRA SFT MoE quantization negative results",
+      "status": "fulfilled"
+    },
+    {
+      "id": "systems-conf",
+      "query": "OSDI NSDI SOSP SIGMOD COLM September 2026 new research papers LLM serving agent memory vector retrieval RL infrastructure",
+      "status": "fulfilled"
+    },
+    {
+      "id": "methods-conf",
+      "query": "COLM EMNLP September 2026 new papers evaluation validity LLM judges agent benchmark negative results reproducibility",
+      "status": "fulfilled"
+    },
+    {
+      "id": "hardware-topics",
+      "query": "GPU Blackwell FP4 quantization CXL memory reliability kernels",
+      "status": "fulfilled"
+    },
+    {
+      "id": "model-topics",
+      "query": "hybrid linear attention architecture LoRA supervised fine tuning model merging",
+      "status": "fulfilled"
+    },
+    {
+      "id": "systems-topics",
+      "query": "agent memory RAG retrieval vector database reinforcement learning serving systems",
+      "status": "fulfilled"
+    },
+    {
+      "id": "methods-topics",
+      "query": "LLM evaluation negative results benchmark calibration reliability judge",
+      "status": "fulfilled"
+    },
+    {
+      "id": "infra-news",
+      "query": "September 10–28 2026 vLLM SGLang FlashInfer PyTorch Tri Dao cHHillee Unsloth ray release announcement engineering blog",
+      "status": "fulfilled"
+    },
+    {
+      "id": "labs-news",
+      "query": "September 10–28 2026 DeepSeek Z.ai GLM MiniMax new model release official announcement",
+      "status": "fulfilled"
+    },
+    {
+      "id": "practice-news",
+      "query": "September 10–28 2026 Modal Baseten Fireworks Together AI inference RL engineering blog production benchmarks",
+      "status": "fulfilled"
+    }
+  ],
+  "explanation_searches": [
+    {
+      "id": "mkernel",
+      "title": "mKernel: Fast Multi-GPU, Multi-Node Fused Kernels",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "mKernel: Fast Multi-GPU, Multi-Node",
+          "url": "https://uccl-project.github.io/posts/mkernel/"
+        },
+        {
+          "title": "uccl-project/mKernel",
+          "url": "https://github.com/uccl-project/mKernel"
+        },
+        {
+          "title": "[2609.13585] mKernel: Fast Multi-GPU, Multi-Node Fused Kernels",
+          "url": "https://arxiv.org/abs/2609.13585"
+        }
+      ]
+    },
+    {
+      "id": "bitwise",
+      "title": "Taming Bitwise Behavior in GPU Kernels",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "Taming Bitwise Behavior in GPU Kernels with Tensor Core: Black-Box Reconstruction, Compiler Enforcement, and Static Verification | hgpu.org",
+          "url": "https://hgpu.org/?p=31199"
+        },
+        {
+          "title": "Taming Bitwise Behavior in GPU Kernels with Tensor Core: Black-Box Reconstruction, Compiler Enforcement, and Static Verification",
+          "url": "https://arxiv.org/pdf/2609.11356"
+        },
+        {
+          "title": "Ziteng Yang",
+          "url": "https://www.linkedin.com/in/ziteng-yang"
+        }
+      ]
+    },
+    {
+      "id": "sft",
+      "title": "Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs",
+          "url": "https://arxiv.org/html/2609.27262v1"
+        },
+        {
+          "title": "Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs",
+          "url": "https://bittide.aicompass.dev/article/60dab8e6-9e9f-42e4-9d90-9089c1790e0b"
+        },
+        {
+          "title": "Computer Science",
+          "url": "https://www.arxiv.org/list/cs/recent?show=2000&skip=614"
+        }
+      ]
+    },
+    {
+      "id": "lowbit",
+      "title": "Low-Bit Recurrent States in Hybrid Language Models",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "Low-Bit Recurrent States in Hybrid Language Models",
+          "url": "https://arxiv.org/abs/2609.30950"
+        },
+        {
+          "title": "Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM | alphaXiv",
+          "url": "https://www.alphaxiv.org/abs/2609.04098"
+        },
+        {
+          "title": "What Attention Recalls and Recurrence Controls in Hybrid Language Models",
+          "url": "https://arxiv.org/pdf/2609.04434v1"
+        }
+      ]
+    },
+    {
+      "id": "agentkv",
+      "title": "AgentKV: Phase-Aware KV Eviction for Agentic LLMs",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "[2609.14872] AgentKV: Phase-Aware KV Eviction for Agentic LLMs",
+          "url": "https://arxiv.org/abs/2609.14872"
+        },
+        {
+          "title": "ICML  AgentKV: Phase-Aware KV Eviction for Agentic LLMs",
+          "url": "https://icml.cc/virtual/2026/75143"
+        },
+        {
+          "title": "AgentKV: Phase-Aware KV Eviction for Agentic LLMs | OpenReview",
+          "url": "https://openreview.net/forum?id=s80e8otSxP&referrer=%5Bthe+profile+of+Bowen+Yang%5D%28%2Fprofile%3Fid%3D%7EBowen_Yang1%29"
+        }
+      ]
+    },
+    {
+      "id": "dsec",
+      "title": "DeepSeek Elastic Compute",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
+          "url": "https://arxiv.org/abs/2609.22978"
+        },
+        {
+          "title": "DeepSeek-V4: a million-token context that agents can actually use",
+          "url": "https://huggingface.co/blog/deepseekv4"
+        },
+        {
+          "title": "Paper page - DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
+          "url": "https://huggingface.co/papers/2609.22978"
+        }
+      ]
+    },
+    {
+      "id": "jevmem",
+      "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+          "url": "https://arxiv.org/html/2609.23986"
+        },
+        {
+          "title": "Paper page - Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+          "url": "https://huggingface.co/papers/2609.23986"
+        },
+        {
+          "title": "Don’t Default Memory Control to an Autoregressive LLM: Reading Jev-Mem’s System-One Memory Architecture",
+          "url": "https://redreamality.com/blog/jev-mem-system-one-agentic-memory/"
+        }
+      ]
+    },
+    {
+      "id": "gauge",
+      "title": "GAUGE: When Not to Trust LLM-as-a-Judge",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents",
+          "url": "https://arxiv.org/pdf/2609.12191"
+        },
+        {
+          "title": "GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents",
+          "url": "https://bittide.aicompass.dev/article/1d77dc95-4e73-4b0a-9a1a-859667107c98?cache=1"
+        },
+        {
+          "title": "GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents | alphaXiv",
+          "url": "https://www.alphaxiv.org/replicate/2609.12191"
+        }
+      ]
+    },
+    {
+      "id": "consensus",
+      "title": "Agreement Overstates Evidence: Error Dependence in LLM Judge Consensus",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "Error Dependence in LLM Judge Consensus",
+          "url": "https://arxiv.org/abs/2609.22512"
+        },
+        {
+          "title": "When LLM judges agree, should we believe them?",
+          "url": "https://www.amazon.science/blog/when-llm-judges-agree-should-we-believe-them"
+        },
+        {
+          "title": "Agreement Overstates Evidence: Error Dependence in LLM Judge Consensus",
+          "url": "http://arxiv.org/abs/2609.22512v1"
+        }
+      ]
+    },
+    {
+      "id": "overclaim",
+      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+          "url": "https://arxiv.org/pdf/2609.20812.pdf"
+        },
+        {
+          "title": "Coding agents overclaim when their work is incomplete - Ken Ashe | AI Application Builder",
+          "url": "https://kenashe.ai/blog/2026-09-18-coding-agents-overclaim-when-their-work-is-incomplete/"
+        },
+        {
+          "title": "Frontier coding agents often say they reviewed every file w…",
+          "url": "https://disruptive-concepts.com/article/quantifying-overclaiming-propensity-in-frontier-llm-agents"
+        }
+      ]
+    },
+    {
+      "id": "vllm",
+      "title": "Kimi K3 Performance Optimizations in vLLM: The Road to 2.8× Throughput",
+      "status": "fulfilled",
+      "results": [
+        {
+          "title": "Kimi K3 Performance Optimizations in vLLM: The Road to 2.8× Throughput | vLLM Blog",
+          "url": "https://vllm.ai/blog/2026-09-13-kimi-k3-performance-optimization"
+        },
+        {
+          "title": "Watermarking in vLLM | vLLM Blog",
+          "url": "https://vllm.ai/blog/2026-09-24-watermarking-in-vllm"
+        },
+        {
+          "title": "TLDR - A Byte Sized Daily Tech Newsletter",
+          "url": "https://tldr.tech/?bhcl_id=ef6c869c-1a57-4d80-b571-1906bcbc7825_%7B%7Bsubscriber_id%7D%7D_%7B%7Bemail_address_id%7D%7D"
+        }
+      ]
+    }
+  ]
+}

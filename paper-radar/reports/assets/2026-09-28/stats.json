@@ -1,0 +1,115 @@
+{
+  "date": "2026-09-28",
+  "mode": "周扫",
+  "window": "09-10 → 09-28",
+  "paper_cap": 10,
+  "lines": {
+    "硬件": {
+      "full": 1,
+      "abstract": 1
+    },
+    "模型": {
+      "full": 1,
+      "abstract": 1
+    },
+    "软件系统": {
+      "full": 1,
+      "abstract": 2
+    },
+    "工程方法": {
+      "full": 1,
+      "abstract": 2
+    }
+  },
+  "practice_full": 1,
+  "practice_abstract": 3,
+  "news": 3,
+  "flash": 0,
+  "pool": 0,
+  "commentary": 3,
+  "judgments": 20,
+  "graph": {
+    "sources": [
+      {
+        "id": "AK",
+        "label": "AgentKV\n2609.14872",
+        "type": "论文"
+      },
+      {
+        "id": "VL",
+        "label": "vLLM Kimi K3\n固定提交压测",
+        "type": "一方博客"
+      },
+      {
+        "id": "OC",
+        "label": "OverclaimBench\n2609.20812",
+        "type": "论文"
+      },
+      {
+        "id": "MK",
+        "label": "mKernel\n2609.13585",
+        "type": "论文"
+      },
+      {
+        "id": "GA",
+        "label": "GAUGE\n2609.12191",
+        "type": "论文"
+      },
+      {
+        "id": "CO",
+        "label": "Judge Consensus\n2609.22512",
+        "type": "论文"
+      }
+    ],
+    "judgments": [
+      {
+        "id": "J1",
+        "label": "真实负载下重测"
+      },
+      {
+        "id": "J6",
+        "label": "核查执行与产出"
+      },
+      {
+        "id": "J12",
+        "label": "互联限定架构"
+      },
+      {
+        "id": "J20",
+        "label": "评委错误相关性"
+      }
+    ],
+    "edges": [
+      {
+        "from": "AK",
+        "to": "J1",
+        "kind": "印证"
+      },
+      {
+        "from": "VL",
+        "to": "J1",
+        "kind": "辅助"
+      },
+      {
+        "from": "OC",
+        "to": "J6",
+        "kind": "印证"
+      },
+      {
+        "from": "MK",
+        "to": "J12",
+        "kind": "印证"
+      },
+      {
+        "from": "GA",
+        "to": "J20",
+        "kind": "新增"
+      },
+      {
+        "from": "CO",
+        "to": "J20",
+        "kind": "新增"
+      }
+    ]
+  }
+}

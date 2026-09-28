@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-10",
+  "mode": "周扫",
+  "window": "09-08 → 09-10",
+  "paper_cap": 8,
+  "lines": {
+    "硬件":     {"full": 0, "abstract": 1},
+    "模型":     {"full": 1, "abstract": 1},
+    "软件系统": {"full": 1, "abstract": 2},
+    "工程方法": {"full": 1, "abstract": 1}
+  },
+  "practice_full": 4,
+  "practice_abstract": 4,
+  "news": 7,
+  "flash": 5,
+  "pool": 5,
+  "commentary": 1,
+  "judgments": 19,
+  "graph": {
+    "sources": [
+      {"id": "KVA",  "label": "KVShareArena\n2609.10266", "type": "论文"},
+      {"id": "IB2",  "label": "IB2 路由绑定协议\n2609.10494", "type": "论文"},
+      {"id": "GPBS", "label": "Good Pretraining, Bad SFT\n2609.08966", "type": "论文"},
+      {"id": "OSP",  "label": "Osprey\n2609.09338", "type": "论文"},
+      {"id": "PD",   "label": "Pipeline-Dependent\n2609.08765", "type": "论文"},
+      {"id": "QD",   "label": "Quantization Determinism\n2609.07901", "type": "论文"},
+      {"id": "MIL",  "label": "Miles v0.1\n2609.08368", "type": "论文"},
+      {"id": "VLLM", "label": "vLLM x AgentX", "type": "一方博客"},
+      {"id": "QUE",  "label": "Quesma Qwen3.8 量化实测", "type": "工业博客"}
+    ],
+    "judgments": [
+      {"id": "J19", "label": "量化「无损」只在\n准确率层成立"},
+      {"id": "J1",  "label": "加速比要带\n负载分布"},
+      {"id": "J8",  "label": "微调对升级脆弱", "status": "存疑"},
+      {"id": "J10", "label": "采集窗口与\n发表日期分开"},
+      {"id": "J12", "label": "互联带宽\n反向约束架构"},
+      {"id": "J13", "label": "差分指标\n需冻结对照臂"},
+      {"id": "J15", "label": "共享 endpoint\n不是冻结仪器"},
+      {"id": "J16", "label": "更多记忆\n不是单调有益"}
+    ],
+    "edges": [
+      {"from": "QD",   "to": "J19", "kind": "新增"},
+      {"from": "QUE",  "to": "J19", "kind": "辅助"},
+      {"from": "OSP",  "to": "J1",  "kind": "印证"},
+      {"from": "VLLM", "to": "J1",  "kind": "辅助"},
+      {"from": "VLLM", "to": "J12", "kind": "辅助"},
+      {"from": "KVA",  "to": "J16", "kind": "印证"},
+      {"from": "KVA",  "to": "J8",  "kind": "印证"},
+      {"from": "MIL",  "to": "J10", "kind": "印证"},
+      {"from": "GPBS", "to": "J10", "kind": "印证"},
+      {"from": "PD",   "to": "J13", "kind": "印证"},
+      {"from": "IB2",  "to": "J15", "kind": "印证"}
+    ]
+  }
+}
