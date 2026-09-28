@@ -1,0 +1,2140 @@
+{
+  "checked_at": "2026-09-28T15:41:16.653969+00:00",
+  "method": "HTTP GET; X original posts supplemented by official oEmbed",
+  "links": [
+    {
+      "url": "https://arxiv.org/abs/2603.06199",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2603.06199",
+      "title": "[2603.06199] FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.01651",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.01651",
+      "title": "[2608.01651] Bole: Efficient Tree Speculation for Hybrid-Attention Language Models",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.11095",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.11095",
+      "title": "[2608.11095] Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.15008",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.15008",
+      "title": "[2608.15008] Harness the Memory: A Holistic Evaluation of Memory Substrates in Memory Agents",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.16586",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.16586",
+      "title": "[2608.16586] When Is Complex Chunking Worth It? A Multi-Objective Evaluation of Chunking Methods at Scale",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.16630",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.16630",
+      "title": "[2608.16630] The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.17071",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.17071",
+      "title": "[2608.17071] KernelArc: A Multi-Agent Framework for GPU Kernel Optimization",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.17247",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.17247",
+      "title": "[2608.17247] Explicit State Elicitation Is Not Enough: A Controlled Audit of Memory-Policy Classification",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.17379",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.17379",
+      "title": "[2608.17379] PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.17641",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.17641",
+      "title": "[2608.17641] rl-triton: High-Performance Triton GPU Kernels for Reinforcement Learning Credit Assignment",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.17804",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.17804",
+      "title": "[2608.17804] An Empirical Study of Reward Specification and Benchmark Reliability in GRPO-based LLM Unlearning",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.19535",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.19535",
+      "title": "[2608.19535] From Retrieved Context to Runtime Control: Adaptive Compression for Edge-based RAG",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.19564",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.19564",
+      "title": "[2608.19564] Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.19659",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.19659",
+      "title": "[2608.19659] FleetSieve: Decision-Critical Profiling for SLO-Aware LLM Fleet Configuration",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.19758",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.19758",
+      "title": "[2608.19758] FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.19920",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.19920",
+      "title": "[2608.19920] Learning how to Forget: Fine-tuning for Long-Context Sparse Attention",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20202",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20202",
+      "title": "[2608.20202] MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20290",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20290",
+      "title": "[2608.20290] Phantom Gains: Auditing Self-Improvement Against a Measured Null",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20743",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20743",
+      "title": "[2608.20743] Is Multimodal Speculative Decoding Ready for Diffusion-Based Parallel Drafting? A Survey and Empirical Diagnosis",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20768",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20768",
+      "title": "[2608.20768] Beyond Endpoint Gains: A Weight-Delta Audit of Medical Specialization",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20786",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20786",
+      "title": "[2608.20786] Structure for Reading, Prose for Writing: Asymmetric Structural Conditioning in Multi-Agent Document Authoring",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20794",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20794",
+      "title": "[2608.20794] Knowing but Not Saying: Preventing Factual Access Failures in LLM SFT via Recall-Anchored Distillation",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20845",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20845",
+      "title": "[2608.20845] RAG Deserves an Index: Why Ingest-Time Compilation Beats Query-Time Interpretation",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20918",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20918",
+      "title": "[2608.20918] UpgradeBench: A Decision-Centric Benchmark for Upgrading Fine-Tuned LLM Specialists",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20938",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20938",
+      "title": "[2608.20938] No Judgment Without a Reason: Counterfactual Receipts for Versioned AI Evaluators",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20961",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20961",
+      "title": "[2608.20961] TreeWY: Speculative Verification for Gated DeltaNet Hybrids",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20988",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.20988",
+      "title": "[2608.20988] Jacobian-guided Noise Injection for Quantization Robustness in Large Language Models",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.21027",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.21027",
+      "title": "[2608.21027] Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.21097",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.21097",
+      "title": "[2608.21097] When Trust Meets Truth: Trust-Truth Separability in LLM-as-Judge",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.21172",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.21172",
+      "title": "[2608.21172] Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.21230",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.21230",
+      "title": "[2608.21230] Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.21345",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.21345",
+      "title": "[2608.21345] Asymmetric Capacity Allocation in Self-Refinement Pipelines",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.21690",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.21690",
+      "title": "[2608.21690] Context as an Environment: Programmatic Context Management for Long-Horizon Agents",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.22215",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.22215",
+      "title": "[2608.22215] Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.28978",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.28978",
+      "title": "[2608.28978] Selective Forgetting: A Graph-Based Memory Framework for Long-Term LLM Agents",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.30177",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.30177",
+      "title": "[2608.30177] Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.30769",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.30769",
+      "title": "[2608.30769] TrainSDC: Characterizing and Mitigating Silent Data Corruption in Large Language Model Training",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.31057",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2608.31057",
+      "title": "[2608.31057] Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.00066",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.00066",
+      "title": "[2609.00066] OCGQuant: Outlier-Companion Grouping for NVFP4 Quantization",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.00450",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.00450",
+      "title": "[2609.00450] HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.00749",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.00749",
+      "title": "[2609.00749] ContextPipe: Database-Inspired Context Assembly for Long-Horizon Agents",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.01139",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.01139",
+      "title": "[2609.01139] Does task decomposition improve automatic NLG evaluation?",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.01244",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.01244",
+      "title": "[2609.01244] Post-Training Science for Supervised Fine-Tuning",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.01374",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.01374",
+      "title": "[2609.01374] Behaviorally Effective LoRA Writes Are Sparse and Structured",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.01836",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.01836",
+      "title": "[2609.01836] Agent Memory Is a Surface for Endogenous Authorization Laundering",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.02750",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.02750",
+      "title": "[2609.02750] Bilevel Coordinated Reflection: A Game-Theoretic Approach to Multi-Agent LLM Systems",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.02942",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.02942",
+      "title": "[2609.02942] Judging LLM-as-a-Judge: Concerning Rubric Artifacts in LLM-based Automated Text Generation Evaluation",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.02986",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.02986",
+      "title": "[2609.02986] Modern Transformers Are Implicit Hybrids: From Functional Differentiation to Principled Hybrid Architecture Design",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.03340",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.03340",
+      "title": "[2609.03340] Fresh Memory, Stale Plans: Dependency-Scoped Validation for Distributed LLM-Agent Memory",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.03450",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.03450",
+      "title": "[2609.03450] Plan Pointers and Record-Directive Form in Budgeted Verification of Inherited Agent Memory",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04105",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.04105",
+      "title": "[2609.04105] Hardware-Aware FP4 FlashAttention-4",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04198",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.04198",
+      "title": "[2609.04198] Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04774",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.04774",
+      "title": "[2609.04774] Adaptive Context Parallelism for Production LLM Serving",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04852",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.04852",
+      "title": "[2609.04852] KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04915",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.04915",
+      "title": "[2609.04915] Compact-Memory LLM Agents via Online Max-Member Clustering and Atom-Aware Packing",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.05339",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.05339",
+      "title": "[2609.05339] Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.07108",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.07108",
+      "title": "[2609.07108] Online Draft Co-Training for Speculative Decoding in Large-Scale, Long-Context RL Post-Training",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.07664",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.07664",
+      "title": "[2609.07664] Accuracy is Not Enough: A Divergence-Based Approach to Evaluate Fidelity Loss in Quantized LLMs",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.07901",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.07901",
+      "title": "[2609.07901] Quantization Amplifies Determinism, Not Bias: Scale-Dependent Behavioral Effects of Serving-Time Weight Compression",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08016",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.08016",
+      "title": "[2609.08016] What Does Multi-Agent LLM Debate Actually Change? A Layered Analysis of Disagreement and Answer Quality",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08279",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.08279",
+      "title": "[2609.08279] What Eviction Destroys: A Restore-Counterfactual Audit of Forgetting in Agent Memory",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08368",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.08368",
+      "title": "[2609.08368] Miles v0.1: Production-Level Post-Training",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08765",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.08765",
+      "title": "[2609.08765] Benchmark Scores Are Pipeline-Dependent: A Reliability Audit of Cybersecurity LLM Benchmarks",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08887",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.08887",
+      "title": "[2609.08887] Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08966",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.08966",
+      "title": "[2609.08966] Good Pretraining, Bad SFT: Checkpoint Quality Across the Training Stack",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.09338",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.09338",
+      "title": "[2609.09338] Osprey: Target-agnostic Pre-training Makes Stronger Drafters in Speculative Decoding",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.09696",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.09696",
+      "title": "[2609.09696] When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.09800",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.09800",
+      "title": "[2609.09800] HBFSim: Fast and Faithful Simulation of High-Bandwidth Flash Under Real GPU Execution",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.10266",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.10266",
+      "title": "[2609.10266] KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.10494",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.10494",
+      "title": "[2609.10494] IBIB: A Protocol for Measuring Enterprise AI Systems by Serving Route, Not Model Identifier",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.11356",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.11356",
+      "title": "[2609.11356] Taming Bitwise Behavior in GPU Kernels with Tensor Core: Black-Box Reconstruction, Compiler Enforcement, and Static Verification",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.12191",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.12191",
+      "title": "[2609.12191] GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents",
+      "sources": [
+        "reports/2026-09-28.md",
+        "state/judgments.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.13585",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.13585",
+      "title": "[2609.13585] mKernel: Fast Multi-GPU, Multi-Node Fused Kernels",
+      "sources": [
+        "reports/2026-09-28.md",
+        "state/judgments.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.14872",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.14872",
+      "title": "[2609.14872] AgentKV: Phase-Aware KV Eviction for Agentic LLMs",
+      "sources": [
+        "reports/2026-09-28.md",
+        "state/judgments.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.20812",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.20812",
+      "title": "[2609.20812] Quantifying Overclaiming Propensity in Frontier LLM Agents",
+      "sources": [
+        "reports/2026-09-28.md",
+        "state/judgments.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.22512",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.22512",
+      "title": "[2609.22512] Agreement Overstates Evidence: Error Dependence in LLM Judge Consensus",
+      "sources": [
+        "reports/2026-09-28.md",
+        "state/judgments.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.22978",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.22978",
+      "title": "[2609.22978] DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.23986",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.23986",
+      "title": "[2609.23986] Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.27262",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.27262",
+      "title": "[2609.27262] Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.30950",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.30950",
+      "title": "[2609.30950] Low-Bit Recurrent States in Hybrid Language Models",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://bhavishyapandit9.substack.com/p/ai-agent-memory",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://bhavishyapandit9.substack.com/p/ai-agent-memory",
+      "title": "AI Agent Memory: How Production AI Agents Remember and Learn",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://calpaterson.com/memoryfields.html",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://calpaterson.com/memoryfields.html",
+      "title": "Agent memory as a file format",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://cohere.com/blog/megakernels",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://cohere.com/blog/megakernels",
+      "title": "Cohere's North Mini Code Megakernel Serving Engine | Cohere",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://datapace.ai/blog/claude-md-catastrophic-remembering",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://datapace.ai/blog/claude-md-catastrophic-remembering",
+      "title": "CLAUDE.md never shrinks. A 1,867-repo study shows why.",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://decagon.ai/blog/gpu-efficient-inference-serving-stack",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://decagon.ai/blog/gpu-efficient-inference-serving-stack",
+      "title": "How we made one of our largest inference workloads 4.7× more GPU-efficient | Decagon",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://dev.to/linfordr/context-compaction-is-silently-destroying-your-llm-agents-memory-2pg2",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://dev.to/linfordr/context-compaction-is-silently-destroying-your-llm-agents-memory-2pg2",
+      "title": "Context compaction is silently destroying your LLM agent's memory - DEV CommunityNavigation menuSearchSearchCloseMore...Copy linkEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeCollapseExpandDropdown menuLike comment: Like comment: Comment buttonCollapseExpandDropdown menuLike comment: Like comment: Comment buttonCollapseExpandDropdown menuLike comment: Like comment: ThreadDropdown menuLike comment: Like comment: ThreadDropdown menuLike comment: Like comment: Comment buttonCollapseExpandD",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/",
+      "title": "Introducing Support for Local AI Models in the Antigravity SDK\n            \n            \n            - Google Developers Blog",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://feedly.com/engineering/posts/fast-autoscaling-on-gpus",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://feedly.com/engineering/posts/fast-autoscaling-on-gpus",
+      "title": "Fast autoscaling on GPUs | Feedly",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://fireworks.ai/blog/arcv3-and-the-case-for-cross-region-rl",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://fireworks.ai/blog/arcv3-and-the-case-for-cross-region-rl",
+      "title": "Every byte counts: ARCv3 and the case for cross-region RL",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/LiuTaowen-Tony/agentkv",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/LiuTaowen-Tony/agentkv",
+      "title": "GitHub - LiuTaowen-Tony/agentkv · GitHub",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/OpenBMB/Meshy",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/OpenBMB/Meshy",
+      "title": "GitHub - OpenBMB/Meshy · GitHub",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/argonautlabsai/deltafin",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/argonautlabsai/deltafin",
+      "title": "GitHub - argonautlabsai/deltafin: ARGODRIVE Deltafin: Kimi K3 (2.8T MoE) streamed from SSDs on Apple Silicon — fork of gavamedia/deltafin with the ARGODRIVE storage work and benchmark package · GitHub",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/awslabs/keys_values",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/awslabs/keys_values",
+      "title": "GitHub - awslabs/keys_values · GitHub",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/casparil/chunking-eval",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/casparil/chunking-eval",
+      "title": "GitHub - casparil/chunking-eval · GitHub",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/chengxuphd/phantom-gains",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/chengxuphd/phantom-gains",
+      "title": "GitHub - chengxuphd/phantom-gains · GitHub",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/megagonlabs/restore-counterfactual",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/megagonlabs/restore-counterfactual",
+      "title": "GitHub - megagonlabs/restore-counterfactual: Code for CBW@COLM 2026 paper \"What Eviction Destroys: A Restore-Counterfactual Audit of Forgetting in Agent Memory\" · GitHub",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/openai/codex/commit/8444cf63b50a8a88521e0d2970d49f659b48eac7",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/openai/codex/commit/8444cf63b50a8a88521e0d2970d49f659b48eac7",
+      "title": "Derive sandbox contexts from turn environments (#40551) · openai/codex@8444cf6 · GitHub",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/qhfan/FlashPrefill",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/qhfan/FlashPrefill",
+      "title": "GitHub - qhfan/FlashPrefill: Implementation of \"FlashPreill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling\" · GitHub",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/rohitg00/agentmemory/releases/tag/v0.9.29",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/rohitg00/agentmemory/releases/tag/v0.9.29",
+      "title": "Release v0.9.29 · rohitg00/agentmemory · GitHub",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/skhanzad/Selective-Amnesia",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/skhanzad/Selective-Amnesia",
+      "title": "GitHub - skhanzad/Selective-Amnesia · GitHub",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/uccl-project/mKernel",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/uccl-project/mKernel",
+      "title": "GitHub - uccl-project/mKernel: mKernel: fast multi-node, multi-GPU fused kernels · GitHub",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm/commit/82a85dc1",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/vllm-project/vllm/commit/82a85dc1",
+      "title": "[Attention] Add Triton/FlashInfer composite for multimodal prefix att… · vllm-project/vllm@82a85dc · GitHub",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/funes",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/funes",
+      "title": "Give Your Coding Agents a Memory You Own",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "title": "Transformers now runs llama.cpp quants",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
+      "title": "inclusionAI/Ling-3.0-flash-VL · Hugging Face",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "title": "openbmb/MiniCPM5-2B · Hugging Face",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://icml.cc/virtual/2026/75143",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://icml.cc/virtual/2026/75143",
+      "title": "ICML  AgentKV: Phase-Aware KV Eviction for Agentic LLMsICML 2026",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://jczhu.com/blog/codex-memory-internals/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://jczhu.com/blog/codex-memory-internals/",
+      "title": "Codex Memory Internals: What It Remembers, Who Decides, and How It Compares to OpenCode",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+      "title": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition",
+      "title": "Diagnosing and Mitigating Tool-Call Repetition in MiMo-V2.6",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "editor_note": "HTTP 200；页面原文通过 Exa 补核，标题、作者方和 2026-09-27 日期与条目相符。",
+      "evidence": "HTTP GET plus Exa original-page content",
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://mistral.ai/news/legacy-code-modernization",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://mistral.ai/news/legacy-code-modernization/",
+      "title": "Modernizing complex legacy code with AI agents | Mistral",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+      "title": "Making sovereign, open-weight AI the technology frontier | Mistral",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://modal.com/blog/quail-billion-tpm",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://modal.com/blog/quail-billion-tpm",
+      "title": "Hitting a billion tokens per minute on one GPU by combining a query planner and an inference engine",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=49508317",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://news.ycombinator.com/item?id=49508317",
+      "title": "Agent memory as a file format | Hacker News",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=49611128",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://news.ycombinator.com/item?id=49611128",
+      "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses | Hacker News",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=49859112",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://news.ycombinator.com/item?id=49859112",
+      "title": "DeepSeek Elastic Compute (DSec) | Hacker News",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+      "title": "TPU Inference Externalization Full Steam Ahead - InferenceX",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/ai-policy-window",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/ai-policy-window",
+      "title": "",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "editor_note": "直接检查返回 403，Exa 补抓同样受限；未将此结果称为失效或可访问，保留官方地址并在文章旁标明限制。",
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/gpt-6-astra",
+      "title": "",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "editor_note": "直接检查返回 403，Exa 补抓同样受限；未将此结果称为失效或可访问，保留官方地址并在文章旁标明限制。",
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "title": "",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "editor_note": "直接检查返回 403，Exa 补抓同样受限；未将此结果称为失效或可访问，保留官方地址并在文章旁标明限制。",
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://opennash.com/blog/context-compaction-for-agents-keeping-long-horizon-sessions/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://opennash.com/blog/context-compaction-for-agents-keeping-long-horizon-sessions/",
+      "title": "Context Compaction for Agents: Keeping Long-Horizon Sessions Coherent Past the Window | OpenNash Blog",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://openreview.net/forum?id=s80e8otSxP",
+      "status": "restricted",
+      "http": 200,
+      "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Ds80e8otSxP",
+      "title": "Verifying your browser | OpenReview",
+      "sources": [],
+      "editor_note": "返回浏览器验证页面，未执行或绕过验证。AgentKV 的 arXiv 与 ICML 原始入口均可读。",
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://openrouter.ai/blog/announcements/us-in-region-routing/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://openrouter.ai/blog/announcements/us-in-region-routing/",
+      "title": "In-Region Routing: keep your data in the US or EU",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+      "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses - Quesma BlogGitHubX",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://redreamality.com/blog/jev-mem-system-one-agentic-memory/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://redreamality.com/blog/jev-mem-system-one-agentic-memory/",
+      "title": "Don’t Default Memory Control to an Autoregressive LLM: Reading Jev-Mem’s System-One Memory Architecture",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://rlancemartin.github.io/2025/06/23/context_engineering/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://rlancemartin.github.io/2025/06/23/context_engineering/",
+      "title": "Context Engineering for Agents",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://tasklet.ai/blog/2026-08-12-agent-memory",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://tasklet.ai/blog/2026-08-12-agent-memory",
+      "title": "Introducing Memory: Agents that learn & improve over time - Blog - Tasklet",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+      "title": "Defeating Nondeterminism in LLM Inference - Thinking Machines Lab",
+      "sources": [
+        "reports/2026-08-23.md",
+        "reports/2026-09-08.md",
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md",
+        "reports/assets/2026-09-08/research-notes.md",
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://thinkingmachines.ai/blog/lora/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://thinkingmachines.ai/blog/lora/",
+      "title": "LoRA Without Regret - Thinking Machines Lab",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://uccl-project.github.io/posts/mkernel/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://uccl-project.github.io/posts/mkernel/",
+      "title": "mKernel: Fast Multi-GPU, Multi-Node\nFused Kernels",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
+      "title": "Exploring Speculative Decoding in vLLM on AMD GPUs | vLLM Blog",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-09-07-vllm-tt-plugin",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-09-07-vllm-tt-plugin",
+      "title": "Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin | vLLM Blog",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-09-08-vllm-agentx",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-09-08-vllm-agentx",
+      "title": "vLLM x AgentX: Optimizing for Real-World Agentic Serving | vLLM Blog",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-09-13-kimi-k3-performance-optimization",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-09-13-kimi-k3-performance-optimization",
+      "title": "Kimi K3 Performance Optimizations in vLLM: The Road to 2.8× Throughput | vLLM Blog",
+      "sources": [
+        "reports/2026-09-28.md",
+        "state/judgments.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-09-15-kimi-k3-dspark",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-09-15-kimi-k3-dspark",
+      "title": "How we trained the fastest DSpark for Kimi-K3 using GB300 NVL72 | vLLM Blog",
+      "sources": [
+        "reports/2026-09-10-weekly.md",
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md",
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-09-22-vllm-metal-v0-28-0",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-09-22-vllm-metal-v0-28-0",
+      "title": "Announcing vllm-metal: Concurrent Serving on Apple Silicon | vLLM Blog",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "title": "Demystifying evals for AI agents \\ Anthropic",
+      "sources": [
+        "reports/2026-08-23.md",
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md",
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "title": "Effective context engineering for AI agents \\ Anthropic",
+      "sources": [
+        "reports/2026-09-08.md",
+        "reports/2026-09-10.md",
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md",
+        "reports/assets/2026-09-10/research-notes.md",
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/contextual-retrieval",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/engineering/contextual-retrieval",
+      "title": "Contextual Retrieval in AI Systems \\ Anthropic",
+      "sources": [
+        "reports/2026-08-24.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a",
+      "title": "China-Based Artificial Intelligence Companies Conducting Industrial-Scale Distillation Campaigns Against U.S. AI Companies | CISALock",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data",
+      "title": "Pretraining progress is mostly coming from data",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/arul99_utility-under-attack-agent-memory-poisoning-activity-7497959530782429184-zEIM",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.linkedin.com/posts/arul99_utility-under-attack-agent-memory-poisoning-activity-7497959530782429184-zEIM",
+      "title": "Agent Memory Poisoning and AI Security Limits | Arulnidhi Karunanidhi posted on the topic | LinkedIn",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/kushalc_got-annoyed-had-an-idea-wrote-a-paper-activity-7493699129169059840-rSzo",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.linkedin.com/posts/kushalc_got-annoyed-had-an-idea-wrote-a-paper-activity-7493699129169059840-rSzo",
+      "title": "Why CLAUDE.md Never Stops Growing and How to Fix It | Kushal Chakrabarti posted on the topic | LinkedIn",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/nikitha-lokaraju_in-continuation-to-my-previous-post-on-what-activity-7500243024300359680-J-wG",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.linkedin.com/posts/nikitha-lokaraju_in-continuation-to-my-previous-post-on-what-activity-7500243024300359680-J-wG",
+      "title": "AI Agent Context Strategy: Storing and Retrieving Information | Nikitha L posted on the topic | LinkedIn",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.lmsys.org/blog/2026-08-18-miles-v0-1/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.lmsys.org/blog/2026-08-18-miles-v0-1/",
+      "title": "Miles v0.1: Production-level Post-training - LMSYS Org",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/AravSrinivas/status/2097372049559969973",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/AravSrinivas/status/2097372049559969973",
+      "title": "Aravind Srinivas on X: \"We have started serving a lot of our inference on NVLink Blackwells. Vera Rubins next!\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/BSPK_/status/2096582455860015508",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/BSPK_/status/2096582455860015508",
+      "title": "BSPK on X: \"https://t.co/FhJ6Q5NQxe\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/GregoryDiamos/status/2096873745420075020",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/GregoryDiamos/status/2096873745420075020",
+      "title": "Greg Diamos on X: \"I think we should revisit outrageously small neural nets. \n\nI needed a 10k tok/s CPU model for data processing. So I gave Anthropic claude code a pile of tokens to build one.\n\nIt made three interesting discoveries: https://t.co/eR28fVZdDI\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/SemiAnalysis_/status/2097007346421531008",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/SemiAnalysis_/status/2097007346421531008",
+      "title": "SemiAnalysis on X: \"ALERT🚨: AMD INCREASED @vllm_project PERFORMANCE BY 11x IN LESS THAN 19 DAYS ON MI355X AGENTIC WORKLOADS on the modern MiniMax M3 model!\n\nThis was done entirely through software optimizations, mainly by optimizing the long-context attention op, along with other optimizations! Th… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/SemiAnalysis_/status/2097309231082807795",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/SemiAnalysis_/status/2097309231082807795",
+      "title": "SemiAnalysis on X: \"ALERT🚨🚨: On apples-to-apples InferenceX Comparisons, TPUv7 Ironwood achieves 50% better perf per dollar than Blackwell Ultra on the new TorchTPU external inference stack!\n\nTorchTPU brings native PyTorch to TPUs, & along with Google open-sourcing a bunch of their Pallas inferen… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/SemiAnalysis_/status/2097445137521524787",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/SemiAnalysis_/status/2097445137521524787",
+      "title": "SemiAnalysis on X: \"Spec Decoding (DSpark) finally works with Pipeline Parallelism in vLLM!! 🔥 A lot of the GPU poor/proletarian have been asking for this feature for a while now, but it took the recent Kimi K3's massive 2.8T parameters affecting the GPU middle class (B200) for it to be implemente… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/SemiAnalysis_/status/2097490954907275409",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/SemiAnalysis_/status/2097490954907275409",
+      "title": "SemiAnalysis on X: \"TPUv7 has a specialized hardware-accelerated unit called the SparseCore. TPU's specialized SparseCore handles data movement, gathering each expert’s tokens into contiguous groups, while the TensorCore is left to run the expert matrix multiplications. When using SparseCore for re… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/SemiAnalysis_/status/2098238630015705267",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/SemiAnalysis_/status/2098238630015705267",
+      "title": "SemiAnalysis on X: \"ALERT🚨 GB300 NVL72 NVLINK BACKPLANE ENABLES 13x BETTER PERF PER DOLLAR THAN HOPPER ON AGENTIC INFERENCE\n\nThrough extreme co-design, GB300 NVL72 uses an innovative copper backplane to expand the scale-up domain to 72 versus 8 on Hopper. This allows optimizations like @vllm_proje… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10-weekly.md",
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md",
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/_mohansolo/status/1899630246862966837",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/_mohansolo/status/1899630246862966837",
+      "title": "Varun Mohan on X: \"But embedding search becomes unreliable as a retrieval heuristic as the size of the codebase grows. Instead, we must rely on a combination of techniques like grep/file search, knowledge graph based retrieval, and more. With all these heuristics, a re-ranking step also becomes nee… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-08-24.md",
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-24/research-notes.md",
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/dair_ai/status/2096985097450999839",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/dair_ai/status/2096985097450999839",
+      "title": "DAIR.AI on X: \"Brilliant paper from LinkedIn.\n\n(bookmark it)\n\nI have been saying that memory is one of the most challenging things to get right when building agents. It's an are you want to invest time in optimizing.\n\nThis paper focuses on whether memory is portable, which is crucial given that mor… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/dair_ai/status/2097555607389896732",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/dair_ai/status/2097555607389896732",
+      "title": "DAIR.AI on X: \"Good work on improving memory for long-horizon agents.\n\nThey separate two things that agent memory papers usually collapse into one. How memories get merged when they are written, and how retrieved content gets assembled into the prompt.\n\nThe setting is a tight prompt budget of 2k to… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/hosseeb/status/1773146428594090473",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/hosseeb/status/1773146428594090473",
+      "title": "Haseeb Qureshi ＞|＜ on X: \"Don’t trust, verify: An Overview of Decentralized AI Inference\n\nSay you want to run a large language model like Llama2-70B. A model this massive requires more than 140GB of memory, which means you can’t run the raw model on your home machine. What are your options? You mig… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-08-23.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-08-23/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/ii_posts/status/2097621235920191555",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/ii_posts/status/2097621235920191555",
+      "title": "Intelligent Internet on X: \"We pointed Meta-Zenith at one task: make Qwen3.8-27B-NVFP4 faster on a single RTX 5090.\n\n111 self-directed trials later, no human in the loop:\n+63.5% throughput (geomean, 18 settings)\n4.1× at 65K context\ntool-call quality unchanged\n\nhttps://t.co/i4yYygwYul\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10-weekly.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/karpathy/status/1937902205765607626",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/karpathy/status/1937902205765607626",
+      "title": "Andrej Karpathy on X: \"+1 for \"context engineering\" over \"prompt engineering\".\n\nPeople associate prompts with short task descriptions you'd give an LLM in your day-to-day use. When in every industrial-strength LLM app, context engineering is the delicate art and science of filling the context windo… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-08.md",
+        "reports/2026-09-10.md",
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md",
+        "reports/assets/2026-09-10/research-notes.md",
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/rohanpaul_ai/status/2096977141326139447",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/rohanpaul_ai/status/2096977141326139447",
+      "title": "Rohan Paul on X: \"New term “catastrophic remembering”\n\nCLAUDE.md has a ratchet problem: instructions are easy to add and increasingly hard to delete.\n\nAgent prompts may remember rules much longer than maintainers remember why those rules exist.\n\nAcross 1,867 GitHub repositories, agentic instruction… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/rohanpaul_ai/status/2097072461561131091",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/rohanpaul_ai/status/2097072461561131091",
+      "title": "Rohan Paul on X: \"Agent skills work for a very specific reason: they turn messy past experience into a clean procedure the agent can follow.\n\nThe researchers gave agents the same past trajectories in 2 forms: Workflow Memory, which keeps more execution detail, and a distilled SKILL.md.\n\nThe skill v… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/steipete/status/2096208734666309999",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/steipete/status/2096208734666309999",
+      "title": "Peter Steinberger 🦞 on X: \"this one weird trick to make compaction and long running goals way better.\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/supermemory/status/2097035274094272935",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/supermemory/status/2097035274094272935",
+      "title": "supermemory on X: \"Agents need continual learning.\n\nAt supermemory, we are doubling down and pushing the frontier for memory and in-context learning, for every agent and use case.\n\nIntroducing 𝚕𝚎𝚊𝚛𝚗𝚎𝚛-𝟷\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-10.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/vllm_project/status/2087571359413281049",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/vllm_project/status/2087571359413281049",
+      "title": "vLLM on X: \"🎉 Congrats to @Alibaba_Qwen on Qwen3.8-2.4T-A95B, one of the largest open-weight models released to date. 2.4T params, 95B active, 512 experts.\n\nDay-0 support in vLLM, verified on @NVIDIA and @AMD hardware. A ready-made 4-bit checkpoint per vendor, both out of the box:\n\nInferact/Qwen3.… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-08.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/vllm_project/status/2100615113506222184",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/vllm_project/status/2100615113506222184",
+      "title": "vLLM on X: \"Kimi K3 serving in vLLM now delivers 2.2–2.8x throughput on our B300 benchmark vs v0.27.1.\n\nWe break down the work across scheduling, KDA state handling, and MoE kernels, with benchmarks and commands to reproduce the results.\n\nThanks to the vLLM community for pushing Kimi K3 performance… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-09-28.md"
+      ],
+      "archived_sources": [
+        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    }
+  ],
+  "content_review": "人工对照全部目标标题与报告条目；新增 X 核对原始页面作者、正文及 UTC 日期；OpenReview 验证页单列受限。"
+}
