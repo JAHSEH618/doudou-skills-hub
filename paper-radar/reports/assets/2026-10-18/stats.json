@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-18",
+  "mode": "周扫",
+  "window": "09-28 → 10-18",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {
+      "full": 1,
+      "abstract": 0
+    },
+    "模型": {
+      "full": 1,
+      "abstract": 0
+    },
+    "软件系统": {
+      "full": 1,
+      "abstract": 0
+    },
+    "工程方法": {
+      "full": 1,
+      "abstract": 0
+    }
+  },
+  "practice_full": 5,
+  "practice_abstract": 0,
+  "news": 4,
+  "flash": 0,
+  "pool": 0,
+  "commentary": 3,
+  "judgments": 23,
+  "graph": {
+    "sources": [
+      {
+        "id": "NV",
+        "label": "NVFP4 Schur Replay\n2609.36654",
+        "type": "论文"
+      },
+      {
+        "id": "SS",
+        "label": "Sampling SFT\n2610.02140",
+        "type": "论文"
+      },
+      {
+        "id": "VR",
+        "label": "VenusRL\n2610.03286",
+        "type": "论文"
+      },
+      {
+        "id": "BR",
+        "label": "Benchmark 结构诊断\n2609.33196",
+        "type": "论文"
+      },
+      {
+        "id": "MG",
+        "label": "vLLM K3 megakernel\n10-16",
+        "type": "一方博客"
+      },
+      {
+        "id": "MI",
+        "label": "MI355X AgentX\n10-16",
+        "type": "一方博客"
+      },
+      {
+        "id": "BM",
+        "label": "SGLang Beam\n10-16",
+        "type": "一方博客"
+      },
+      {
+        "id": "ML",
+        "label": "Modal VM 沙箱文件系统\n10-16",
+        "type": "工业博客"
+      },
+      {
+        "id": "JV",
+        "label": "Blackwell dtype 实测\n10-05",
+        "type": "工业博客"
+      }
+    ],
+    "judgments": [
+      {
+        "id": "J1",
+        "label": "真实负载下重测"
+      },
+      {
+        "id": "J21",
+        "label": "加速数字带条件集"
+      },
+      {
+        "id": "J22",
+        "label": "管线-参考模型耦合"
+      },
+      {
+        "id": "J23",
+        "label": "benchmark 可见性"
+      }
+    ],
+    "edges": [
+      {
+        "from": "VR",
+        "to": "J21",
+        "kind": "新增"
+      },
+      {
+        "from": "MI",
+        "to": "J21",
+        "kind": "辅助"
+      },
+      {
+        "from": "MG",
+        "to": "J21",
+        "kind": "辅助"
+      },
+      {
+        "from": "JV",
+        "to": "J21",
+        "kind": "辅助"
+      },
+      {
+        "from": "SS",
+        "to": "J22",
+        "kind": "新增"
+      },
+      {
+        "from": "BR",
+        "to": "J23",
+        "kind": "新增"
+      },
+      {
+        "from": "VR",
+        "to": "J1",
+        "kind": "辅助"
+      },
+      {
+        "from": "MI",
+        "to": "J1",
+        "kind": "辅助"
+      },
+      {
+        "from": "MG",
+        "to": "J1",
+        "kind": "辅助"
+      },
+      {
+        "from": "BM",
+        "to": "J1",
+        "kind": "辅助"
+      },
+      {
+        "from": "ML",
+        "to": "J1",
+        "kind": "辅助"
+      }
+    ]
+  }
+}

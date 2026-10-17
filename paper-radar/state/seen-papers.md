@@ -6,13 +6,15 @@
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
 > 非论文（工程实践节的详条目与简条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注，简条目再加【仅摘要】；【资讯】【快讯】不进本账本（硬规则 11），解说链接也不进。
 
-**上次周扫：2026-09-28**（窗口 09-10 → 09-28；18 天，扩容至 10 篇；报告 `reports/2026-09-28.md`，GitHub + Pages 发布）
+**上次周扫：2026-10-18**（窗口 09-28 → 10-18；20 天，4 篇全文 + 5 篇实践详条目；报告 `reports/2026-10-18.md`，已推送：否——GitHub 写权限未就绪，等待手动发布）
 
 格式：`- [首推日期] 【溯源】标题 · 会议/机构 · arXiv ID 或会议页链接 —— 当时判词`
 （非论文条目：`- [首推日期] 【一方博客/工业博客/技术报告/上游变更】标题 · 来源方 · 原文链接 —— 当时判词`）
 （ID/链接为硬要求，无 arXiv ID 的会议论文用会议页链接；2026-08-20 前的旧条目缺 ID 属历史欠账，再次遇到该论文时顺手补上）
 
 ## 硬件
+
+- [2026-10-18] 【全文】Replay the Curvature: Accurate and Scalable NVFP4 Quantization for LLM Inference · KlingAI Research / 复旦 / 上海 AI 孵化器 / 中科大 · https://arxiv.org/abs/2609.36654 —— W4A4 七基准问题加权恢复 99.35/100.84%（对 BF16），胜 ScaleSweep 97.28/99.03；逐层计算 15.17×/23.14×、峰值 35 GB，整模型时间是投影值。J21 辅助
 
 - [2026-09-28] 【全文】mKernel: Fast Multi-GPU, Multi-Node Fused Kernels · https://arxiv.org/abs/2609.13585 —— 2×8 H200；Ring Attention 最高 1.88×，5 月已有博客；MoE 对照与自适应实验规模需分开读
 - [2026-09-28] 【仅摘要】Taming Bitwise Behavior in GPU Kernels with Tensor Core · https://arxiv.org/abs/2609.11356 —— 27 个 kernel 中 19 个固定次序版本性能差在 10% 内；不是全服务确定性
@@ -53,6 +55,8 @@
 
 ## 模型
 
+- [2026-10-18] 【全文】Finetuning with Sampling: SFT Learns Better Than You Think · 哈佛（Karan/Chen/Du） · https://arxiv.org/abs/2610.02140 —— MCMC projection sampling 改写 off-policy 轨迹、SFT 目标不变：MATH500 +33.7% 超最强 RL 26.9pp、pass@k 0→67.2/53.1；Olmo 数据微调 Qwen 化学 57.33 < vanilla 61.8。LW 2026-10-16 独立验证：对齐任务 replay 比 projection sampling 更划算（54%→14%，每保留 token 约 20 生成 token）。J22 主证据
+
 - [2026-09-28] 【全文】Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs · https://arxiv.org/abs/2609.27262 —— 13 模型八数据集；顺序全参遗忘，多任务是部署折中；四私有数据，代码未核实
 - [2026-09-28] 【仅摘要】Low-Bit Recurrent States in Hybrid Language Models · https://arxiv.org/abs/2609.30950 —— 4-bit 平均载荷 NLL 额外误差降低 3.3–27.9×，不能换算成吞吐
 
@@ -82,6 +86,8 @@
 - [2026-09-10] 【仅摘要】Quantization Amplifies Determinism, Not Bias: Scale-Dependent Behavioral Effects of Serving-Time Weight Compression · 单作者 Dachi Kurtskhalia · arXiv 2609.07901 —— Qwen3-8B/14B/32B × W4A16 AWQ / W8A16 FP8-Marlin / bf16，约 71k 配对补全，三波预注册：8B 上 int4 输出集中度 +5.1pp（Holm p=.023，重跑 +4.4pp）、TTR −0.011；14B/32B 集中度不显著但出现风格漂移；刻板印象方向零结果。J19 主证据
 
 ## 软件系统
+
+- [2026-10-18] 【全文】VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction · 中科院计算所 / 北航 / Infrawaves / 上海创新院 · https://arxiv.org/abs/2610.03286 —— E2E 1.06–4.24×（up to）、环境成本最多 -89%；沙箱内存平均利用 8%、页共享密度达原生 E2B 905%；8%/60% 为作者自报生产剖析。J21 主证据、J1 辅助
 
 - [2026-09-28] 【全文】AgentKV: Phase-Aware KV Eviction for Agentic LLMs · https://arxiv.org/abs/2609.14872 —— 匹配实现的 12 配置平均 +4.2pp；1.80× 绑定 H100 NVL/32B/32K；Mini-SGLang 分支
 - [2026-09-28] 【仅摘要】DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale · https://arxiv.org/abs/2609.22978 —— 160 节点约 300 万沙箱/天，峰值并发 >38 万；不同容量指标不能合并
@@ -178,6 +184,8 @@
 
 ## 工程方法
 
+- [2026-10-18] 【全文】Are Benchmarks Reliable? Toward Structural Diagnosis via Item-Level Capability Boundaries · 北师大 · https://arxiv.org/abs/2609.33196 —— BSDProbe item 级能力边界：MATH 题序异常率 4.25–8.18%、GSM8K 跨模型轴 28.13%、GPQA 最高 48.21–57.59%；画像引导选题平均 NDR +17.9%（MMLU +24.1/GPQA +30.1/PopQA +37.1）。J23 主证据
+
 - [2026-09-28] 【全文】GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents · https://arxiv.org/abs/2609.12191 —— 首推；整体排序ρ0.94但接近候选31%排错，四评委平均未改善；政策/结果感知 gate 有用
 - [2026-09-28] 【仅摘要】Agreement Overstates Evidence: Error Dependence in LLM Judge Consensus · https://arxiv.org/abs/2609.22512 —— 10 评委错误相关0.21等效3.5独立评委；最高28%比较显著性消失
 - [2026-09-28] 【仅摘要】Quantifying Overclaiming Propensity in Frontier LLM Agents · https://arxiv.org/abs/2609.20812 —— 67.9%运行未触及全部文件，其中80.4%误导；触及一行不等于读完，CLI混杂
@@ -207,6 +215,12 @@
 - [2026-09-10] 【仅摘要】When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination · arXiv 2609.09696 —— 落选池。Gemini 3.0 Pro 找 150 篇论文 450 处植入错误：单篇 50%、小批 60%、大批 2.8%，大批时编造不存在的错误而非弃权；最像真的错误最常漏
 
 ## 工程实践（非论文）
+
+- [2026-10-18] 【一方博客】Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly（megakernel） · vLLM 团队 · https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel —— 16×GB300、batch 1、DSpark（合成 AL=6）842+ tok/s；AgentX c1 P90 交互 1.8×（优化版 16 卡 vs 旧 8 卡，非同卡对比）；原文承认 agent 辅助开发快过评审维护流程
+- [2026-10-18] 【一方博客】Scaling Kimi K3 on AMD Instinct MI355X（Embedded LLM） · AMD / vLLM 博客 · https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x —— AgentX 50 tok/s/user P90 点 7,567 vs 6,083 tok/s/GPU（+24.4%），峰值算力 10.1 vs 13.5 PFLOP/s 更低；c70 +28.9%、前缀缓存命中 74.8→80.1%；数据为 SemiAnalysis InferenceX 10-09 快照
+- [2026-10-18] 【一方博客】SGLang 与 Beam：501B MoE 上生产（LMSYS 博客） · SGLang 团队 · https://www.lmsys.org/blog/2026-10-16-beam —— 96 H200（64 训 + 32 推）解耦异步 GRPO：AIME25 46.3→56.7%（204 步，响应长度下降）；serving NVFP4 + FP8 KV + 推测解码，c96 83,504 tok/s/GPU、前缀缓存命中 92–96%
+- [2026-10-18] 【工业博客】Building fast filesystems for VMs · Modal · https://modal.com/blog/vm-sandbox-filesystem —— virtio-fs 代价：stat 2×、递归 chown 6×+（4s→1min+）、pnpm/bun install 约 3×；ImageFS-blk 块级 CoW：bun install 12.5s→1.07s（12×），VM Sandboxes 已按此后端 GA
+- [2026-10-18] 【工业博客】Blackwell dtypes Qwen3-32B · JarvisLabs · https://jarvislabs.ai/blog/blackwell-dtypes-qwen3-32b —— NVFP4-AWQ 3,079 tok/s（2.41× BF16）PPL +0.41；FP8/MXFP8 +0.06 内 1.63×/1.73×；MXFP4-AWQ PPL +0.44 却仅 1,715 tok/s（Marlin weight-only 无 FP4 算力路径）；TTFT 最高改善约 8.4×（concurrency 420）
 
 - [2026-09-28] 【一方博客】Kimi K3 Performance Optimizations in vLLM · https://vllm.ai/blog/2026-09-13-kimi-k3-performance-optimization —— 全文；B300 TP8 CUDA13.3，固定提交82a85dc1对v0.27.1；并发1/4/16吞吐2.2–2.8×
 - [2026-09-28] 【工业博客】【仅摘要】Quail: query-aware inference · https://modal.com/blog/quail-billion-tpm —— 简条目；十亿TPM不是生成吞吐，全基准1.84×；版本核验不足

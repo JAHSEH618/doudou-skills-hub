@@ -1,29 +1,7 @@
 {
-  "checked_at": "2026-09-28T15:41:16.653969+00:00",
+  "checked_at": "2026-10-17T20:12:29.180271+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
-    {
-      "url": "https://arxiv.org/abs/2603.06199",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2603.06199",
-      "title": "[2603.06199] FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.01651",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.01651",
-      "title": "[2608.01651] Bole: Efficient Tree Speculation for Hybrid-Attention Language Models",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
-      ]
-    },
     {
       "url": "https://arxiv.org/abs/2608.11095",
       "status": "reachable",
@@ -32,9 +10,6 @@
       "title": "[2608.11095] Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -45,9 +20,6 @@
       "title": "[2608.15008] Harness the Memory: A Holistic Evaluation of Memory Substrates in Memory Agents",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -58,9 +30,6 @@
       "title": "[2608.16586] When Is Complex Chunking Worth It? A Multi-Objective Evaluation of Chunking Methods at Scale",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -71,31 +40,6 @@
       "title": "[2608.16630] The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.17071",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.17071",
-      "title": "[2608.17071] KernelArc: A Multi-Agent Framework for GPU Kernel Optimization",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.17247",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.17247",
-      "title": "[2608.17247] Explicit State Elicitation Is Not Enough: A Controlled Audit of Memory-Policy Classification",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -103,23 +47,9 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://arxiv.org/abs/2608.17379",
-      "title": "[2608.17379] PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX",
+      "title": "[2608.17379] PTXBench: Benchmarking and Adapting LLMs for GPU Kernel Optimization with Architecture-specific PTX",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.17641",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.17641",
-      "title": "[2608.17641] rl-triton: High-Performance Triton GPU Kernels for Reinforcement Learning Credit Assignment",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -130,31 +60,6 @@
       "title": "[2608.17804] An Empirical Study of Reward Specification and Benchmark Reliability in GRPO-based LLM Unlearning",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.19535",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.19535",
-      "title": "[2608.19535] From Retrieved Context to Runtime Control: Adaptive Compression for Edge-based RAG",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.19564",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.19564",
-      "title": "[2608.19564] Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -165,9 +70,6 @@
       "title": "[2608.19659] FleetSieve: Decision-Critical Profiling for SLO-Aware LLM Fleet Configuration",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -178,9 +80,6 @@
       "title": "[2608.19758] FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -191,9 +90,6 @@
       "title": "[2608.19920] Learning how to Forget: Fine-tuning for Long-Context Sparse Attention",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -204,9 +100,6 @@
       "title": "[2608.20202] MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -217,31 +110,6 @@
       "title": "[2608.20290] Phantom Gains: Auditing Self-Improvement Against a Measured Null",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.20743",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.20743",
-      "title": "[2608.20743] Is Multimodal Speculative Decoding Ready for Diffusion-Based Parallel Drafting? A Survey and Empirical Diagnosis",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.20768",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.20768",
-      "title": "[2608.20768] Beyond Endpoint Gains: A Weight-Delta Audit of Medical Specialization",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -252,20 +120,6 @@
       "title": "[2608.20786] Structure for Reading, Prose for Writing: Asymmetric Structural Conditioning in Multi-Agent Document Authoring",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.20794",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.20794",
-      "title": "[2608.20794] Knowing but Not Saying: Preventing Factual Access Failures in LLM SFT via Recall-Anchored Distillation",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -276,9 +130,6 @@
       "title": "[2608.20845] RAG Deserves an Index: Why Ingest-Time Compilation Beats Query-Time Interpretation",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -289,9 +140,6 @@
       "title": "[2608.20918] UpgradeBench: A Decision-Centric Benchmark for Upgrading Fine-Tuned LLM Specialists",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -302,9 +150,6 @@
       "title": "[2608.20938] No Judgment Without a Reason: Counterfactual Receipts for Versioned AI Evaluators",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -315,9 +160,6 @@
       "title": "[2608.20961] TreeWY: Speculative Verification for Gated DeltaNet Hybrids",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -328,9 +170,6 @@
       "title": "[2608.20988] Jacobian-guided Noise Injection for Quantization Robustness in Large Language Models",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -341,31 +180,6 @@
       "title": "[2608.21027] Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.21097",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.21097",
-      "title": "[2608.21097] When Trust Meets Truth: Trust-Truth Separability in LLM-as-Judge",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.21172",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.21172",
-      "title": "[2608.21172] Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -376,20 +190,6 @@
       "title": "[2608.21230] Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.21345",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.21345",
-      "title": "[2608.21345] Asymmetric Capacity Allocation in Self-Refinement Pipelines",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -400,20 +200,6 @@
       "title": "[2608.21690] Context as an Environment: Programmatic Context Management for Long-Horizon Agents",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.22215",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.22215",
-      "title": "[2608.22215] Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -424,20 +210,6 @@
       "title": "[2608.28978] Selective Forgetting: A Graph-Based Memory Framework for Long-Term LLM Agents",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.30177",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2608.30177",
-      "title": "[2608.30177] Understanding Stage-Wise Utility-Risk Trade-offs in LLM Agent Memory",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -448,9 +220,6 @@
       "title": "[2608.30769] TrainSDC: Characterizing and Mitigating Silent Data Corruption in Large Language Model Training",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -461,9 +230,6 @@
       "title": "[2608.31057] Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -474,31 +240,6 @@
       "title": "[2609.00066] OCGQuant: Outlier-Companion Grouping for NVFP4 Quantization",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.00450",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.00450",
-      "title": "[2609.00450] HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.00749",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.00749",
-      "title": "[2609.00749] ContextPipe: Database-Inspired Context Assembly for Long-Horizon Agents",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -509,9 +250,6 @@
       "title": "[2609.01139] Does task decomposition improve automatic NLG evaluation?",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -522,42 +260,6 @@
       "title": "[2609.01244] Post-Training Science for Supervised Fine-Tuning",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.01374",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.01374",
-      "title": "[2609.01374] Behaviorally Effective LoRA Writes Are Sparse and Structured",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.01836",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.01836",
-      "title": "[2609.01836] Agent Memory Is a Surface for Endogenous Authorization Laundering",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.02750",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.02750",
-      "title": "[2609.02750] Bilevel Coordinated Reflection: A Game-Theoretic Approach to Multi-Agent LLM Systems",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -568,9 +270,6 @@
       "title": "[2609.02942] Judging LLM-as-a-Judge: Concerning Rubric Artifacts in LLM-based Automated Text Generation Evaluation",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -581,20 +280,6 @@
       "title": "[2609.02986] Modern Transformers Are Implicit Hybrids: From Functional Differentiation to Principled Hybrid Architecture Design",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.03340",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.03340",
-      "title": "[2609.03340] Fresh Memory, Stale Plans: Dependency-Scoped Validation for Distributed LLM-Agent Memory",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -605,9 +290,6 @@
       "title": "[2609.03450] Plan Pointers and Record-Directive Form in Budgeted Verification of Inherited Agent Memory",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -618,9 +300,6 @@
       "title": "[2609.04105] Hardware-Aware FP4 FlashAttention-4",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -631,9 +310,6 @@
       "title": "[2609.04198] Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -644,9 +320,6 @@
       "title": "[2609.04774] Adaptive Context Parallelism for Production LLM Serving",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -657,20 +330,6 @@
       "title": "[2609.04852] KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.04915",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.04915",
-      "title": "[2609.04915] Compact-Memory LLM Agents via Online Max-Member Clustering and Atom-Aware Packing",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -681,31 +340,6 @@
       "title": "[2609.05339] Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.07108",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.07108",
-      "title": "[2609.07108] Online Draft Co-Training for Speculative Decoding in Large-Scale, Long-Context RL Post-Training",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.07664",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.07664",
-      "title": "[2609.07664] Accuracy is Not Enough: A Divergence-Based Approach to Evaluate Fidelity Loss in Quantized LLMs",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -716,20 +350,6 @@
       "title": "[2609.07901] Quantization Amplifies Determinism, Not Bias: Scale-Dependent Behavioral Effects of Serving-Time Weight Compression",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.08016",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.08016",
-      "title": "[2609.08016] What Does Multi-Agent LLM Debate Actually Change? A Layered Analysis of Disagreement and Answer Quality",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -740,9 +360,6 @@
       "title": "[2609.08279] What Eviction Destroys: A Restore-Counterfactual Audit of Forgetting in Agent Memory",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -753,9 +370,6 @@
       "title": "[2609.08368] Miles v0.1: Production-Level Post-Training",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -766,20 +380,6 @@
       "title": "[2609.08765] Benchmark Scores Are Pipeline-Dependent: A Reliability Audit of Cybersecurity LLM Benchmarks",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.08887",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.08887",
-      "title": "[2609.08887] Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -790,9 +390,6 @@
       "title": "[2609.08966] Good Pretraining, Bad SFT: Checkpoint Quality Across the Training Stack",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -803,20 +400,6 @@
       "title": "[2609.09338] Osprey: Target-agnostic Pre-training Makes Stronger Drafters in Speculative Decoding",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.09696",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://arxiv.org/abs/2609.09696",
-      "title": "[2609.09696] When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -827,9 +410,6 @@
       "title": "[2609.09800] HBFSim: Fast and Faithful Simulation of High-Bandwidth Flash Under Real GPU Execution",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -840,9 +420,6 @@
       "title": "[2609.10266] KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -853,9 +430,6 @@
       "title": "[2609.10494] IBIB: A Protocol for Measuring Enterprise AI Systems by Serving Route, Not Model Identifier",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -866,9 +440,6 @@
       "title": "[2609.11356] Taming Bitwise Behavior in GPU Kernels with Tensor Core: Black-Box Reconstruction, Compiler Enforcement, and Static Verification",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -880,9 +451,6 @@
       "sources": [
         "reports/2026-09-28.md",
         "state/judgments.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -894,9 +462,6 @@
       "sources": [
         "reports/2026-09-28.md",
         "state/judgments.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -908,9 +473,6 @@
       "sources": [
         "reports/2026-09-28.md",
         "state/judgments.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -922,9 +484,6 @@
       "sources": [
         "reports/2026-09-28.md",
         "state/judgments.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -936,9 +495,6 @@
       "sources": [
         "reports/2026-09-28.md",
         "state/judgments.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -949,9 +505,6 @@
       "title": "[2609.22978] DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -962,9 +515,6 @@
       "title": "[2609.23986] Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -975,9 +525,6 @@
       "title": "[2609.27262] Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -988,9 +535,49 @@
       "title": "[2609.30950] Low-Bit Recurrent States in Hybrid Language Models",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.33196",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.33196",
+      "title": "[2609.33196] Are Benchmarks Reliable? Toward Structural Diagnosis via Item-Level Capability Boundaries",
+      "sources": [
+        "reports/2026-10-18.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.36654",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.36654",
+      "title": "[2609.36654] Replay the Curvature: Accurate and Scalable NVFP4 Quantization for Large Language Model Inference",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.02140",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.02140",
+      "title": "[2610.02140] Finetuning with Sampling: SFT Learns Better Than You Think",
+      "sources": [
+        "reports/2026-10-18.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.03286",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.03286",
+      "title": "[2610.03286] VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction",
+      "sources": [
+        "reports/2026-10-18.md",
+        "state/judgments.md"
       ]
     },
     {
@@ -1001,9 +588,16 @@
       "title": "AI Agent Memory: How Production AI Agents Remember and Learn",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://blog.redwoodresearch.org/p/screwtape-adversarial-transcript",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://blog.redwoodresearch.org/p/screwtape-adversarial-transcript",
+      "title": "Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1014,9 +608,6 @@
       "title": "Agent memory as a file format",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1027,9 +618,6 @@
       "title": "Cohere's North Mini Code Megakernel Serving Engine | Cohere",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1040,9 +628,6 @@
       "title": "CLAUDE.md never shrinks. A 1,867-repo study shows why.",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1053,9 +638,6 @@
       "title": "How we made one of our largest inference workloads 4.7× more GPU-efficient | Decagon",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -1066,9 +648,6 @@
       "title": "Context compaction is silently destroying your LLM agent's memory - DEV CommunityNavigation menuSearchSearchCloseMore...Copy linkEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeCollapseExpandDropdown menuLike comment: Like comment: Comment buttonCollapseExpandDropdown menuLike comment: Like comment: Comment buttonCollapseExpandDropdown menuLike comment: Like comment: ThreadDropdown menuLike comment: Like comment: ThreadDropdown menuLike comment: Like comment: Comment buttonCollapseExpandD",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1079,9 +658,6 @@
       "title": "Introducing Support for Local AI Models in the Antigravity SDK\n            \n            \n            - Google Developers Blog",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1092,9 +668,6 @@
       "title": "Fast autoscaling on GPUs | Feedly",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -1105,9 +678,6 @@
       "title": "Every byte counts: ARCv3 and the case for cross-region RL",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1118,9 +688,6 @@
       "title": "GitHub - LiuTaowen-Tony/agentkv · GitHub",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1131,9 +698,6 @@
       "title": "GitHub - OpenBMB/Meshy · GitHub",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1144,9 +708,6 @@
       "title": "GitHub - argonautlabsai/deltafin: ARGODRIVE Deltafin: Kimi K3 (2.8T MoE) streamed from SSDs on Apple Silicon — fork of gavamedia/deltafin with the ARGODRIVE storage work and benchmark package · GitHub",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1157,9 +718,6 @@
       "title": "GitHub - awslabs/keys_values · GitHub",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -1170,9 +728,6 @@
       "title": "GitHub - casparil/chunking-eval · GitHub",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -1183,20 +738,6 @@
       "title": "GitHub - chengxuphd/phantom-gains · GitHub",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://github.com/megagonlabs/restore-counterfactual",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://github.com/megagonlabs/restore-counterfactual",
-      "title": "GitHub - megagonlabs/restore-counterfactual: Code for CBW@COLM 2026 paper \"What Eviction Destroys: A Restore-Counterfactual Audit of Forgetting in Agent Memory\" · GitHub",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1207,9 +748,6 @@
       "title": "Derive sandbox contexts from turn environments (#40551) · openai/codex@8444cf6 · GitHub",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1220,9 +758,6 @@
       "title": "GitHub - qhfan/FlashPrefill: Implementation of \"FlashPreill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling\" · GitHub",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -1233,20 +768,6 @@
       "title": "Release v0.9.29 · rohitg00/agentmemory · GitHub",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://github.com/skhanzad/Selective-Amnesia",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://github.com/skhanzad/Selective-Amnesia",
-      "title": "GitHub - skhanzad/Selective-Amnesia · GitHub",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1257,9 +778,6 @@
       "title": "GitHub - uccl-project/mKernel: mKernel: fast multi-node, multi-GPU fused kernels · GitHub",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1270,9 +788,6 @@
       "title": "[Attention] Add Triton/FlashInfer composite for multimodal prefix att… · vllm-project/vllm@82a85dc · GitHub",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1283,9 +798,6 @@
       "title": "Give Your Coding Agents a Memory You Own",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1296,9 +808,6 @@
       "title": "Transformers now runs llama.cpp quants",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1309,9 +818,6 @@
       "title": "inclusionAI/Ling-3.0-flash-VL · Hugging Face",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1322,9 +828,6 @@
       "title": "openbmb/MiniCPM5-2B · Hugging Face",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1335,9 +838,16 @@
       "title": "ICML  AgentKV: Phase-Aware KV Eviction for Agentic LLMsICML 2026",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://jarvislabs.ai/blog/blackwell-dtypes-qwen3-32b",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://jarvislabs.ai/blog/blackwell-dtypes-qwen3-32b",
+      "title": "Four Blackwell Formats, One Model: Quantizing Qwen3-32B on RTX PRO 6000",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1348,9 +858,6 @@
       "title": "Codex Memory Internals: What It Remembers, Who Decides, and How It Compares to OpenCode",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1361,24 +868,16 @@
       "title": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
       "url": "https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition",
-      "status": "reachable",
+      "status": "unverified",
       "http": 200,
       "final_url": "https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition",
-      "title": "Diagnosing and Mitigating Tool-Call Repetition in MiMo-V2.6",
+      "title": "",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "editor_note": "HTTP 200；页面原文通过 Exa 补核，标题、作者方和 2026-09-27 日期与条目相符。",
-      "evidence": "HTTP GET plus Exa original-page content",
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1389,9 +888,6 @@
       "title": "Modernizing complex legacy code with AI agents | Mistral",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1402,9 +898,6 @@
       "title": "Making sovereign, open-weight AI the technology frontier | Mistral",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1412,12 +905,19 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://modal.com/blog/quail-billion-tpm",
-      "title": "Hitting a billion tokens per minute on one GPU by combining a query planner and an inference engine",
+      "title": "Quail: Speeding up AI-SQL by jointly optimizing query planner and inference engine",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://modal.com/blog/vm-sandbox-filesystem",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://modal.com/blog/vm-sandbox-filesystem",
+      "title": "Building fast filesystems for VMsReads and writes on ImageFSThe VM filesystem stack with virtio-fsFilesystem operations, 100,000 calls eachOne chown over virtio-fschown over virtio-blkReads and writes on ImageFS-blkFilesystem operations, 100,000 calls each: ImageFS-blk against virtio-fsDeveloper workflow and database benchmarks",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1428,9 +928,6 @@
       "title": "Agent memory as a file format | Hacker News",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1441,9 +938,6 @@
       "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses | Hacker News",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1454,20 +948,6 @@
       "title": "DeepSeek Elastic Compute (DSec) | Hacker News",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
-      "title": "TPU Inference Externalization Full Steam Ahead - InferenceX",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -1478,10 +958,6 @@
       "title": "",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "editor_note": "直接检查返回 403，Exa 补抓同样受限；未将此结果称为失效或可访问，保留官方地址并在文章旁标明限制。",
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1492,10 +968,6 @@
       "title": "",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "editor_note": "直接检查返回 403，Exa 补抓同样受限；未将此结果称为失效或可访问，保留官方地址并在文章旁标明限制。",
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1506,10 +978,6 @@
       "title": "",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "editor_note": "直接检查返回 403，Exa 补抓同样受限；未将此结果称为失效或可访问，保留官方地址并在文章旁标明限制。",
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1520,21 +988,6 @@
       "title": "Context Compaction for Agents: Keeping Long-Horizon Sessions Coherent Past the Window | OpenNash Blog",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://openreview.net/forum?id=s80e8otSxP",
-      "status": "restricted",
-      "http": 200,
-      "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Ds80e8otSxP",
-      "title": "Verifying your browser | OpenReview",
-      "sources": [],
-      "editor_note": "返回浏览器验证页面，未执行或绕过验证。AgentKV 的 arXiv 与 ICML 原始入口均可读。",
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1542,12 +995,9 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://openrouter.ai/blog/announcements/us-in-region-routing/",
-      "title": "In-Region Routing: keep your data in the US or EU",
+      "title": "In-Region Routing: route inference in the US or EU",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1558,9 +1008,6 @@
       "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses - Quesma BlogGitHubX",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1568,12 +1015,9 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://redreamality.com/blog/jev-mem-system-one-agentic-memory/",
-      "title": "Don’t Default Memory Control to an Autoregressive LLM: Reading Jev-Mem’s System-One Memory Architecture",
+      "title": "Don’t Default Memory Control to an Autoregressive LLM: Reading",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1584,9 +1028,6 @@
       "title": "Context Engineering for Agents",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1597,9 +1038,16 @@
       "title": "Introducing Memory: Agents that learn & improve over time - Blog - Tasklet",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+      "title": "Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while once again massively cutting per-task costs",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1612,11 +1060,6 @@
         "reports/2026-08-23.md",
         "reports/2026-09-08.md",
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md",
-        "reports/assets/2026-09-08/research-notes.md",
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1627,9 +1070,6 @@
       "title": "LoRA Without Regret - Thinking Machines Lab",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -1640,9 +1080,6 @@
       "title": "mKernel: Fast Multi-GPU, Multi-Node\nFused Kernels",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1653,9 +1090,6 @@
       "title": "Exploring Speculative Decoding in vLLM on AMD GPUs | vLLM Blog",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1666,9 +1100,6 @@
       "title": "Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin | vLLM Blog",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -1679,9 +1110,6 @@
       "title": "vLLM x AgentX: Optimizing for Real-World Agentic Serving | vLLM Blog",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1693,9 +1121,6 @@
       "sources": [
         "reports/2026-09-28.md",
         "state/judgments.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1707,10 +1132,6 @@
       "sources": [
         "reports/2026-09-10-weekly.md",
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md",
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1721,9 +1142,28 @@
       "title": "Announcing vllm-metal: Concurrent Serving on Apple Silicon | vLLM Blog",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
+      "title": "Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly | vLLM Blog",
+      "sources": [
+        "reports/2026-10-18.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
+      "title": "Scaling Kimi K3 on AMD Instinct MI355X: Matching NVIDIA HGX B300 Throughput per GPU on AgentX | vLLM Blog",
+      "sources": [
+        "reports/2026-10-18.md",
+        "state/judgments.md"
       ]
     },
     {
@@ -1735,10 +1175,6 @@
       "sources": [
         "reports/2026-08-23.md",
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md",
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1751,11 +1187,6 @@
         "reports/2026-09-08.md",
         "reports/2026-09-10.md",
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md",
-        "reports/assets/2026-09-10/research-notes.md",
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1766,9 +1197,6 @@
       "title": "Contextual Retrieval in AI Systems \\ Anthropic",
       "sources": [
         "reports/2026-08-24.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md"
       ]
     },
     {
@@ -1779,9 +1207,6 @@
       "title": "China-Based Artificial Intelligence Companies Conducting Industrial-Scale Distillation Campaigns Against U.S. AI Companies | CISALock",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1792,9 +1217,16 @@
       "title": "Pretraining progress is mostly coming from data",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.lesswrong.com/posts/xFxmqkjLNa2Bvs7cw/projection-sampling-preserves-capabilities-but-diminishes",
+      "status": "restricted",
+      "http": 401,
+      "final_url": "https://www.lesswrong.com/posts/xFxmqkjLNa2Bvs7cw/projection-sampling-preserves-capabilities-but-diminishes",
+      "title": "LessWrong",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1802,12 +1234,9 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.linkedin.com/posts/arul99_utility-under-attack-agent-memory-poisoning-activity-7497959530782429184-zEIM",
-      "title": "Agent Memory Poisoning and AI Security Limits | Arulnidhi Karunanidhi posted on the topic | LinkedIn",
+      "title": "Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1818,9 +1247,6 @@
       "title": "Why CLAUDE.md Never Stops Growing and How to Fix It | Kushal Chakrabarti posted on the topic | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1831,9 +1257,6 @@
       "title": "AI Agent Context Strategy: Storing and Retrieving Information | Nikitha L posted on the topic | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1844,9 +1267,58 @@
       "title": "Miles v0.1: Production-level Post-training - LMSYS Org",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://www.lmsys.org/blog/2026-10-16-beam",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.lmsys.org/blog/2026-10-16-beam",
+      "title": "SGLang Powers Beam in Production - LMSYS Org",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://www.marktechpost.com/2026-10-16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://www.marktechpost.com/2026-10-16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
+      "title": "Just a moment...",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://www.marktechpost.com/2026-10-16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context/",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://www.marktechpost.com/2026-10-16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context/",
+      "title": "Just a moment...",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://x.com/Alibaba_Qwen/status/2110214931559899630",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/Alibaba_Qwen/status/2110214931559899630",
+      "title": "Qwen on X: \"Congrats to @lightseekorg on the impressive TokenSpeed results! 🚀 Great to see Qwen3.8-Flash-Next reaching 685 output tokens/s per user on Nvida GPUs. Excited to see the community unlock more of Qwen’s inference potential!\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://x.com/AntLingAGI/status/2110709863097762043",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/AntLingAGI/status/2110709863097762043",
+      "title": "Ant Ling on X: \"Thanks @sgl_project for day-zero support and for helping developers serve Ling-3.1-flash more efficiently! ⚡\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1858,9 +1330,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1872,9 +1341,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -1886,9 +1352,17 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
+      ]
+    },
+    {
+      "url": "https://x.com/OpenBMB/status/2110656703838699892",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenBMB/status/2110656703838699892",
+      "title": "OpenBMB on X: \"370 tokens/sec with MiniCPM-V 4.7?! 🔥\n\nLove seeing the community push the limits of what's possible with speculative decoding.\n\nHuge shoutout to @Tech2Wild for putting this together! 🚀\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1900,9 +1374,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1914,9 +1385,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1928,9 +1396,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1942,9 +1407,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -1957,10 +1419,6 @@
       "sources": [
         "reports/2026-09-10-weekly.md",
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md",
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -1973,10 +1431,6 @@
       "sources": [
         "reports/2026-08-24.md",
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-24/research-notes.md",
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -1988,21 +1442,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
-      ]
-    },
-    {
-      "url": "https://x.com/dair_ai/status/2097555607389896732",
-      "status": "x-original",
-      "http": 200,
-      "final_url": "https://x.com/dair_ai/status/2097555607389896732",
-      "title": "DAIR.AI on X: \"Good work on improving memory for long-horizon agents.\n\nThey separate two things that agent memory papers usually collapse into one. How memories get merged when they are written, and how retrieved content gets assembled into the prompt.\n\nThe setting is a tight prompt budget of 2k to… / X",
-      "evidence": "Original X page includes author and post text",
-      "sources": [],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -2014,9 +1453,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-08-23.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-08-23/research-notes.md"
       ]
     },
     {
@@ -2028,9 +1464,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10-weekly.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10-weekly/research-notes.md"
       ]
     },
     {
@@ -2044,11 +1477,6 @@
         "reports/2026-09-08.md",
         "reports/2026-09-10.md",
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md",
-        "reports/assets/2026-09-10/research-notes.md",
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     },
     {
@@ -2060,9 +1488,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -2074,9 +1499,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -2088,9 +1510,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -2102,9 +1521,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-10/research-notes.md"
       ]
     },
     {
@@ -2116,9 +1532,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-08.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-08/research-notes.md"
       ]
     },
     {
@@ -2130,11 +1543,7 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-28.md"
-      ],
-      "archived_sources": [
-        "reports/assets/2026-09-28/research-notes.md"
       ]
     }
-  ],
-  "content_review": "人工对照全部目标标题与报告条目；新增 X 核对原始页面作者、正文及 UTC 日期；OpenReview 验证页单列受限。"
+  ]
 }

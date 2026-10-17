@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-18",
+  "mode": "周扫",
+  "window": [
+    "2026-09-28",
+    "2026-10-18"
+  ],
+  "searches": [
+    {
+      "id": "scan-aihot",
+      "source": "AIHot",
+      "query": "fetch_sources.py scan --since 2026-09-28",
+      "status": "ok",
+      "note": "139 关键词命中 / 10 热点"
+    },
+    {
+      "id": "scan-hn",
+      "source": "Hacker News",
+      "query": "fetch_sources.py scan（Algolia since 2026-09-28, score>=30）",
+      "status": "ok",
+      "note": "窗口内无高分相关项"
+    },
+    {
+      "id": "exa-hw-1",
+      "source": "Exa",
+      "query": "arXiv 2026 paper GPU FP4 NVFP4 quantization tensor core microarchitecture",
+      "status": "ok",
+      "line": "hardware"
+    },
+    {
+      "id": "exa-hw-2",
+      "source": "Exa",
+      "query": "arXiv 2026 paper CXL memory pooling KV cache server GPU cluster",
+      "status": "ok",
+      "line": "hardware"
+    },
+    {
+      "id": "exa-hw-3",
+      "source": "Exa",
+      "query": "arXiv 2026 paper GPU kernel LLM inference cluster SDC fault NVLink",
+      "status": "ok",
+      "line": "hardware"
+    },
+    {
+      "id": "exa-md-1",
+      "source": "Exa",
+      "query": "arXiv 2026 paper hybrid linear attention MoE architecture",
+      "status": "ok",
+      "line": "model"
+    },
+    {
+      "id": "exa-md-2",
+      "source": "Exa",
+      "query": "arXiv 2026 paper LLM quantization compression weights INT4 FP8",
+      "status": "ok",
+      "line": "model"
+    },
+    {
+      "id": "exa-md-3",
+      "source": "Exa",
+      "query": "arXiv 2026 paper LoRA SFT RL fine-tuning post-training method",
+      "status": "ok",
+      "line": "model"
+    },
+    {
+      "id": "exa-sys-1",
+      "source": "Exa",
+      "query": "arXiv 2026 paper LLM inference serving scheduling KV cache",
+      "status": "ok",
+      "line": "system"
+    },
+    {
+      "id": "exa-sys-2",
+      "source": "Exa",
+      "query": "arXiv 2026 paper agent memory RAG retrieval",
+      "status": "ok",
+      "line": "system"
+    },
+    {
+      "id": "exa-sys-3",
+      "source": "Exa",
+      "query": "arXiv 2026 paper agent orchestration RL training infrastructure",
+      "status": "ok",
+      "line": "system"
+    },
+    {
+      "id": "exa-mth-1",
+      "source": "Exa",
+      "query": "arXiv 2026 paper LLM evaluation benchmark methodology empirical study",
+      "status": "ok",
+      "line": "method"
+    },
+    {
+      "id": "exa-mth-2",
+      "source": "Exa",
+      "query": "arXiv 2026 paper LLM negative result limitation calibration",
+      "status": "ok",
+      "line": "method"
+    },
+    {
+      "id": "exa-window-rescan",
+      "source": "Exa",
+      "query": "窗口内日期过滤重搜（同上 10 组）",
+      "status": "ok",
+      "note": "exa-window.json 86 条"
+    },
+    {
+      "id": "ws-1",
+      "source": "WebSearch",
+      "query": "VenusRL disaggregated agentic RL system 4.24x",
+      "status": "ok",
+      "note": "基线区间/节点画像/24k LOC 确认"
+    },
+    {
+      "id": "ws-2",
+      "source": "WebSearch",
+      "query": "\"Replay the Curvature\" NVFP4 quantization KlingAI",
+      "status": "ok",
+      "note": "MR-GPTQ Llama 91.81%/消融/SOAR CI 确认"
+    },
+    {
+      "id": "ws-3",
+      "source": "WebSearch",
+      "query": "vLLM Kimi K3 megakernel CuTe DSL GB300 842 tokens/s",
+      "status": "ok",
+      "note": "842=1.73× stock(488)、batch 全表 1.31–1.92× 确认"
+    },
+    {
+      "id": "fetch-arxiv-full",
+      "source": "web_extract",
+      "query": "arXiv HTML 全文 ×4（2609.36654 / 2610.02140 / 2610.03286 / 2609.33196，char_limit 200000）",
+      "status": "ok"
+    },
+    {
+      "id": "fetch-blogs",
+      "source": "web_extract",
+      "query": "vllm.ai ×2 / lmsys.org / modal.com / jarvislabs.ai（char_limit 12000）",
+      "status": "ok"
+    },
+    {
+      "id": "fetch-lw",
+      "source": "web_extract",
+      "query": "lesswrong.com/posts/xFxmqkjLNa2Bvs7cw（curl 返回已删除页，web_extract 成功 3,822 字符）",
+      "status": "ok"
+    },
+    {
+      "id": "lookup-official",
+      "source": "fetch_sources.py lookup",
+      "query": "四篇标题 --days 90",
+      "status": "ok",
+      "note": "均无 HN/AIHot 收录；仅 Sampling SFT 有 LW 帖"
+    }
+  ]
+}

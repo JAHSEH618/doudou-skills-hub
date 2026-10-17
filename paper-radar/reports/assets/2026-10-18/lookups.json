@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2609.36654",
+    "query": "2609.36654",
+    "returncode": 0,
+    "stdout": "lookup: Replay the Curvature: Accurate and Scalable NVFP4 Quantization for Large Language Model Inference\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：",
+    "stderr": ""
+  },
+  {
+    "id": "2610.02140",
+    "query": "2610.02140",
+    "returncode": 0,
+    "stdout": "lookup: Finetuning with Sampling: SFT Learns Better Than You Think\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：",
+    "stderr": ""
+  },
+  {
+    "id": "2610.03286",
+    "query": "2610.03286",
+    "returncode": 0,
+    "stdout": "lookup: VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：",
+    "stderr": ""
+  },
+  {
+    "id": "2609.33196",
+    "query": "2609.33196",
+    "returncode": 0,
+    "stdout": "lookup: Are Benchmarks Reliable? Toward Structural Diagnosis via Item-Level Capability Boundaries\nHN（90 天内）0 条：\nAIHot（7 天内，mode=all）0 条：",
+    "stderr": ""
+  }
+]
