@@ -14,10 +14,10 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class Links(HTMLParser):
-    def __init__(self, text):
+    def __init__(self, text, raw=False):
         super().__init__()
         self.urls = set()
-        self.feed(markdown.markdown(text))
+        self.feed(text if raw else markdown.markdown(text))
 
     def handle_starttag(self, tag, attrs):
         for key, value in attrs:
@@ -91,8 +91,8 @@ def main():
     parser.add_argument('--workers', type=int, default=12)
     args = parser.parse_args()
     sources = {}
-    for path in sorted([*(ROOT/'reports').glob('*.md'), *(ROOT/'state').glob('*.md')]):
-        for url in Links(path.read_text()).urls:
+    for path in sorted([*(ROOT/'reports').glob('*.md'), *(ROOT/'state').glob('*.md'), *(ROOT/'dankoe').glob('*.html')]):
+        for url in Links(path.read_text(), raw=path.suffix == '.html').urls:
             sources.setdefault(url, []).append(str(path.relative_to(ROOT)))
     results = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:

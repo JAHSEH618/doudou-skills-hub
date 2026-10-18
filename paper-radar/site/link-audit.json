@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T08:43:39.811145+00:00",
+  "checked_at": "2026-10-18T12:49:19.371408+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -1171,6 +1171,16 @@
       ]
     },
     {
+      "url": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/",
+      "title": "HUMAN 3.0 – A Map To Reach The Top 1% - Dan Koe",
+      "sources": [
+        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html"
+      ]
+    },
+    {
       "url": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
       "status": "reachable",
       "http": 200,
@@ -1394,7 +1404,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.linkedin.com/posts/kushalc_got-annoyed-had-an-idea-wrote-a-paper-activity-7493699129169059840-rSzo",
-      "title": "(got annoyed, had an idea, wrote a paper, now trending #2 on | LinkedIn",
+      "title": "Why CLAUDE.md Never Stops Growing and How to Fix It | Kushal Chakrabarti posted on the topic | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
       ]
@@ -1671,6 +1681,17 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"
+      ]
+    },
+    {
+      "url": "https://x.com/thedankoe/status/2023779299367809063",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/thedankoe/status/2023779299367809063",
+      "title": "DAN KOE on X: \"https://t.co/CdLm1xoOAb\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html"
       ]
     },
     {

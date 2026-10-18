@@ -45,7 +45,7 @@ def frame(title, body, prefix='', path='', description='AI 工程化论文与实
 <link rel="canonical" href="{SITE}/{path}"><link rel="stylesheet" href="{prefix}site.css"></head>
 <body id="top"><a class="skip" href="#main">跳到正文</a><div class="shell">
 <header class="site-header"><a class="wordmark" href="{prefix}index.html"><span class="brand-symbol" aria-hidden="true">◉</span> 论文雷达<span class="brand-en">Paper Radar</span></a>
-<nav aria-label="主导航"><a href="{prefix}index.html#archive">往期文章</a><a href="{prefix}judgments.html">判断账本</a><a href="{REPO}">GitHub ↗</a></nav></header>
+<nav aria-label="主导航"><a href="{prefix}index.html#archive">往期文章</a><a href="{prefix}judgments.html">判断账本</a><a href="{prefix}dankoe/index.html">Dan Koe 翻译</a><a href="{REPO}">GitHub ↗</a></nav></header>
 {body}<footer><div><strong>Paper Radar</strong><p>硬件 · 模型 · 软件系统 · 工程方法</p><p>关于 AI 模型、系统与工程实践的持续阅读。</p></div><div class="footer-links"><a href="{REPO}">GitHub 原文 ↗</a><a href="#top">回到顶部 ↑</a></div></footer></div></body></html>'''
 
 
@@ -97,6 +97,8 @@ def build():
     for stale in ('link-audit.html', 'link-audit.json'):
         (OUT/stale).unlink(missing_ok=True)
     shutil.copytree(ROOT/'reports/assets',OUT/'reports/assets',dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','*.pyc','research-notes.md'))
+    if (ROOT/'dankoe').is_dir() and any((ROOT/'dankoe').glob('*.html')):
+        shutil.copytree(ROOT/'dankoe',OUT/'dankoe',dirs_exist_ok=True)
     reports = sorted((ROOT/'reports').glob('*.md'), key=lambda p:(p.stem[:10],p.stem.endswith('weekly')), reverse=True)
     assert reports, 'No reports found'
     items = [(source,*source_data(source)[:2]) for source in reports]
