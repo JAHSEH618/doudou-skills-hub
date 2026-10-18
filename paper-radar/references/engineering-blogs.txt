@@ -1,0 +1,46 @@
+# 一方工程博客清单（paper-radar 每期自动抓取，脚本 scripts/fetch_sources.py 的 scan 子命令读取）
+#
+# 格式与 x-accounts.txt 同款：
+#   `## 组名 !` 起一组；组名末尾 `!` = 必看组（每期必查，1 天窗口也不例外，
+#   窗口内新条目必须按硬规则 10 读原文入报告；无 `!` = 被动组（照常抓，挑相关的不相关就丢）
+#   组内每行一个信源：`<feed URL 或 page 标记>  # 注释`
+#   `page:` 前缀 = 非 RSS 页面，脚本里有对应专用解析器（目前只有 anthropic-engineering）
+#
+# 维护：feed 失效（404 / 停更超 3 个月）直接删行；新源先 curl 验证有货再加。
+
+## Anthropic 必看!
+https://claude.dev/rss.xml  # claude.dev 工程博客（Claude Code / 平台工程）
+page:anthropic-engineering  # anthropic.com/engineering（无 RSS，scraper 解析文章卡）
+
+## vLLM 必看!
+https://vllm.ai/blog/rss.xml
+
+## Hugging Face 必看!
+https://huggingface.co/blog/feed.xml
+
+## OpenAI 必看!
+https://openai.com/news/rss.xml
+
+## DeepMind 必看!
+https://deepmind.google/blog/rss.xml
+
+## NVIDIA Developer 必看!
+https://developer.nvidia.com/blog/feed
+
+## PyTorch 必看!
+https://pytorch.org/blog/rss/
+
+## Qwen 被动
+https://qwenlm.github.io/blog/index.xml
+
+## Together AI 被动
+https://together.ai/blog/rss.xml
+
+## Sebastian Raschka 被动
+https://magazine.sebastianraschka.com/feed/
+
+## Chip Huyen 被动
+https://huyenchip.com/feed.xml
+
+## Lilian Weng 被动
+https://lilianweng.github.io/index.xml

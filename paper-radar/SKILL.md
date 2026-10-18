@@ -15,13 +15,14 @@ description: AI 工程化论文雷达，支持周扫、定向研究和单篇验�
 
 执行细节拆在 `references/`：`sources.md`（脚本与各类信源怎么搜）、`charts.md`（stats.json 与三张图）、`archive.md`（落档路径与格式）、`editorial.md`（博文编辑规范）、`x-accounts.txt`（X 账号清单）。走到那一步再读。
 
-## 三种模式
+## 四种模式
 
 - **周扫**（无参数，`/paper-radar`）：扫「上次扫描日期 → 今天」的窗口（日期记在 `state/seen-papers.md` 头部；缺失则回退 7 天）。四条线全扫。
+- **每日推送**：定时任务按周扫流程每日跑一次，窗口通常 1 天（上次运行日期 → 今天）。「本期是否有货」判定按硬规则 19（有新论文或必看博客新条目）；查重、账本回写（照常推进「上次周扫」日期，使次日窗口回到 1 天）、落档与周扫完全一致。
 - **定向**（带主题，如 `/paper-radar agent记忆`）：按主题捞，临时收窄范围。**下次无参数周扫自动回到四线全幅**，定向不改变常驻范围。
 - **单篇验证**（带论文或非论文链接/标题，如 `/paper-radar 验证 <arXiv链接>`，或用户直接问「这篇靠谱吗」）：论文走全文验证检查单，非论文走来源核验四项，出单篇验证报告；结论照常联动两个账本。
 
-三种模式共用同一套溯源、账本规则；体量规则适用于周扫与定向。
+四种模式共用同一套溯源、账本规则；体量规则适用于周扫、每日推送与定向。
 
 ## 周扫执行流程
 
@@ -29,9 +30,9 @@ description: AI 工程化论文雷达，支持周扫、定向研究和单篇验�
 
 1. 定位 skill 自身目录，读 `state/seen-papers.md`（含头部「上次周扫」日期）与 `state/judgments.md`。
 2. 确定窗口：上次周扫日期 → 今天（缺失回退 7 天）。窗口 >10 天可声明扩容（硬规则 8）。
-3. 跑 `python3 scripts/fetch_sources.py scan --since <窗口起点> --out reports/assets/<日期>/candidates.json`，拿到 AIHot 热点、关键词命中、必搜账号、HN 高分帖的候选池（硬规则 18，细节见 `references/sources.md`）。
+3. 跑 `python3 scripts/fetch_sources.py scan --since <窗口起点> --out reports/assets/<日期>/candidates.json`，拿到 AIHot 热点、关键词命中、必搜账号、HN 高分帖的候选池，外加窗口内一方工程博客新条目 `blog_feeds`（必看清单 `references/engineering-blogs.txt`）（硬规则 18、19，细节见 `references/sources.md`）。
 4. 四条线逐线用 exa 搜**论文**，每线 2–3 个角度（硬规则 3、4），候选逐条对账本查重。
-5. **非论文**：从候选池挑，再用 exa 补脚本盖不到的（硬规则 17）。工程实践分详 / 简两层，详条目走硬规则 10 核验；资讯按范围过滤；快讯只认 X 原帖。逐条对账本查重。
+5. **非论文**：从候选池挑，再用 exa 补脚本盖不到的（硬规则 17）；`blog_feeds` 里必看组（Anthropic/claude.dev、vLLM、HF、OpenAI、DeepMind、NVIDIA Dev、PyTorch）的窗口内新条目逐条处理（硬规则 19）。工程实践分详 / 简两层，详条目走硬规则 10 核验；资讯按范围过滤；快讯只认 X 原帖。逐条对账本查重。
 6. 选出重点解读的 2–3 篇论文，走全文验证检查单（硬规则 7）；选读能提供实现细节的工程博客，并核对 X 原帖。
 7. 给每篇论文和每条实践详条目找解说（硬规则 16）：`fetch_sources.py lookup` 一次 + exa 一次，封顶。
 8. 按本期主题写博文初稿到 `reports/YYYY-MM-DD.md`（硬规则 15）。
@@ -91,7 +92,9 @@ description: AI 工程化论文雷达，支持周扫、定向研究和单篇验�
 
 **硬规则 17｜非论文分层与资讯范围**：工程实践分两层——**详条目**（读原文 + 硬规则 10 四项核验）和**简条目**（【仅摘要】，解释线索与尚缺的核验，不冒充全文验证）。这是在不降质量的前提下加量的唯一办法：详条目的成本是读原文，简条目不读。资讯只收四条线范围内的事，加模型厂 / 推理框架方 / 芯片方的融资、人事、组织变动（它们影响你依赖的东西走向）；消费产品、生成音乐、通用科技新闻不收。**资讯与快讯的边界：有第一方公告页的进资讯，只有 X 帖的进快讯**。（来源：2026-09-10 用户要求，非翻车复盘。）
 
-**硬规则 18｜脚本信源与记录**：每期先跑 `scripts/fetch_sources.py scan`（AIHot + HN + X 账号清单），再用 exa 补。AIHot 的 7 天窗口、来源失败与补搜方式写入 `reports/assets/<日期>/research-notes.md`。向用户如实报告影响交付的缺口，阅读页只链接原始出处，不展示聚合发现、扫描范围或工具说明。
+**硬规则 18｜脚本信源与记录**：每期先跑 `scripts/fetch_sources.py scan`（AIHot + HN + X 账号清单 + 一方工程博客 feed），再用 exa 补。AIHot 的 7 天窗口、来源失败与补搜方式写入 `reports/assets/<日期>/research-notes.md`。向用户如实报告影响交付的缺口，阅读页只链接原始出处，不展示聚合发现、扫描范围或工具说明。
+
+**硬规则 19｜工程博客与论文同等必查**：`references/engineering-blogs.txt` 的必看组（Anthropic/claude.dev、vLLM、Hugging Face、OpenAI、DeepMind、NVIDIA Developer、PyTorch）每期必查，**1 天窗口也不例外**。窗口内新条目 web_extract 读原文、走硬规则 10 四项核验，进工程实践详 / 简槽；被动组（Qwen、Together、Raschka、Huyen、Lilian Weng）命中四线才处理。必看条目不许静默漏掉：过滤掉的要在 research-notes.md 记理由。**日报「本期是否有货」的判定 = 有新论文 或 有必看博客新条目**：任一有就发布；两者都无才可回「今日无新条目」。日报要丰富：有博客的期，报告必须有工程博客板块，数字看板能填就填。（来源：2026-10-18 用户要求「不要只关注论文，Anthropic 的工程博客都要看，日报要丰富」。）
 
 ## 溯源
 

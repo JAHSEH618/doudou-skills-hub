@@ -188,3 +188,31 @@ Ling-3.1-flash 发布当天拿到 SGLang、vLLM、DeepInfra 三方支持：560B 
 2. Exa search 10 组（四线各 2–3 组，exa_api.py 直连 REST，key 走 ~/.hermes/credentials/exa-api-key）：hardware ×3（FP4/NVFP4/CXL/KV、GPU 集群 SDC/NVLink、量化微架构）、model ×3（hybrid attention MoE、量化 INT4/FP8、LoRA SFT RL post-training）、system ×3（serving 调度 KV、agent memory/RAG、agent orchestration RL infra）、method ×2（benchmark 方法论、negative result/calibration）→ 初筛 66 条；窗口过滤后重搜 → 86 条（exa-window.json），窗口内有效候选约 78 条。
 3. web_extract 抓取：arXiv HTML 全文 ×4（char_limit 200000）、5 篇博客（char_limit 12000）、LessWrong 帖。
 4. 短名单（四线各 1 篇）写入 shortlist.json；arXiv abs 页 curl 逐篇确认存在与提交日期。
+
+---
+
+## 工程博客板块补齐记录（10-18 同日，按硬规则 19）
+
+本期上线版本只含论文与既有实践条目。skill 更新后（硬规则 19：必看组每期必查、有博客的期必须有工程博客板块），对完整窗口 09-28 → 10-18 重跑博客扫描：`fetch_sources.py scan --since 2026-09-28` → `candidates-blog-update.json`（13 个 feed 全活，errors 空；必看 141 条 + 被动 4 条）。
+
+### 采用与核验（15 篇原文全部 curl 抓取 + 逐条数字核对）
+
+- 详条目 ×1：claude.dev《How the Claude Code team does code review》（10-15）。全文核对：90% 代码量、2,500→30,000+ 日变更、合并翻倍 + revert -40%+、16%→54%、六层结构、REVIEW.md、Boris Cherny 2–3× 原话、50+ 轮循环、59% 旧代码、3 轮上限、GA 状态、adoption 清单。
+- 合并 ×1：HF《Welcome Beam》+ vLLM《Serving Reflection Beam on vLLM from Day 0》→ 并入既有 SGLang/Beam 条目（同事件三方）。HF 文核对：Apache 2.0、三档 checkpoint（BF16 ~1TB / NVFP4 ~280GB）、43 SW + 9 NoPE、scalable-softmax 公式、深度缩放残差、KV 36.08 GiB/208 GiB、Reflection 自报 benchmark 表。vLLM 文核对：agent 自主 7 处优化、8.95→3.30 ms（2.71×）、328→176 ms（1.87×）、MoE 层 13 kernel、DFlash2 自适应验证 c=128 +10.8%/p99 -9%、TP8 708 tok/s AL 3.7、AgentX ~88K tok/s/GPU（96 并发）、SkyRL 50 步 AIME25 61→79%。
+- 摘要 ×8：Muse Spark Open（HF 文核对：816B/42B、256/8 专家、1M、822B/484B checkpoint、KV 250KB/token~266GB、SGLang NVFP4 recipe 两种部署、M3 Ultra Q2_K 18 tok/s / oQ3e 344GB / prefill 225；PyTorch 文核对：Helion kernel 1.03–3.95×、MI350 端到端 +3%）、Gemini 4 Argon（$2/$10→$4/$20、缓存 95% off、+35%、回滚降近 1/3、IPI 0.7%、Vals 第一）、Claude Code 云端会话（VM 4vCPU/16GB/30GB、token 不进 VM 原句、16s/61-65-72s/87s、5× 额度）、Claude Code 自动化（书签/失败显式上报/ok:true+ts/预算 3–5× 触顶暂停，四条规则原文核对）、Zephon（0.82→0.05/0.011 原文核对）、Nemotron 3.5 Super VL（120B/12B、MTP 3–5、5×/600+ TPS/4× 均厂商口径、DGX Spark=Super 非 VL 原文自注）、Inductor Spyre（75W、2MB scratchpad、stick 128B、7× 代码量、-29~69%、-17%、80µs→1.1µs）、Indic 2.8T（2,601.0B+224.6B、四段管线、CPT 10B/100B、+4.98~9.82 原文注"未隔离"）。
+- 链接处理：新增 12 个不同外链（含 Together 合并链接），全部 curl 200 验证；进 link-audit.json 后统一 build+check。
+
+### 必看组未采用条目及理由（硬规则 19 留痕）
+
+- **claude.dev**：《Getting started with Claude Code mods》（10-01）入门教程，技术实质低；《Building with Claude Sonnet 5.5》（09-28）模型发布指南，产品通告性质且摘要槽已满；《Automating eval design and hillclimbing》（09-28）与本期主题弱相关，摘要槽已满（下期如出 eval 方法论论文可召回）。
+- **vLLM**：《Adaptive Verification Without a Confidence Head》（10-14）内容已被 Beam 合并段覆盖（DFlash2 自适应验证即其方法）；《NIXL push connector》（10-14）/《train-inference consistency》（10-14）/《bidirectional-kvxfer》（10-12）KV 传输工程线，摘要槽已满、本期四线未命中；《Vera Rubin preview》（10-09）硬件预告，无公开基准；《DeepSeek-V4.1-Flash day-0》（10-07）与产品动态节 10-17 的 V4.1-Flash-1017 资讯同事件，不重复占槽；《disaggregated-serving-guide》（09-29）教程性质。
+- **HF**（12 条）：Granite Switch 4.1、FLUX.3、HiRO-ACEv2、LFM2.5、Falcon ASR、Open TTS Leaderboard、Holo4、RL Environments——模型/工具发布或平台通告，未命中四线且槽满；ml-intern（10-08）社区故事无工程数据；thinkingbox（10-03，agent 失败案例）与 agent eval 线相关，槽满，留作专题期召回；AutoSynthData（10-02，合成数据）与 Indic 条目主题重叠，避免重复；source-aware verification（09-29，MCP eval）本期弱相关。
+- **OpenAI**（42 条）：绝大多数为客户案例（Itaú、SentinelOne、Oracle、Asana、Sophos、Block 等）与营销/政策内容，无工程实质；模型发布线（GPT-6.1 Sol 09-29、GPT-6 for everyone 10-07、model guide 10-02、dots 09-29、DevDay recap 09-29）属产品动态素材而非工程博客——本期产品动态节 4 槽在上线版已定（SPACE/Screwtape/DeepSeek/Step 5），GPT-6 系列留作下期产品动态候选；safety cases（09-28）、EU text provenance（10-05）、EU agentic（10-14）为安全/政策文。
+- **DeepMind**（除 Argon 主篇外 7 条）：robotics（10-13）应用案例，开发者发布已由 Argon 摘要覆盖；responsibly（10-13）安全白皮书，本期域外；antimicrobial（10-15）、scam detection（10-14）应用案例无公开工程数字；EmbeddingGemma 2（10-06）轻量 embedding 模型，槽满；next era（09-30）首发公告已并入 Argon 摘要（链接见账本）；SynthID Bio（09-30）水印工具。
+- **NVIDIA Dev**（除已合并 2 条外 46 条）：全部为 DevZone 工具教程/平台通告（Run:ai 开源、ReplaySSM、cuOpt、cuPhoton、Groq 3 LPX、NVLink 6、AIPerf、TensorRT 系列等），未命中四线。有技术储备价值的 3 条留作召回：ReplaySSM（10-15，hybrid 模型解码状态存储）、Scale Bitwise-Deterministic Pretraining with Megatron Core（10-15）、SWE-Serve（10-01，本地测试 vs 线上 serving 差距，与 J21 相关）。
+- **PyTorch**（除已用 3 条外 7 条）：ExecuTorch Cortex-M（10-15）MCU 域外；Dynamo session-aware（10-08）、Spyre native device（10-08）、FBTriton（10-06）、media landscape（10-05）、Hardware Enablement WG（10-05）、Helion vLLM linear backend（10-02）——槽满或主题已被 Muse/Spyre 条目覆盖。
+- **被动组**（4 条）：Together《Muse Spark Open live》（10-15）随 Muse 条目合并为出处链接（命中同一事件）；Together IBM Cloud 容量（10-06）、Together Link（10-05）无四线命中；Raschka 文本分类史（09-29）域外。
+
+### 统计变化
+
+practice_count 5→6（详条目 +1）、practice_abstract_count 0→8；stats.json 同步；link-audit.json 全量重审后 build + check。

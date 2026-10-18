@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T20:12:29.180271+00:00",
+  "checked_at": "2026-10-18T08:43:39.811145+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -611,6 +611,36 @@
       ]
     },
     {
+      "url": "https://claude.dev/blog/building-effective-agent-automations/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://claude.dev/blog/building-effective-agent-automations/",
+      "title": "Building effective agent automations / claude.dev Blog",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://claude.dev/blog/claude-code-in-the-cloud/",
+      "title": "Claude Code in the cloud: a field guide to cloud sessions / claude.dev Blog",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "title": "How the Claude Code team does code review / claude.dev Blog",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
       "url": "https://cohere.com/blog/megakernels",
       "status": "reachable",
       "http": 200,
@@ -641,6 +671,16 @@
       ]
     },
     {
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "title": "Gemini 4 Argon is now available for everyone",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
       "url": "https://dev.to/linfordr/context-compaction-is-silently-destroying-your-llm-agents-memory-2pg2",
       "status": "reachable",
       "http": 200,
@@ -648,6 +688,26 @@
       "title": "Context compaction is silently destroying your LLM agent's memory - DEV CommunityNavigation menuSearchSearchCloseMore...Copy linkEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeCollapseExpandDropdown menuLike comment: Like comment: Comment buttonCollapseExpandDropdown menuLike comment: Like comment: Comment buttonCollapseExpandDropdown menuLike comment: Like comment: ThreadDropdown menuLike comment: Like comment: ThreadDropdown menuLike comment: Like comment: Comment buttonCollapseExpandD",
       "sources": [
         "reports/2026-09-10.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+      "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72 | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -798,6 +858,36 @@
       "title": "Give Your Coding Agents a Memory You Own",
       "sources": [
         "reports/2026-09-10.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/reflection-beam",
+      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1001,6 +1091,36 @@
       ]
     },
     {
+      "url": "https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon/",
+      "title": "Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon - PyTorch",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/",
+      "title": "Extending Inductor for the IBM Spyre Accelerator - PyTorch",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://pytorch.org/blog/muse-spark-open/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://pytorch.org/blog/muse-spark-open/",
+      "title": "Muse Spark Is Now an Open-Weights Model - PyTorch",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
       "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
       "status": "reachable",
       "http": 200,
@@ -1145,6 +1265,26 @@
       ]
     },
     {
+      "url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
+      "title": "Day 0 support for Muse Spark Open on vLLM | vLLM Blog",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-10-15-nemotron-3-5-super-vl-vllm",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-15-nemotron-3-5-super-vl-vllm",
+      "title": "Announcing Day 0 Support for NVIDIA Nemotron 3.5 Super VL on vLLM | vLLM Blog",
+      "sources": [
+        "reports/2026-10-18.md"
+      ]
+    },
+    {
       "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
       "status": "reachable",
       "http": 200,
@@ -1164,6 +1304,16 @@
       "sources": [
         "reports/2026-10-18.md",
         "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
+      "title": "Serving Reflection Beam on vLLM from Day 0 | vLLM Blog",
+      "sources": [
+        "reports/2026-10-18.md"
       ]
     },
     {
@@ -1234,7 +1384,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.linkedin.com/posts/arul99_utility-under-attack-agent-memory-poisoning-activity-7497959530782429184-zEIM",
-      "title": "Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking | LinkedIn",
+      "title": "Agent Memory Poisoning and AI Security Limits | Arulnidhi Karunanidhi posted on the topic | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
       ]
@@ -1244,7 +1394,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.linkedin.com/posts/kushalc_got-annoyed-had-an-idea-wrote-a-paper-activity-7493699129169059840-rSzo",
-      "title": "Why CLAUDE.md Never Stops Growing and How to Fix It | Kushal Chakrabarti posted on the topic | LinkedIn",
+      "title": "(got annoyed, had an idea, wrote a paper, now trending #2 on | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
       ]

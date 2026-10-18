@@ -22,9 +22,12 @@ HTTP 走 curl 而不是 urllib：这台机器的 python.org Python 没带 CA 证
 
 import argparse
 import json
+import re
 import subprocess
 import time
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urlencode
 
@@ -39,6 +42,8 @@ KEYWORDS = [
     "agent memory", "RAG", "RL training", "post-training", "LLM evaluation",
 ]
 DEFAULT_ACCOUNTS = Path(__file__).resolve().parent.parent / "references" / "x-accounts.txt"
+DEFAULT_BLOGS = Path(__file__).resolve().parent.parent / "references" / "engineering-blogs.txt"
+UA_BROWSER = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
 
 def curl(url, ua=None, timeout=25):
@@ -53,6 +58,20 @@ def curl(url, ua=None, timeout=25):
         return json.loads(r.stdout)
     except json.JSONDecodeError:
         raise RuntimeError(f"non-JSON response from {url[:80]}: {r.stdout[:120]!r}")
+
+
+def curl_text(url, ua=None, timeout=25):
+    """同 curl() 但返回原始文本（RSS / 页面抓取用）。"""
+    cmd = ["curl", "-sSL", "--compressed", "--max-time", str(timeout)]
+    if ua:
+        cmd += ["-A", ua]
+    cmd.append(url)
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError(f"curl failed ({r.returncode}): {r.stderr.strip()[:200]}")
+    if not r.stdout.strip():
+        raise RuntimeError(f"empty response from {url[:80]}")
+    return r.stdout
 
 
 # ---------------------------------------------------------------- AIHot
@@ -140,6 +159,132 @@ def load_accounts(path):
     return groups
 
 
+# ---------------------------------------------------------------- 一方工程博客
+
+def load_blogs(path):
+    """返回 [(group, must, [entries])]。与 load_accounts 同款：`## 组名` 起一组，
+    组名末尾 ! = 必看组（每期必查，1 天窗口也不例外）；组内每行一个 feed URL 或
+    `page:` 标记（非 RSS 页面，走专用解析器），行尾 # 后是注释。"""
+    groups, cur = [], None
+    for raw in Path(path).read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if line.startswith("##"):
+            name = line[2:].strip().replace("！", "!")  # 容错：全角！也认
+            cur = (name.rstrip("!").strip(), name.endswith("!"), [])
+            groups.append(cur)
+        elif line.startswith("#") or not line or cur is None:
+            continue
+        else:
+            entry = line.split("#", 1)[0].strip()
+            if entry:
+                cur[2].append(entry)
+    return groups
+
+
+def parse_feed_date(s):
+    """RSS pubDate（RFC 2822）或 Atom published/updated（ISO 8601）。
+    返回 tz-aware datetime（无时区信息的按 UTC）；解析失败返回 None。"""
+    if not s:
+        return None
+    s = s.strip()
+    dt = None
+    try:
+        dt = parsedate_to_datetime(s)
+    except (TypeError, ValueError):
+        pass
+    if dt is None:
+        try:
+            dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+    if dt is not None and dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)  # 无时区 / 只有日期的源按 UTC
+    return dt
+
+
+def _strip_ns(tag):
+    return tag.rsplit("}", 1)[-1]
+
+
+def parse_feed(xml_text):
+    """RSS 2.0 / Atom 通用解析，返回 [{title, url, published_raw, summary}]。"""
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError as e:
+        raise RuntimeError(f"not well-formed XML ({e}); head: {xml_text[:80]!r}")
+    items = []
+    for el in root.iter():
+        if _strip_ns(el.tag) not in ("item", "entry"):
+            continue
+        title = link = date_s = summ = ""
+        for child in el:
+            ctag = _strip_ns(child.tag)
+            if ctag == "title":
+                title = (child.text or "").strip()
+            elif ctag == "link":
+                if _strip_ns(el.tag) == "entry":
+                    if child.get("rel") in (None, "alternate"):
+                        link = child.get("href") or ""
+                else:
+                    link = (child.text or "").strip()
+            elif ctag in ("pubDate", "published", "updated"):
+                date_s = date_s or (child.text or "").strip()
+            elif ctag in ("description", "summary") and not summ:
+                summ = (child.text or "").strip()[:200]
+        items.append({"title": title, "url": link, "published_raw": date_s, "summary": summ})
+    return items
+
+
+def scrape_anthropic_engineering():
+    """anthropic.com/engineering 没有 RSS：列表页服务端渲染，直接解析文章卡
+    （<a href="/engineering/slug"> + <h2/h3> 标题 + <time dateTime=...>）。
+    返回 [{title, url, published_raw, summary}]。"""
+    html = curl_text("https://www.anthropic.com/engineering", ua=UA_BROWSER)
+    items, seen = [], set()
+    for m in re.finditer(r'href="/engineering/([a-z0-9-]+)"[^>]*>(.*?)(?:</a>)', html, re.S):
+        slug, body = m.group(1), m.group(2)
+        if slug in seen:
+            continue
+        seen.add(slug)
+        t = re.search(r'<time dateTime="(\d{4}-\d{2}-\d{2})">', body)
+        h = re.search(r"<h[23][^>]*>(.*?)</h[23]>", body, re.S)
+        s = re.search(r'<p class="[^"]*summary[^"]*">(.*?)</p>', body, re.S)
+        items.append({
+            "title": re.sub(r"<[^>]+>", "", h.group(1)).strip() if h else slug,
+            "url": f"https://www.anthropic.com/engineering/{slug}",
+            "published_raw": t.group(1) if t else "",
+            "summary": re.sub(r"<[^>]+>", "", s.group(1)).strip()[:200] if s else "",
+        })
+    if not items:
+        raise RuntimeError("anthropic engineering 页解析到 0 篇文章，页面结构可能变了")
+    return items
+
+
+def fetch_blog_entry(entry, since):
+    """抓一个信源（feed URL 或 page: 标记），返回窗口内的 (posts, skipped_no_date)。"""
+    if entry.startswith("page:"):
+        name = entry[5:]
+        if name == "anthropic-engineering":
+            raw = scrape_anthropic_engineering()
+        else:
+            raise RuntimeError(f"page 信源 {name} 没有对应解析器")
+    else:
+        raw = parse_feed(curl_text(entry, ua=UA_BROWSER))
+    posts, skipped, seen = [], 0, set()
+    for it in raw:
+        if not it["url"] or it["url"] in seen:
+            continue
+        seen.add(it["url"])
+        dt = parse_feed_date(it.pop("published_raw"))
+        if dt is None:
+            skipped += 1
+            continue
+        it["published_at"] = dt.isoformat(timespec="seconds")
+        if dt >= since:
+            posts.append(it)
+    return posts, skipped
+
+
 # ---------------------------------------------------------------- scan
 
 def cmd_scan(args):
@@ -153,7 +298,7 @@ def cmd_scan(args):
 
     result = {"since": args.since, "generated_at": now.isoformat(timespec="seconds"),
               "notes": notes, "aihot_hot_topics": [], "aihot_items": [],
-              "x_by_account": {}, "hn": [], "errors": []}
+              "x_by_account": {}, "hn": [], "blog_feeds": {}, "errors": []}
 
     def guard(label, fn, *a, **kw):
         try:
@@ -212,6 +357,19 @@ def cmd_scan(args):
                 hn_seen[key] = h
     result["hn"] = sorted(hn_seen.values(), key=lambda x: x["points"], reverse=True)
 
+    # 5) 一方工程博客（engineering-blogs.txt）：必看组每期必查，1 天窗口也不例外
+    for gname, must, entries in load_blogs(args.blogs):
+        for entry in entries:
+            try:
+                posts, skipped = fetch_blog_entry(entry, since)
+            except RuntimeError as e:
+                result["errors"].append(f"blog {entry}: {e}")
+                posts, skipped = [], 0
+            time.sleep(0.2)
+            result["blog_feeds"][entry] = {
+                "group": gname, "must": must, "posts": posts, "skipped_no_date": skipped,
+            }
+
     out = Path(args.out) if args.out else None
     if out:
         out.parent.mkdir(parents=True, exist_ok=True)
@@ -239,6 +397,16 @@ def cmd_scan(args):
     print(f"HN ≥{args.hn_min} 分 {len(result['hn'])} 条：")
     for h in result["hn"][:15]:
         print(f"  {h['points']:>4} 分 {h['comments']:>4} 评  {h['title'][:70]}  {h['hn_url']}")
+    blog_total = sum(len(f["posts"]) for f in result["blog_feeds"].values())
+    print(f"一方工程博客：窗口内新条目 {blog_total} 条（清单 references/engineering-blogs.txt）")
+    for entry, f in result["blog_feeds"].items():
+        mark = "必看" if f["must"] else "被动"
+        if f["posts"]:
+            print(f"  [{mark}·{f['group']}] {entry}: {len(f['posts'])} 条")
+            for p in f["posts"][:5]:
+                print(f"    - {p['published_at'][:10]}  {p['title'][:70]}  {p['url']}")
+        else:
+            print(f"  [{mark}·{f['group']}] {entry}: 窗口内无新条目")
     if out:
         print(f"→ {out}")
 
@@ -292,6 +460,7 @@ def main():
     s.add_argument("--topic", help="定向模式主题，追加到关键词")
     s.add_argument("--hn-min", type=int, default=100)
     s.add_argument("--accounts", default=str(DEFAULT_ACCOUNTS))
+    s.add_argument("--blogs", default=str(DEFAULT_BLOGS))
     s.set_defaults(fn=cmd_scan)
     l = sub.add_parser("lookup")
     l.add_argument("query")

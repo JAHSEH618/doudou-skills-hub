@@ -4,7 +4,7 @@
 
 ## 一次周扫 / 定向的搜索顺序
 
-1. `python3 scripts/fetch_sources.py scan --since <窗口起点> --out reports/assets/<日期>/candidates.json`（定向加 `--topic "<主题>"`）。一次拉齐 AIHot 热点榜、AIHot 关键词命中、必搜账号本人帖、HN ≥100 分帖，写成候选 JSON。stdout 的摘要先看，JSON 再细读。
+1. `python3 scripts/fetch_sources.py scan --since <窗口起点> --out reports/assets/<日期>/candidates.json`（定向加 `--topic "<主题>"`）。一次拉齐 AIHot 热点榜、AIHot 关键词命中、必搜账号本人帖、HN ≥100 分帖、**一方工程博客窗口内新条目（`blog_feeds` 节，清单见下）**，写成候选 JSON。stdout 的摘要先看，JSON 再细读。
 2. 论文：四条线逐线用 exa 搜，每线 2–3 个角度（硬规则 3、4）。
 3. 非论文：从候选 JSON 里挑，再用 exa 补脚本盖不到的（AIHot 未收录的账号、>7 天前的博客、按来源方名字搜的一方博客）。
 4. 解说：每篇论文 `python3 scripts/fetch_sources.py lookup "<标题>"` 一次 + exa 一次（见下）。
@@ -31,6 +31,23 @@
 - **解说**：`lookup "<论文标题>"` 查讨论串，返回分数和评论数。HN 上的博客讨论远比论文多，实践详条目也照查。
 
 引用格式：`[HN 53 评论](https://news.ycombinator.com/item?id=…)`。
+
+## 一方工程博客（engineering-blogs.txt）
+
+`references/engineering-blogs.txt`，`scan` 自动拉，输出在 candidates.json 的 `blog_feeds` 节。与 X 账号清单同款格式：`## 组名 !` 起组，组名末尾 `!` = **必看组**，其余 = 被动组。
+
+- **必看组（每期必查，1 天窗口也不例外，硬规则 19）**：
+  - **Anthropic**：`claude.dev/rss.xml`（RSS）+ `page:anthropic-engineering`（anthropic.com/engineering 无 RSS，脚本解析服务端渲染的文章卡：slug + 标题 + `<time dateTime>`）。
+  - **vLLM**（`vllm.ai/blog/rss.xml`）、**Hugging Face**（`huggingface.co/blog/feed.xml`）、**OpenAI**（`openai.com/news/rss.xml`）、**DeepMind**（`deepmind.google/blog/rss.xml`，gzip）、**NVIDIA Developer**（`developer.nvidia.com/blog/feed`，Atom）、**PyTorch**（`pytorch.org/blog/rss/`）。
+- **被动组**（照常抓，命中四线才处理，无上报义务）：Qwen、Together AI、Sebastian Raschka、Chip Huyen、Lilian Weng。
+- 必看组窗口内新条目：web_extract 读原文 → 硬规则 10 四项核验 → 进工程实践详 / 简槽；过滤掉的记 research-notes.md 理由。**不许静默漏**。
+- 同一事件论文 + 一方博客双出（如 K3 论文 + vLLM 优化博客）：合并成一条条目，两个出处都挂，不重复占槽。
+- Feed 全是标准 RSS 2.0 / Atom，stdlib 解析，无新依赖。Anthropic 页面结构变化时脚本会直接报错（scan stdout 与 JSON `errors` 可见）——照硬规则 3 同款向用户声明，不静默。
+- 维护：feed 404 或停更超 3 个月删行；新源先验证有货再加，一行一个，注释写清定位：
+  1. `curl -s -o /dev/null -w "%{http_code}" --compressed <url>` 确认 200 且内容是 XML——部分站点只回 gzip，不加 `--compressed` 会把压缩字节当解析错误。
+  2. 猜测路径 404 时，抓博客首页找 `<link rel="alternate" type="application/rss+xml">` 拿真实 feed 地址（vLLM 的真实 feed 在 `/blog/rss.xml`，不在站点根的 `/rss.xml`）。
+  3. 加完跑一次 `scan`，核对 stdout 博客节条目数 > 0 且 `errors` 无该源——部分 feed 日期不带时区（只到日），`parse_feed_date` 已归一 UTC；改动解析逻辑时注意 naive/aware 时间比较会 TypeError 或静默 0 条。
+- 组标记 `!` 保持半角：全角 `！`（输入法手滑）会让必看组静默降为被动组；loader 已对全角做容错转换，但文件里仍以半角为准。
 
 ## 核一条 X 原帖
 
