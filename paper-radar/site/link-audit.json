@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T13:26:20.030031+00:00",
+  "checked_at": "2026-10-18T13:49:40.469063+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -741,17 +741,6 @@
       ]
     },
     {
-      "url": "https://github.com/JAHSEH618/doudou-skills-hub",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://github.com/JAHSEH618/doudou-skills-hub",
-      "title": "GitHub - JAHSEH618/doudou-skills-hub: Self Skills · GitHub",
-      "sources": [
-        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html",
-        "dankoe/index.html"
-      ]
-    },
-    {
       "url": "https://github.com/LiuTaowen-Tony/agentkv",
       "status": "reachable",
       "http": 200,
@@ -942,26 +931,6 @@
       ]
     },
     {
-      "url": "https://jahseh618.github.io/doudou-skills-hub/dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html",
-      "status": "unverified",
-      "http": 200,
-      "final_url": "https://jahseh618.github.io/doudou-skills-hub/dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html",
-      "title": "",
-      "sources": [
-        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html"
-      ]
-    },
-    {
-      "url": "https://jahseh618.github.io/doudou-skills-hub/dankoe/index.html",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://jahseh618.github.io/doudou-skills-hub/dankoe/index.html",
-      "title": "Dan Koe 中文翻译",
-      "sources": [
-        "dankoe/index.html"
-      ]
-    },
-    {
       "url": "https://jarvislabs.ai/blog/blackwell-dtypes-qwen3-32b",
       "status": "reachable",
       "http": 200,
@@ -979,17 +948,6 @@
       "title": "Codex Memory Internals: What It Remembers, Who Decides, and How It Compares to OpenCode",
       "sources": [
         "reports/2026-09-10.md"
-      ]
-    },
-    {
-      "url": "https://letters.thedankoe.com/archive",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://letters.thedankoe.com/archive",
-      "title": "Archive - future/proof",
-      "sources": [
-        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html",
-        "dankoe/index.html"
       ]
     },
     {
@@ -1713,17 +1671,6 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"
-      ]
-    },
-    {
-      "url": "https://x.com/thedankoe/status/2023779299367809063",
-      "status": "x-original",
-      "http": 200,
-      "final_url": "https://x.com/thedankoe/status/2023779299367809063",
-      "title": "DAN KOE on X: \"https://t.co/CdLm1xoOAb\" / X",
-      "evidence": "Original X page includes author and post text",
-      "sources": [
-        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html"
       ]
     },
     {

@@ -6,12 +6,13 @@ from pathlib import Path
 from urllib.parse import urljoin
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = 'https://jahseh618.github.io/doudou-skills-hub/dankoe/'
+BASE = 'https://jahseh618.github.io/dankoe-zh/'
+DANKOE_SITE = ROOT.parents[1] / 'dankoe-zh'  # sibling repo: ~/Downloads/dankoe-zh
 
 def main():
     src, out = Path(sys.argv[1]).resolve(), Path(sys.argv[2])
     text = src.read_text()
-    css = (ROOT/'dankoe/dankoe.css').read_text()
+    css = (DANKOE_SITE / 'dankoe.css').read_text()
     text = text.replace('<link rel="stylesheet" href="dankoe.css">', f'<style>\n{css}\n</style>')
 
     def fix_href(m):

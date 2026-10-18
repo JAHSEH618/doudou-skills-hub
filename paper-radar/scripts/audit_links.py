@@ -91,7 +91,7 @@ def main():
     parser.add_argument('--workers', type=int, default=12)
     args = parser.parse_args()
     sources = {}
-    for path in sorted([*(ROOT/'reports').glob('*.md'), *(ROOT/'state').glob('*.md'), *(ROOT/'dankoe').glob('*.html')]):
+    for path in sorted([*(ROOT/'reports').glob('*.md'), *(ROOT/'state').glob('*.md'),]):
         for url in Links(path.read_text(), raw=path.suffix == '.html').urls:
             sources.setdefault(url, []).append(str(path.relative_to(ROOT)))
     results = []

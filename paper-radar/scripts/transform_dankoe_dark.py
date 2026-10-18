@@ -11,25 +11,25 @@ import sys
 from pathlib import Path
 
 SERIES = 'Koe Letters'
-CANONICAL = 'https://jahseh618.github.io/doudou-skills-hub/dankoe/'
+CANONICAL = 'https://jahseh618.github.io/dankoe-zh/'
 FRAME = '''<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content="{desc}">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:type" content="article">
 <link rel="canonical" href="{canonical}"><link rel="stylesheet" href="dankoe.css"></head>
 <body id="top"><a class="skip" href="#main">跳到正文</a><div class="shell">
-<header class="site-header"><a class="wordmark" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>Dan Koe<span class="wordmark-sub">翻译</span></a>
-<nav aria-label="主导航"><a href="../index.html#archive">往期文章</a><a href="../judgments.html">判断账本</a><a href="index.html" aria-current="page">Dan Koe 翻译</a><a href="https://github.com/JAHSEH618/doudou-skills-hub">GitHub ↗</a></nav></header>
+<header class="site-header"><a class="wordmark" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Dan Koe<span class="wordmark-sub">翻译</span></a>
+<nav aria-label="主导航"><a href="index.html">全部翻译</a><a href="https://jahseh618.github.io/doudou-skills-hub/">论文雷达</a><a href="https://letters.thedankoe.com/archive">Dan Koe 原站 ↗</a><a href="https://github.com/JAHSEH618/dankoe-zh">GitHub ↗</a></nav></header>
 <main id="main"><article>
 <div class="article-header"><h1>{title}</h1><p class="meta"><span>{date}</span><span>{series}</span><span>约 {mins} 分钟</span></p></div>
 {toc}
 <div class="reading">
 {content}
 </div>
-<p class="back-link"><a href="index.html">← 返回 Dan Koe 翻译</a></p>
+<p class="back-link"><a href="index.html">← 返回全部翻译</a></p>
 <p class="source-link"><a href="{source}" rel="noopener">原文链接 ↗</a></p>
 </article></main>
-<footer class="site-footer"><div><strong>Dan Koe 翻译</strong><p>Dan Koe 长文中文翻译</p><p>样式取自他的 Substack 主题：黑底、白字、鼠尾草绿。</p></div><div class="footer-links"><a href="https://letters.thedankoe.com/archive">Dan Koe 原站 ↗</a><a href="../index.html">← 返回论文雷达</a><a href="#top">回到顶部 ↑</a></div></footer></div></body></html>
+</div></body></html>
 '''
 
 
