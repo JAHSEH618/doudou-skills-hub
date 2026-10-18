@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T12:49:19.371408+00:00",
+  "checked_at": "2026-10-18T13:26:20.030031+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -741,6 +741,17 @@
       ]
     },
     {
+      "url": "https://github.com/JAHSEH618/doudou-skills-hub",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/JAHSEH618/doudou-skills-hub",
+      "title": "GitHub - JAHSEH618/doudou-skills-hub: Self Skills · GitHub",
+      "sources": [
+        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html",
+        "dankoe/index.html"
+      ]
+    },
+    {
       "url": "https://github.com/LiuTaowen-Tony/agentkv",
       "status": "reachable",
       "http": 200,
@@ -931,6 +942,26 @@
       ]
     },
     {
+      "url": "https://jahseh618.github.io/doudou-skills-hub/dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html",
+      "status": "unverified",
+      "http": 200,
+      "final_url": "https://jahseh618.github.io/doudou-skills-hub/dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html",
+      "title": "",
+      "sources": [
+        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html"
+      ]
+    },
+    {
+      "url": "https://jahseh618.github.io/doudou-skills-hub/dankoe/index.html",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://jahseh618.github.io/doudou-skills-hub/dankoe/index.html",
+      "title": "Dan Koe 中文翻译",
+      "sources": [
+        "dankoe/index.html"
+      ]
+    },
+    {
       "url": "https://jarvislabs.ai/blog/blackwell-dtypes-qwen3-32b",
       "status": "reachable",
       "http": 200,
@@ -948,6 +979,17 @@
       "title": "Codex Memory Internals: What It Remembers, Who Decides, and How It Compares to OpenCode",
       "sources": [
         "reports/2026-09-10.md"
+      ]
+    },
+    {
+      "url": "https://letters.thedankoe.com/archive",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://letters.thedankoe.com/archive",
+      "title": "Archive - future/proof",
+      "sources": [
+        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html",
+        "dankoe/index.html"
       ]
     },
     {
@@ -1168,16 +1210,6 @@
       "title": "Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while once again massively cutting per-task costs",
       "sources": [
         "reports/2026-10-18.md"
-      ]
-    },
-    {
-      "url": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/",
-      "title": "HUMAN 3.0 – A Map To Reach The Top 1% - Dan Koe",
-      "sources": [
-        "dankoe/2025-08-26-human-3-0-a-map-to-reach-the-top-1.html"
       ]
     },
     {
