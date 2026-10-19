@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T13:49:40.469063+00:00",
+  "checked_at": "2026-10-19T03:36:04.253378+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -581,6 +581,17 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2610.14224",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.14224",
+      "title": "[2610.14224] Harness^2: Recursive Agent Harnessing for an Open World",
+      "sources": [
+        "reports/2026-10-19.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://bhavishyapandit9.substack.com/p/ai-agent-memory",
       "status": "reachable",
       "http": 200,
@@ -798,6 +809,16 @@
       "title": "GitHub - chengxuphd/phantom-gains · GitHub",
       "sources": [
         "reports/2026-08-23.md"
+      ]
+    },
+    {
+      "url": "https://github.com/google-research/harness2",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/google-research/harness2",
+      "title": "GitHub - google-research/harness2 · GitHub",
+      "sources": [
+        "reports/2026-10-19.md"
       ]
     },
     {
@@ -1151,6 +1172,16 @@
       ]
     },
     {
+      "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+      "title": "Redesigning source control at Anthropic",
+      "sources": [
+        "reports/2026-10-19.md"
+      ]
+    },
+    {
       "url": "https://tasklet.ai/blog/2026-08-12-agent-memory",
       "status": "reachable",
       "http": 200,
@@ -1168,6 +1199,16 @@
       "title": "Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while once again massively cutting per-task costs",
       "sources": [
         "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://thenewstack.io/anthropic-scion-git-replacement/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://thenewstack.io/anthropic-scion-git-replacement/",
+      "title": "Anthropic built its own git replacement for AI-scale coding. But you can’t have it. - The New StackGroup",
+      "sources": [
+        "reports/2026-10-19.md"
       ]
     },
     {
@@ -1317,6 +1358,16 @@
       ]
     },
     {
+      "url": "https://www.aiincontext.com/articles/google-open-sources-harness2-framework-that-improves-agents-without-touching-mod-26bc8a57",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.aiincontext.com/articles/google-open-sources-harness2-framework-that-improves-agents-without-touching-mod-26bc8a57",
+      "title": "Google Open-Sources Harness² Agent Framework — AI In Context",
+      "sources": [
+        "reports/2026-10-19.md"
+      ]
+    },
+    {
       "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
       "status": "reachable",
       "http": 200,
@@ -1340,6 +1391,16 @@
       ]
     },
     {
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "title": "Redesigning source control at Anthropic \\ Anthropic",
+      "sources": [
+        "reports/2026-10-19.md"
+      ]
+    },
+    {
       "url": "https://www.anthropic.com/news/contextual-retrieval",
       "status": "reachable",
       "http": 200,
@@ -1347,6 +1408,16 @@
       "title": "Contextual Retrieval in AI Systems \\ Anthropic",
       "sources": [
         "reports/2026-08-24.md"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/news/public-benefit-fund",
+      "title": "Investing in the public benefit \\ Anthropic",
+      "sources": [
+        "reports/2026-10-19.md"
       ]
     },
     {

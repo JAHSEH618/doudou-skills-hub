@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-19",
+  "mode": "每日推送",
+  "window": [
+    "2026-10-18",
+    "2026-10-19"
+  ],
+  "searches": [
+    {
+      "id": "scan-aihot",
+      "source": "AIHot",
+      "query": "fetch_sources.py scan --since 2026-10-18",
+      "status": "ok",
+      "note": "10 热点（含 Google Research 开源 Harness² / Anthropic 公益基金 / DeepSeek V4.1-Flash-1017）"
+    },
+    {
+      "id": "scan-hn",
+      "source": "Hacker News",
+      "query": "fetch_sources.py scan（Algolia since 2026-10-18, score>=30）",
+      "status": "ok",
+      "note": "窗口内 0 高分相关项"
+    },
+    {
+      "id": "scan-x",
+      "source": "X 固定账号",
+      "query": "fetch_sources.py scan（x-accounts.txt 21 账号）",
+      "status": "ok",
+      "note": "窗口内全部 0 帖 → X 讨论节不收"
+    },
+    {
+      "id": "scan-blogs",
+      "source": "一方工程博客 feed",
+      "query": "fetch_sources.py scan（13 源）",
+      "status": "ok",
+      "note": "窗口内 posts 全 0；唯一例外 anthropic 1 条 skipped_no_date（Scion 卡片无 <time>）"
+    },
+    {
+      "id": "exa-hw-1",
+      "source": "Exa",
+      "query": "NVFP4 FP4 quantization LLM inference kernel accuracy",
+      "status": "ok",
+      "line": "hardware",
+      "note": "includeDomains=arxiv.org, start=2026-10-15 end=2026-10-19"
+    },
+    {
+      "id": "exa-hw-2",
+      "source": "Exa",
+      "query": "GPU silent data corruption reliability large-scale training cluster",
+      "status": "ok",
+      "line": "hardware"
+    },
+    {
+      "id": "exa-hw-3",
+      "source": "Exa",
+      "query": "CXL memory pooling KV cache offload LLM serving",
+      "status": "ok",
+      "line": "hardware"
+    },
+    {
+      "id": "exa-hw-4",
+      "source": "Exa",
+      "query": "GPU kernel fusion multi-GPU communication overlap",
+      "status": "ok",
+      "line": "hardware"
+    },
+    {
+      "id": "exa-md-1",
+      "source": "Exa",
+      "query": "hybrid linear attention mixture of experts architecture",
+      "status": "ok",
+      "line": "model"
+    },
+    {
+      "id": "exa-md-2",
+      "source": "Exa",
+      "query": "supervised fine-tuning LoRA reward learning recipe LLM",
+      "status": "ok",
+      "line": "model"
+    },
+    {
+      "id": "exa-md-3",
+      "source": "Exa",
+      "query": "weight quantization low-bit compression LLM inference",
+      "status": "ok",
+      "line": "model"
+    },
+    {
+      "id": "exa-sys-1",
+      "source": "Exa",
+      "query": "LLM inference serving scheduling KV cache disaggregation",
+      "status": "ok",
+      "line": "system"
+    },
+    {
+      "id": "exa-sys-2",
+      "source": "Exa",
+      "query": "agentic RL reinforcement learning post-training rollout infrastructure",
+      "status": "ok",
+      "line": "system"
+    },
+    {
+      "id": "exa-sys-3",
+      "source": "Exa",
+      "query": "agent memory RAG retrieval long-horizon",
+      "status": "ok",
+      "line": "system"
+    },
+    {
+      "id": "exa-mth-1",
+      "source": "Exa",
+      "query": "LLM evaluation benchmark reliability methodology",
+      "status": "ok",
+      "line": "method"
+    },
+    {
+      "id": "exa-mth-2",
+      "source": "Exa",
+      "query": "LLM-as-a-judge evaluation validity agreement",
+      "status": "ok",
+      "line": "method"
+    },
+    {
+      "id": "exa-mth-3",
+      "source": "Exa",
+      "query": "agentic coding benchmark harness empirical study",
+      "status": "ok",
+      "line": "method"
+    },
+    {
+      "id": "exa-dedup",
+      "source": "Exa",
+      "query": "13 组结果按 arXiv ID 去重 + 20 篇 abs 页核验",
+      "status": "ok",
+      "note": "86 篇唯一论文，抽样 20 篇全 v1=2026-10-15（10-18→10-19 窗口外）→ paper_count=0"
+    },
+    {
+      "id": "arxiv-api-latest",
+      "source": "arXiv API",
+      "query": "cs.LG / cs.CL / cs.DC / cs.DB / cs.AR 各线按 submittedDate 倒序",
+      "status": "ok",
+      "note": "各线最新 10-15/16，窗口内零新提交（与 exa 池互证）"
+    },
+    {
+      "id": "ws-harness2",
+      "source": "WebSearch",
+      "query": "Google Research open source Harness agent optimization framework 2026",
+      "status": "ok",
+      "note": "定位 arXiv 2610.14224，开源 10-18（窗口内），GitHub google-research/harness2 Apache 2.0"
+    },
+    {
+      "id": "ws-harness2-verify",
+      "source": "WebSearch",
+      "query": "Google Research open source Harness agent optimization framework 2026 (limit 6 复核)",
+      "status": "ok",
+      "note": "开源日期 10-18 复核"
+    },
+    {
+      "id": "fetch-harness2-full",
+      "source": "web_extract",
+      "query": "arxiv.org/abs/2610.14224（2,805 字符）+ arxiv.org/html/2610.14224（16,715 字符）",
+      "status": "ok",
+      "note": "v1 提交 10-09；k=1/k=5 数字、执行器、基线、局限段核对"
+    },
+    {
+      "id": "fetch-scion-full",
+      "source": "web_extract",
+      "query": "anthropic.com/engineering/redesigning-source-control（24,074 字符）",
+      "status": "ok",
+      "note": "发布 10-13 / 更新 10-15；规模数字与适用边界逐项核对"
+    },
+    {
+      "id": "lookup-scion-commentary",
+      "source": "Exa",
+      "query": "scion_lookup.py（无域名过滤，start=2026-10-12 end=2026-10-19）",
+      "status": "ok",
+      "note": "解说：The New Stack（10-15）、Simon Willison（10-14）"
+    },
+    {
+      "id": "ws-scion-commentary",
+      "source": "WebSearch",
+      "query": "Anthropic Scion source control commentary",
+      "status": "ok",
+      "note": "佐证 The New Stack / Simon Willison 解读"
+    },
+    {
+      "id": "ws-fund",
+      "source": "WebSearch",
+      "query": "Anthropic Public Benefit Fund site:anthropic.com",
+      "status": "ok",
+      "note": "定位第一方 newsroom 页"
+    },
+    {
+      "id": "curl-fund",
+      "source": "curl",
+      "query": "anthropic.com/news/public-benefit-fund",
+      "status": "ok",
+      "note": "HTTP 200，资讯第一方来源验证"
+    },
+    {
+      "id": "curl-deepseek-dedup",
+      "source": "curl",
+      "query": "api-docs.deepseek.com/zh-cn/changelog + /news/news261017/",
+      "status": "ok",
+      "note": "均 200；DeepSeek V4.1-Flash-1017 已在 10-18 报过 → 去重排除"
+    }
+  ]
+}

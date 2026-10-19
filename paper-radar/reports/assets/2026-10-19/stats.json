@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-19",
+  "mode": "每日推送",
+  "window": "10-18 → 10-19",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {
+      "full": 0,
+      "abstract": 0
+    },
+    "模型": {
+      "full": 0,
+      "abstract": 0
+    },
+    "软件系统": {
+      "full": 0,
+      "abstract": 0
+    },
+    "工程方法": {
+      "full": 0,
+      "abstract": 0
+    }
+  },
+  "practice_full": 2,
+  "practice_abstract": 0,
+  "news": 1,
+  "flash": 0,
+  "pool": 0,
+  "commentary": 2,
+  "judgments": 23,
+  "graph": {
+    "sources": [
+      {
+        "id": "H2",
+        "label": "Harness²\n2610.14224",
+        "type": "论文"
+      }
+    ],
+    "judgments": [
+      {
+        "id": "J8",
+        "label": "harness 先行再动权重",
+        "status": "存疑"
+      }
+    ],
+    "edges": [
+      {
+        "from": "H2",
+        "to": "J8",
+        "kind": "印证"
+      }
+    ]
+  }
+}

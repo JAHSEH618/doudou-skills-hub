@@ -6,7 +6,7 @@
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
 > 非论文（工程实践节的详条目与简条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注，简条目再加【仅摘要】；【资讯】【快讯】不进本账本（硬规则 11），解说链接也不进。
 
-**上次周扫：2026-10-18**（窗口 09-28 → 10-18；20 天，4 篇全文 + 6 篇实践详条目 + 8 条实践摘要；报告 `reports/2026-10-18.md`，已推送：是——10-18 期上线，同日按硬规则 19 补工程博客板块后重推）
+**上次周扫：2026-10-19**（窗口 10-18 → 10-19；1 天，0 篇论文 + 2 条实践详条目（Scion + Harness²）+ 1 条资讯（Anthropic 公益基金）；报告 `reports/2026-10-19.md`，已推送：是——本期上线）
 
 格式：`- [首推日期] 【溯源】标题 · 会议/机构 · arXiv ID 或会议页链接 —— 当时判词`
 （非论文条目：`- [首推日期] 【一方博客/工业博客/技术报告/上游变更】标题 · 来源方 · 原文链接 —— 当时判词`）
@@ -216,6 +216,8 @@
 
 ## 工程实践（非论文）
 
+- [2026-10-19] 【一方博客】Redesigning source control at Anthropic（Scion） · Anthropic · https://www.anthropic.com/engineering/redesigning-source-control —— 详条目（24,074 字符全文读）。monorepo 日合并 5 月约 2,500 → 9 月 3 万+（增量多数为 agent 提交）；主分支历史约 100 GB、压缩工作副本 >25 GB；CI 每天约 2,500 万次检查；朴素「每分支全量快照」一天 >600 PB git 流量；拆控制面（Spanner）+ 内容寻址数据面（CAS）+ 三级缓存（命中率 99%+）；CI 收回约 25% CPU、checkout 快两个数量级、基础设施 CPU/内存小 200 倍；7 人团队 5 个月完成迁移。适用边界原文写死：非 git 即插即换替代品，仅「数万名工程师或 agent 集群」超大 monorepo 才值得自建；Claude Mythos Preview 重写入库管线（内存省 20×/提速 4×）为作者侧陈述、无可复现路径。硬规则 19 漏网必看条目（skipped_no_date，卡片无 `<time>`）读全文 + 四项核验后补收。解说：The New Stack、Simon Willison（导读）
+- [2026-10-19] 【论文→实践详条目】Harness²: Recursive Agent Harnessing for an Open World · Google Cloud AI Research · https://arxiv.org/abs/2610.14224 —— v1 提交 10-09（早于 exa 搜窗 start=10-15，未被四线搜捞到），10-18 开源 v0.1.0（Apache 2.0，google-research/harness2），开源事件在窗口内 → 本期按第二条实践详条目收（非「窗口内新论文」，v1 10-09 如实标注）。冻结权重、递归调优 8 组件 harness（系统提示/护栏/记忆/技能/工具指引/脚本/子 agent/中间件，Propose–Probe–Compose 对比式递归 + EXPERIENCE.md 经验库）；k=1 WB 最高 11.5（GLM-5 OpenCode 64.2→75.7）/ Job 4.5 / LAB 11.8pp，k=5 并行再 +2.9–4.2；弱执行器（GLM-5）受益更大。结果全部 Google 自报、无独立复现，仓库自注「非 Google 官方支持的产品」；绑定 GLM-5 / Gemini 3.5 Flash × OpenCode / Codex，v0.1.0 单一机构，换执行器/外壳数字需重测。J8「harness 先行」半句弱印证（不改状态，仍【存疑】）。解说：AI In Context（Rebecca Stone，导读）
 - [2026-10-18] 【一方博客】Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly（megakernel） · vLLM 团队 · https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel —— 16×GB300、batch 1、DSpark（合成 AL=6）842+ tok/s；AgentX c1 P90 交互 1.8×（优化版 16 卡 vs 旧 8 卡，非同卡对比）；原文承认 agent 辅助开发快过评审维护流程
 - [2026-10-18] 【一方博客】Scaling Kimi K3 on AMD Instinct MI355X（Embedded LLM） · AMD / vLLM 博客 · https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x —— AgentX 50 tok/s/user P90 点 7,567 vs 6,083 tok/s/GPU（+24.4%），峰值算力 10.1 vs 13.5 PFLOP/s 更低；c70 +28.9%、前缀缓存命中 74.8→80.1%；数据为 SemiAnalysis InferenceX 10-09 快照
 - [2026-10-18] 【一方博客】SGLang 与 Beam：501B MoE 上生产（LMSYS 博客 + HF《Welcome Beam》+ vLLM《Serving Reflection Beam on vLLM from Day 0》，同事件三方合并） · SGLang / Hugging Face / vLLM 团队 · https://www.lmsys.org/blog/2026-10-16-beam · https://huggingface.co/blog/reflection-beam · https://vllm.ai/blog/2026-10-16-reflection-beam —— 96 H200（64 训 + 32 推）解耦异步 GRPO：AIME25 46.3→56.7%（204 步，响应长度下降）；serving NVFP4 + FP8 KV + 推测解码，c96 83,504 tok/s/GPU、前缀缓存命中 92–96%。HF 公告：Apache 2.0、三档 checkpoint（BF16 约 1TB / NVFP4 约 280GB）、43 SW + 9 NoPE 全局层 + scalable-softmax、1M 上下文 BF16 KV 36.08 GiB/序列、Reflection 自报 SWE-B-Pro v2-Hard 78.6 / AIME26 97.7。vLLM 部署：agent 自主 7 处优化（decode 2.71× / prefill 1.87× TP8）、DFlash2 自适应验证 c128 +10.8%、AgentX 约 88K tok/s/GPU（96 并发）、SkyRL 50 步 AIME25 61→79%（与 SGLang 204 步记录是不同 RL run）

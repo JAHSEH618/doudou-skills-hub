@@ -111,11 +111,16 @@ def build():
     for name in ['judgments','seen-papers']:
         render_article(ROOT/'state'/(name+'.md'),OUT/(name+'.html'),'','paper-radar/state/'+name+'.md')
     latest,meta,title = items[0]
+    # Only surface the "X 上的技术讨论" link when the latest issue actually has that section
+    # (some issues ship with no X discussion, which would otherwise leave a dead anchor).
+    latest_html = (OUT/'reports'/(latest.stem+'.html')).read_text(encoding='utf-8')
+    x_link = (f'<a href="reports/{latest.stem}.html#x-上的技术讨论">读 X 上的技术讨论 →</a>'
+              if 'id="x-上的技术讨论"' in latest_html else '')
     rows = []
     for source,details,heading in items:
         rows.append(f'<li><div class="archive-date"><time datetime="{source.stem[:10]}">{source.stem[:10]}</time><span>{escape(("专题文章" if details.get("mode") == "定向" else "技术札记"))}</span></div><div><h3><a href="reports/{source.stem}.html">{escape(heading)}</a></h3><p>{escape(details.get("description",""))}</p></div><a class="row-arrow" href="reports/{source.stem}.html" aria-label="阅读{escape(heading)}">↗</a></li>')
     body = f'''<main id="main"><section class="home-intro"><h1>AI 工程，逐篇读。</h1><p>从论文到实现，记录模型、系统与评估中的具体进展。<br>关心方法怎样实现，也关心它在什么条件下有效。</p></section>
-<section class="latest" aria-labelledby="latest-title"><div class="latest-main"><div class="issue-meta"><span>最新一期</span><time datetime="{latest.stem[:10]}">{latest.stem[:10]}</time></div><h2 id="latest-title"><a href="reports/{latest.stem}.html">{escape(title)}</a></h2><p>{escape(meta.get('description',''))}</p><a class="read" href="reports/{latest.stem}.html">展开阅读 <span aria-hidden="true">↗</span></a></div><aside class="latest-aside"><h3>从研究到实践</h3><p>论文里的实验，博客里的实现，以及作者在 X 上继续展开的讨论。</p><p>把相关材料放在一起，读清一个具体的技术问题。</p><a href="reports/{latest.stem}.html#x-上的技术讨论">读 X 上的技术讨论 →</a></aside></section>
+<section class="latest" aria-labelledby="latest-title"><div class="latest-main"><div class="issue-meta"><span>最新一期</span><time datetime="{latest.stem[:10]}">{latest.stem[:10]}</time></div><h2 id="latest-title"><a href="reports/{latest.stem}.html">{escape(title)}</a></h2><p>{escape(meta.get('description',''))}</p><a class="read" href="reports/{latest.stem}.html">展开阅读 <span aria-hidden="true">↗</span></a></div><aside class="latest-aside"><h3>从研究到实践</h3><p>论文里的实验，博客里的实现，以及作者在 X 上继续展开的讨论。</p><p>把相关材料放在一起，读清一个具体的技术问题。</p>{x_link}</aside></section>
 <section id="archive" class="archive-section"><div class="section-heading"><h2>全部文章</h2><span>{len(items)} 期 · 按发布日期</span></div><ul class="archive">{''.join(rows)}</ul></section>
 </main>'''
     (OUT/'index.html').write_text(frame('AI 工程，逐篇读', body),encoding='utf-8')
