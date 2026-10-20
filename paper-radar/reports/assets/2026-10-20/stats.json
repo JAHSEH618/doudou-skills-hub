@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-20",
+  "mode": "每日推送",
+  "window": "10-19 → 10-20",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {
+      "full": 0,
+      "abstract": 2
+    },
+    "模型": {
+      "full": 2,
+      "abstract": 0
+    },
+    "软件系统": {
+      "full": 0,
+      "abstract": 3
+    },
+    "工程方法": {
+      "full": 0,
+      "abstract": 1
+    }
+  },
+  "practice_full": 6,
+  "practice_abstract": 1,
+  "news": 2,
+  "flash": 0,
+  "pool": 3,
+  "commentary": 0,
+  "judgments": 26,
+  "graph": {
+    "sources": [
+      {
+        "id": "SE",
+        "label": "LLMEI 软错误\n2610.22520",
+        "type": "论文"
+      },
+      {
+        "id": "AV",
+        "label": "宽松验证\n2610.23818",
+        "type": "论文"
+      },
+      {
+        "id": "KV",
+        "label": "KV 驻留\n2610.22863",
+        "type": "论文"
+      },
+      {
+        "id": "HL",
+        "label": "Helion × CompileIQ\n10-19",
+        "type": "一方博客"
+      },
+      {
+        "id": "EP",
+        "label": "vLLM Elastic EP\n10-19",
+        "type": "一方博客"
+      },
+      {
+        "id": "AK",
+        "label": "AWS 双向 KV\n10-19",
+        "type": "一方博客"
+      }
+    ],
+    "judgments": [
+      {
+        "id": "J24",
+        "label": "软错误故障签名\n四分类"
+      },
+      {
+        "id": "J25",
+        "label": "接受率\n不是吞吐"
+      },
+      {
+        "id": "J26",
+        "label": "多轮 KV\n驻留问题"
+      },
+      {
+        "id": "J1",
+        "label": "真实负载下重测"
+      },
+      {
+        "id": "J11",
+        "label": "观测先于容错"
+      },
+      {
+        "id": "J21",
+        "label": "加速数字带条件集"
+      }
+    ],
+    "edges": [
+      {
+        "from": "SE",
+        "to": "J24",
+        "kind": "新增"
+      },
+      {
+        "from": "SE",
+        "to": "J11",
+        "kind": "印证"
+      },
+      {
+        "from": "AV",
+        "to": "J25",
+        "kind": "新增"
+      },
+      {
+        "from": "AV",
+        "to": "J1",
+        "kind": "印证"
+      },
+      {
+        "from": "AV",
+        "to": "J21",
+        "kind": "印证"
+      },
+      {
+        "from": "KV",
+        "to": "J26",
+        "kind": "新增"
+      },
+      {
+        "from": "HL",
+        "to": "J1",
+        "kind": "印证"
+      },
+      {
+        "from": "HL",
+        "to": "J21",
+        "kind": "印证"
+      },
+      {
+        "from": "EP",
+        "to": "J21",
+        "kind": "印证"
+      },
+      {
+        "from": "AK",
+        "to": "J21",
+        "kind": "印证"
+      }
+    ]
+  }
+}

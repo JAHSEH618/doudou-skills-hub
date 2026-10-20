@@ -6,13 +6,16 @@
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
 > 非论文（工程实践节的详条目与简条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注，简条目再加【仅摘要】；【资讯】【快讯】不进本账本（硬规则 11），解说链接也不进。
 
-**上次周扫：2026-10-19**（窗口 10-18 → 10-19；1 天，0 篇论文 + 2 条实践详条目（Scion + Harness²）+ 1 条资讯（Anthropic 公益基金）；报告 `reports/2026-10-19.md`，已推送：是——本期上线）
+**上次周扫：2026-10-20**（窗口 10-19 → 10-20；1 天，8 篇论文（2 全文 + 6 仅摘要）+ 6 条实践详条目 + 1 条简条目 + 2 条资讯；报告 `reports/2026-10-20.md`，已推送：是——本期上线）
 
 格式：`- [首推日期] 【溯源】标题 · 会议/机构 · arXiv ID 或会议页链接 —— 当时判词`
 （非论文条目：`- [首推日期] 【一方博客/工业博客/技术报告/上游变更】标题 · 来源方 · 原文链接 —— 当时判词`）
 （ID/链接为硬要求，无 arXiv ID 的会议论文用会议页链接；2026-08-20 前的旧条目缺 ID 属历史欠账，再次遇到该论文时顺手补上）
 
 ## 硬件
+
+- [2026-10-20] 【仅摘要】HBFSim: A Simulator for Exploring HBF in Memory Hierarchies for LLMs · https://arxiv.org/abs/2610.23503 —— HBF（TB 级本地 / HBM 级带宽）事件驱动模拟；服务装不进 HBM 的数据比 host DRAM 快 11.0–19.0×；HBM 更适合活跃序列 KV 而非通用 cache
+- [2026-10-20] 【仅摘要】CMM-MP: A Novel Memory Pooling Architecture using Purpose-built Memory Device with CXL and Ethernet · SK hynix（OCP Summit 2026）· https://arxiv.org/abs/2610.22716 —— CXL + Ethernet 合成本池化 fabric，定位 HBM 容量与 host DRAM 延迟之间；Valkey+YCSB/DiskANN 场景胜 RDMA-based
 
 - [2026-10-18] 【全文】Replay the Curvature: Accurate and Scalable NVFP4 Quantization for LLM Inference · KlingAI Research / 复旦 / 上海 AI 孵化器 / 中科大 · https://arxiv.org/abs/2609.36654 —— W4A4 七基准问题加权恢复 99.35/100.84%（对 BF16），胜 ScaleSweep 97.28/99.03；逐层计算 15.17×/23.14×、峰值 35 GB，整模型时间是投影值。J21 辅助
 
@@ -55,6 +58,9 @@
 
 ## 模型
 
+- [2026-10-20] 【全文】Understanding LLM Hallucinations Caused by Soft Errors · Villanova + MBZUAI · https://arxiv.org/abs/2610.22520 —— LLMEI 注入 SRAM 多位翻转，3,200 GPU 时；幻觉四分类分布随 BER 移动；代码任务断崖（Token Corruption 占 100%）、数学渐进；J24：代码通过率是硬件可靠性比数学分数更好的哨兵
+- [2026-10-20] 【全文】Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding · https://arxiv.org/abs/2610.23818 —— 5 条宽松验证规则 × 360 配置，vLLM 0.26.0 单 H100、3 seed 约 750 GPU 时；198/300 cell 丢精度、144 变长 cell 中 132 丢、省轮次 40 cell 中 35 丢；spec_casc_tok 唯一平均保精度；J25
+
 - [2026-10-18] 【全文】Finetuning with Sampling: SFT Learns Better Than You Think · 哈佛（Karan/Chen/Du） · https://arxiv.org/abs/2610.02140 —— MCMC projection sampling 改写 off-policy 轨迹、SFT 目标不变：MATH500 +33.7% 超最强 RL 26.9pp、pass@k 0→67.2/53.1；Olmo 数据微调 Qwen 化学 57.33 < vanilla 61.8。LW 2026-10-16 独立验证：对齐任务 replay 比 projection sampling 更划算（54%→14%，每保留 token 约 20 生成 token）。J22 主证据
 
 - [2026-09-28] 【全文】Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs · https://arxiv.org/abs/2609.27262 —— 13 模型八数据集；顺序全参遗忘，多任务是部署折中；四私有数据，代码未核实
@@ -86,6 +92,10 @@
 - [2026-09-10] 【仅摘要】Quantization Amplifies Determinism, Not Bias: Scale-Dependent Behavioral Effects of Serving-Time Weight Compression · 单作者 Dachi Kurtskhalia · arXiv 2609.07901 —— Qwen3-8B/14B/32B × W4A16 AWQ / W8A16 FP8-Marlin / bf16，约 71k 配对补全，三波预注册：8B 上 int4 输出集中度 +5.1pp（Holm p=.023，重跑 +4.4pp）、TTR −0.011；14B/32B 集中度不显著但出现风格漂移；刻板印象方向零结果。J19 主证据
 
 ## 软件系统
+
+- [2026-10-20] 【仅摘要】Understanding KV Residency in Production-Scale Agentic LLM Workloads · https://arxiv.org/abs/2610.22863 —— 生产多轮 trace：p99 单会话 KV 需求 > H100 80GB HBM；1 小时空闲上限降需求 3.6×；KV 是驻留问题不是纯驱逐；J26
+- [2026-10-20] 【仅摘要】BaGuaLu-2: Taming Dynamic Memory Fluctuation for Efficient MoE Model Training over 10,000 GPUs · https://arxiv.org/abs/2610.23064 —— 1.04T MoE / 12,288 卡，35% MFU 下持续 2+ EFlops；对两个 SOTA 平均 1.14×/1.13×（基线名需对原文）
+- [2026-10-20] 【仅摘要】FuTransformer: FP8 prefill and INT4 decode for Llama-style inference on Hopper · https://arxiv.org/abs/2610.23796 —— prefill 对 compiled PyTorch FP8 最高 1.48×（1.29 PFLOP/s）、8B 对 CODA BF16 1.13×、FP8 2.02–2.18×；INT4 decode 权重 + INT4 KV，8B/70B 验
 
 - [2026-10-18] 【全文】VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction · 中科院计算所 / 北航 / Infrawaves / 上海创新院 · https://arxiv.org/abs/2610.03286 —— E2E 1.06–4.24×（up to）、环境成本最多 -89%；沙箱内存平均利用 8%、页共享密度达原生 E2B 905%；8%/60% 为作者自报生产剖析。J21 主证据、J1 辅助
 
@@ -184,6 +194,8 @@
 
 ## 工程方法
 
+- [2026-10-20] 【仅摘要】Equivalence testing and run-count design for stochastic machine-learning experiments · https://arxiv.org/abs/2610.23700 —— TOST + 功效分析 + seed×item 两层方差 + 闭环运行次数公式，270 cell 验证；4 次公开运行的等效主张基本不成立（每方法 2 次不够）
+
 - [2026-10-18] 【全文】Are Benchmarks Reliable? Toward Structural Diagnosis via Item-Level Capability Boundaries · 北师大 · https://arxiv.org/abs/2609.33196 —— BSDProbe item 级能力边界：MATH 题序异常率 4.25–8.18%、GSM8K 跨模型轴 28.13%、GPQA 最高 48.21–57.59%；画像引导选题平均 NDR +17.9%（MMLU +24.1/GPQA +30.1/PopQA +37.1）。J23 主证据
 
 - [2026-09-28] 【全文】GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents · https://arxiv.org/abs/2609.12191 —— 首推；整体排序ρ0.94但接近候选31%排错，四评委平均未改善；政策/结果感知 gate 有用
@@ -215,6 +227,14 @@
 - [2026-09-10] 【仅摘要】When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination · arXiv 2609.09696 —— 落选池。Gemini 3.0 Pro 找 150 篇论文 450 处植入错误：单篇 50%、小批 60%、大批 2.8%，大批时编造不存在的错误而非弃权；最像真的错误最常漏
 
 ## 工程实践（非论文）
+
+- [2026-10-20] 【一方博客】One search, two layers — compiler controls inside PyTorch Helion using NVIDIA CompileIQ · PyTorch 团队 · https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/ —— 详条目。搜索空间推到 ptxas 寄存器分配层（CUDA 13.3 新控制面）：单目标 1.047×（0.0971→0.0928 ms，d≈2.5，两次独立运行最优 ACF 一致）、多目标 occupancy +0.16pp（p=9.2e-23）换 runtime 1.75–2% + L1TEX +4.5pp；ACF 绑硬件+工具链
+- [2026-10-20] 【一方博客】Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM · AWS · https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/ —— 详条目。1P1D P5en+EFA：Qwen3-32B TTFT 最多 1.6×、GLM-5-FP8 最多 3.3×（长 prompt）；decode→prefill 回灌 KV，下一轮温缓存起步；源自 Trainium，贡献 vLLM
+- [2026-10-20] 【一方博客】Elastic EP, near-zero-downtime · vLLM 团队（NVIDIA 参与）· https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime —— 详条目。DEP 拓扑，异步准备 + NIXL EP：16→20 GPU 停机 99.62s→0.82s、20→16 56.25s→1.96s；仅 MoE 专家并行部分，attention 走副本逻辑
+- [2026-10-20] 【一方博客】Introducing TorchNeuron — Native PyTorch backend for AWS Trainium · PyTorch / AWS · https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/ —— 详条目。Trainium2/3 原生 PyTorch 设备：eager（实验）+ torch.compile + NKI；Apache 2.0，公测 10-20；Deepgram 自报每美元约多 60% 输入音频 vs GPU；10 万模型盲扫约 22k 算子无原生 lowering
+- [2026-10-20] 【一方博客】Accelerating Mamba-2 with high-performance forward-pass kernels in NVIDIA CUDA Tile · NVIDIA / Jane Street · https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/ —— 详条目。Mamba-2 前向 cuTile（3 手写 kernel），单 B300，对 Triton 参考（mamba_ssm 2.3.2.post1）1.14–1.82×；kernel 级非端到端，无反向
+- [2026-10-20] 【一方博客】Low-resource programming languages · OpenAI · https://openai.com/index/low-resource-programming-languages —— 详条目。MultiLangBench（20 语言建 SQLite 兼容引擎）：GPT-6 Astra 平均 87.4% vs GPT-5.6 Sol 26.8%、Luna 40.3%；COBOL 迁移 86.6% vs 5.4%（低推理，成本 −39%）、高推理 97.9%；测试套件开源
+- [2026-10-20] 【一方博客】【仅摘要】GRAFT——把 reward hacking 行为定位到独立适配器再删掉 · Anthropic alignment（MATS）· https://alignment.anthropic.com/2026/graft/ —— 简条目。RETAIN/FORGET 适配器梯度路由：被标记轨迹只更新 FORGET、monitor 只路由不进奖励；Qwen3-8B Countdown-Code 目标任务提升且 hacking 率不升；单轮 ≤8B
 
 - [2026-10-19] 【一方博客】Redesigning source control at Anthropic（Scion） · Anthropic · https://www.anthropic.com/engineering/redesigning-source-control —— 详条目（24,074 字符全文读）。monorepo 日合并 5 月约 2,500 → 9 月 3 万+（增量多数为 agent 提交）；主分支历史约 100 GB、压缩工作副本 >25 GB；CI 每天约 2,500 万次检查；朴素「每分支全量快照」一天 >600 PB git 流量；拆控制面（Spanner）+ 内容寻址数据面（CAS）+ 三级缓存（命中率 99%+）；CI 收回约 25% CPU、checkout 快两个数量级、基础设施 CPU/内存小 200 倍；7 人团队 5 个月完成迁移。适用边界原文写死：非 git 即插即换替代品，仅「数万名工程师或 agent 集群」超大 monorepo 才值得自建；Claude Mythos Preview 重写入库管线（内存省 20×/提速 4×）为作者侧陈述、无可复现路径。硬规则 19 漏网必看条目（skipped_no_date，卡片无 `<time>`）读全文 + 四项核验后补收。解说：The New Stack、Simon Willison（导读）
 - [2026-10-19] 【论文→实践详条目】Harness²: Recursive Agent Harnessing for an Open World · Google Cloud AI Research · https://arxiv.org/abs/2610.14224 —— v1 提交 10-09（早于 exa 搜窗 start=10-15，未被四线搜捞到），10-18 开源 v0.1.0（Apache 2.0，google-research/harness2），开源事件在窗口内 → 本期按第二条实践详条目收（非「窗口内新论文」，v1 10-09 如实标注）。冻结权重、递归调优 8 组件 harness（系统提示/护栏/记忆/技能/工具指引/脚本/子 agent/中间件，Propose–Probe–Compose 对比式递归 + EXPERIENCE.md 经验库）；k=1 WB 最高 11.5（GLM-5 OpenCode 64.2→75.7）/ Job 4.5 / LAB 11.8pp，k=5 并行再 +2.9–4.2；弱执行器（GLM-5）受益更大。结果全部 Google 自报、无独立复现，仓库自注「非 Google 官方支持的产品」；绑定 GLM-5 / Gemini 3.5 Flash × OpenCode / Codex，v0.1.0 单一机构，换执行器/外壳数字需重测。J8「harness 先行」半句弱印证（不改状态，仍【存疑】）。解说：AI In Context（Rebecca Stone，导读）

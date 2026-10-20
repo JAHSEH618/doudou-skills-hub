@@ -17,7 +17,8 @@
 - **支撑追加（2026-09-10）**：Osprey（arXiv 2609.09338，EMNLP 2026）把本条推到投机解码的 drafter：接受率是 drafter 训练分布的函数，不是模型常数——对单目标窄分布训练的 drafter 在 workload 切换时接受率崩，目标无关预训练的 backbone 在域外和多语言数据上增益最大（Qwen3-8B 接受长度 +16.1%、Llama-3.3-70B +21.2%、MiniMax-M2.5 +22.7%）。所以「投机解码提速 N×」这个数字也要带 workload 分布。vLLM x AgentX（一方博客，辅助证据）给了 SLO 版本：`--long-prefill-token-threshold 512` 让 DeepSeek V4 Pro 在 B300 上吞吐 +93%、P90 交互 2.3×，代价是长请求 TTFT 变差——同一个开关在 TTFT 敏感的部署上是负优化
 - **支撑追加（2026-09-28）**：[AgentKV](https://arxiv.org/abs/2609.14872) 的最高 1.80× 绑定 H100 NVL、Qwen3-32B、32K 输入/1K 输出及固定显存预算；紧 KV 预算仍损失任务分数。[vLLM Kimi K3](https://vllm.ai/blog/2026-09-13-kimi-k3-performance-optimization)（一方博客，辅助证据）固定 B300、TP8、CUDA 13.3 与提交 82a85dc1，相对 v0.27.1 在并发 1/4/16 吞吐 2.2/2.5/2.8×；两端关闭 prefix caching。报告倍率需保留版本、负载与缓存条件。
 - **支撑追加（2026-10-18）**：[VenusRL](https://arxiv.org/abs/2610.03286) 的 4.24× 是 agentic RL 负载上的 up to 值，区间下界 1.06×——调度收益强依赖负载形状；其生产剖析（沙箱内存平均利用 8%、环境沙箱占非 GPU 成本 >60%）为作者自报（Infrawaves 即系统运行方），按方向性证据读。[vLLM K3 megakernel](https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel)（一方博客，辅助证据）842+ tok/s 绑定 16×GB300、batch 1、合成验收长度；AgentX 1.8× 的比较基线是 8 卡旧结果而非同卡对照。[MI355X 报告](https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x)（一方博客，辅助证据）的 24.4% 只在 50 tok/s/user P90 交互性点成立，且随并发放大（c70 28.9%）——负载点是必带限定。
-- **更新**：2026-10-18
+- **支撑追加（2026-10-20）**：[Acceptance Is Not Speed](https://arxiv.org/abs/2610.23818)（全文，J25 主证据）360 配置全部带 target/drafter/规则/硬件/seed 条件，跨服务器可复现性明写「round 比可复现、time 比不可，原因逐条列出」；[Helion × CompileIQ](https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/)（一方博客，辅助证据）4.7% 带 p 值与两次独立运行；[BaGuaLu-2](https://arxiv.org/abs/2610.23064)（仅摘要）1.14×/1.13× 绑定 12,288 卡 / 35% MFU 持续值
+- **更新**：2026-10-20
 
 ### J2 · 约束和数据不要写在 tool/skill description 里——那个位置生效权重垫底，工具的「存在」本身就是压过指令的强信号
 
@@ -92,7 +93,8 @@
 
 - **支撑**：Meta 失效分析（先知道故障长什么样）→ SysOM-AI/Eroica/ARGUS（观测层）→ ByteRobust（容错系统）的依赖链；SDCs in the Wild（没有 workload 级回放观测，坏卡问题会被当代码 bug debug 几周）
 - **边界**：自建集群才完整适用；租云/调 API 团队取其结论部分（loss spike 不一定是你的代码）
-- **更新**：2026-08-17
+- **支撑追加（2026-10-20）**：[Understanding LLM Hallucinations Caused by Soft Errors](https://arxiv.org/abs/2610.22520)（全文，3,200 GPU 时）——硬件软错误在应用层呈现四种幻觉，分布随任务与 BER 移动，代码生成断崖式崩溃、数学推理渐进退化——应用层故障签名本身就是观测层，知道「故障长什么样」才写得出现在监控规则（见新增 J24）
+- **更新**：2026-10-20
 
 ### J12 · 互联带宽反向约束服务架构：论文里的漂亮架构大多默认 NVLink+IB，普通云实例（10–35 Gbps）下结论会翻转
 
@@ -167,7 +169,8 @@
 - **支撑**：[VenusRL](https://arxiv.org/abs/2610.03286)（主证据：agentic RL 负载 E2E 1.06–4.24×，4.24 为 up to、环境成本最多 -89%；生产剖析沙箱内存平均利用 8%、环境沙箱占非 GPU 成本 >60%）；MI355X AgentX 报告（一方博客，辅助证据：24.4% 吞吐优势只在 50 tok/s/user P90 交互点成立，峰值算力 10.1 vs 13.5 PFLOP/s 反而更低，赢在软件栈）；vLLM K3 megakernel（一方博客，辅助证据：842+ tok/s 绑定 16×GB300 / batch 1 / 合成验收长度，AgentX 1.8× 对比 8 卡旧基线）；JarvisLabs Blackwell dtypes（工业博客，辅助证据：NVFP4 2.41× 与 TTFT 8.4× 绑定 concurrency 420；MXFP4 是 4-bit 却因无 FP4 算力路径而更慢——位数不等于性能）
 - **边界**：证据多为一方报告，独立复现有限（MI355X 数字来自 SemiAnalysis InferenceX 第三方建模）；部分博客条件集不完整（DSpark 合成验收长度、AgentX 缓存策略细节）
 - **可操作**：① 引用加速数字时列全五要素：对比基线、负载、并发点、卡数、是否 up to；② 标题级"N×"先找区间下界或最小配置条件；③ 采购 / SLO 决策前在自己的负载上复测
-- **更新**：2026-10-18
+- **支撑追加（2026-10-20）**：本期一方三件套条件集都写在文内：[Helion × CompileIQ](https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/)（一方博客，辅助证据）1.047× 绑定 GB200/B200 + CUDA 13.3 ptxas 控制面；[vLLM Elastic EP](https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime)（一方博客，辅助证据）0.82s 停机绑定 16↔20 GPU DEP 拓扑；[AWS 双向 KV](https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/)（一方博客，辅助证据）TTFT 1.6×/3.3× 绑定 1P1D P5en+EFA + 两模型
+- **更新**：2026-10-20
 
 ### J22 · posttraining 数据管线（采样 / 改写 / 混合比例）与参考模型强耦合；换参考模型后跨模型复用数据或 checkpoint 必须先验证 vanilla 基线是否被反超
 
@@ -182,3 +185,25 @@
 - **边界**：主轴为单一模型家族（Qwen3）、单一机构（北师大）；"结构→可靠性"是诊断方向，不是对具体基准的"失效判决"；换轴后异常率分布需重测
 - **可操作**：① 用基准区分接近模型前先查题序 / 跨模型异常率或同类结构指标；② GPQA 类高异常基准对接近模型报告多排序 / 多种子；③ 选题 / 消融可借画像引导选题降方差
 - **更新**：2026-10-18
+
+
+### J24 · 硬件软错误的应用层故障签名是随任务与错误率变化的四分类分布；代码生成任务是推理硬件可靠性比数学推理分数更好的哨兵
+
+- **支撑**：[Understanding LLM Hallucinations Caused by Soft Errors](https://arxiv.org/abs/2610.22520)（全文，主证据：LLMEI 注入 SRAM 多位翻转，3,200 GPU 时，4×A800-80GB + 3×A6000-48GB；四分类 Token Corruption / Language Drift / Logical Corruption / Premature Termination，分布随 BER 移动——温和错误破坏推理与语义、严重损坏致 token 崩溃；代码生成任务过阈值后 Token Corruption 占损坏输出 100% 断崖式崩溃，数学推理渐进退化）；OSDI '26《SDCs in the Wild》（独立印证：合成压测漏 60%+ 坏卡，要用触发失败的确切 workload 回放定位）——两者收敛：故障签名不落在通用压测里，落在任务特定的失败模式里
+- **边界**：22520 是受控注入实验，BER 是注入参数，不是某台真实机器的自然错误率统计；「代码比数学更敏感」由论文内两任务对比推出，不是线上监控指标的对照。与 J11 的关系（不合并）：J11 说先建观测层，本条给观测层的具体形态（盯哪个任务的通过率）
+- **可操作**：① 推理硬件可靠性监控把代码生成类任务通过率纳入哨兵指标，不只看数学分数——软错误渗入时后者先不动；② 同一模型代码通过率断崖而数学分数不动时，先查硬件侧（SRAM/位翻转类），不要先怀疑模型
+- **更新**：2026-10-20
+
+### J25 · 接受率不是吞吐：投机解码的宽松验证用输出变长与精度损失换接受率，长度膨胀必须进验收指标
+
+- **支撑**：[Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding](https://arxiv.org/abs/2610.23818)（全文，主证据：5 条宽松验证规则 × 360 配置，vLLM 0.26.0 单 H100，GPT-OSS-20B/Qwen3-8B，EAGLE-3，3 seed 约 750 GPU 时，7 基准；300 评分 cell 198 个（66%）丢精度，激进三规则 180 cell 丢 143；144 个变长 cell 中 132 丢精度；EAGLE 头下真省轮次的 40 cell 中 35 丢；spec_casc_tok 唯一平均保精度）；Osprey（arXiv 2609.09338，独立印证，见 J1：接受率是 drafter 训练分布的函数不是模型常数）——两者收敛：接受率是可调但不是免费的量，代价在「省轮次」指标之外
+- **边界**：单 H100、两个目标模型；测的是「搜到的最宽松设置」不是方法自身极限；精度损失是基准评分（HumanEval/LiveCodeBench/MT-Bench 等），业务任务上的量级要按 J1 重测。与 J21 的关系（不合并）：J21 管加速数字的读法纪律，本条管加新优化时必须同时看的指标集
+- **可操作**：① 引入宽松/有损验证时，把长度膨胀与精度损失和「省轮次」放同一张仪表盘再定去留；② 只看一个数就看精度损失不看接受率——66% 的配置证明后者与前者不挂钩
+- **更新**：2026-10-20
+
+### J26 · 多轮 agentic KV 是内存驻留问题：空闲超时与容量准入是 KV 管理的一等公民，不是驱逐策略的附庸
+
+- **支撑**：[Understanding KV Residency in Production-Scale Agentic LLM Workloads](https://arxiv.org/abs/2610.22863)（仅摘要，主证据：生产多轮 trace 测出 p99 单会话 KV 需求超 H100 80GB HBM，会话 1 小时空闲上限把内存需求降 3.6×）；[AgentKV](https://arxiv.org/abs/2609.14872)（独立印证：phase-aware KV 驱逐，匹配实现 12 配置平均 +4.2pp，1.80× 绑定 H100 NVL/32B/32K）——两者收敛：agentic 负载下 KV 的生命周期（空闲、阶段、回收）决定内存行为，纯驱逐策略不成立
+- **边界**：22863 是摘要级信息，硬件级结论（H100 80GB 上限、3.6×）采购决策前需全文核验；AgentKV 的 1.80× 绑定特定硬件/模型（见 J1）
+- **可操作**：① 多轮 agent serving 先在自己的流量上量 p99 单会话 KV 足迹与会话空闲时长分布，再定 KV 预算；② 空闲超时要作为显式参数（论文点是 1 小时）而不是藏在 cache 里
+- **更新**：2026-10-20

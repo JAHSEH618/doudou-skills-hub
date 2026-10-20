@@ -1,7 +1,17 @@
 {
-  "checked_at": "2026-10-19T03:36:04.253378+00:00",
+  "checked_at": "2026-10-20T04:59:02.590042+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
+    {
+      "url": "https://alignment.anthropic.com/2026/graft/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://alignment.anthropic.com/2026/graft/",
+      "title": "Reducing Reward Hacking by Localizing Bad Behavior Instead of Penalizing It",
+      "sources": [
+        "reports/2026-10-20.md"
+      ]
+    },
     {
       "url": "https://arxiv.org/abs/2608.11095",
       "status": "reachable",
@@ -592,6 +602,57 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2610.22520",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.22520",
+      "title": "[2610.22520] Understanding LLM Hallucinations Caused by Soft Errors",
+      "sources": [
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.22863",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.22863",
+      "title": "[2610.22863] Understanding KV Residency in Production-Scale Agentic LLM Workloads",
+      "sources": [
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.23064",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.23064",
+      "title": "[2610.23064] BaGuaLu-2: Taming Dynamic Memory Fluctuation for Efficient MoE Model Training over 10,000 GPUs",
+      "sources": [
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.23818",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.23818",
+      "title": "[2610.23818] Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding",
+      "sources": [
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+      "title": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM | Artificial Intelligence\n                      x\n                     \n                      facebook\n                     \n                      linkedin\n                     \n                      instagram\n                     \n                      twitch\n                     \n                      youtube\n                     \n                      podcasts\n                     \n                      email\n                     \n                      California Consumer Privacy Act (CCPA) Opt-Out Icon",
+      "sources": [
+        "reports/2026-10-20.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://bhavishyapandit9.substack.com/p/ai-agent-memory",
       "status": "reachable",
       "http": 200,
@@ -699,6 +760,16 @@
       "title": "Context compaction is silently destroying your LLM agent's memory - DEV CommunityNavigation menuSearchSearchCloseMore...Copy linkEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeEnter fullscreen modeExit fullscreen modeCollapseExpandDropdown menuLike comment: Like comment: Comment buttonCollapseExpandDropdown menuLike comment: Like comment: Comment buttonCollapseExpandDropdown menuLike comment: Like comment: ThreadDropdown menuLike comment: Like comment: ThreadDropdown menuLike comment: Like comment: Comment buttonCollapseExpandD",
       "sources": [
         "reports/2026-09-10.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
+      "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-20.md"
       ]
     },
     {
@@ -1082,6 +1153,16 @@
       ]
     },
     {
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/low-resource-programming-languages",
+      "title": "",
+      "sources": [
+        "reports/2026-10-20.md"
+      ]
+    },
+    {
       "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
       "status": "restricted",
       "http": 403,
@@ -1132,6 +1213,16 @@
       ]
     },
     {
+      "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/",
+      "title": "Introducing TorchNeuron: Native PyTorch backend for AWS Trainium - PyTorch",
+      "sources": [
+        "reports/2026-10-20.md"
+      ]
+    },
+    {
       "url": "https://pytorch.org/blog/muse-spark-open/",
       "status": "reachable",
       "http": 200,
@@ -1139,6 +1230,17 @@
       "title": "Muse Spark Is Now an Open-Weights Model - PyTorch",
       "sources": [
         "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/",
+      "title": "One Search, Two Layers: Compiler Controls Inside PyTorch Helion using NVIDIA CompileIQ - PyTorch",
+      "sources": [
+        "reports/2026-10-20.md",
+        "state/judgments.md"
       ]
     },
     {
@@ -1358,10 +1460,21 @@
       ]
     },
     {
+      "url": "https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime",
+      "title": "Achieving near-zero-downtime scaling in Elastic Expert Parallelism | vLLM Blog",
+      "sources": [
+        "reports/2026-10-20.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://www.aiincontext.com/articles/google-open-sources-harness2-framework-that-improves-agents-without-touching-mod-26bc8a57",
       "status": "reachable",
       "http": 200,
-      "final_url": "https://www.aiincontext.com/articles/google-open-sources-harness2-framework-that-improves-agents-without-touching-mod-26bc8a57",
+      "final_url": "https://aiincontext.com/articles/google-open-sources-harness2-framework-that-improves-agents-without-touching-mod-26bc8a57",
       "title": "Google Open-Sources Harness² Agent Framework — AI In Context",
       "sources": [
         "reports/2026-10-19.md"
@@ -1441,6 +1554,16 @@
       ]
     },
     {
+      "url": "https://www.federalregister.gov/public-inspection/2026-21447",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://unblock.federalregister.gov/",
+      "title": "Federal Register :: Request Access",
+      "sources": [
+        "reports/2026-10-20.md"
+      ]
+    },
+    {
       "url": "https://www.lesswrong.com/posts/xFxmqkjLNa2Bvs7cw/projection-sampling-preserves-capabilities-but-diminishes",
       "status": "restricted",
       "http": 401,
@@ -1475,7 +1598,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.linkedin.com/posts/nikitha-lokaraju_in-continuation-to-my-previous-post-on-what-activity-7500243024300359680-J-wG",
-      "title": "AI Agent Context Strategy: Storing and Retrieving Information | Nikitha L posted on the topic | LinkedIn",
+      "title": "In continuation to my previous post on \"What actually happen | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
       ]
@@ -1518,6 +1641,16 @@
       "title": "Just a moment...",
       "sources": [
         "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.minimax.io/blog/minimax-m31f",
+      "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost - MiniMax Research | MiniMax",
+      "sources": [
+        "reports/2026-10-20.md"
       ]
     },
     {
