@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T04:59:02.590042+00:00",
+  "checked_at": "2026-10-21T06:00:09.494493+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -833,6 +833,16 @@
       ]
     },
     {
+      "url": "https://github.com/Ojhaharsh/30u30",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/Ojhaharsh/30u30",
+      "title": "GitHub - Ojhaharsh/30u30: 30 Days. 30 Papers. 90% of AI · GitHub",
+      "sources": [
+        "reports/2026-10-21-30u30.md"
+      ]
+    },
+    {
       "url": "https://github.com/OpenBMB/Meshy",
       "status": "reachable",
       "http": 200,
@@ -1130,6 +1140,16 @@
       "title": "DeepSeek Elastic Compute (DSec) | Hacker News",
       "sources": [
         "reports/2026-09-28.md"
+      ]
+    },
+    {
+      "url": "https://ojhaharsh.github.io/30u30/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://ojhaharsh.github.io/30u30/",
+      "title": "30u30 — 30 Foundational AI Papers in 30 Days",
+      "sources": [
+        "reports/2026-10-21-30u30.md"
       ]
     },
     {
@@ -1484,7 +1504,7 @@
       "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
       "status": "reachable",
       "http": 200,
-      "final_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "final_url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
       "title": "Demystifying evals for AI agents \\ Anthropic",
       "sources": [
         "reports/2026-08-23.md",
@@ -1495,7 +1515,7 @@
       "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
       "status": "reachable",
       "http": 200,
-      "final_url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "final_url": "https://www.anthropic.com/research/effective-context-engineering-for-ai-agents",
       "title": "Effective context engineering for AI agents \\ Anthropic",
       "sources": [
         "reports/2026-09-08.md",
@@ -1507,7 +1527,7 @@
       "url": "https://www.anthropic.com/engineering/redesigning-source-control",
       "status": "reachable",
       "http": 200,
-      "final_url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "final_url": "https://www.anthropic.com/research/redesigning-source-control",
       "title": "Redesigning source control at Anthropic \\ Anthropic",
       "sources": [
         "reports/2026-10-19.md"
@@ -1517,8 +1537,8 @@
       "url": "https://www.anthropic.com/news/contextual-retrieval",
       "status": "reachable",
       "http": 200,
-      "final_url": "https://www.anthropic.com/engineering/contextual-retrieval",
-      "title": "Contextual Retrieval in AI Systems \\ Anthropic",
+      "final_url": "https://www.anthropic.com/research/contextual-retrieval",
+      "title": "Contextual retrieval in AI systems \\ Anthropic",
       "sources": [
         "reports/2026-08-24.md"
       ]
@@ -1588,7 +1608,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.linkedin.com/posts/kushalc_got-annoyed-had-an-idea-wrote-a-paper-activity-7493699129169059840-rSzo",
-      "title": "Why CLAUDE.md Never Stops Growing and How to Fix It | Kushal Chakrabarti posted on the topic | LinkedIn",
+      "title": "(got annoyed, had an idea, wrote a paper, now trending #2 on | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
       ]
@@ -1598,7 +1618,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.linkedin.com/posts/nikitha-lokaraju_in-continuation-to-my-previous-post-on-what-activity-7500243024300359680-J-wG",
-      "title": "In continuation to my previous post on \"What actually happen | LinkedIn",
+      "title": "AI Agent Context Strategy: Storing and Retrieving Information | Nikitha L posted on the topic | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
       ]
@@ -1698,6 +1718,27 @@
       ]
     },
     {
+      "url": "https://x.com/GitHub_Daily",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://x.com/GitHub_Daily",
+      "title": "GitHubDaily (@GitHub_Daily) / X",
+      "sources": [
+        "reports/2026-10-21-30u30.md"
+      ]
+    },
+    {
+      "url": "https://x.com/GitHub_Daily/status/2112695371118080053",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/GitHub_Daily/status/2112695371118080053",
+      "title": "GitHubDaily on X: \"Ilya 推荐过一份 30 篇的 AI 论文清单，说真读懂了这些，就懂了当下 AI 90% 的要点。\n\n不少人都存过，可真打开第一篇，满屏公式就读不下去了。\n\n30u30 把这份清单拆成了 30 天的课，一天啃一篇，从 RNN、LSTM 一路学到 Transformer，最后落在 ChatGPT 背后的 RLHF。\n\nGitHub：https://t.co/0RJTmmwJVE\n\n每篇都有一份大白话讲解，外加一页「讲给 5 岁小孩听」的速览，再从零把代码写一遍，配图看着学。\n\n每天还有 5 道练习题，答案也附上了。代码在普通电脑的 CPU 上就能跑，几分… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-21-30u30.md"
+      ]
+    },
+    {
       "url": "https://x.com/GregoryDiamos/status/2096873745420075020",
       "status": "x-original",
       "http": 200,
@@ -1743,11 +1784,10 @@
     },
     {
       "url": "https://x.com/SemiAnalysis_/status/2097445137521524787",
-      "status": "x-original",
+      "status": "reachable",
       "http": 200,
       "final_url": "https://x.com/SemiAnalysis_/status/2097445137521524787",
-      "title": "SemiAnalysis on X: \"Spec Decoding (DSpark) finally works with Pipeline Parallelism in vLLM!! 🔥 A lot of the GPU poor/proletarian have been asking for this feature for a while now, but it took the recent Kimi K3's massive 2.8T parameters affecting the GPU middle class (B200) for it to be implemente… / X",
-      "evidence": "Original X page includes author and post text",
+      "title": "X on X / X",
       "sources": [
         "reports/2026-09-10-weekly.md"
       ]
