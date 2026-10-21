@@ -13,7 +13,7 @@ def main():
     src, out = Path(sys.argv[1]).resolve(), Path(sys.argv[2])
     text = src.read_text()
     css = (DANKOE_SITE / 'dankoe.css').read_text()
-    text = text.replace('<link rel="stylesheet" href="dankoe.css">', f'<style>\n{css}\n</style>')
+    text = re.sub(r'<link\b[^>]*href="dankoe\.css"[^>]*/?>', f'<style>\n{css}\n</style>', text)
 
     def fix_href(m):
         attr, href = m.group(1), m.group(2)
