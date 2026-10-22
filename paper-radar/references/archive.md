@@ -6,6 +6,7 @@
 
 - 仓库：https://github.com/JAHSEH618/doudou-skills-hub
 - 阅读站：https://jahseh618.github.io/doudou-skills-hub/
+- 用户口头的「gitbook」指本站，与 dankoe 翻译站共用此称呼——按内容消歧：雷达报告进这里，译文文章进 dankoe-zh 仓库。
 - 源报告：`paper-radar/reports/YYYY-MM-DD.md`；同日多模式用有意义的后缀。
 - 资源：`paper-radar/reports/assets/<日期或同名后缀>/`，相对链接保持一致。
 - 账本：`paper-radar/state/seen-papers.md` 与 `judgments.md`。
@@ -19,6 +20,13 @@
 5. 默认分支 `master` 的报告变化触发 `.github/workflows/paper-radar-pages.yml`；PR 只构建检查，默认分支才发布。
 6. 等待工作流成功，打开本期网页并检查图表。正文和图表都在线可读才算发布成功。失败时给 GitHub 原文链接并说明 Pages 状态，不能把已推送说成已上线。
 7. 对话给本期网页、历史索引和 GitHub 原文链接，加一句论文/实践/资讯体量，不贴全文。
+
+**定时运行的预算纪律**：commit/push/Actions 验证是迭代预算耗尽时最先被挤掉的步骤。仓库同步完成后**立即** commit + push，把剩余迭代留给 Actions 验证与页面检查；定时任务提示词里已固定提交身份（`user.name`/`user.email`），不要花迭代跑 `git log` 看提交风格。若一次运行死在了推送之前，按其最终响应里列出的「未完成」清单补完剩余步骤后自行验证外部状态（Actions success、页面 200）再汇报。
+
+## 发布坑（2026-10-20 实测）
+
+- 账本（judgments.md / seen-papers.md）条目里**禁止用非 URL 的 markdown 链接**，如 `[SDCs in the Wild](OSDI '26，独立印证：…)`——构建器会把括号内容当相对路径生成 `<a href>`，check_site.py 必报 `missing`。无 URL 的旁证用纯文本：`OSDI '26《SDCs in the Wild》（独立印证：…）`。
+- cron 跑死在推送之前时：主会话可直接复用磁盘产物收尾，不重跑后台（研究产物都在 `reports/assets/<日期>/`）。收尾顺序：写报告 → 更新两个账本 → 同步 `reports/` + `state/` 到 doudou-skills-hub 仓库工作区 → `render_charts.py <assets目录>` → `audit_links.py` → `build_site.py` + `check_site.py _site` → commit + push（作者身份 `了可以 <60974244+JAHSEH618@users.noreply.github.com>`，与往期一致）→ 等 Actions success + 页面与 SVG 资源 200 再汇报。
 
 ## 站点和元数据
 

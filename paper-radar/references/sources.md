@@ -53,6 +53,8 @@
 
 exa 抓不到 x.com。用 `python3 scripts/fetch_sources.py x <链接...>`，走公开的 oEmbed 端点拿作者和正文，不需要登录。快讯每条发出前都过一遍，AIHot 给的中文摘要只是索引，正文以 oEmbed 返回为准。
 
+要精确发帖时间或 oEmbed 正文不全时：`curl -sL https://x.com/<handle>/status/<id>` 不登录也返回服务端渲染 HTML——`og:title`/`og:description` 带帖文正文（长帖截断），`article:published_time` 是精确发帖时间，补快讯「发布者与日期」一栏。发帖时间还可不联网直接由 ID 推得：`(int(id) >> 22) + 1288834974657` 为 epoch 毫秒。正文仍缺完整段时再查 twiscan.com / twstalker.com 这类镜像站。
+
 ## X 账号清单
 
 `references/x-accounts.txt`，`## 组名 !` 的组每期必搜（推理 / 训练基础设施、模型厂国内），其余组被动收——只从 AIHot 返回里认，不主动搜。

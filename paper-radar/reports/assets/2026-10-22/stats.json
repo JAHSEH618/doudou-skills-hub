@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-22",
+  "mode": "每日推送",
+  "window": "10-20 → 10-22",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {"full": 0, "abstract": 2},
+    "模型": {"full": 1, "abstract": 1},
+    "软件系统": {"full": 2, "abstract": 2},
+    "工程方法": {"full": 0, "abstract": 0}
+  },
+  "practice_full": 7,
+  "practice_abstract": 0,
+  "news": 8,
+  "flash": 0,
+  "pool": 2,
+  "commentary": 1,
+  "judgments": 26,
+  "graph": {
+    "sources": [
+      {"id": "EL", "label": "Elicitation or Expansion\n2610.27889", "type": "论文"},
+      {"id": "PP", "label": "POPE 词元集混淆\n2610.25964", "type": "论文"},
+      {"id": "DI", "label": "DeepSeek DeepInfer 开源\n10-20", "type": "资讯"}
+    ],
+    "judgments": [
+      {"id": "J8", "label": "harness 空间先行\n【存疑】"},
+      {"id": "J13", "label": "差分类指标\n需要对照臂"},
+      {"id": "J21", "label": "加速数字\n必须带条件集"}
+    ],
+    "edges": [
+      {"from": "EL", "to": "J8", "kind": "印证"},
+      {"from": "PP", "to": "J13", "kind": "印证"},
+      {"from": "DI", "to": "J21", "kind": "印证"}
+    ]
+  }
+}

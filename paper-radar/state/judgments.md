@@ -72,7 +72,8 @@
 - **2026-09-10 弱印证（不改状态）**：Does Your Agent's Memory Survive a Model Upgrade?（arXiv 2609.05339，LinkedIn）显示脆弱性不限于权重，模型写的压缩笔记同样跟写入模型耦合：换写入模型后精度 +9.91 / −13.28 不对称，固定 schema 图只动 +0.0004，只靠记忆库修复笔记 48 例全败、保留原始历史修回 34 例。它支持「模型生成的产物对升级脆弱」这个更宽的表述，但测的是记忆不是微调，J8 的存疑点（微调是否比 prompt 资产更脆弱）没被触及。边界：48 条合成历史、Llama-3.1-8B↔Qwen2.5-7B 单一跨族迁移
 - **2026-09-10 弱印证（不改状态）**：KVShareArena（arXiv 2609.10266）的跨 checkpoint 实验：换一个同族 checkpoint 写 cache，训练无关的修复方法几乎不动（≤0.06，多数不显著），贴着某个 checkpoint 训出来的 adapter（KVPacket）六格里四格显著掉、最多 −0.135，LegoLink 零重算变体在多跳上 −0.231，失败是静默的（流畅答案配错实体）。这是「贴权重训出来的产物对升级脆弱、训练无关的不脆弱」的又一个样本，与 Memory Survive a Model Upgrade 同向；仍然测的不是任务微调，J8 的存疑点没动
 - **2026-10-19 弱印证（不改状态）**：[Harness²](https://arxiv.org/abs/2610.14224)（arXiv 2610.14224，Google Cloud AI Research；v1 提交 2026-10-09，2026-10-18 开源）为 J8 的「harness 先行」半句提供直接证据：模型权重冻结下，单步对比式递归在 WorkBuddy-Bench 最高提 11.5 分（GLM-5 在 OpenCode 下 64.2→75.7）、JobBench 4.5 分、LAB 部分通过率 11.8pp，k=5 并行递归再提 2.9–4.2；弱执行器（GLM-5）比强执行器（Gemini 3.5 Flash）受益更大。说明 harness 空间存在大量未开发头寸，印证「先把 harness/prompt 空间做到见顶，再考虑动权重」；但不触及 J8 的存疑点（微调对升级是否结构性脆弱），且与本条【存疑】记录的「权重资产 80× 交付优势」构成张力——维持【存疑】，待直接测升级跳衰减的第二来源
-- **更新**：2026-10-19
+- **2026-10-22 弱印证（不改状态）**：[Elicitation or Expansion?](https://arxiv.org/abs/2610.27889)（FuriosaAI + 延世大学 + UC Berkeley，全文）把冻结权重下的 harness 优化收益拆开：LawBench 上 GPT-OSS-20B + 优化 harness 在 pass@1 超 120B 基线 +16.05pp、pass@64 翻转为 -4.00pp；HotpotQA/AppWorld 难子集 40 候选全低于 Qwen3-32B 基线。确认冻结权重下仍有可观空间（「harness 先行」方向），但收益性质是易子集驱动的覆盖结构而非能力位移，且基线为作者自跑；不触及 J8 存疑点（微调对升级的结构性脆弱），维持【存疑】
+- **更新**：2026-10-22
 
 ### J9 · Blackwell（B200）上 attention 已从 GEMM-bound 变为 softmax/SMEM-bound，FP4 的 4× tensor core 优势被指数单元掩盖；「上 Blackwell+FP4=4× 加速」的采购假设是错的
 
@@ -112,7 +113,8 @@
 - **边界**：这是评测方法论规则，不针对特定训练方法。四条实操：① null 几乎白送——多臂实验里每条臂的 checkpoint 0 都是对未训练模型的一次独立评测；② 一次冻结对比不构成 null，三臂研究拥有的复现数还不够；③ transition 类指标比 accuracy 少约 10× 统计功效，百题级 pilot 分辨不出来；④ **保义扰动（置换来源顺序、改写不改义）是成本极低、区分度极高的探针**——一个能把 98% 打回 55% 的测试值得对任何高分结果默认跑一遍。与 J10 互补：J10 管「结论会不会过期」，J13 管「结论一开始是不是测量伪影」
 - **支撑追加（2026-09-08）**：Clean Engineering, Unstable Measurement · arXiv 2609.04198（把问题推到上游一层——见新增的 J15）；Judging LLM-as-a-Judge: Rubric Artifacts · arXiv 2609.02942（EMNLP 2026：**只用 rubric 文本训练、完全看不到被评回答的分类器就能非平凡地预测 judge 输出**——rubric 措辞本身编码了可回收的评价信号；且反事实扰动下把候选回答或 rubric 判据反转，judge 常不更新决定。这是「保义扰动是低成本高区分度探针」那条实操的又一个变体：先跑「只喂 rubric 不喂回答」）；**同族污染新样本**：Post-Training Science for SFT · arXiv 2609.01244 的训练数据由迭代 SFT「改到通过评测为止」生成，而下游打分用的就是同一个判据——生成器与评判器同源，作者把它当优点写（监督目标内部一致），但「判定质量不随 epoch 提升」这类结论在该设置下天然偏保守
 - **支撑追加（2026-09-10）**：Benchmark Scores Are Pipeline-Dependent（arXiv 2609.08765，仅摘要）把「仪器」从模型判断扩到整条评测流水线：8 个网络安全基准 × 10 模型，15 种系统性失败模式，单个流水线选项能让一个模型动 >80 个百分点，两对语义相近任务因评测约定不兼容给出不同排名；在保留任务语义、统一流水线选项的 harness 下 10 个模型里 9 个至少一处移 ≥3 名。可操作：报告分数时把流水线选项当元数据写出来，跨基准比较前先核约定是否兼容
-- **更新**：2026-09-10
+- **支撑追加（2026-10-22）**：[Token-Set Choice Confounds POPE](https://arxiv.org/abs/2610.25964)（全文）是「分数由管线参数决定而非模型」的新样本：POPE 系 VLM 幻觉抽取环节的词元集合与模型真实输出可能不匹配（LLaVA-1.5-7B NF4、9k 题、9 种推理时修正全部失败）；读幻觉率先核抽取代码的词元集合——这是管线参数，不是模型属性
+- **更新**：2026-10-22
 
 ### J14 · 读任何 kernel/量化加速比，先查它测的是哪张卡的算力-带宽配比；中国特供 SKU（H20/L20）算力被砍而带宽基本保留，会系统性放大「省算力」类优化的收益
 
@@ -170,7 +172,8 @@
 - **边界**：证据多为一方报告，独立复现有限（MI355X 数字来自 SemiAnalysis InferenceX 第三方建模）；部分博客条件集不完整（DSpark 合成验收长度、AgentX 缓存策略细节）
 - **可操作**：① 引用加速数字时列全五要素：对比基线、负载、并发点、卡数、是否 up to；② 标题级"N×"先找区间下界或最小配置条件；③ 采购 / SLO 决策前在自己的负载上复测
 - **支撑追加（2026-10-20）**：本期一方三件套条件集都写在文内：[Helion × CompileIQ](https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/)（一方博客，辅助证据）1.047× 绑定 GB200/B200 + CUDA 13.3 ptxas 控制面；[vLLM Elastic EP](https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime)（一方博客，辅助证据）0.82s 停机绑定 16↔20 GPU DEP 拓扑；[AWS 双向 KV](https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/)（一方博客，辅助证据）TTFT 1.6×/3.3× 绑定 1P1D P5en+EFA + 两模型
-- **更新**：2026-10-20
+- **支撑追加（2026-10-22）**：DeepSeek 开源 [DeepInfer](https://github.com/deepseek-ai/DeepInfer)（官方发布 + 官方 Q&A，非论文）：单集群 155T tokens/天 与 $38/GPU·小时（off-peak 计价口径）未绑定 GPU 型号（生产 GPU 型号未披露）、未绑定负载形状、未绑定并发点；第三方 ~82% 毛利估算（Databricks 员工帖，按 B300 租金 $7/GPU·小时）是单点测算。条件集不完整样本——采购/SLO 前按本条 ① 先问 GPU 型号、负载与并发点
+- **更新**：2026-10-22
 
 ### J22 · posttraining 数据管线（采样 / 改写 / 混合比例）与参考模型强耦合；换参考模型后跨模型复用数据或 checkpoint 必须先验证 vanilla 基线是否被反超
 

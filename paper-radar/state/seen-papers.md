@@ -6,13 +6,16 @@
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
 > 非论文（工程实践节的详条目与简条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注，简条目再加【仅摘要】；【资讯】【快讯】不进本账本（硬规则 11），解说链接也不进。
 
-**上次周扫：2026-10-20**（窗口 10-19 → 10-20；1 天，8 篇论文（2 全文 + 6 仅摘要）+ 6 条实践详条目 + 1 条简条目 + 2 条资讯；报告 `reports/2026-10-20.md`，已推送：是——本期上线）
+**上次周扫：2026-10-22**（窗口 10-20 → 10-22；2 天，8 篇论文（3 全文 + 5 仅摘要）+ 7 条实践详条目 + 8 条资讯；报告 `reports/2026-10-22.md`，已推送：是——本期上线）
 
 格式：`- [首推日期] 【溯源】标题 · 会议/机构 · arXiv ID 或会议页链接 —— 当时判词`
 （非论文条目：`- [首推日期] 【一方博客/工业博客/技术报告/上游变更】标题 · 来源方 · 原文链接 —— 当时判词`）
 （ID/链接为硬要求，无 arXiv ID 的会议论文用会议页链接；2026-08-20 前的旧条目缺 ID 属历史欠账，再次遇到该论文时顺手补上）
 
 ## 硬件
+
+- [2026-10-22] 【仅摘要】Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs · https://arxiv.org/abs/2610.26660 —— 混合线性注意力 GUI agent 在移动 NPU 上 serving：长指令不变、每轮只更新近期历史；关键是循环状态的 checkpoint 策略（哪些步保存/恢复），平衡 NPU 内存约束与重算代价
+- [2026-10-22] 【仅摘要】A Hybrid GPU and Processing-Near-Memory Architecture with Shared DRAM for Efficient Prefill-Decode Disaggregation · https://arxiv.org/abs/2610.26131 —— prefill 与 decode 分置 GPU/PNM（processing-near-memory）硬件、共享 DRAM，KV cache 不重复搬运；针对 prefill 计算受限、decode 内存受限的失衡
 
 - [2026-10-20] 【仅摘要】HBFSim: A Simulator for Exploring HBF in Memory Hierarchies for LLMs · https://arxiv.org/abs/2610.23503 —— HBF（TB 级本地 / HBM 级带宽）事件驱动模拟；服务装不进 HBM 的数据比 host DRAM 快 11.0–19.0×；HBM 更适合活跃序列 KV 而非通用 cache
 - [2026-10-20] 【仅摘要】CMM-MP: A Novel Memory Pooling Architecture using Purpose-built Memory Device with CXL and Ethernet · SK hynix（OCP Summit 2026）· https://arxiv.org/abs/2610.22716 —— CXL + Ethernet 合成本池化 fabric，定位 HBM 容量与 host DRAM 延迟之间；Valkey+YCSB/DiskANN 场景胜 RDMA-based
@@ -58,6 +61,9 @@
 
 ## 模型
 
+- [2026-10-22] 【全文】Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation · Sri Krishna College of Technology + Sri Eshwar · https://arxiv.org/abs/2610.25964 —— POPE 系 VLM 幻觉抽取环节的 yes/no 词元集合可能不匹配模型真实输出（LLaVA-1.5-7B NF4、9k 题、9 种推理时修正全部失败）；幻觉率依赖抽取管线的词元集合——是管线参数不是模型属性。J13 印证
+- [2026-10-22] 【仅摘要】PACT: NVFP4 Data-Flow LoRA Fine-Tuning on Consumer GPUs · https://arxiv.org/abs/2610.25048 —— 消费级 GPU 上 NVFP4 数据流 GEMM LoRA 微调，把微调精度从 BF16 降到 NVFP4，针对消费卡显存瓶颈
+
 - [2026-10-20] 【全文】Understanding LLM Hallucinations Caused by Soft Errors · Villanova + MBZUAI · https://arxiv.org/abs/2610.22520 —— LLMEI 注入 SRAM 多位翻转，3,200 GPU 时；幻觉四分类分布随 BER 移动；代码任务断崖（Token Corruption 占 100%）、数学渐进；J24：代码通过率是硬件可靠性比数学分数更好的哨兵
 - [2026-10-20] 【全文】Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding · https://arxiv.org/abs/2610.23818 —— 5 条宽松验证规则 × 360 配置，vLLM 0.26.0 单 H100、3 seed 约 750 GPU 时；198/300 cell 丢精度、144 变长 cell 中 132 丢、省轮次 40 cell 中 35 丢；spec_casc_tok 唯一平均保精度；J25
 
@@ -92,6 +98,9 @@
 - [2026-09-10] 【仅摘要】Quantization Amplifies Determinism, Not Bias: Scale-Dependent Behavioral Effects of Serving-Time Weight Compression · 单作者 Dachi Kurtskhalia · arXiv 2609.07901 —— Qwen3-8B/14B/32B × W4A16 AWQ / W8A16 FP8-Marlin / bf16，约 71k 配对补全，三波预注册：8B 上 int4 输出集中度 +5.1pp（Holm p=.023，重跑 +4.4pp）、TTR −0.011；14B/32B 集中度不显著但出现风格漂移；刻板印象方向零结果。J19 主证据
 
 ## 软件系统
+
+- [2026-10-22] 【全文】The KV-Surgeon: Compensation-Aware Offline KV-Cache Compaction · ZIB + TU Berlin · https://arxiv.org/abs/2610.25933 —— Lemma：KIVI 式 top-m 独立删除里 softmax 重归一化使所有删除决策互相耦合，独立打分等价于优化已变形的目标；ZIB（zero-impact 闭式界）+ TUB（可调代价）交替、离线压实；50×/100× × 三基准 × 4B–30B × 5 种子，50× 处比 attention matching 最高高 4pp，fast 版 2/5 代价拿大部分收益；作者专节警告 zero-impact 界的混合服务陷阱
+- [2026-10-22] 【仅摘要】Conjugate Compilation: Self-Improving Agentic Co-Compilation for Speculative Decoding · https://arxiv.org/abs/2610.25012 —— agentic 编译器搜索 draft/target 编译参数组合，以接受率为反馈迭代调参，面向同芯片投机解码
 
 - [2026-10-20] 【仅摘要】Understanding KV Residency in Production-Scale Agentic LLM Workloads · https://arxiv.org/abs/2610.22863 —— 生产多轮 trace：p99 单会话 KV 需求 > H100 80GB HBM；1 小时空闲上限降需求 3.6×；KV 是驻留问题不是纯驱逐；J26
 - [2026-10-20] 【仅摘要】BaGuaLu-2: Taming Dynamic Memory Fluctuation for Efficient MoE Model Training over 10,000 GPUs · https://arxiv.org/abs/2610.23064 —— 1.04T MoE / 12,288 卡，35% MFU 下持续 2+ EFlops；对两个 SOTA 平均 1.14×/1.13×（基线名需对原文）
@@ -137,6 +146,9 @@
 - [2026-09-10] 【仅摘要】Q2D-Web · Perplexity · arXiv 2609.08887 —— 落选池。190M 网页、69,721 条 agent 改写查询（十种语言、九个月生产流量）、三套相关性判定（agent 引用 / 生产排序 / LLM 补判），公开榜；语料私有
 
 ### Agent 编排
+- [2026-10-22] 【全文】Elicitation or Expansion? Demystifying Gains from Agent Harness Optimization · FuriosaAI + 延世大学 + UC Berkeley · https://arxiv.org/abs/2610.27889 —— 冻结权重只优化 harness：LawBench 上 GPT-OSS-20B harness pass@1 超 120B 基线 +16.05pp、pass@64 翻转 -4.00pp；HotpotQA/AppWorld 聚合值接近更强参照但难子集 40 候选全低于 Qwen3-32B 基线——收益由易子集驱动；pass@1 最优与 pass@128 最优 harness 不是同一个；基线全部作者自跑。J8 弱印证
+- [2026-10-22] 【仅摘要】Cache Engineering for Agents · https://arxiv.org/abs/2610.28577 —— agent 轨迹主导成本是 KV cache I/O 与存储而非计算；任何前缀修改使缓存失效，提出沿轨迹的缓存维护策略（哪些留、哪些重算）
+
 - [2026-08-10] 【仅摘要】Capable language models can outgrow the benefits of collaboration · Nature MI —— 单 agent 基线 ~45% 是多 agent 收益分水岭；无集中验证的架构错误放大 17.2× vs centralized 4.4×
 - [2026-08-10] 【仅摘要】Single-Agent LLMs Outperform MAS Under Equal Thinking Token Budgets —— 算力归一化后单 agent 打平或胜出；MAS 收益部分是未计入的额外算力；context 被污染（非删减）到重度时 MAS 反超
 - [2026-08-10] 【仅摘要】When Do Multi-Agent Systems Help? (Information Bottleneck) —— MAS 真正优势只在有界 relay 下；对弱模型稳定有帮助，对强模型缩小甚至反转
@@ -291,3 +303,5 @@
 - What It Costs to Compose, Rebuild, and Correct Precomputed Memory · arXiv 2608.30647 —— 定向「agent 记忆」判为跳过。KV cache 级「预计算记忆」拼接退化、重建成本高、忽略旁置纠正；Llama-3.1-8B
 - What Makes Agent Memory Useful for Reliable Unanswerable Question Handling? · arXiv 2608.27924 —— 判为跳过。记忆对 UAQ 的收益选择性且跨数据集脆弱
 - Hindsight Memory-PRM · arXiv 2608.29605；MemGuard · arXiv 2608.21867；InjecMEM · arXiv 2608.23471；Towards a Formal Definition of Agent Memory · arXiv 2608.11654 —— 定向「agent 记忆」窗口内见过，判为跳过
+- System X（KV 决策模型）· arXiv 2610.25456 —— 本期窗口内，初疑属 harness 论证群，复核为 KV 决策模型、不在本期论证内，不凑数
+- Shopify Sidekick 分工架构（GTC Berlin 演讲转述）· https://x.com/shao__meng/status/2112889195178181033 —— 原谈日期早于本期窗口，记入「继续阅读」；转述称快 7 倍、成本降约 90%，未核验原文
