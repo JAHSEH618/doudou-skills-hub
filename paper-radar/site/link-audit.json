@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T03:11:10.758943+00:00",
+  "checked_at": "2026-10-22T03:14:58.044198+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -995,6 +995,16 @@
       ]
     },
     {
+      "url": "https://github.com/Ojhaharsh/30u30",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/Ojhaharsh/30u30",
+      "title": "GitHub - Ojhaharsh/30u30: 30 Days. 30 Papers. 90% of AI · GitHub",
+      "sources": [
+        "reports/2026-10-21-30u30.md"
+      ]
+    },
+    {
       "url": "https://github.com/OpenBMB/Meshy",
       "status": "reachable",
       "http": 200,
@@ -1393,6 +1403,16 @@
       "title": "The Huawei-DeepSeek Symbiosis",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://ojhaharsh.github.io/30u30/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://ojhaharsh.github.io/30u30/",
+      "title": "30u30 — 30 Foundational AI Papers in 30 Days",
+      "sources": [
+        "reports/2026-10-21-30u30.md"
       ]
     },
     {
@@ -1971,7 +1991,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.linkedin.com/posts/nikitha-lokaraju_in-continuation-to-my-previous-post-on-what-activity-7500243024300359680-J-wG",
-      "title": "In continuation to my previous post on \"What actually happen | LinkedIn",
+      "title": "AI Agent Context Strategy: Storing and Retrieving Information | Nikitha L posted on the topic | LinkedIn",
       "sources": [
         "reports/2026-09-10.md"
       ]
@@ -2068,6 +2088,27 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-08.md"
+      ]
+    },
+    {
+      "url": "https://x.com/GitHub_Daily",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://x.com/GitHub_Daily",
+      "title": "GitHubDaily (@GitHub_Daily) / X",
+      "sources": [
+        "reports/2026-10-21-30u30.md"
+      ]
+    },
+    {
+      "url": "https://x.com/GitHub_Daily/status/2112695371118080053",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/GitHub_Daily/status/2112695371118080053",
+      "title": "GitHubDaily on X: \"Ilya 推荐过一份 30 篇的 AI 论文清单，说真读懂了这些，就懂了当下 AI 90% 的要点。\n\n不少人都存过，可真打开第一篇，满屏公式就读不下去了。\n\n30u30 把这份清单拆成了 30 天的课，一天啃一篇，从 RNN、LSTM 一路学到 Transformer，最后落在 ChatGPT 背后的 RLHF。\n\nGitHub：https://t.co/0RJTmmwJVE\n\n每篇都有一份大白话讲解，外加一页「讲给 5 岁小孩听」的速览，再从零把代码写一遍，配图看着学。\n\n每天还有 5 道练习题，答案也附上了。代码在普通电脑的 CPU 上就能跑，几分… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-21-30u30.md"
       ]
     },
     {
