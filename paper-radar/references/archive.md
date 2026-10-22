@@ -26,6 +26,8 @@
 ## 发布坑（2026-10-20 实测）
 
 - 账本（judgments.md / seen-papers.md）条目里**禁止用非 URL 的 markdown 链接**，如 `[SDCs in the Wild](OSDI '26，独立印证：…)`——构建器会把括号内容当相对路径生成 `<a href>`，check_site.py 必报 `missing`。无 URL 的旁证用纯文本：`OSDI '26《SDCs in the Wild》（独立印证：…）`。
+- audit_links.py 只并集当前工作目录（skill 目录）下的 `reports/*.md` + `state/*.md`。仓库独有报告（如直接写在仓库的 2026-10-21-30u30.md）不在并集里，其外链不会进 link-audit.json，check_site.py 会以 `external link needs audit` 非零退出（本地干跑若不跑全部报告页同样漏检）。跑审计前先把仓库独有报告拷进 skill 目录。
+- 报告正文的外链 slug 必须以研究产物（candidates.json 的 RSS 原链 / 网页缓存）为准，不能凭记忆拼——凭记忆的截断 slug 会全部 404，audit 的 missing 列表是最后防线，发布前必须 missing=0。
 - cron 跑死在推送之前时：主会话可直接复用磁盘产物收尾，不重跑后台（研究产物都在 `reports/assets/<日期>/`）。收尾顺序：写报告 → 更新两个账本 → 同步 `reports/` + `state/` 到 doudou-skills-hub 仓库工作区 → `render_charts.py <assets目录>` → `audit_links.py` → `build_site.py` + `check_site.py _site` → commit + push（作者身份 `了可以 <60974244+JAHSEH618@users.noreply.github.com>`，与往期一致）→ 等 Actions success + 页面与 SVG 资源 200 再汇报。
 
 ## 站点和元数据
