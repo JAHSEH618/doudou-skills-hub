@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-27",
+  "mode": "每日推送",
+  "window": [
+    "2026-10-22",
+    "2026-10-27"
+  ],
+  "searches": [
+    {
+      "id": "scan-aihot",
+      "source": "AIHot",
+      "query": "fetch_sources.py scan --since 2026-10-22",
+      "status": "ok",
+      "note": "10 热点 + 172 条"
+    },
+    {
+      "id": "scan-hn",
+      "source": "Hacker News",
+      "query": "fetch_sources.py scan（Algolia since 2026-10-22, score>=30）",
+      "status": "ok",
+      "note": "1 条高分帖：Ubicloud 修 vLLM tool-call 准确率（132 分）"
+    },
+    {
+      "id": "scan-x",
+      "source": "X 固定账号",
+      "query": "fetch_sources.py scan（x-accounts.txt）",
+      "status": "ok",
+      "note": "10 账号有帖（OpenBMB、AntLing 等）；去重后 8 条进 X 讨论，AntLing 两帖窗口外只记账"
+    },
+    {
+      "id": "scan-blogs",
+      "source": "一方工程博客 feed",
+      "query": "fetch_sources.py scan（13 源）",
+      "status": "ok",
+      "note": "窗口内：vLLM 3 / HF 2 / OpenAI 7 / NVIDIA Dev 5 / PyTorch 1 / Raschka 1；claude.dev、DeepMind、Qwen、Together、Huyen、Lilian 均 0；anthropic-engineering 页解析失败（0 篇），手动补查确认窗口内无新文章（最新 10-13）"
+    },
+    {
+      "id": "exa-hw-1",
+      "source": "Exa",
+      "query": "arXiv paper NVFP4 FP4 quantization LLM inference kernel Blackwell",
+      "status": "ok",
+      "line": "hardware",
+      "note": "start=2026-10-15, category=research paper, 8 条"
+    },
+    {
+      "id": "exa-hw-2",
+      "source": "Exa",
+      "query": "arXiv CXL memory pooling GPU inference LLM KV cache",
+      "status": "ok",
+      "line": "hardware",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-hw-3",
+      "source": "Exa",
+      "query": "arXiv GPU cluster silent data corruption observability fault tolerance serving",
+      "status": "ok",
+      "line": "hardware",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-md-1",
+      "source": "Exa",
+      "query": "arXiv hybrid linear attention MoE sparse attention architecture LLM",
+      "status": "ok",
+      "line": "model",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-md-2",
+      "source": "Exa",
+      "query": "arXiv LoRA SFT reinforcement learning fine-tuning LLM post-training",
+      "status": "ok",
+      "line": "model",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-md-3",
+      "source": "Exa",
+      "query": "arXiv LLM quantization compression weight-only int4 fp8",
+      "status": "ok",
+      "line": "model",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-ss-1",
+      "source": "Exa",
+      "query": "arXiv LLM inference serving scheduler KV cache prefill decode disaggregation",
+      "status": "ok",
+      "line": "software-systems",
+      "note": "8 条，命中 KVStream / HyScale"
+    },
+    {
+      "id": "exa-ss-2",
+      "source": "Exa",
+      "query": "arXiv LLM agent memory RAG retrieval vector database",
+      "status": "ok",
+      "line": "software-systems",
+      "note": "8 条，命中 AMM 视角文（落选池）"
+    },
+    {
+      "id": "exa-ss-3",
+      "source": "Exa",
+      "query": "arXiv RL post-training infrastructure rollout agentic reinforcement learning system",
+      "status": "ok",
+      "line": "software-systems",
+      "note": "8 条，命中 NgramRL"
+    },
+    {
+      "id": "exa-em-1",
+      "source": "Exa",
+      "query": "arXiv LLM evaluation benchmark reliability methodology audit",
+      "status": "ok",
+      "line": "engineering-methods",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-em-2",
+      "source": "Exa",
+      "query": "arXiv empirical study LLM agent harness negative results",
+      "status": "ok",
+      "line": "engineering-methods",
+      "note": "8 条，命中 WAF / MCP Faults"
+    },
+    {
+      "id": "exa-em-3",
+      "source": "Exa",
+      "query": "arXiv LLM-as-a-judge reliability calibration judge",
+      "status": "ok",
+      "line": "engineering-methods",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-x-1",
+      "source": "Exa",
+      "query": "vLLM SGLang FlashInfer PyTorch release announcement engineering",
+      "status": "ok",
+      "line": "x",
+      "note": "start=2026-10-23, 8 条"
+    },
+    {
+      "id": "exa-x-2",
+      "source": "Exa",
+      "query": "DeepSeek Qwen Kimi GLM MiniMax Hunyuan new model open weights release",
+      "status": "ok",
+      "line": "x",
+      "note": "start=2026-10-23, 8 条"
+    },
+    {
+      "id": "exa-cm",
+      "source": "Exa",
+      "query": "13 次解说 lookup（cm_*，每篇论文/实践详条目一次，硬规则 16 封顶）",
+      "status": "ok",
+      "note": "合格解说 2 条（SkyRL 谈 HyScale、LMSYS 谈 DSV4.1-Flash）；其余为自动聚合站，按硬规则 16 不收"
+    },
+    {
+      "id": "arxiv-window",
+      "source": "arXiv",
+      "query": "fetch_arxiv_window.py（cs.LG/CL/DC/DB/AR/AI/IR/CR/NI/DL/SE/CE, since 2026-10-22）",
+      "status": "partial",
+      "note": "合并 1,399 篇（2610.28693–2610.32982）；cs.OS 抓取失败（1/13 类目）"
+    }
+  ]
+}

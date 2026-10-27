@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T03:14:58.044198+00:00",
+  "checked_at": "2026-10-27T00:42:00.141407+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -10,6 +10,16 @@
       "title": "Reducing Reward Hacking by Localizing Bad Behavior Instead of Penalizing It",
       "sources": [
         "reports/2026-10-20.md"
+      ]
+    },
+    {
+      "url": "https://anthropic.com/news/s1-sec",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/news/s1-sec",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering \\ Anthropic",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -724,6 +734,86 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2610.31827",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.31827",
+      "title": "[2610.31827] KVStream: Adaptive Parallel Storage Management for KV Caching in Large-Scale LLM Serving",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32057",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.32057",
+      "title": "[2610.32057] HyScale: Scaling Long-Context Training for Learned Sparse Attention",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32229",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.32229",
+      "title": "[2610.32229] Training an MoE LLM in MXFP4: How We Closed the Gap to BF16",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32313",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.32313",
+      "title": "[2610.32313] Large-Scale Study of GitHub Copilot Trajectories",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32483",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.32483",
+      "title": "[2610.32483] When Agents Fail: Model or Harness--Who's to Blame?",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32555",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.32555",
+      "title": "[2610.32555] Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32881",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.32881",
+      "title": "[2610.32881] NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32891",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.32891",
+      "title": "[2610.32891] Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
       "status": "reachable",
       "http": 200,
@@ -825,6 +915,16 @@
       ]
     },
     {
+      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "title": "Concerning behavior from a popular open-weight AI model | Cohere",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://cohere.com/blog/megakernels",
       "status": "reachable",
       "http": 200,
@@ -895,6 +995,26 @@
       ]
     },
     {
+      "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+      "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+      "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
       "status": "reachable",
       "http": 200,
@@ -945,6 +1065,36 @@
       ]
     },
     {
+      "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+      "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1 | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
+      "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2 | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
       "status": "reachable",
       "http": 200,
@@ -952,6 +1102,16 @@
       "title": "Introducing Support for Local AI Models in the Antigravity SDK\n            \n            \n            - Google Developers Blog",
       "sources": [
         "reports/2026-09-28.md"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23573764",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://zenodo.org/records/23573765",
+      "title": "MCP-Injector: protocol-level fault injection for tool-calling LLM agents | Zenodo",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -1156,6 +1316,16 @@
       ]
     },
     {
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/allenai/litpivot",
+      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://huggingface.co/blog/funes",
       "status": "reachable",
       "http": 200,
@@ -1243,6 +1413,16 @@
       "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
       "sources": [
         "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -1366,6 +1546,16 @@
       ]
     },
     {
+      "url": "https://networking-docs.nvidia.com/minerva/1.0.1",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://networking-docs.nvidia.com/minerva/1.0.1",
+      "title": "NVIDIA Minerva User Guide | NVIDIA Minerva User Guide",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://news.ycombinator.com/item?id=49508317",
       "status": "reachable",
       "http": 200,
@@ -1446,6 +1636,16 @@
       ]
     },
     {
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "title": "",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://openai.com/index/low-resource-programming-languages",
       "status": "restricted",
       "http": 403,
@@ -1453,6 +1653,16 @@
       "title": "",
       "sources": [
         "reports/2026-10-20.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/openai-cut-incident-investigation",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/openai-cut-incident-investigation",
+      "title": "",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -1466,6 +1676,16 @@
       ]
     },
     {
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "title": "",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
       "status": "restricted",
       "http": 403,
@@ -1473,6 +1693,26 @@
       "title": "",
       "sources": [
         "reports/2026-09-10-weekly.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "title": "",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "title": "",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -1574,6 +1814,16 @@
       "sources": [
         "reports/2026-10-20.md",
         "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch/",
+      "title": "Optimizing Streaming Speech Recognition on Arm® Edge Devices with ExecuTorch - PyTorch",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -1854,6 +2104,36 @@
       ]
     },
     {
+      "url": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
+      "title": "Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Scales to GB300 NVL72 | vLLM Blog",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
+      "title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s | vLLM Blog",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+      "title": "vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash | vLLM Blog",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://www.aiincontext.com/articles/google-open-sources-harness2-framework-that-improves-agents-without-touching-mod-26bc8a57",
       "status": "reachable",
       "http": 200,
@@ -1927,6 +2207,16 @@
       ]
     },
     {
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "title": "How Cerebras Deploys Trillion-Parameter AI Models",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a",
       "status": "reachable",
       "http": 200,
@@ -1954,6 +2244,16 @@
       "title": "Federal Register :: Request Access",
       "sources": [
         "reports/2026-10-20.md"
+      ]
+    },
+    {
+      "url": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+      "title": "Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -2017,6 +2317,16 @@
       ]
     },
     {
+      "url": "https://www.lmsys.org/blog/2026-10-24-dsv41-deepinfer",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.lmsys.org/blog/2026-10-24-dsv41-deepinfer",
+      "title": "More Than DeepInfer: What SGLang Delivers - LMSYS Org",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://www.marktechpost.com/2026-10-16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
       "status": "restricted",
       "http": 403,
@@ -2037,6 +2347,16 @@
       ]
     },
     {
+      "url": "https://www.marktechpost.com/2026-10-23/moonshot-ai-kimi-k3-1-pro-open-weight-model/",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://www.marktechpost.com/2026-10-23/moonshot-ai-kimi-k3-1-pro-open-weight-model/",
+      "title": "Just a moment...",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://www.minimax.io/blog/minimax-m31f",
       "status": "reachable",
       "http": 200,
@@ -2044,6 +2364,16 @@
       "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost - MiniMax Research | MiniMax",
       "sources": [
         "reports/2026-10-20.md"
+      ]
+    },
+    {
+      "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+      "title": "Fixing Tool-Call Accuracy in vLLM",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -2123,6 +2453,17 @@
       ]
     },
     {
+      "url": "https://x.com/OpenAI/status/2113766354386084338",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenAI/status/2113766354386084338",
+      "title": "OpenAI on X: \"During this red-teaming exercise, we also found a vulnerability that allows for unauthenticated remote code execution in Brotli, a widely-deployed compression library included in many pieces of software such as Node.js, Bun, and Envoy.\n\nThe flaw could let an attacker run their own cod… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://x.com/OpenBMB/status/2110656703838699892",
       "status": "x-original",
       "http": 200,
@@ -2131,6 +2472,39 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://x.com/OpenBMB/status/2114703594347725005",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenBMB/status/2114703594347725005",
+      "title": "OpenBMB on X: \"An agent that can run a full post-training pipeline almost never reconsiders its initial strategy.\nWe analyze 1,338 complete training trajectories from PostTrainBench — 7 benchmarks, 4 base models, Claude Code / Codex CLI / OpenCode, 10h on one H100 — and split capability into EXECUT… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://x.com/SaitoWu/status/2113244300008169729",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/SaitoWu/status/2113244300008169729",
+      "title": "Saito on X: \"一张 B300 卡跑推理一小时能收 40 美元，市场上买它一小时只要 5 到 6 美元。SF Compute 的 Evan Conrad 说，这两个数字里必须有一个要变。算力到现在还没被真正定过价。 https://t.co/V7Ydq2NAhf\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://x.com/SaitoWu/status/2114651886712500477",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/SaitoWu/status/2114651886712500477",
+      "title": "Saito on X: \"训练 V3 花了 280 万个 H800 卡时，推理一年烧掉一千五百多万个，是训练的六倍，按两年模型寿命摊是 12 倍。更狠的是 decode 阶段，一块卡只跑出 5% 的算力，瓶颈不在算力，在显存带宽。 https://t.co/Qz98sCSsvr\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {
@@ -2213,6 +2587,17 @@
       ]
     },
     {
+      "url": "https://x.com/emollick/status/2114001653879672877",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/emollick/status/2114001653879672877",
+      "title": "Ethan Mollick on X: \"Without being overly credulous, we should be taking seemingly “out there” ideas about AI cybersecurity from the Labs more seriously. Examples: Anthropic was mocked for saying Mythos-level AI changed cyber & @polynoamial for saying that models would find novel ways to coordinate… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://x.com/hosseeb/status/1773146428594090473",
       "status": "x-original",
       "http": 200,
@@ -2248,6 +2633,17 @@
       ]
     },
     {
+      "url": "https://x.com/natolambert/status/2114770812058186077",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/natolambert/status/2114770812058186077",
+      "title": "Nathan Lambert on X: \"Simplest explanation is just a narrow RL training reliant on their internal infra (which isn't good design for an open weight model)\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
       "url": "https://x.com/rohanpaul_ai/status/2096977141326139447",
       "status": "x-original",
       "http": 200,
@@ -2267,6 +2663,28 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"
+      ]
+    },
+    {
+      "url": "https://x.com/rohanpaul_ai/status/2113713658887102788",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/rohanpaul_ai/status/2113713658887102788",
+      "title": "Rohan Paul on X: \"Moonshot deliberately weakened Kimi K3.1 Pro’s hacking ability before the open release.\n\nthe uncut version solved 90.5% of in-house exploit tasks, while the released model solved 81%, still well above K3’s 33.3% and behind DeepSeek V4.1-Flash at 85.7% by Moonshot’s count.\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://x.com/rohanpaul_ai/status/2114770477688508909",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/rohanpaul_ai/status/2114770477688508909",
+      "title": "Rohan Paul on X: \"OpenRouter shows Anthropic’s 7-day token average rising from about 0.65T a day on September 22 to about 2.25T on October 24, roughly 3.5x.\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-27.md"
       ]
     },
     {

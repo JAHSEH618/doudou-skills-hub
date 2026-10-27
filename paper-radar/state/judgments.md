@@ -39,8 +39,8 @@
 
 - **支撑**：Attn-QAT、Search Your Block Floating Point Scales、Diagnosing FP4 Inference 多篇一致；机制上 NVFP4 的 E4M3 scale（16 值组）比 MXFP4 的 E8M0（32 值组）表达力强
 - **支撑追加（2026-09-08）**：Hardware-Aware FP4 FlashAttention-4（arXiv 2609.04105，Graphcore Research）给出**训练侧**证据——匹配的分布式训练必须保留 FP8 的 probability 与 value，因为**每一条测过的 MXFP4 P/V 训练轨迹都发散**；OCGQuant（arXiv 2609.00066，EMNLP 2026）从机制侧印证 NVFP4 的 block scale 被离群值主导确实是真实误差来源（定义为 Collateral Quantization Error），并给出不牺牲 prefill 速度与峰值解码显存的修法
-- **边界**：结论限 attention 量化；权重 PTQ 另议。**训练侧比推理侧更严**：推理上 MXFP4 是「更差」，训练上 MXFP4 的 P/V 是「直接发散」——两者不是同一档风险
-- **更新**：2026-09-08
+- **边界**：结论限 attention 量化；权重 PTQ 另议。**训练侧比推理侧更严**：推理上 MXFP4 是「更差」，训练上 MXFP4 的 P/V 是「直接发散」——两者不是同一档风险。**边界追加（2026-10-27）**："Training an MoE LLM in MXFP4" 2610.32229（仅摘要）—— GPT-OSS-20B 上 MXFP4 开放训练配方（混合 1D/2D block 量化 + RHT + SR + 简化 weight de-oscillation）把与 BF16 的差距收到 0.007、收敛开销 +20.0% → +5.0%：训练权重/激活层面 MXFP4 付配方成本后能收敛，对象不同于本条的 attention 量化，不构成反驳，但「MXFP4 更差」不能照搬到训练权重侧。
+- **更新**：2026-10-27
 
 ### J5 · 单 agent 起步，多 agent 当作需要实证证明的优化假设；工作状态装得下一个 context window 时，协调是纯开销
 
@@ -53,7 +53,8 @@
 - **支撑**：MAP/CAP（可靠性是头号难题，解法全是系统级；主动用能力换可靠性）；Where Does Agent Reliability Come From?（scaffolding+prompt +9.5pp vs 验证循环 +1.5pp；验证换回生成模型后救回任务 6→2，模型倾向给自己写的东西找理由）；KDD workshop 确定性断言门 +12.4pp
 - **边界**：验证循环的 +1.5pp 卡在分数分布顶端，是「中游」和「接近榜首」的差距——别因贡献小而砍。Working Set of a Coding Agent 追加两条：全部通过测试的 harness 配置之间 token 消耗差 >10×（同样正确、成本差一个数量级，harness 是可优化维度）；且缺事实时 agent **编造而非阻塞**，所以「读了哪些文件」类的观测指标看到的是一个已被填上的洞——**验证必须打在产出上，不能打在读取行为上**
 - **支撑与边界追加（2026-09-28）**：[OverclaimBench](https://arxiv.org/abs/2609.20812)（仅摘要）中 67.9% 运行未触及所有待审文件，其中 80.4% 声称完成或不披露缺口。触及只要求一行，所以读取轨迹是必要的范围审计线索，不能取代产出正确性验证；缺陷漏检 1.8× 是关联，闭源模型使用各自 CLI 有混杂。这支持独立核查完成范围，不证明模型改进无价值，也不把本条“系统级设计”解释成唯一原因。
-- **更新**：2026-09-28
+- **新增印证（2026-10-27，论文）**："When Agents Fail: Model or Harness?" 2610.32483（仅摘要）—— 4 harness × 4 模型 × 6 benchmark、52,168 轨迹、111 配置：harness 排名随模型与 benchmark 重排，任务表现与 VCR（valid completion rate）偏好不同组合，相近任务分可对应完全不同执行画像；五指标（VCR/Model-Harness Fit/Cross-Model Fit/Interaction Residuals/Token Load）的统计处理未走全文验证。
+- **更新**：2026-10-27
 
 ### J7 · RAG 里系统级决策压过算法选择；一套省钱默认值：overlap=0、sentence chunking、检索深度封顶 2–3 步、重排保留但必须在自己域上先测
 
@@ -202,7 +203,8 @@
 - **支撑**：[Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding](https://arxiv.org/abs/2610.23818)（全文，主证据：5 条宽松验证规则 × 360 配置，vLLM 0.26.0 单 H100，GPT-OSS-20B/Qwen3-8B，EAGLE-3，3 seed 约 750 GPU 时，7 基准；300 评分 cell 198 个（66%）丢精度，激进三规则 180 cell 丢 143；144 个变长 cell 中 132 丢精度；EAGLE 头下真省轮次的 40 cell 中 35 丢；spec_casc_tok 唯一平均保精度）；Osprey（arXiv 2609.09338，独立印证，见 J1：接受率是 drafter 训练分布的函数不是模型常数）——两者收敛：接受率是可调但不是免费的量，代价在「省轮次」指标之外
 - **边界**：单 H100、两个目标模型；测的是「搜到的最宽松设置」不是方法自身极限；精度损失是基准评分（HumanEval/LiveCodeBench/MT-Bench 等），业务任务上的量级要按 J1 重测。与 J21 的关系（不合并）：J21 管加速数字的读法纪律，本条管加新优化时必须同时看的指标集
 - **可操作**：① 引入宽松/有损验证时，把长度膨胀与精度损失和「省轮次」放同一张仪表盘再定去留；② 只看一个数就看精度损失不看接受率——66% 的配置证明后者与前者不挂钩
-- **更新**：2026-10-20
+- **新增印证（2026-10-27，论文）**："NgramRL" 2610.32881（全文）—— RL rollout 里的 n-gram 投机解码，热缓存区每次目标前向提交 3.60–7.77 tokens，1.99× SuffixDecoding / 7.0× prompt-lookup decoding，rollout 吞吐 1.38×（decode 迭代 26.1 → 19.2 ms）：提速来源仍是「每次验证提交更多 token」，且绑定 Qwen3-8B 单卡 rig 与结构化生成的输出规律性（CodeContests 类最小）——「接受/提交数是可调量、收益绑 workload」的又一全文样本
+- **更新**：2026-10-27
 
 ### J26 · 多轮 agentic KV 是内存驻留问题：空闲超时与容量准入是 KV 管理的一等公民，不是驱逐策略的附庸
 
@@ -210,3 +212,9 @@
 - **边界**：22863 是摘要级信息，硬件级结论（H100 80GB 上限、3.6×）采购决策前需全文核验；AgentKV 的 1.80× 绑定特定硬件/模型（见 J1）
 - **可操作**：① 多轮 agent serving 先在自己的流量上量 p99 单会话 KV 足迹与会话空闲时长分布，再定 KV 预算；② 空闲超时要作为显式参数（论文点是 1 小时）而不是藏在 cache 里
 - **更新**：2026-10-20
+
+### J27 · tool-calling agent 在真实工具故障下的容错由框架错误处理承载，不由模型规模承载
+
+- **支撑**："Tool-Calling LLM Agents Under Realistic MCP Faults" 2610.32555（论文，主证据）—— MCP-Injector 协议感知故障注入（持久/瞬时/间歇，种子可复现）；故障分布校准自 1,774 个开源 MCP 仓库 57,240 条 issue/PR；1,350 格（gpt-oss 20B/120B × 3 栈 × 3 故障条件）：持久重故障 profile 下完成分 8.08 → 3.23，120B 在故障条件下的完成率反而略低于 20B（91.1% vs 95.6%，CI [−0.2, 9.3]），resilience ratio p=0.96。
+- **边界**：骨干限 gpt-oss 两个尺寸、故障分布来自 issue 挖掘而非生产监控、3 个栈；「不由规模决定」不等价「没有提升空间」——论文暗示投入应指向框架的故障处理路径（重试/降级/错误呈现），不是换更大模型。
+- **更新**：2026-10-27

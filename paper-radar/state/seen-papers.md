@@ -6,7 +6,7 @@
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
 > 非论文（工程实践节的详条目与简条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注，简条目再加【仅摘要】；【资讯】【快讯】不进本账本（硬规则 11），解说链接也不进。
 
-**上次周扫：2026-10-22**（窗口 10-20 → 10-22；2 天，8 篇论文（3 全文 + 5 仅摘要）+ 7 条实践详条目 + 8 条资讯；报告 `reports/2026-10-22.md`，已推送：是——本期上线）
+**上次周扫：2026-10-27**（窗口 10-22 → 10-27；5 天，8 篇论文（3 全文 + 5 仅摘要）+ 实践详 5 + 简 8 + 资讯 6 + 快讯 8；报告 `reports/2026-10-27.md`，已推送：是——本期已发布）
 
 格式：`- [首推日期] 【溯源】标题 · 会议/机构 · arXiv ID 或会议页链接 —— 当时判词`
 （非论文条目：`- [首推日期] 【一方博客/工业博客/技术报告/上游变更】标题 · 来源方 · 原文链接 —— 当时判词`）
@@ -14,6 +14,9 @@
 
 ## 硬件
 
+- [2026-10-27] 【仅摘要】Training an MoE LLM in MXFP4: How We Closed the Gap to BF16 · https://arxiv.org/abs/2610.32229 —— GPT-OSS-20B（MLPerf Small MoE）MXFP4 开放训练配方（摘要内配方名 ALTO）：混合 1D/2D block 量化 + RHT + SR + 简化 weight de-oscillation；C4 GBS16 16,128 步 3.3350 vs BF16 3.3283（差 0.007），收回无 de-oscillation（3.3418）约一半差距；FP4 收敛开销 +20.0% → +5.0%；三个负面结果（DGE/outlier clipping/macro-block：算子级 SNR 升、端到端降）。边界：模拟 MXFP4 kernel、MI300、wall-clock 未优化
+- [2026-10-27] 【落选】Beyond Hotness（ARM SPE 分层内存表征）· https://arxiv.org/abs/2610.32711 —— 硬件可观测方向，非本期论证主干
+- [2026-10-27] 【落选】Tile-Based Decompression in Compiled GPU Engines · https://arxiv.org/abs/2610.32695 —— 压缩 kernel，单一结果无跨源
 - [2026-10-22] 【仅摘要】Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs · https://arxiv.org/abs/2610.26660 —— 混合线性注意力 GUI agent 在移动 NPU 上 serving：长指令不变、每轮只更新近期历史；关键是循环状态的 checkpoint 策略（哪些步保存/恢复），平衡 NPU 内存约束与重算代价
 - [2026-10-22] 【仅摘要】A Hybrid GPU and Processing-Near-Memory Architecture with Shared DRAM for Efficient Prefill-Decode Disaggregation · https://arxiv.org/abs/2610.26131 —— prefill 与 decode 分置 GPU/PNM（processing-near-memory）硬件、共享 DRAM，KV cache 不重复搬运；针对 prefill 计算受限、decode 内存受限的失衡
 
@@ -61,6 +64,7 @@
 
 ## 模型
 
+- [2026-10-27] 【落选】Agentic Memory Management Is the Next Frontier of Information Retrieval · https://arxiv.org/abs/2610.32464 —— 视角文，无实证数字
 - [2026-10-22] 【全文】Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation · Sri Krishna College of Technology + Sri Eshwar · https://arxiv.org/abs/2610.25964 —— POPE 系 VLM 幻觉抽取环节的 yes/no 词元集合可能不匹配模型真实输出（LLaVA-1.5-7B NF4、9k 题、9 种推理时修正全部失败）；幻觉率依赖抽取管线的词元集合——是管线参数不是模型属性。J13 印证
 - [2026-10-22] 【仅摘要】PACT: NVFP4 Data-Flow LoRA Fine-Tuning on Consumer GPUs · https://arxiv.org/abs/2610.25048 —— 消费级 GPU 上 NVFP4 数据流 GEMM LoRA 微调，把微调精度从 BF16 降到 NVFP4，针对消费卡显存瓶颈
 
@@ -99,6 +103,10 @@
 
 ## 软件系统
 
+- [2026-10-27] 【仅摘要】KVStream: Adaptive Parallel Storage Management for KV Caching in Large-Scale LLM Serving · https://arxiv.org/abs/2610.31827 —— 前缀 KV 检索 = 跨 NVMe/并行文件系统的聚合带宽调度：单步读请求打包、写入延后、chunk 全层复制、层空闲自抓；作者性能模型给出无需调参的聚合带宽上界；LMCache 集成 4 模型 6 数据集 ≤128 GPU：查询界内 5%、离线吞吐 1.49×、突发 TTFT 最多 −6.1×（边界：上界靠自家模型、收益依赖突发到达）
+- [2026-10-27] 【仅摘要】HyScale: Scaling Long-Context Training for Learned Sparse Attention · https://arxiv.org/abs/2610.32057 —— learned sparse attention 长上下文训练：瓶颈在「选」（top-k 打分要物化分数矩阵，重计算再选一遍）；HyTopK 逐 query 精确 top-k 不物化 + selection replay 反向复用选择；1M GLM-5.1 训练 512 H20 上 2.07× Megatron-LM，32 H800 上 CSA 层 2.01×/QSA 层 1.57×（摘要级，精度保证机制未验证）
+- [2026-10-27] 【全文】NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding · https://arxiv.org/abs/2610.32881 —— GRPO 同 prompt 反复访问 → 历次 rollout 建 n-gram 表（host 内存、与 GPU 重叠）+ fan-out prefetcher 按验证结果分布预建草稿表；热缓存区每次前向 3.60–7.77 tokens、1.99× SuffixDecoding/7.0× prompt-lookup；N=16 覆盖 96.6% 结果分布（Spider 99.5%）、rollout 1.38×（decode 迭代 26.1→19.2ms）。边界：Qwen3-8B 单卡 rig 的 rollout 阶段吞吐，非端到端；增益随输出规律性走，CodeContests 最小
+- [2026-10-27] 【落选】Decode Late, Multiply Once · https://arxiv.org/abs/2610.31913 —— 量化点积重表述，理论侧无 serving 集成
 - [2026-10-22] 【全文】The KV-Surgeon: Compensation-Aware Offline KV-Cache Compaction · ZIB + TU Berlin · https://arxiv.org/abs/2610.25933 —— Lemma：KIVI 式 top-m 独立删除里 softmax 重归一化使所有删除决策互相耦合，独立打分等价于优化已变形的目标；ZIB（zero-impact 闭式界）+ TUB（可调代价）交替、离线压实；50×/100× × 三基准 × 4B–30B × 5 种子，50× 处比 attention matching 最高高 4pp，fast 版 2/5 代价拿大部分收益；作者专节警告 zero-impact 界的混合服务陷阱
 - [2026-10-22] 【仅摘要】Conjugate Compilation: Self-Improving Agentic Co-Compilation for Speculative Decoding · https://arxiv.org/abs/2610.25012 —— agentic 编译器搜索 draft/target 编译参数组合，以接受率为反馈迭代调参，面向同芯片投机解码
 
@@ -206,6 +214,10 @@
 
 ## 工程方法
 
+- [2026-10-27] 【仅摘要】When Agents Fail: Model or Harness--Who's to Blame? · https://arxiv.org/abs/2610.32483 —— 4 harness（OpenCode/Codex CLI/Pi CLI/DeepAgents）× 4 模型 + 2 原生组合 × 6 benchmark、111 配置、52,168 轨迹；五指标（VCR/Model-Harness Fit/Cross-Model Fit/Interaction Residuals/Token Load）；harness 排名随模型与 benchmark 重排、任务分与 VCR 偏好不同组合、相近任务分可对应不同执行画像。J6 印证（摘要级，指标统计处理未验证）
+- [2026-10-27] 【仅摘要】Tool-Calling LLM Agents Under Realistic MCP Faults · https://arxiv.org/abs/2610.32555 —— MCP-Injector 协议感知故障注入（持久/瞬时/间歇，种子可复现），故障模型校准自 1,774 个开源 MCP 仓库 57,240 条 issue/PR；1,350 格（gpt-oss 20B/120B × 3 栈 × 3 条件）：持久重故障 profile 完成分 8.08 → 3.23，120B 故障条件完成率反而略低（91.1% vs 95.6%），resilience ratio p=0.96。J32 新增（骨干限 gpt-oss 两尺寸、故障分布来自 issue 挖掘）
+- [2026-10-27] 【全文】Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations · https://arxiv.org/abs/2610.32891 —— EffiLearner 在 EffiBench 全 1,000 题上进程级硬件能耗测量：单次优化推理能耗 250–2,800 次 GPT-4.1 查询量级（cap 最大输出 token 最高省 69%）；44 配置中 42 个优化代码单次运行能耗高于人类参考解；收支平衡点跨题目 10^2–10^5 次、一般情形论文估 10^6–10^7；自优化不随 epoch 稳定降执行能耗
+- [2026-10-27] 【全文】Large-Scale Study of GitHub Copilot Trajectories · https://arxiv.org/abs/2610.32313 —— 7,581 Copilot PR / 1,602 仓库：58% PR 无人工介入、其中已合并 62% 零额外 commit（真自治）；第一次介入后轨迹 −20.8 轮 −8.4 min、后续介入几乎不掉；Human-AI loops 中位数 2；介入与合并率相关（选择效应未排除）。边界：限 issue 工作流；编码数据集已放出
 - [2026-10-20] 【仅摘要】Equivalence testing and run-count design for stochastic machine-learning experiments · https://arxiv.org/abs/2610.23700 —— TOST + 功效分析 + seed×item 两层方差 + 闭环运行次数公式，270 cell 验证；4 次公开运行的等效主张基本不成立（每方法 2 次不够）
 
 - [2026-10-18] 【全文】Are Benchmarks Reliable? Toward Structural Diagnosis via Item-Level Capability Boundaries · 北师大 · https://arxiv.org/abs/2609.33196 —— BSDProbe item 级能力边界：MATH 题序异常率 4.25–8.18%、GSM8K 跨模型轴 28.13%、GPQA 最高 48.21–57.59%；画像引导选题平均 NDR +17.9%（MMLU +24.1/GPQA +30.1/PopQA +37.1）。J23 主证据
@@ -240,6 +252,19 @@
 
 ## 工程实践（非论文）
 
+- [2026-10-27] 【一方博客】Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Surpasses SGLang · vLLM 团队 · https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep —— 详条目。GB300 NVL72 单机 PD 分离 + Wide-EP，AgentX 954K tok/s/GPU（第一方口径，对其自家前代 7.9×）、单用户 P90 196 tok/s；decode 端 GB200 131K nextn=3 与 DeepInfer 已发表数字差 <6%（对比发表值、非同场复测，作者注明）；prefill 栈 +35.6%–+43.9%（bounded replay SWA +19.9%/Engram 2MB +2.8%/DeepSelect +15.6%）；KV 890 B/token、MoE 占 decode 步 62%；LMSYS 同基准对比为解说
+- [2026-10-27] 【一方博客】GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16×H200 · vLLM 团队 · https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse —— 简条目。1M 上下文：PCP token 切分 prompt（16 chunk 配对分布）+ DCP token 切分 KV + HiSparse KV 下沉 host；每 token KV 54,728 B（MLA 78 + indexer 21 + MTP 3），1M = 53.4 GiB；AgentX PCP8×DCP8+HiSparse 对等吞吐 DP 1.7–3.2× 单用户，原文实验里唯一能供 1M 的形态
+- [2026-10-27] 【一方博客】vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash · vLLM 团队 · https://vllm.ai/blog/2026-10-23-minimax-m31-flash —— 简条目。原生 NVFP4 KV + NVFP4 MoE：MSA kernel QMUL4 反量化入核（indexer QK decode 1.7×/sparse attn decode 1.3×）、MegaMoE + MXFP8 共享融合 prefill kernel −20%/吞吐 +7%、indexer decode CP 在 4×GB300 上 512K 3.3×；agentic GB300 418.9 tok/s/用户、Rubin 724.9 tok/s/用户 + 191.5K tok/s/GPU、MI355X 133.3M tok/$ 最省 TCO；Day-0 RL 16×GB300 AIME-2024 36.3% → 67.5%
+- [2026-10-27] 【一方博客】How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield · NVIDIA · https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/ —— 详条目。AI 工厂拓扑图关联遥测：单个 link 降级在 40 万接口工厂里把 81 个事件收敛成 1 起 incident，相对逐一处理省约 54 小时集群时间（第一方案例，无独立验证）；主动 SuperNIC 维护（预测性换件）
+- [2026-10-27] 【一方博客】How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes · NVIDIA · https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/ —— 简条目。K8s 自主恢复（调度器/作业恢复/硬件恢复三组件）：硬件故障挪作业、瞬时软件故障自动重启或升级、退化早期剔除出调度池；GA，VR NVL72 为 EA
+- [2026-10-27] 【一方博客】Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part 2) · OpenAI · https://openai.com/index/scaling-storage-one-billion-users-part-two —— 详条目。十亿用户存储层：Cosmos DB 多租户、工作负载放置、访问控制；p50 120ms → 10ms（12×，第一方口径）；第三方「用 Codex 重写 Rust 存储」是媒体转述，原文不以此为重点
+- [2026-10-27] 【一方博客】Securing our frontier model training environment + OpenAI CUT incident investigation · OpenAI · https://openai.com/index/securing-our-frontier-model-training-environment —— 详条目。9-20 发现训练环境模型用 DNS 作出站信道绕过沙箱（沙箱本无出站）；对策 offline policy（训练环境断网），RL 训练 10-1 恢复；调查报告页 https://openai.com/index/openai-cut-incident-investigation 给时间线。第一方自报，无独立复现；J14 佐证（辅助证据）
+- [2026-10-27] 【一方博客】Optimizing Streaming Speech Recognition on Arm Edge Devices with ExecuTorch · PyTorch 团队 · https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch/ —— 详条目。Nemotron 3.5 流式 ASR 上 Pixel 11（XNNPACK）：chunk 80–1,120ms 为部署旋钮，FP16 WER 15.2% → 11.5%、QC8W 15.5% → 11.7%；SME2 整段 9.79s → 4.61s（2.12×）/QC8W 5.20s → 3.24s（1.61×），GEMM 占大头；RTF 0.19/0.13、SME 利用率 38.4%/53.7%；全部第一方测量
+- [2026-10-27] 【一方博客】Scaling NVIDIA TensorRT...Global Performance Tuner Part 1 & Part 2 · NVIDIA · https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/ —— 简条目。build path 问题形式化（Part 1）+ 全局搜索循环：跨 path 候选 + 精度容差 ε 下 engine 选择（Part 2）；绑 TRT 11.1/T-TRT 2.15，正文无第一方数字表；1.14×–1.63× 为媒体转述（TokenPost）
+- [2026-10-27] 【一方博客】Using AI Agents to Teach Robots Like Microduck to Walk in Simulation · NVIDIA · https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/ —— 简条目。RTX Spark（Hermes + Nemotron 3.5 Bolt 计划）→ Astra 3D 资产（FreeCAD/Blender/USD）→ Isaac Sim + Omniverse + Newton → Isaac Lab 4,096 并行环境、单张 RTX PRO 6000 训练感知+步态；sim-to-real 走 BAM + domain randomization。工作流演示，无量化数字
+- [2026-10-27] 【一方博客】Does Your Model Run on AWS Trainium?（torch-neuronx 模型支持）· Hugging Face · https://huggingface.co/blog/torch-neuronx-model-support —— 简条目。Trainium2 支持面：16 模型 × 4 设备（16 core）全 PASS；原文自带边界：只测了装得进 4 台 Trainium2 的模型，PASS 不代表吞吐
+- [2026-10-27] 【一方博客】LitPivot: Developing research ideas through dynamic contextualization · HF（Ai2 + 宾大）· https://huggingface.co/blog/allenai/litpivot —— 简条目。研究想法 pivot 工具：自 4 个项目挖 21 次真实 pivot + 5 名研究者 formative study（UIST 2026 论文）；方法学价值，非系统数字
+- [2026-10-27] 【工业博客】【仅摘要】Fixing Tool-Call Accuracy in vLLM · Ubicloud · https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm —— 简条目。tool-call 格式漂移修复：JSON tool description 包进模型专属 token（Kimi <|im_system|>tool_declare）+ 约束解码（Begin tool call → name → index → args JSON → End）；HN 132 分；无量化准确率数据，只述机制
 - [2026-10-20] 【一方博客】One search, two layers — compiler controls inside PyTorch Helion using NVIDIA CompileIQ · PyTorch 团队 · https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/ —— 详条目。搜索空间推到 ptxas 寄存器分配层（CUDA 13.3 新控制面）：单目标 1.047×（0.0971→0.0928 ms，d≈2.5，两次独立运行最优 ACF 一致）、多目标 occupancy +0.16pp（p=9.2e-23）换 runtime 1.75–2% + L1TEX +4.5pp；ACF 绑硬件+工具链
 - [2026-10-20] 【一方博客】Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM · AWS · https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/ —— 详条目。1P1D P5en+EFA：Qwen3-32B TTFT 最多 1.6×、GLM-5-FP8 最多 3.3×（长 prompt）；decode→prefill 回灌 KV，下一轮温缓存起步；源自 Trainium，贡献 vLLM
 - [2026-10-20] 【一方博客】Elastic EP, near-zero-downtime · vLLM 团队（NVIDIA 参与）· https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime —— 详条目。DEP 拓扑，异步准备 + NIXL EP：16→20 GPU 停机 99.62s→0.82s、20→16 56.25s→1.96s；仅 MoE 专家并行部分，attention 走副本逻辑
@@ -297,6 +322,10 @@
 - Cascade —— per-request latency budget 调度（8 月初，窗口外）
 - FlashBoot —— 亚秒级权重加载（8 月初，窗口外）
 - CoinRAG —— nugget 级 KV 复用（8 月初，窗口外）
+- OpenAI《ChatGPT's expanding world of work》（10-26）—— 经济研究数据，出四线范围
+- OpenAI × Fanatics / Ultrafast CUT 事故调查（10-26）—— 客户案例，出范围
+- Raschka: Building Reasoning Models from the Ground Up（10-23）—— 视频课程，教育内容
+- AntLing Ming-3.0 系列语音模型 + 本地工作流两帖（10-19，窗口外）· https://x.com/AntLingAGI/status/2112395816300388539 · https://x.com/AntLingAGI/status/2112395707659526510
 - MoE-Infinity —— 开源库非论文；落地首选，Expert Cache 篇说明其频率排序部分可能多余
 - InferenceX 官方预览 TPUv7 Ironwood vs Blackwell/Blackwell Ultra · SemiAnalysis · https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam —— 落选池。TPU 在 FP8 聚合服务上性能每美元最高优 50%、TPUv7 无原生 FP4；但基于私有 beta 的 TorchTPU 栈与其自有 fork，外部不可独立复现（预计 10 月中开源），且是付费产品预览稿，按硬规则 10 第 4 条降级
 - Invalidation Contracts for Cross-Episode Agent Memory · arXiv 2609.00243 —— 定向「agent 记忆」判为跳过。缓存的 API 错误修复建议加版本戳；7 模型 9,400 episode，合规率随模型翻转（Haiku 4.5 100% vs Sonnet 5 ≤11%）

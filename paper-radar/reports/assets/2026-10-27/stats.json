@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-27",
+  "mode": "每日推送",
+  "window": "10-22 → 10-27",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {"full": 0, "abstract": 1},
+    "模型": {"full": 0, "abstract": 0},
+    "软件系统": {"full": 1, "abstract": 2},
+    "工程方法": {"full": 2, "abstract": 2}
+  },
+  "practice_full": 5,
+  "practice_abstract": 8,
+  "news": 6,
+  "flash": 8,
+  "pool": 4,
+  "commentary": 2,
+  "judgments": 27,
+  "judgments_updated": 4,
+  "graph": {
+    "sources": [
+      {"id": "WAF", "label": "Model or Harness\n2610.32483", "type": "论文"},
+      {"id": "MCP", "label": "MCP 故障注入\n2610.32555", "type": "论文"},
+      {"id": "NGR", "label": "NgramRL\n2610.32881", "type": "论文"},
+      {"id": "MXF", "label": "MXFP4 训练收差\n2610.32229", "type": "论文"}
+    ],
+    "judgments": [
+      {"id": "J6", "label": "可靠性靠系统级设计\nharness 是变量"},
+      {"id": "J27", "label": "容错在框架\n不在规模（新增）"},
+      {"id": "J25", "label": "接受率不是吞吐\n提交数绑 workload"},
+      {"id": "J4", "label": "attention 量化\nNVFP4 > MXFP4"}
+    ],
+    "edges": [
+      {"from": "WAF", "to": "J6", "kind": "印证"},
+      {"from": "MCP", "to": "J27", "kind": "新增"},
+      {"from": "NGR", "to": "J25", "kind": "印证"},
+      {"from": "MXF", "to": "J4", "kind": "边界"}
+    ]
+  }
+}
