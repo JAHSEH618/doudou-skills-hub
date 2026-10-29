@@ -6,7 +6,7 @@
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
 > 非论文（工程实践节的详条目与简条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注，简条目再加【仅摘要】；【资讯】【快讯】不进本账本（硬规则 11），解说链接也不进。
 
-**上次周扫：2026-10-27**（窗口 10-22 → 10-27；5 天，8 篇论文（3 全文 + 5 仅摘要）+ 实践详 5 + 简 8 + 资讯 6 + 快讯 8；报告 `reports/2026-10-27.md`，已推送：是——本期已发布）
+**上次周扫：2026-10-29**（窗口 10-27 → 10-29，2 天；论文详条目 8（全文 3 + 摘要 5）+ 实践详 3 / 简 8 + 资讯 2 + 快讯 4；报告 `reports/2026-10-29.md`，已推送：是——本期已发布）
 
 格式：`- [首推日期] 【溯源】标题 · 会议/机构 · arXiv ID 或会议页链接 —— 当时判词`
 （非论文条目：`- [首推日期] 【一方博客/工业博客/技术报告/上游变更】标题 · 来源方 · 原文链接 —— 当时判词`）
@@ -14,6 +14,8 @@
 
 ## 硬件
 
+- [2026-10-29] 【全文】When and Why to Use TMA: A Workload-Grounded Characterization of Tensor Memory Acceleration on NVIDIA Hopper GPUs · Purdue（4 作者）· https://arxiv.org/abs/2610.34907 —— H100 TMA 3.2TB/s、96% 理论值（LDGSTS 4CTA 3.1TB/s、94%）；FA3 式 kernel prefill BF16/FP16 +5.7–11.9%、FP8 +13.4–22.2%、decode 零；CUTLASS B200 中位 2.12×（320/324 cell）/ H100 中位 1.24×；判据 = 传输规模×描述符复用 / L2 带宽瓶颈 / DRAM 成本对齐；CC BY-SA 4.0
+- [2026-10-29] 【落选】SPARTA: Sparse Ternary LLM Accelerator for Long-Context Edge Inference · https://arxiv.org/abs/2610.34824 —— 1.58-bit 三值权重 + 自适应注意力，长上下文端侧 KV 流量是瓶颈；单源结果，未跨源收敛
 - [2026-10-27] 【仅摘要】Training an MoE LLM in MXFP4: How We Closed the Gap to BF16 · https://arxiv.org/abs/2610.32229 —— GPT-OSS-20B（MLPerf Small MoE）MXFP4 开放训练配方（摘要内配方名 ALTO）：混合 1D/2D block 量化 + RHT + SR + 简化 weight de-oscillation；C4 GBS16 16,128 步 3.3350 vs BF16 3.3283（差 0.007），收回无 de-oscillation（3.3418）约一半差距；FP4 收敛开销 +20.0% → +5.0%；三个负面结果（DGE/outlier clipping/macro-block：算子级 SNR 升、端到端降）。边界：模拟 MXFP4 kernel、MI300、wall-clock 未优化
 - [2026-10-27] 【落选】Beyond Hotness（ARM SPE 分层内存表征）· https://arxiv.org/abs/2610.32711 —— 硬件可观测方向，非本期论证主干
 - [2026-10-27] 【落选】Tile-Based Decompression in Compiled GPU Engines · https://arxiv.org/abs/2610.32695 —— 压缩 kernel，单一结果无跨源
@@ -64,6 +66,8 @@
 
 ## 模型
 
+- [2026-10-29] 【全文】End-to-End MXFP8 Reinforcement Learning on Blackwell: What Matching Buys, When It Pays Off, and How It Fails · Wengee Zhang（独立）· https://arxiv.org/abs/2610.34915 —— 5 失败模式 × 4 层检测；F2 vLLM 0.24 matcher 子串回退静默排除 Qwen3-1.7B 的 56/311 dense MLP 参数、KL 0.007–0.010、全部标准指标正常，仅离线精确重查暴露；F5 同步层 5/7 静默；无质量声明，交付 7 条件同步规格；印证 J19
+- [2026-10-29] 【摘要级】When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic RL through Video Editing · https://arxiv.org/abs/2610.35497 —— 边界是 horizon：Fine Cut（60+ 轮）衰减过程奖励相对 outcome-only GRPO +45.4%，短 horizon（30–40 轮）outcome-only 仍有竞争力（≤+10.4%）；奖励劫持随权重衰减缓解；OPSD 近零收益；负面/校准类
 - [2026-10-27] 【落选】Agentic Memory Management Is the Next Frontier of Information Retrieval · https://arxiv.org/abs/2610.32464 —— 视角文，无实证数字
 - [2026-10-22] 【全文】Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation · Sri Krishna College of Technology + Sri Eshwar · https://arxiv.org/abs/2610.25964 —— POPE 系 VLM 幻觉抽取环节的 yes/no 词元集合可能不匹配模型真实输出（LLaVA-1.5-7B NF4、9k 题、9 种推理时修正全部失败）；幻觉率依赖抽取管线的词元集合——是管线参数不是模型属性。J13 印证
 - [2026-10-22] 【仅摘要】PACT: NVFP4 Data-Flow LoRA Fine-Tuning on Consumer GPUs · https://arxiv.org/abs/2610.25048 —— 消费级 GPU 上 NVFP4 数据流 GEMM LoRA 微调，把微调精度从 BF16 降到 NVFP4，针对消费卡显存瓶颈
@@ -103,6 +107,12 @@
 
 ## 软件系统
 
+- [2026-10-29] 【摘要级】WAKMan: Workload Aware KVCache Manager · https://arxiv.org/abs/2610.36355 —— 生产混合流量（单轮/多轮/agentic）20 种组合：无淘汰策略通吃（agentic 偏重 LRU 胜 S3FIFO 12%，其他组合落后至 22%）；实时流量选策略平均 +5pp 命中、optimality gap 最小；J26 边界补充
+- [2026-10-29] 【摘要级】MCF: A Memory- and Communication-Aware Co-Designed Framework for Long-Context LLM Inference · https://arxiv.org/abs/2610.34731 —— MARS chunked prefill KV 选择性复制 + 阶段性回收，避开 prefill-decode 边界布局迁移；decode query-centric（KV 分片原地、query 路由），通信从 KV 依赖变 query 依赖；FPGA 计算 NIC 数据通路；数字与基线未核验（摘要级）
+- [2026-10-29] 【摘要级】InterQ-RL: Interaction-Aware Correction of Execution Mismatch in Quantized Agentic RL · https://arxiv.org/abs/2610.35303 —— W8A8-KV8 rollout 量化，失配沿状态可达性累积；有界执行前缀校正 + 固定位移预算、无额外前向；4B–30B dense/MoE，ALFWorld/WebShop/ScienceWorld 与 BF16 差 0.7 点内、两设置超 BF16；off-policy 分布影响未核验
+- [2026-10-29] 【落选】Request-Adaptive Execution for Efficient Hybrid LLM Inference · https://arxiv.org/abs/2610.37432 —— hybrid attention/SSM LLM 的逐请求自适应执行；与本期 KV 生命周期主题接近但软件系统线配额已满、贡献点与 MCF 重叠
+- [2026-10-29] 【落选】TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving · https://arxiv.org/abs/2610.37230 —— agentic 推理与 CPU 工具返回就绪的联合调度；单源，无独立印证
+- [2026-10-29] 【落选】When Is Additional Retrieval Worthwhile? A Cost-Aware Study of Evidence Gain and Answer Reliability in RAG · https://arxiv.org/abs/2610.37358 —— 成本感知 RAG：追加检索常不必要、证据增益不转化为答案可靠性；负面结果向，但本期工程方法线配额已满
 - [2026-10-27] 【仅摘要】KVStream: Adaptive Parallel Storage Management for KV Caching in Large-Scale LLM Serving · https://arxiv.org/abs/2610.31827 —— 前缀 KV 检索 = 跨 NVMe/并行文件系统的聚合带宽调度：单步读请求打包、写入延后、chunk 全层复制、层空闲自抓；作者性能模型给出无需调参的聚合带宽上界；LMCache 集成 4 模型 6 数据集 ≤128 GPU：查询界内 5%、离线吞吐 1.49×、突发 TTFT 最多 −6.1×（边界：上界靠自家模型、收益依赖突发到达）
 - [2026-10-27] 【仅摘要】HyScale: Scaling Long-Context Training for Learned Sparse Attention · https://arxiv.org/abs/2610.32057 —— learned sparse attention 长上下文训练：瓶颈在「选」（top-k 打分要物化分数矩阵，重计算再选一遍）；HyTopK 逐 query 精确 top-k 不物化 + selection replay 反向复用选择；1M GLM-5.1 训练 512 H20 上 2.07× Megatron-LM，32 H800 上 CSA 层 2.01×/QSA 层 1.57×（摘要级，精度保证机制未验证）
 - [2026-10-27] 【全文】NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding · https://arxiv.org/abs/2610.32881 —— GRPO 同 prompt 反复访问 → 历次 rollout 建 n-gram 表（host 内存、与 GPU 重叠）+ fan-out prefetcher 按验证结果分布预建草稿表；热缓存区每次前向 3.60–7.77 tokens、1.99× SuffixDecoding/7.0× prompt-lookup；N=16 覆盖 96.6% 结果分布（Spider 99.5%）、rollout 1.38×（decode 迭代 26.1→19.2ms）。边界：Qwen3-8B 单卡 rig 的 rollout 阶段吞吐，非端到端；增益随输出规律性走，CodeContests 最小
@@ -214,6 +224,9 @@
 
 ## 工程方法
 
+- [2026-10-29] 【全文】Can LLMs Reliably Grade Olympiad Proofs? A Study of Mathematical Verification with LLMs · 华为 Foundation Model 部门 / CUHK / HKUST · https://arxiv.org/abs/2610.36767 —— Trojan-Bench(H) USAMO 2025 专家判分；20 模型 × 7 指标 × 2 prompt 风格 × 3 推理方法 × 3 模板广评估、SOTA 留明显空间；TROJAN 迭代自我批评规模化对抗性证明生成；MABGrader（判分=多臂选择）对 ProofGrader QWK +26.4%、判分误差 −14%；代码 github.com/aziksh-ospanov/TROJAN
+- [2026-10-29] 【摘要级】Do AI Scientists Know What's New? · https://arxiv.org/abs/2610.36511 —— 时序 ground truth（proposal/claim 级，4 数据集 1,060 proposal）；proposal 级高拒绝率 = 对人类后来实现 idea 的高误报；ClaimNov claim 级检测：伪装论文 97% 召回 / 1.5% 误报，LLM 判官误报 11.8%→1.5%；100 个 novel proposal（含 1 处拼接先验）保留 91（最强现有检查保留 76）；只拒 3% 被审稿人质疑贡献的 ICLR 接收文；代码 github.com/emmatliu/claimnov；与 Ai2 NoveltyBench（同日简条目）对读
+- [2026-10-29] 【落选】From Self-Confidence to Statistical Accuracy: Scaling Human-in-the-Loop Evaluation · https://arxiv.org/abs/2610.35698 —— HITL 评估的自信心校准；与 TROJAN 方向重叠但在评估侧而非判分侧，留待后续
 - [2026-10-27] 【仅摘要】When Agents Fail: Model or Harness--Who's to Blame? · https://arxiv.org/abs/2610.32483 —— 4 harness（OpenCode/Codex CLI/Pi CLI/DeepAgents）× 4 模型 + 2 原生组合 × 6 benchmark、111 配置、52,168 轨迹；五指标（VCR/Model-Harness Fit/Cross-Model Fit/Interaction Residuals/Token Load）；harness 排名随模型与 benchmark 重排、任务分与 VCR 偏好不同组合、相近任务分可对应不同执行画像。J6 印证（摘要级，指标统计处理未验证）
 - [2026-10-27] 【仅摘要】Tool-Calling LLM Agents Under Realistic MCP Faults · https://arxiv.org/abs/2610.32555 —— MCP-Injector 协议感知故障注入（持久/瞬时/间歇，种子可复现），故障模型校准自 1,774 个开源 MCP 仓库 57,240 条 issue/PR；1,350 格（gpt-oss 20B/120B × 3 栈 × 3 条件）：持久重故障 profile 完成分 8.08 → 3.23，120B 故障条件完成率反而略低（91.1% vs 95.6%），resilience ratio p=0.96。J32 新增（骨干限 gpt-oss 两尺寸、故障分布来自 issue 挖掘）
 - [2026-10-27] 【全文】Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations · https://arxiv.org/abs/2610.32891 —— EffiLearner 在 EffiBench 全 1,000 题上进程级硬件能耗测量：单次优化推理能耗 250–2,800 次 GPT-4.1 查询量级（cap 最大输出 token 最高省 69%）；44 配置中 42 个优化代码单次运行能耗高于人类参考解；收支平衡点跨题目 10^2–10^5 次、一般情形论文估 10^6–10^7；自优化不随 epoch 稳定降执行能耗
@@ -252,6 +265,18 @@
 
 ## 工程实践（非论文）
 
+- [2026-10-29] 【一方博客，详】Cloudflare × SGLang KV cache 跨请求泄漏联合披露（双方陈述互核，本期主线）· https://blog.cloudflare.com/kv-cache-exposure-remediation/ + https://www.lmsys.org/blog/2026-10-26-cf-security/（2026-10-26）—— 8/27 GLM-5.3 Workers AI 隔离问题、9/8 外部研究员报告、9/9 修复、10/26 联合披露；1,048,576 token 上下文 vs 681,280 token prefill 池 + SGLang f8014539 释放时序变更；修复 = deferred release（#35049/#35360）+ admission 队列退役（#38935）+ page tag 原型；v0.4.x–v0.5.2x；2×H100 1P1D 21 臂 ±2%；记入 J26（隔离侧辅助证据）
+- [2026-10-29] 【一方博客，详】PyTorch 2.15 Release Blog · https://pytorch.org/blog/pytorch-2-15-release-blog/（2026-10-28）—— 重写 NCCL 后端成默认（带 flight recorder）+ NIXL 单边传输（可 CUDA graph 捕获）+ FSDP2 流水线细粒度控制 + ROCm 10.0 / CUDA 13.2 默认 wheel
+- [2026-10-29] 【一方博客，详】NVIDIA 3 Ways to Boost MoE Inference on DGX Spark · https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark（2026-10-27）—— Ling-3.0-flash（124B 总参/5.1B 激活，42 层 35KDA+7MLA）batch 1：FlashInfer MXFP4 Humming 27.71→25.35 ms + LM head 在线 FP8 +21.7% + MTP 投机（NEXTN、3.90 接受/轮）+185.1%（合成口径）；GSM8K 全量解码 +42.5%、延迟 −24.5%、精度无可检变化
+- [2026-10-29] 【一方博客，简】NVIDIA Memory-Enforced GPU Sharing in K8s with CUDA 13.4 · https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/（2026-10-27）—— GPU Fractioning Operator（KAI Scheduler 组织）+ MPS 监督 + 按工作负载内存限制（保证下限/可突发上限）+ NvFractions Pod 注释；摘要级，调度开销与隔离边界未核验
+- [2026-10-29] 【一方博客，简】NVIDIA Fine-Tuning Nemotron to Know Local Rules · https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/（2026-10-27）—— Nemotron-Personas-FR/BE 合成居民数据集 + 行为契约 + LoRA 微调工作流（NeMo、Nemotron 3.5 Lightning）+ Pleias Lamina 落地；摘要级，数据管道细节未核验
+- [2026-10-29] 【工业博客，简】Together AI Auto repair for GPU Clusters · https://www.together.ai/blog/auto-repair-for-together-gpu-clusters（2026-10-27）—— 被动健康检查（VM 内 + 宿主机）+ 最轻修复动作推荐（带证据）+ 按 Xid 码粒度声明等批准/自主执行 + 自定义检测器注释接入；被动组命中硬件线（集群容错）；摘要级，成功率/MTTR 未核验
+- [2026-10-29] 【一方博客，简】HF Build specialized multimodal models with LFM3（LiquidAI）· https://huggingface.co/blog/LiquidAI/lfm3（2026-10-27）—— tri-hybrid 架构 2B 档五模型（text/vision/audio/omni/decision）共享 backbone，LFM3-1.7B-Base 24 层 22T token 分出六模型；摘要级，架构细节与基线未核验
+- [2026-10-29] 【一方博客，简】HF Can we trust LLMs to judge whether a research idea is novel?（Ai2）· https://huggingface.co/blog/allenai/novelty-bench（2026-10-27）—— NoveltyBench：154 个人类 idea 高新颖池（ICLR 各方向 top 10% 接收 + 审稿人确认新颖）+ 反向构造低新颖池 + 自动化流水线；摘要级，judge 失败模式统计未核验；与 ClaimNov 对读
+- [2026-10-29] 【一方博客，简】HF NVIDIA Nemotron 3.5 Transcribe and Granary v2 · https://huggingface.co/blog/nvidia/nemotron-transcribe-granary（2026-10-28）—— 单开放模型多语言转录/说话人归属/翻译/音频问答 + Granary v2 开放数据管线（NeMo Curator 构建）+ NeMo Speech 微调配方；摘要级，榜单与数据规模未核验
+- [2026-10-29] 【一方博客，简】Anthropic How AI agents shape experts' judgment calls · https://www.anthropic.com/research/agents-judgment-calls（2026-10-27）—— RCT 61 名因果推断分析师：86% 跟随 agent 隐藏倾向（基线 50%）、四倾向预测 82% 最终推荐、仅 15% 归因 agent；摘要级，完整设计与逐倾向分解未核验
+- [2026-10-29] 【一方博客，简】Anthropic Discovering and exploiting vulnerabilities in critical, real-world software with Claude · https://www.anthropic.com/research/discovering-vulnerabilities-with-claude（2026-10-27）—— 内部研究模型在浏览器/OS 发现关键漏洞、5 条攻击链（Chrome 一键 RCE → 62 CVE、Safari SOP 绕过、Android 锁屏绕过）、协调披露；摘要级，完整链细节未核验
+- [2026-10-29] 【补记，不入正文】NVIDIA Running Frontier-Class AI Models Across 8 DGX Spark Nodes · https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/（2026-10-22 发布，落在上期 10-22→10-27 窗口内但上期未处理；本期窗口 10-27→10-29 之外）—— 登记防重复处理；理由与后续处理见 assets/2026-10-29/research-notes.md
 - [2026-10-27] 【一方博客】Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Surpasses SGLang · vLLM 团队 · https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep —— 详条目。GB300 NVL72 单机 PD 分离 + Wide-EP，AgentX 954K tok/s/GPU（第一方口径，对其自家前代 7.9×）、单用户 P90 196 tok/s；decode 端 GB200 131K nextn=3 与 DeepInfer 已发表数字差 <6%（对比发表值、非同场复测，作者注明）；prefill 栈 +35.6%–+43.9%（bounded replay SWA +19.9%/Engram 2MB +2.8%/DeepSelect +15.6%）；KV 890 B/token、MoE 占 decode 步 62%；LMSYS 同基准对比为解说
 - [2026-10-27] 【一方博客】GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16×H200 · vLLM 团队 · https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse —— 简条目。1M 上下文：PCP token 切分 prompt（16 chunk 配对分布）+ DCP token 切分 KV + HiSparse KV 下沉 host；每 token KV 54,728 B（MLA 78 + indexer 21 + MTP 3），1M = 53.4 GiB；AgentX PCP8×DCP8+HiSparse 对等吞吐 DP 1.7–3.2× 单用户，原文实验里唯一能供 1M 的形态
 - [2026-10-27] 【一方博客】vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash · vLLM 团队 · https://vllm.ai/blog/2026-10-23-minimax-m31-flash —— 简条目。原生 NVFP4 KV + NVFP4 MoE：MSA kernel QMUL4 反量化入核（indexer QK decode 1.7×/sparse attn decode 1.3×）、MegaMoE + MXFP8 共享融合 prefill kernel −20%/吞吐 +7%、indexer decode CP 在 4×GB300 上 512K 3.3×；agentic GB300 418.9 tok/s/用户、Rubin 724.9 tok/s/用户 + 191.5K tok/s/GPU、MI355X 133.3M tok/$ 最省 TCO；Day-0 RL 16×GB300 AIME-2024 36.3% → 67.5%

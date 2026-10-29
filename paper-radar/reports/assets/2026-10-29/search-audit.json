@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-29",
+  "mode": "每日推送（补跑，补 10-28/10-29 两日）",
+  "window": [
+    "2026-10-27",
+    "2026-10-29"
+  ],
+  "searches": [
+    {
+      "id": "scan-aihot",
+      "source": "AIHot",
+      "query": "fetch_sources.py scan --since 2026-10-27",
+      "status": "ok",
+      "note": "143 条"
+    },
+    {
+      "id": "scan-hn",
+      "source": "Hacker News",
+      "query": "fetch_sources.py scan（Algolia since 2026-10-27, score>=30）",
+      "status": "ok",
+      "note": "0 条高分帖"
+    },
+    {
+      "id": "scan-x",
+      "source": "X 固定账号",
+      "query": "fetch_sources.py scan（x-accounts.txt，21 账号）",
+      "status": "ok",
+      "note": "窗口内有帖账号进 X 讨论 4 条（CF × SGLang 泄漏、Ling 3.0 发布、Ling 3.0 多模态、SGLang Day-0 Qwen）"
+    },
+    {
+      "id": "scan-blogs",
+      "source": "一方工程博客 feed",
+      "query": "fetch_sources.py scan（13 源）",
+      "status": "partial",
+      "note": "窗口内：HF 3 / OpenAI 6 / NVIDIA Dev 4 / PyTorch 1 / DeepMind 2 / Together 1；claude.dev、vLLM、Qwen、Raschka、Huyen、Lilian 均 0；anthropic-engineering 页解析失败（0 篇，页面结构可能变了），Anthropic 线靠 exa + X 兜底"
+    },
+    {
+      "id": "arxiv-window",
+      "source": "arXiv API",
+      "query": "13 类目 since 2026-10-26（与上期重叠，账本去重）",
+      "status": "ok",
+      "note": "合并 1,218 篇；screened 1,226 条"
+    },
+    {
+      "id": "exa-hw-1",
+      "source": "Exa",
+      "query": "arXiv paper NVFP4 FP4 FP8 low precision training inference kernel GPU",
+      "status": "ok",
+      "line": "hardware",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-hw-2",
+      "source": "Exa",
+      "query": "arXiv CXL memory pooling disaggregated memory GPU serving inference",
+      "status": "ok",
+      "line": "hardware",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-hw-3",
+      "source": "Exa",
+      "query": "arXiv large-scale training cluster fault tolerance silent data corrupt",
+      "status": "ok",
+      "line": "hardware",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-mo-1",
+      "source": "Exa",
+      "query": "arXiv hybrid linear attention sparse attention MoE architecture LLM",
+      "status": "ok",
+      "line": "model",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-mo-2",
+      "source": "Exa",
+      "query": "arXiv LLM quantization compression weight sparsity int4 fp8 post-train",
+      "status": "ok",
+      "line": "model",
+      "note": "7 条"
+    },
+    {
+      "id": "exa-mo-3",
+      "source": "Exa",
+      "query": "arXiv reinforcement learning LLM fine-tuning recipe SFT post-training",
+      "status": "ok",
+      "line": "model",
+      "note": "7 条"
+    },
+    {
+      "id": "exa-ss-1",
+      "source": "Exa",
+      "query": "arXiv LLM inference serving scheduler KV cache prefill decode disaggregate",
+      "status": "ok",
+      "line": "software",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-ss-2",
+      "source": "Exa",
+      "query": "arXiv agentic reinforcement learning rollout infrastructure environment",
+      "status": "ok",
+      "line": "software",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-ss-3",
+      "source": "Exa",
+      "query": "arXiv LLM agent memory RAG retrieval long-context",
+      "status": "ok",
+      "line": "software",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-em-1",
+      "source": "Exa",
+      "query": "arXiv LLM evaluation benchmark reliability methodology audit",
+      "status": "ok",
+      "line": "engineering",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-em-2",
+      "source": "Exa",
+      "query": "arXiv empirical study LLM agent harness failure analysis negative results",
+      "status": "ok",
+      "line": "engineering",
+      "note": "5 条"
+    },
+    {
+      "id": "exa-x-1",
+      "source": "Exa",
+      "query": "vLLM SGLang FlashInfer PyTorch release announcement engineering",
+      "status": "ok",
+      "line": "x",
+      "note": "8 条"
+    },
+    {
+      "id": "exa-x-2",
+      "source": "Exa",
+      "query": "DeepSeek Qwen Kimi GLM MiniMax Hunyuan MiniCPM new model open weights",
+      "status": "ok",
+      "line": "x",
+      "note": "8 条"
+    }
+  ],
+  "total_exa_results": 99,
+  "errors": [
+    "blog page:anthropic-engineering: anthropic engineering 页解析到 0 篇文章，页面结构可能变了"
+  ]
+}

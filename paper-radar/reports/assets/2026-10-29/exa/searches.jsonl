@@ -1,0 +1,13 @@
+{"name": "hw_fp4", "query": "arXiv paper NVFP4 FP4 FP8 low precision training inference kernel GPU", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:21:39+0900"}
+{"name": "hw_cxl", "query": "arXiv CXL memory pooling disaggregated memory GPU serving inference", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:21:48+0900"}
+{"name": "hw_cluster", "query": "arXiv large-scale training cluster fault tolerance silent data corruption GPU observability", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:21:56+0900"}
+{"name": "mo_arch", "query": "arXiv hybrid linear attention sparse attention MoE architecture LLM", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:22:04+0900"}
+{"name": "mo_quant", "query": "arXiv LLM quantization compression weight sparsity int4 fp8 post-training", "n_results": 7, "exit": 0, "err": "", "ts": "2026-10-29T17:22:12+0900"}
+{"name": "mo_finetune", "query": "arXiv reinforcement learning LLM fine-tuning recipe SFT post-training", "n_results": 7, "exit": 0, "err": "", "ts": "2026-10-29T17:22:21+0900"}
+{"name": "ss_serving", "query": "arXiv LLM inference serving scheduler KV cache prefill decode disaggregation", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:22:29+0900"}
+{"name": "ss_agent", "query": "arXiv LLM agent memory RAG retrieval long-context", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:22:35+0900"}
+{"name": "ss_rl", "query": "arXiv agentic reinforcement learning rollout infrastructure environment scaling", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:22:40+0900"}
+{"name": "em_eval", "query": "arXiv LLM evaluation benchmark reliability methodology audit", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:22:45+0900"}
+{"name": "em_empir", "query": "arXiv empirical study LLM agent harness failure analysis negative results", "n_results": 5, "exit": 0, "err": "", "ts": "2026-10-29T17:22:50+0900"}
+{"name": "x_infra", "query": "vLLM SGLang FlashInfer PyTorch release announcement engineering", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:22:56+0900"}
+{"name": "x_models", "query": "DeepSeek Qwen Kimi GLM MiniMax Hunyuan MiniCPM new model open weights release", "n_results": 8, "exit": 0, "err": "", "ts": "2026-10-29T17:23:01+0900"}

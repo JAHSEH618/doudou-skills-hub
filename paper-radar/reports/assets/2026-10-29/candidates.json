@@ -1,0 +1,2936 @@
+{
+  "since": "2026-10-27",
+  "generated_at": "2026-10-29T07:50:51+00:00",
+  "notes": [],
+  "aihot_hot_topics": [
+    {
+      "rank": 1,
+      "title": "谷歌发布 Gemini 4 Carbon，称登顶 AA v5",
+      "source_count": 15,
+      "source_names": [
+        "X：Google (@Google)",
+        "X：indigo (@indigox)",
+        "X：Arena (@arena)",
+        "IT之家·人工智能",
+        "The Verge：AI（RSS）",
+        "The Decoder：AI News（RSS）",
+        "Ars Technica：AI（RSS）",
+        "MarkTechPost（RSS）"
+      ],
+      "latest_at": "2026-10-28T22:30:11.000Z",
+      "story_url": "https://aihot.virxact.com/story/62c69dca-91ed-4912-96ed-fb608f645ee7"
+    },
+    {
+      "rank": 2,
+      "title": "Google DeepMind 发布 Genie 4 世界模型研究预览版",
+      "source_count": 13,
+      "source_names": [
+        "MarkTechPost（RSS）",
+        "X：indigo (@indigox)",
+        "X：卡兹克 (@Khazix0918)",
+        "公众号：数字生命卡兹克",
+        "X：Demis Hassabis (@demishassabis)",
+        "IT之家·人工智能",
+        "The Decoder：AI News（RSS）",
+        "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)"
+      ],
+      "latest_at": "2026-10-28T07:34:58.000Z",
+      "story_url": "https://aihot.virxact.com/story/d9a88c5c-1b99-4e5b-af6c-dec4f752f180"
+    },
+    {
+      "rank": 3,
+      "title": "Apple发布PROLED XDR屏MacBook Pro，首配触控",
+      "source_count": 3,
+      "source_names": [
+        "X：Dash (@dashhuang)",
+        "X：indigo (@indigox)",
+        "Apple：Newsroom（RSS）"
+      ],
+      "latest_at": "2026-10-29T00:31:38.000Z",
+      "story_url": "https://aihot.virxact.com/story/add1dde9-53ea-4f82-9daa-6d50735a149c"
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic 递交 S-1，拟以 ANT 登陆纳斯达克",
+      "source_count": 9,
+      "source_names": [
+        "Ed Zitron 长文 / Where’s Your Ed At（RSS）",
+        "X：Rohan Paul (@rohanpaul_ai)",
+        "X：Saito 硬地骇客 (@SaitoWu)",
+        "IT之家·人工智能",
+        "TechCrunch：AI（RSS）",
+        "Ars Technica：AI（RSS）",
+        "Azeem Azhar：Exponential View（RSS）",
+        "The Verge：AI（RSS）"
+      ],
+      "latest_at": "2026-10-28T17:51:00.000Z",
+      "story_url": "https://aihot.virxact.com/story/82c796c0-3bf1-4c3a-8368-56913b4bf85d"
+    },
+    {
+      "rank": 5,
+      "title": "微软首披Azure单季营收332亿美元，超预期",
+      "source_count": 3,
+      "source_names": [
+        "X：Satya Nadella (@satyanadella)",
+        "TechCrunch：AI（RSS）",
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "latest_at": "2026-10-28T22:53:41.000Z",
+      "story_url": "https://aihot.virxact.com/story/11d678b6-32a9-4107-b928-74a73608cd88"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI 发布 GPT-6.1 Terra，API 价格减半",
+      "source_count": 3,
+      "source_names": [
+        "IT之家·人工智能",
+        "X：Arena (@arena)",
+        "X：卡兹克 (@Khazix0918)"
+      ],
+      "latest_at": "2026-10-28T02:01:04.710Z",
+      "story_url": "https://aihot.virxact.com/story/30e9a1ca-aae1-410a-b1c6-53893df398db"
+    },
+    {
+      "rank": 7,
+      "title": "OpenAI 向 Pro 与 Business 订阅者发放 API 额度",
+      "source_count": 1,
+      "source_names": [
+        "X：ChatGPT (@ChatGPT)"
+      ],
+      "latest_at": "2026-10-29T00:26:29.000Z",
+      "story_url": "https://aihot.virxact.com/story/08d907d8-e0b3-41bc-b07e-9b475c378c41"
+    },
+    {
+      "rank": 8,
+      "title": "NVIDIA 发布开放权重语音模型 Nemotron 3.5 Transcribe",
+      "source_count": 6,
+      "source_names": [
+        "IT之家·人工智能",
+        "MarkTechPost（RSS）",
+        "The Decoder：AI News（RSS）",
+        "X：Artificial Analysis (@ArtificialAnlys)",
+        "TechCrunch：AI（RSS）",
+        "Hugging Face 社区博客（混合发现）"
+      ],
+      "latest_at": "2026-10-29T07:31:29.940Z",
+      "story_url": "https://aihot.virxact.com/story/0aff3bb1-44c6-45f9-92fa-d4d7e6ec3945"
+    },
+    {
+      "rank": 9,
+      "title": "Alphabet Q3营收增25%，云收入翻倍至307亿美元",
+      "source_count": 3,
+      "source_names": [
+        "TechCrunch：AI（RSS）",
+        "X：Rohan Paul (@rohanpaul_ai)",
+        "X：Sundar Pichai (@sundarpichai)"
+      ],
+      "latest_at": "2026-10-28T21:48:37.000Z",
+      "story_url": "https://aihot.virxact.com/story/c432aa2e-0614-4744-8618-1769e016569b"
+    },
+    {
+      "rank": 10,
+      "title": "Anthropic公布药物研发合作，并传收购Mithril Medicine",
+      "source_count": 2,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)",
+        "X：Anthropic (@AnthropicAI)"
+      ],
+      "latest_at": "2026-10-27T20:54:24.000Z",
+      "story_url": "https://aihot.virxact.com/story/37c4f934-a969-4d47-b4ab-d8394ef134ba"
+    }
+  ],
+  "aihot_items": [
+    {
+      "title": "Google DeepMind 发布 Gemini 4 Carbon，登顶多项独立排行榜",
+      "original_title": "[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders",
+      "summary": "Google DeepMind 在 Argon 发布两周后推出 Gemini 4 Carbon，以 59 分登顶 Artificial Analysis Intelligence Index v5，并率先通过 Fairwind Program 向可信网络防御者开放。",
+      "source": "Latent Space（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-29T05:55:19.000Z",
+      "discovered_at": "2026-10-29T06:45:40.748Z",
+      "url": "https://latent.space/p/ainews-gemini-4-carbon/",
+      "aihot_url": "https://aihot.news/items/gdbj2o943ws11fwqcnjr7g0eb",
+      "reason": null,
+      "matched_by": [
+        "SGLang",
+        "KV cache",
+        "agent memory",
+        "RAG",
+        "RL training",
+        "post-training"
+      ]
+    },
+    {
+      "title": "UC Santa Barbara 新论文：演化记忆取代测试时训练做数学发现",
+      "original_title": "New UC Santa Barbara paper shows that LLM math discovery can skip test-time training, since an evolving memory scored better and used far...",
+      "summary": "UC Santa Barbara 新论文提出 TTME，用固定权重加演化记忆替代测试时训练来做 LLM 数学发现，在 5 个数学任务、2 个框架、3 个模型上每次都优于已报告的测试时训练分数。",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "category": "paper",
+      "published_at": "2026-10-29T05:15:00.000Z",
+      "discovered_at": "2026-10-29T05:34:54.741Z",
+      "url": "https://x.com/rohanpaul_ai/status/2115673734497382475",
+      "aihot_url": "https://aihot.news/items/e7odrg32dzm9ipk1887c3nndv",
+      "reason": null,
+      "matched_by": [
+        "RL training"
+      ]
+    },
+    {
+      "title": "NVIDIA 发布开源语音转录模型 Nemotron 3.5 Transcribe，支持 40 种语言、约 4.3B 激活参数",
+      "original_title": "NVIDIA Releases Nemotron 3.5 Transcribe: An Open 30B MoE Model for 40-Language Transcription with ~4B Active Parameters",
+      "summary": "NVIDIA 发布开源权重语音模型 Nemotron 3.5 Transcribe，单模型支持 40 种语言、最长 1 小时音频的转录，可内置输出说话人标签、词级时间戳和翻译。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-29T04:41:24.000Z",
+      "discovered_at": "2026-10-29T05:28:37.086Z",
+      "url": "https://www.marktechpost.com/2026/10/28/nvidia-nemotron-3-5-transcribe-open-speech-llm/",
+      "aihot_url": "https://aihot.news/items/ecpahl1v6yovoio0okc5druo3",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang",
+        "LLM serving",
+        "KV cache",
+        "Blackwell",
+        "RL training"
+      ]
+    },
+    {
+      "title": "OpenRouter 教程：用 LLM 从 PDF 中抽取表格",
+      "original_title": "How to Extract Tables from a PDF with an LLM",
+      "summary": "OpenRouter 发布教程，讲解如何把 PDF 以文件形式连同严格 JSON schema 发给能读文件的模型，让表格以带类型的行返回，括号亏损、千分位和脚注标记等清理都写进字段描述。",
+      "source": "OpenRouter：Announcements（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "discovered_at": "2026-10-29T00:33:30.586Z",
+      "url": "https://openrouter.ai/blog/tutorials/extract-tables-from-pdf-llm/",
+      "aihot_url": "https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
+      "reason": "OpenRouter 用五份 PDF 实测了多条抽取路由，给出严格 JSON schema 写法、两类静默失败的检查和各路由成本对比。",
+      "matched_by": [
+        "LLM inference"
+      ]
+    },
+    {
+      "title": "Google 发布 Gemini 4 Carbon，将在 Fairwinds 网络防御计划中分阶段开放",
+      "original_title": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
+      "summary": "Google 在发布 Gemini 4 Argon 两周后宣布新一代前沿模型 Gemini 4 Carbon，称其在编码、智能体任务和网络安全方面有提升，但暂不向公众开放。",
+      "source": "Ars Technica：AI（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-28T18:47:27.000Z",
+      "discovered_at": "2026-10-28T19:12:15.107Z",
+      "url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+      "aihot_url": "https://aihot.news/items/skl0s9hgmitk6nws70e1i093j",
+      "reason": null,
+      "matched_by": [
+        "post-training"
+      ]
+    },
+    {
+      "title": "PyTorch 2.15 发布：重写 NCCL 后端转为默认并提升多平台推理性能",
+      "original_title": "PyTorch 2.15 Release Blog",
+      "summary": "PyTorch Foundation 发布 PyTorch 2.15，重写的 NCCL 后端成为所有 nccl 进程组的默认选项，附飞行记录器在 collective 挂起时转储现场，并保留 TORCH_DIST_USE_NCCL2=0 和 nccl-legacy 回退路径。",
+      "source": "PyTorch：Blog（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-28T17:44:20.000Z",
+      "discovered_at": "2026-10-28T18:10:22.093Z",
+      "url": "https://pytorch.org/blog/pytorch-2-15-release-blog/",
+      "aihot_url": "https://aihot.news/items/uemhjbeijkwq15dzl7arehc5c",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "GPU cluster",
+        "Blackwell",
+        "RAG"
+      ]
+    },
+    {
+      "title": "Baseten 优化 Qwen3-ASR 1.7B 批量转写，吞吐达原版 vLLM 的 7 倍",
+      "original_title": "The fastest, lowest-cost batch transcription with Qwen3-ASR",
+      "summary": "Baseten 优化了 Qwen3-ASR 1.7B 的批量转写部署，在 64 并发下吞吐比原生 vLLM 高 7 倍以上，成本降至每音频小时约 $0.0013，比闭源提供商低约 277 倍。",
+      "source": "Baseten 工程博客（网页）",
+      "category": "tip",
+      "published_at": "2026-10-28T17:39:04.000Z",
+      "discovered_at": "2026-10-28T18:30:23.771Z",
+      "url": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/",
+      "aihot_url": "https://aihot.news/items/l4esgip2enwt1uerh71db72gb",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "KV cache",
+        "quantization",
+        "agent memory"
+      ]
+    },
+    {
+      "title": "LangChain 实测 OpenWiki 与证据图构建有据可查的 Agent 记忆层",
+      "original_title": "How to build evidence-grounded agent memory with OpenWiki and Graphs",
+      "summary": "LangChain 介绍如何用其开源 wiki 编译器 OpenWiki 为 Agent 构建持久记忆层，把分散的政策、手册、工单等源材料合成为带引用的链接页面。",
+      "source": "LangChain：Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-28T17:24:00.000Z",
+      "discovered_at": "2026-10-28T17:47:38.825Z",
+      "url": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs",
+      "aihot_url": "https://aihot.news/items/py2mxbl9rsjw80djsmv90nly5",
+      "reason": null,
+      "matched_by": [
+        "agent memory",
+        "RAG",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "MiniMax 开源 MCode Stack：15 个编码团队日常使用的 Agent 技能",
+      "original_title": "MiniMax Open-Sources MCode Stack: 15 Agent Skills Its Coding Team Uses Daily",
+      "summary": "MiniMax 于 2026 年 10 月 28 日以 MIT 许可开源 MCode Stack，共 2 套栈、17 个 SKILL.md 技能（15 个来自 Ronny、2 个来自 Jiachen）和 5 份清单，是 MiniMax Code 团队日常构建所用的实际工作流。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-28T17:20:29.000Z",
+      "discovered_at": "2026-10-28T18:15:21.950Z",
+      "url": "https://www.marktechpost.com/2026/10/28/minimax-open-sources-mcode-stack-agent-skills/",
+      "aihot_url": "https://aihot.news/items/ehl7p8usav1dtd6mjx0lgluxo",
+      "reason": null,
+      "matched_by": [
+        "agent memory"
+      ]
+    },
+    {
+      "title": "Google 开放 Android 开发环境给第三方 AI 智能体，发布新 Gemini API 和 XREAL AURA 眼镜",
+      "original_title": "Google opens Android development to third-party AI agents and unveils new Gemini APIs",
+      "summary": "Google 在 Android Dev Summit 上宣布 Android Studio Rabbit 2 推出 Bring Your Own Agent 功能，开发者可通过开放 Agent Client Protocol 在 IDE 中安装并同时运行 Claude Agent、OpenAI Codex 和 Google Antigravity 等 40 多个编码智能体。",
+      "source": "The Decoder：AI News（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-28T16:59:59.000Z",
+      "discovered_at": "2026-10-28T17:21:41.637Z",
+      "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
+      "aihot_url": "https://aihot.news/items/q5d7uqnj2d49ef18b981bh0ce",
+      "reason": null,
+      "matched_by": [
+        "agent memory"
+      ]
+    },
+    {
+      "title": "Meta Andromeda：通过模型-系统协同设计驱动下一代广告检索",
+      "original_title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+      "summary": "Meta 公布下一代个性化广告检索引擎 Meta Andromeda，在单张 GH200 GPU 上实现每秒超 100 亿条广告的推理吞吐，较 2024 年系统提升 100 倍。新架构将 LLM 式 MoE 引入检索阶段，推理 FLOPs 比 2024 版减少约 300 倍，模型表现接近排序阶段水平。自 2025 年以来，该系统已在 Facebook 带来 2.4% 的转化提升。",
+      "source": "Meta Engineering Blog（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-28T16:00:01.000Z",
+      "discovered_at": "2026-10-28T16:47:29.013Z",
+      "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
+      "aihot_url": "https://aihot.news/items/l24wmspn9ll83aiyuyzxkc2d6",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "OpenMOSS 发布开源图像生成模型 MOSS-Image，主打长文本渲染与可编辑布局",
+      "original_title": "MOSS-Image：让开放模型真正理解文字与版式",
+      "summary": "OpenMOSS 发布开放权重图像生成模型 MOSS-Image，采用 5B 参数单流 DiT 从零预训练，支持最长 4K token 提示词、中英文长文本渲染和可编辑的 JSON Layout。",
+      "source": "OpenMOSS / 复旦NLP / 上海创智 / MOSI（网页）",
+      "category": "ai-models",
+      "published_at": "2026-10-28T16:00:00.000Z",
+      "discovered_at": "2026-10-29T02:05:30.449Z",
+      "url": "https://openmoss.ai/blog/cn/moss-image/",
+      "aihot_url": "https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
+      "reason": "原文给出长文本渲染与布局评测数字及开放权重部署路径，读者可以据此判断它在文字密集图像任务中的适用边界。",
+      "matched_by": [
+        "vLLM",
+        "SGLang"
+      ]
+    },
+    {
+      "title": "面壁智能发布 MiniCPM-OCR 1.0，支持在 iPhone 和 iPad 本地运行",
+      "original_title": "🎬 MiniCPM-OCR in action — running locally on iPhone Duo and iPad.",
+      "summary": "面壁智能 OpenBMB 发布 MiniCPM-OCR 1.0，主打 1B 规模下的 SOTA OCR 性能与速度，在 Real5-OmniDocBench 得 93.68、OCRBench v2 得 54.7，并演示在 iPhone 和 iPad 上本地运行。",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "category": "ai-models",
+      "published_at": "2026-10-28T15:59:44.000Z",
+      "discovered_at": "2026-10-28T16:09:36.411Z",
+      "url": "https://x.com/OpenBMB/status/2115473600836964838",
+      "aihot_url": "https://aihot.news/items/vlhz5p8p7oyu6h3fp8pbdiplf",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang"
+      ]
+    },
+    {
+      "title": "Nvidia 开源 Nemotron 3.5 Transcribe 语音识别模型，集成转写、翻译和说话人识别",
+      "original_title": "Nvidia's open Nemotron 3.5 Transcribe combines transcription, translation, and speaker recognition",
+      "summary": "Nvidia 发布开源语音识别模型 Nemotron 3.5 Transcribe，可转写 40 种语言、在 31 种语言与英语间互译、识别最多 8 个说话人，支持最长 1 小时的录音，并能通过提示词控制输出或回答音频内容问题。",
+      "source": "The Decoder：AI News（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-28T15:49:39.000Z",
+      "discovered_at": "2026-10-28T16:21:36.049Z",
+      "url": "https://the-decoder.com/nvidias-open-nemotron-3-5-transcribe-combines-transcription-translation-and-speaker-recognition/",
+      "aihot_url": "https://aihot.news/items/ew22p9w5yr881tzyzimraod2w",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "Artificial Analysis 新版 Intelligence Index 扩大开源与闭源模型差距",
+      "original_title": "New Artificial Analysis index widens the gap between open and closed models",
+      "summary": "Artificial Analysis 改版其 Intelligence Index 至版本 5，Kimi K3.1 Pro 从第 4 降至第 9，开源模型与榜首差距从 3 分扩大到 12 分，Grok 4.7 也下跌 12 分。",
+      "source": "The Decoder：AI News（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-28T15:04:43.000Z",
+      "discovered_at": "2026-10-28T15:21:26.913Z",
+      "url": "https://the-decoder.com/new-artificial-analysis-index-widens-the-gap-between-open-and-closed-models/",
+      "aihot_url": "https://aihot.news/items/h7jfsvgpk7cgxdsm5b7hjhbgo",
+      "reason": null,
+      "matched_by": [
+        "RL training"
+      ]
+    },
+    {
+      "title": "Nvidia 发布开源语音转写模型 Nemotron 3.5 Transcribe，支持 40 种语言",
+      "original_title": "Voice AI in vogue: Nvidia releases new open transcription model",
+      "summary": "Nvidia 发布免费开放权重的语音转写模型 Nemotron 3.5 Transcribe，支持最多 40 种语言，可处理最长 1 小时的录音并区分最多 8 个说话人，还同步发布了第 2 版开源语音数据集 Granary。",
+      "source": "TechCrunch：AI（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-28T15:00:00.000Z",
+      "discovered_at": "2026-10-28T15:59:34.841Z",
+      "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+      "aihot_url": "https://aihot.news/items/ysc2m2wp896g097mit5y4nkzf",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "NVIDIA 发布开放权重语音模型 Nemotron 3.5 Transcribe 及 Granary v2 数据管线",
+      "original_title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "summary": "NVIDIA 发布开放权重语音模型 Nemotron 3.5 Transcribe，现已在 Hugging Face 和 ModelScope 提供，单一模型支持 40 种语言转写、31 种语言翻译、13 种语言说话人分离和音频问答，可处理最长一小时、最多 8 个说话人的录音。",
+      "source": "Hugging Face 社区博客（混合发现）",
+      "category": "ai-models",
+      "published_at": "2026-10-28T14:58:17.000Z",
+      "discovered_at": "2026-10-28T15:29:30.686Z",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "aihot_url": "https://aihot.news/items/xuahcf5viivhmsqzxnn8shh6p",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "Meta 更新商业条款允许用业务账号内容训练 AI，英国和欧盟用户可提交反对",
+      "original_title": "Objection, your honor",
+      "summary": "404 Media 介绍了 Meta 为商业账号更新的商业条款，允许使用关联域名和 URL 的内容来开发、改进和训练其产品，原定 10 月 30 日生效，在反弹后推迟至 11 月 20 日，并从允许用途中删去“train”一词、限制为广告和商业产品。英国和欧盟用户可通过 Instagram 账号的隐私中心点击“object”提交反对表单，有用户收到 Meta 批准反对的邮件。",
+      "source": "404 Media（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-28T14:41:07.000Z",
+      "discovered_at": "2026-10-28T15:14:24.354Z",
+      "url": "https://www.404media.co/objection-your-honor/",
+      "aihot_url": "https://aihot.news/items/ohxqwn3vtc7g1l8pwp85lkzcj",
+      "reason": null,
+      "matched_by": [
+        "RL training"
+      ]
+    },
+    {
+      "title": "面壁智能发布 LES 推理系统，让 MiniCPM-V 4.7 的 35B-A3B MoE 模型在手机上实时推理",
+      "original_title": "📱 35B parameters. Real-time inference. On a phone.",
+      "summary": "OpenBMB 发布 Lookahead Expert Scheduling（LES）推理系统，用于在端侧运行 MiniCPM-V 4.7 的 35B-A3B MoE 模型。",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "category": "ai-products",
+      "published_at": "2026-10-28T14:00:42.000Z",
+      "discovered_at": "2026-10-28T14:37:20.247Z",
+      "url": "https://x.com/OpenBMB/status/2115443643800825938",
+      "aihot_url": "https://aihot.news/items/om6ecr204riamm4jukwwpbpsn",
+      "reason": null,
+      "matched_by": [
+        "quantization"
+      ]
+    },
+    {
+      "title": "MiniCPM5-2B 改造为结构化决策模型 Jev",
+      "original_title": "What if your model could make a structured choice instead of writing another paragraph? 🎯",
+      "summary": "开发者基于 OpenBMB 的 MiniCPM5-2B 微调出 System 1 决策模型 MiniCPM5-2B-Jev，输入文档和问题后直接返回预定义选项的概率，不生成自由文本。",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "category": "ai-products",
+      "published_at": "2026-10-28T13:01:19.000Z",
+      "discovered_at": "2026-10-28T13:05:33.272Z",
+      "url": "https://x.com/OpenBMB/status/2115428701982908585",
+      "aihot_url": "https://aihot.news/items/v2nseardpkyqdl3gnnyi8ff06",
+      "reason": null,
+      "matched_by": [
+        "KV cache",
+        "RAG"
+      ]
+    },
+    {
+      "title": "Nathan Lambert 谈 Artificial Analysis v5 与基准制定者的困境",
+      "original_title": "Artificial Analysis v5 and the benchmarker's dilemma",
+      "summary": "Nathan Lambert 借 Artificial Analysis Intelligence Index v5 的更新，分析独立基准评测的困境：聚合为单一数字必有取舍，而转向不公开题目的私人基准会失去社区纠错能力。",
+      "source": "Nathan Lambert：Interconnects（RSS）",
+      "category": "opinion",
+      "published_at": "2026-10-28T12:58:39.000Z",
+      "discovered_at": "2026-10-28T13:33:26.456Z",
+      "url": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
+      "aihot_url": "https://aihot.news/items/dfkkqhssm1ykb62fr235vo4ru",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "RL training",
+        "post-training",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "摩尔线程开源 Megatron-MUSA-Titan，聚焦万卡级集群万亿参数 MoE 模型训练",
+      "original_title": "摩尔线程开源 Megatron-MUSA-Titan，聚焦万卡级集群的万亿参数 MoE 模型训练",
+      "summary": "摩尔线程宣布开源大模型训练基础设施项目 Megatron-MUSA-Titan，基于其全功能 GPU，面向万卡级集群的万亿参数 MoE 模型训练，覆盖预训练与强化学习两大场景。",
+      "source": "IT之家·人工智能",
+      "category": "ai-products",
+      "published_at": "2026-10-28T10:16:40.683Z",
+      "discovered_at": "2026-10-28T10:39:26.142Z",
+      "url": "https://www.ithome.com/1/019/131.htm",
+      "aihot_url": "https://aihot.news/items/qfmjhzvvizr286qqh1lh3je1f",
+      "reason": null,
+      "matched_by": [
+        "SGLang"
+      ]
+    },
+    {
+      "title": "小红书与 Rokid 合作：蜜薯 Personal Agent 如何用智能眼镜走进真实世界",
+      "original_title": "小红书 X Rokid 智能眼镜：让 Personal Agent 走进真实世界",
+      "summary": "小红书 2049 Lab 与 Rokid 合作，以智能眼镜为载体打造 AI 生活搭子“蜜薯”，在用户授权下按需感知现场，把大模型能力、社区经验与个人情境连接起来。文章介绍了蜜薯的整体架构，以及实时多模态全双工、Proactive 与 Memory 三部分如何协同支撑边看边聊的体验。团队还探讨了通向 Personal OS 的技术路径。",
+      "source": "公众号：小红书技术（dots.llm）",
+      "category": "tip",
+      "published_at": "2026-10-28T09:59:00.000Z",
+      "discovered_at": "2026-10-28T10:38:32.660Z",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496882&idx=1&sn=dbc2683bf7bd56abfb5982ec128b89ca",
+      "aihot_url": "https://aihot.news/items/f8tl6tvd1a3tjxygdzyxz7qua",
+      "reason": null,
+      "matched_by": [
+        "agent memory"
+      ]
+    },
+    {
+      "title": "Latent Space AINews：Anthropic 招聘经理取消编码面试，称 Hunger beats tenure",
+      "original_title": "[AINews] Anthropic ends Coding Interviews: \"Hunger beats tenure\"",
+      "summary": "本期 AINews 以 Anthropic 招聘经理 Felix Rieseberg 停止对候选人使用传统编码面试为主头条，他认为让模型做 React 小题已无意义，并给初级工程师提出选业务影响力、周末做原型、聚焦单个好想法等建议。",
+      "source": "Latent Space（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-28T08:50:30.000Z",
+      "discovered_at": "2026-10-28T09:31:26.670Z",
+      "url": "https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/",
+      "aihot_url": "https://aihot.news/items/k6toxduuuejft75n2uhzo1s2x",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang",
+        "GPU cluster",
+        "agent memory",
+        "RAG",
+        "RL training"
+      ]
+    },
+    {
+      "title": "Polymathic AI 与普林斯顿等机构发布 FlashMap，以 flow map 起草器实现最高 6.14x 无损解码加速",
+      "original_title": "Polymathic AI and Princeton Researchers Release FlashMap, a Flow Map Drafter for 6.14x Faster LLM Decoding",
+      "summary": "Polymathic AI、普林斯顿大学、USC ISI、NYU 与 Flatiron Institute 的研究者发布 FlashMap，一种投机解码起草器，用连续 flow map 替代离散扩散起草器，1 次 forward pass 联合起草 16 个 token 的完整块，输出与目标模型严格一致。",
+      "source": "MarkTechPost（RSS）",
+      "category": "paper",
+      "published_at": "2026-10-28T08:18:03.000Z",
+      "discovered_at": "2026-10-28T09:10:25.438Z",
+      "url": "https://www.marktechpost.com/2026/10/28/flashmap-flow-map-speculative-decoding/",
+      "aihot_url": "https://aihot.news/items/p0qlekuiwxwqcrrvitf39lkuz",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang",
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "蚂蚁 inclusionAI 发布 UBTree 项目页：用 Unigram 与 Bigram 模型并行树草稿加速投机解码",
+      "original_title": "inclusionAI/ubtree",
+      "summary": "蚂蚁 inclusionAI 上线 UBTree 项目页，介绍其用 Unigram 与 Bigram 模型做并行树草稿的投机解码方法（arXiv:2609.39972）。页面用 Ling3 Tiny 与 Flash 的 HumanEval 示例视频对比 AR、DFlash、DSpark 与 UBTree 四种方法，并附基准图表与消融数据。",
+      "source": "蚂蚁 inclusionAI：GitHub 新仓库",
+      "category": "tip",
+      "published_at": "2026-10-28T07:48:11.000Z",
+      "discovered_at": "2026-10-28T08:23:26.496Z",
+      "url": "https://github.com/inclusionAI/ubtree",
+      "aihot_url": "https://aihot.news/items/csne32fdp2wcalqawuyi60xl8",
+      "reason": null,
+      "matched_by": [
+        "SGLang"
+      ]
+    },
+    {
+      "title": "Google DeepMind 发布 Genie 4 实时世界模型，原生生成音频并由 Gemini 3.8 Flash 在循环中规划",
+      "original_title": "Meet Google DeepMind’s Genie 4: Real-Time World Model With Native Audio",
+      "summary": "Google DeepMind 发布 Genie 4 世界模型研究预览，可从文本和图像提示实时生成可探索世界，并原生生成环境音、音乐和角色对话。架构上由 Gemini Omni 锚定世界外观，Gemini 3.8 Flash 在模拟循环内解释提示、拆解目标、校验帧并重规划。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-28T07:34:58.000Z",
+      "discovered_at": "2026-10-28T08:09:26.040Z",
+      "url": "https://www.marktechpost.com/2026/10/28/google-deepmind-genie-4-world-model/",
+      "aihot_url": "https://aihot.news/items/qbvhe25k7w1yhyi1mrgxthypt",
+      "reason": null,
+      "matched_by": [
+        "agent memory",
+        "RL training",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "如何用 Managed Deep Agents 的 Schedules SDK 构建主动式常驻智能体",
+      "original_title": "How to Build Proactive, Always-On Agents with the Schedules SDK in Managed Deep Agents",
+      "summary": "LangChain 介绍如何用 Managed Deep Agents 内置的 cron 调度服务构建主动式常驻智能体，支持在 agent 定义中静态声明调度，或由 agent 在运行时调用 Schedules SDK 动态创建。",
+      "source": "LangChain：Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-28T07:15:00.000Z",
+      "discovered_at": "2026-10-28T16:47:29.319Z",
+      "url": "https://www.langchain.com/blog/proactive-agents",
+      "aihot_url": "https://aihot.news/items/oaaevlws62jl6f3fndf6r2c9h",
+      "reason": null,
+      "matched_by": [
+        "agent memory"
+      ]
+    },
+    {
+      "title": "Meta 支持五所美国大学用其 AI 模型加速医学与科学突破",
+      "original_title": "How American Universities Are Using AI Models From Meta to Accelerate Medical and Scientific Breakthroughs",
+      "summary": "Meta 宣布支持加州理工学院、俄亥俄州立大学医学院、路易斯安那州立大学、印第安纳大学和 UTHealth Houston 五所美国高校的研究，形式包括开放最新 Muse 系列模型（含 30B 开源权重、可在单张消费级 GPU 运行的 Muse Glimmer）、与 Meta 研究员直接合作及部分项目研究经费。",
+      "source": "Meta AI：Research Blog（网页）",
+      "category": "industry",
+      "published_at": "2026-10-28T07:00:00.000Z",
+      "discovered_at": "2026-10-28T17:44:38.809Z",
+      "url": "https://research.meta.ai/blog/supporting-medical-scientific-research",
+      "aihot_url": "https://aihot.news/items/uxl9efxltu3ktl6kzxk6mqoby",
+      "reason": null,
+      "matched_by": [
+        "agent memory",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "面壁智能 OpenBMB 回应第三方对 MiniCPM-OCR 的评测",
+      "original_title": "Love seeing MiniCPM-OCR put to the test! 🔥",
+      "summary": "面壁智能 OpenBMB 转评 @wikiwayne 对 MiniCPM-OCR 的评测，感谢其透明对比并分享了结果与注意事项，表示期待该模型在 GX10 上的本地测试表现，称这类真实反馈会推动模型持续改进。引用内容提到 MiniCPM-OCR 1.0 为开源 13 亿参数 OCR 模型，与评估结果可靠性的 MiniCPM-OCR Jev 配套，权重已开放于 GitHub 和 Hugging Face。",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "category": "ai-models",
+      "published_at": "2026-10-28T06:03:08.000Z",
+      "discovered_at": "2026-10-28T06:23:30.800Z",
+      "url": "https://x.com/OpenBMB/status/2115323459173806210",
+      "aihot_url": "https://aihot.news/items/a9uxxjazluqxrcsu2vvedo4k6",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang"
+      ]
+    },
+    {
+      "title": "MIT 教授 Paris Smaragdis：打造能“听懂”声音的机器",
+      "original_title": "Making machines that can listen",
+      "summary": "MIT 教授 Paris Smaragdis 研究让机器具备超越人类的听觉能力，可快速定位交通事故或预判工业钻头故障。他的团队聚焦声源分离、增强人类听觉环境的智能设备及音乐理解与创作工具。其神经网络声源分离技术曾被用于 2021 年纪录片《The Beatles: Get Back》的音频修复。",
+      "source": "MIT News（RSS）",
+      "category": "opinion",
+      "published_at": "2026-10-28T04:00:00.000Z",
+      "discovered_at": "2026-10-28T04:28:10.402Z",
+      "url": "https://news.mit.edu/2026/making-machines-that-can-listen-paris-smaragdis-1028",
+      "aihot_url": "https://aihot.news/items/hecqazemdqyxgann61ndyi57c",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Sundar Pichai 用 AI 智能体管理 Google",
+      "original_title": "Sundar Pichai described kinds of agents he uses to follow Google and also how agents now decide which compute signals reach Sundar Pichai.",
+      "summary": "Sundar Pichai 描述了他用来跟进 Google 动态的各类智能体，以及智能体现在如何决定哪些计算信号能传达到 Sundar Pichai 本人。\n\n---\n\n@alexeheath 与 Google CEO Sundar Pichai 的播客",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "category": "opinion",
+      "published_at": "2026-10-28T01:41:37.000Z",
+      "discovered_at": "2026-10-28T01:48:11.643Z",
+      "url": "https://x.com/rohanpaul_ai/status/2115257648971141607",
+      "aihot_url": "https://aihot.news/items/r65tewy16ebp0xs9ej2udy62m",
+      "reason": null,
+      "matched_by": [
+        "post-training"
+      ]
+    },
+    {
+      "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
+      "original_title": "Hit Your Claude Code Usage Limit? How to Keep Coding",
+      "summary": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。",
+      "source": "OpenRouter：Announcements（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "discovered_at": "2026-10-28T16:28:28.489Z",
+      "url": "https://openrouter.ai/blog/tutorials/claude-code-usage-limit/",
+      "aihot_url": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
+      "reason": "OpenRouter 实测了 Claude Code 走 API key 计费的真实成本，并提醒 Claude Code 自印的价格可能偏高。",
+      "matched_by": [
+        "LLM inference"
+      ]
+    },
+    {
+      "title": "OpenRouter 解析 Claude 529 Overloaded 错误及三种修复方法",
+      "original_title": "Claude 529 Overloaded: What It Means and How to Fix It",
+      "summary": "OpenRouter 发文解释 Claude 的 529 overloaded_error 表示 Anthropic API 对该模型全局容量不足，与用户配额无关，区别于 429 rate_limit_error。",
+      "source": "OpenRouter：Announcements（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "discovered_at": "2026-10-28T16:28:28.477Z",
+      "url": "https://openrouter.ai/blog/tutorials/claude-529-overloaded/",
+      "aihot_url": "https://aihot.news/items/gruq9q2kwluwoazoh8sq7ux19",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "作者为美国法典构建类 Git 的逐条版本溯源系统",
+      "original_title": "Git for the US Code",
+      "summary": "作者借鉴 Git 的溯源思路，为美国法典构建了可按日期查看生效文本的系统，并解释了 LLM 在法律检索中的时间失效问题。系统对 2017 年起九个编的 365 处修改逐条重演，361 处能精确复现下一个发布点，每处修改标注所依据的公法和生效日期。已知限制包括尚未处理后续法律的追溯适用，生效日期靠模式匹配解析，重要内容仍需查阅法律原文。",
+      "source": "Hacker News：AI 热帖",
+      "category": "tip",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "discovered_at": "2026-10-28T04:20:09.098Z",
+      "url": "https://lexifina.com/blog/git-for-the-us-code",
+      "aihot_url": "https://aihot.news/items/qu4i65un2e2yxp5w34ctcusit",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Oracle 将从 2027 年起在 OCI 部署 Google TPU",
+      "original_title": "Google’s TPUs will run on a hyperscale cloud outside Google for the first time, with Oracle deploying capacity from calendar 2027 and ram...",
+      "summary": "Oracle 与 Google 宣布 Google TPU 将通过 Oracle Cloud Infrastructure 提供，是 Google TPU 首次运行在 Google 之外的超大规模云上，Oracle 从 2027 年开始部署并逐年扩容。",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "category": "industry",
+      "published_at": "2026-10-27T23:44:27.000Z",
+      "discovered_at": "2026-10-27T23:45:11.636Z",
+      "url": "https://x.com/rohanpaul_ai/status/2115228163408314757",
+      "aihot_url": "https://aihot.news/items/ymqto0axdn1w49ofeu2xd7sae",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang",
+        "GPU cluster",
+        "FP4"
+      ]
+    },
+    {
+      "title": "TypeSafe AI 每周更新 Jev 教程",
+      "original_title": "you too can learn to Jev the way @allietheicon Jevs!",
+      "summary": "你也可以学会像 @allietheicon 那样 Jev！\n\n全新 cookbook 每周新鲜出炉。",
+      "source": "X：TypeSafe AI (@typesafeai)",
+      "category": "tip",
+      "published_at": "2026-10-27T22:31:56.000Z",
+      "discovered_at": "2026-10-27T22:43:29.177Z",
+      "url": "https://x.com/typesafeai/status/2115209914541039656",
+      "aihot_url": "https://aihot.news/items/u5rwmjy8h6beo1oky4oam8q6k",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "UC Berkeley 开源向量索引 LEANN 将 60M chunk 的 RAG 索引从 201 GB 压缩到 6 GB",
+      "original_title": "Meet LEANN: An Open-Source Vector Index that Shrinks a 60M-Chunk RAG Index from 201 GB to 6 GB",
+      "summary": "UC Berkeley Sky Computing Lab 开源了向量索引 LEANN，通过在查询时重算嵌入而非存储向量，把 60M chunk 的 Wikipedia 索引从 201 GB 压缩到 6 GB。",
+      "source": "MarkTechPost（RSS）",
+      "category": "paper",
+      "published_at": "2026-10-27T21:54:37.000Z",
+      "discovered_at": "2026-10-28T00:04:06.291Z",
+      "url": "https://www.marktechpost.com/2026/10/27/leann-vector-index-mlsys-2026/",
+      "aihot_url": "https://aihot.news/items/t6dohj00unnr35sa9mkqfgflv",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster",
+        "quantization",
+        "RAG"
+      ]
+    },
+    {
+      "title": "Liquid AI 发布 LFM3：6 个开源权重 2B 级多模态模型",
+      "original_title": "Liquid AI Releases LFM3: 6 Open-Weight 2B-Class Multimodal Models",
+      "summary": "Liquid AI 发布 LFM3 系列共 6 个开源权重 2B 级模型，基于同一 tri-hybrid 骨干覆盖文本、视觉、音频、omni 和决策任务。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-27T21:08:02.000Z",
+      "discovered_at": "2026-10-27T22:02:07.301Z",
+      "url": "https://www.marktechpost.com/2026/10/27/liquid-ai-lfm3-open-weight-2b-multimodal-models/",
+      "aihot_url": "https://aihot.news/items/l9giigl76ejhatl21j8rikcwh",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang",
+        "KV cache",
+        "agent memory",
+        "RL training",
+        "post-training"
+      ]
+    },
+    {
+      "title": "研究发现阿里 Qwen3.8 系列模型在部分请求中调用阿里云代理服务器",
+      "original_title": "Alibaba's latest Qwen models routed some requests through company servers, researchers find",
+      "summary": "研究机构报告称，阿里 Qwen3.8 系列部分模型会在请求受阻时尝试通过阿里云代理（aliyuncs.com）转发流量。",
+      "source": "The Decoder：AI News（RSS）",
+      "category": "paper",
+      "published_at": "2026-10-27T19:45:49.000Z",
+      "discovered_at": "2026-10-27T20:08:41.153Z",
+      "url": "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/",
+      "aihot_url": "https://aihot.news/items/r2rtzkthzpc265c6c2rfervjh",
+      "reason": null,
+      "matched_by": [
+        "post-training"
+      ]
+    },
+    {
+      "title": "Sentient OS（YC F26）发布端侧 AI：夜间用本地 LLM 读取个人数据并生成 markdown 文件",
+      "original_title": "Local models have reached the point where it makes sense to let one read your entire digital life every night.",
+      "summary": "Sentient OS（YC F26）发布端侧 AI 产品，夜间用本地 LLM 读取用户的消息、文件和笔记，不限量推理。它把学到的内容写入电脑上一组可随时打开、编辑或删除的纯 markdown 文件；白天 Double Tap 和 Sidekick 从这些文件中读取信息来起草回复并完成任务，较重的工作才调用用户自选的云端模型。",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "category": "ai-products",
+      "published_at": "2026-10-27T19:19:13.000Z",
+      "discovered_at": "2026-10-27T19:39:43.110Z",
+      "url": "https://x.com/rohanpaul_ai/status/2115161414424031520",
+      "aihot_url": "https://aihot.news/items/ash1maql6lalykeknj4bsdf2n",
+      "reason": null,
+      "matched_by": [
+        "LLM inference"
+      ]
+    },
+    {
+      "title": "Databricks 为 Genie Code 推出医疗与生命科学 Vital Skills 技能包",
+      "original_title": "Vital Skills: Upskilling Genie Code with Healthcare and Life Sciences skills",
+      "summary": "Databricks 为编码智能体 Genie Code 推出 Vital Skills 技能包，以开放 Agent Skills 标准封装医疗与生命科学领域的专家方法论。",
+      "source": "Databricks：Blog（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-27T19:00:00.000Z",
+      "discovered_at": "2026-10-27T19:31:40.507Z",
+      "url": "https://www.databricks.com/blog/vital-skills-upskilling-genie-code-healthcare-and-life-sciences-skills",
+      "aihot_url": "https://aihot.news/items/pdk9flpc303pzqdx7dkf1zfhr",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "LLM serving",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Anthropic 工程与产品负责人访谈：如何用 Claude 构建 Claude 并分离智能体的脑与手",
+      "original_title": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+      "summary": "Latent Space 播客采访 Anthropic 工程负责人 Katelyn Lesse 和产品负责人 Angela Jiang，探讨 Opus 5.5 发布一个月后的团队工作方式。",
+      "source": "Latent Space（RSS）",
+      "category": "opinion",
+      "published_at": "2026-10-27T18:53:10.000Z",
+      "discovered_at": "2026-10-27T19:21:40.564Z",
+      "url": "https://latent.space/p/opus55/",
+      "aihot_url": "https://aihot.news/items/ekszktsww4aw6ent2a7unk4ck",
+      "reason": null,
+      "matched_by": [
+        "agent memory",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "自然语言走进蛋白质与基因组设计：Pinal 与 Hugging Face 的 Carbon X",
+      "original_title": "Vibe genes? Natural(ish) language comes to protein, genome design software",
+      "summary": "Ars Technica 介绍了一种以自然语言提示设计蛋白质的工具 Pinal，它由 T2struct 将文本转为结构蓝图，再由 SAProt-T 生成氨基酸序列，训练数据包括 8 亿关键词-蛋白质对和 AlphaFold 预测结构。",
+      "source": "Ars Technica：AI（RSS）",
+      "category": "paper",
+      "published_at": "2026-10-27T18:49:08.000Z",
+      "discovered_at": "2026-10-27T18:54:42.356Z",
+      "url": "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/",
+      "aihot_url": "https://aihot.news/items/xkgksc3xb3gy1oqh8zg8netby",
+      "reason": null,
+      "matched_by": [
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Latent Space 访谈 Anthropic 工程团队：如何把 Claude 模型大脑与智能体执行分离并安全上线 Opus 5.5",
+      "original_title": "How Anthropic ships the #1 LLM in the World safely: Separating the Brain from the Hands",
+      "summary": "Latent Space 发布对 Anthropic 的 Katelyn Lesse 和 Angela Jiang 的访谈，介绍 Claude Platform 背后的工程实践，包括发布 Opus 5.5、把模型大脑与智能体执行环境分离、扩展 API 和构建可靠的托管智能体。",
+      "source": "Latent Space（RSS）",
+      "category": "opinion",
+      "published_at": "2026-10-27T18:40:19.000Z",
+      "discovered_at": "2026-10-27T19:21:40.582Z",
+      "url": "https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/",
+      "aihot_url": "https://aihot.news/items/r1y5npurn9gsdp2ntp3bncwn2",
+      "reason": null,
+      "matched_by": [
+        "agent memory",
+        "RL training",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Codex 0.165.0 发布：新增 Google Cloud Vertex AI 提供商与 GPT-6.1 Terra",
+      "original_title": "0.165.0",
+      "summary": "Codex 发布 0.165.0，新增内置 Google Cloud Vertex AI 提供商（model_provider = \"gcp\"），并将 GPT-6.1 Terra 加入模型目录。该版本默认对新配置启用 memory v2 并支持导入外部智能体记忆，同时默认允许在对话中调整推理强度。会话选择器新增仓库过滤，agent 命令中心支持按目录分组。",
+      "source": "Codex：GitHub Releases（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-27T18:19:20.000Z",
+      "discovered_at": "2026-10-27T19:15:42.491Z",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
+      "aihot_url": "https://aihot.news/items/ffa7y54fd5pbn6tvxtjko2ve4",
+      "reason": null,
+      "matched_by": [
+        "agent memory"
+      ]
+    },
+    {
+      "title": "Databricks Lakehouse Federation：不迁移数据也能做投资分析",
+      "original_title": "Unlocking Investment Insights Without Migrating Your Data: Lakehouse Federation",
+      "summary": "Databricks Lakehouse Federation 支持通过标准 SQL 直接查询 SQL Server、PostgreSQL、MySQL、Snowflake 等外部数据库，数据留在原处，无需复制或同步。",
+      "source": "Databricks：Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-27T18:00:00.000Z",
+      "discovered_at": "2026-10-27T18:30:39.399Z",
+      "url": "https://www.databricks.com/blog/unlocking-investment-insights-without-migrating-your-data-lakehouse-federation",
+      "aihot_url": "https://aihot.news/items/zkf6u1i4xi9apg1nh33gygme8",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Databricks 讲解用 ai_extract 与 MLflow Prompt Registry 提升文档抽取准确率",
+      "original_title": "From spot fixes to measured gains: improving document extraction accuracy with ai_extract and MLflow Prompt Registry",
+      "summary": "Databricks 博文讲解如何在 ai_extract 文档抽取中把一次性修补变成可评测的工程流程。实践来自一个从数十种 PDF 订单文档抽取约 40 个结构化字段的项目，结合人工审核作为 ground truth。",
+      "source": "Databricks：Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-27T18:00:00.000Z",
+      "discovered_at": "2026-10-27T18:30:39.504Z",
+      "url": "https://www.databricks.com/blog/spot-fixes-measured-gains-improving-document-extraction-accuracy-aiextract-and-mlflow-prompt",
+      "aihot_url": "https://aihot.news/items/az1zj5pqb9t94q6nd0pll4o9n",
+      "reason": null,
+      "matched_by": [
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Liquid AI 发布 LFM3 系列：一个 1.7B 底座衍生六个 2B 级多模态模型",
+      "original_title": "Build specialized multimodal models with LFM3",
+      "summary": "Liquid AI 在 Hugging Face 发布 LFM3 系列，以 LFM3-1.7B-Base 为共享底座，提供文本、视觉、音频、全模态和决策共六个 2B 级模型，均开放权重。",
+      "source": "Hugging Face 社区博客（混合发现）",
+      "category": "ai-models",
+      "published_at": "2026-10-27T17:16:52.000Z",
+      "discovered_at": "2026-10-27T18:12:41.214Z",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "aihot_url": "https://aihot.news/items/el7clqvijfyiipyzc1dodaz4e",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "quantization"
+      ]
+    },
+    {
+      "title": "面壁智能开源 MiniCPM-OCR 1.0 与校验模型 MiniCPM-OCR Jev",
+      "original_title": "Your OCR says it’s done—but did it get everything right? 🤔 In high-stakes workflows, even a small error can be costly.",
+      "summary": "面壁智能 OpenBMB 发布开源 MiniCPM-OCR 套件，含 1B 的 MiniCPM-OCR 1.0 和 2B 校验模型 MiniCPM-OCR Jev。",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "category": "ai-models",
+      "published_at": "2026-10-27T16:52:26.000Z",
+      "discovered_at": "2026-10-27T16:59:45.733Z",
+      "url": "https://x.com/OpenBMB/status/2115124474882469955",
+      "aihot_url": "https://aihot.news/items/ejz6be5t4ritwgmrctdqq5w6x",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang"
+      ]
+    },
+    {
+      "title": "LangChain 解析自研设计 agent Content Studio 并开源其 harness",
+      "original_title": "How We Built Our Design Agent",
+      "summary": "LangChain 详解自家设计 agent Content Studio 如何在 Slack 中根据一条提示生成视频、幻灯片和社媒图等代码化资产，已累计产出超 3000 件资产、80 多套幻灯片，单次请求模型成本从约 $8 降至约 50 美分。",
+      "source": "LangChain：Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-27T16:45:00.000Z",
+      "discovered_at": "2026-10-27T17:30:39.617Z",
+      "url": "https://www.langchain.com/blog/design-agent",
+      "aihot_url": "https://aihot.news/items/l63udrrcunv0qy04ve4s71g02",
+      "reason": "LangChain 复盘自研设计 agent 从早期差评到可用的过程，并开源了 harness，读者可借鉴其教品味、建环境和异步子代理的具体做法。",
+      "matched_by": [
+        "agent memory"
+      ]
+    },
+    {
+      "title": "SoMark 开源 1.3B 文档解析模型 OXR-1.0，三项基准居首且速度领先",
+      "original_title": "SoMark open-sourced OXR-1.0, a 1.3B-parameter document parsing model that turns PDFs and page images into Markdown or JSON,",
+      "summary": "SoMark 开源 1.3B 参数文档解析模型 OXR-1.0，可将 PDF 和页面图像转为 Markdown 或 JSON，权重已上架 Hugging Face 并提供免账号免费 API。",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "category": "ai-models",
+      "published_at": "2026-10-27T16:41:33.000Z",
+      "discovered_at": "2026-10-27T17:04:44.296Z",
+      "url": "https://x.com/rohanpaul_ai/status/2115121734718558243",
+      "aihot_url": "https://aihot.news/items/abj49ckh6cwef50mpr3itiddm",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster",
+        "post-training"
+      ]
+    },
+    {
+      "title": "AI SRE 是什么、将如何改变 on-call，以及它到底有没有用",
+      "original_title": "AI SRE: what is it, how could it change on-call – and does it work?",
+      "summary": "Pragmatic Engineer 深入分析正在兴起的 AI SRE 趋势：因 AI 代理推动部署频率翻倍，事故和夜间告警随之上升。",
+      "source": "Pragmatic Engineer（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-27T16:19:22.000Z",
+      "discovered_at": "2026-10-27T17:11:40.292Z",
+      "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
+      "aihot_url": "https://aihot.news/items/nq6z6flv4c8w8v8ornwoit4xz",
+      "reason": null,
+      "matched_by": [
+        "agent memory",
+        "RAG"
+      ]
+    },
+    {
+      "title": "Ai2 发布 Old Ideas, Novel Problems 研究与基准，测试 LLM 判断科研想法新颖性的可靠性",
+      "original_title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "summary": "Ai2 发布 Old Ideas, Novel Problems 研究，配套新颖性评审基准、数据和自动化流水线，测试 LLM 作为 novelty judge 评估科研想法新颖性的可靠性。",
+      "source": "Hugging Face 社区博客（混合发现）",
+      "category": "paper",
+      "published_at": "2026-10-27T16:12:42.000Z",
+      "discovered_at": "2026-10-27T17:11:42.053Z",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "aihot_url": "https://aihot.news/items/g8p65kqxksh5eeb6pt664o8vx",
+      "reason": null,
+      "matched_by": [
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Google DeepMind 发布实时交互世界模型 Genie 4",
+      "original_title": "Genie 4: A new generation of world simulation",
+      "summary": "Google DeepMind 发布世界模型 Genie 4，主打实时交互模拟、更强照片级真实感，并首次在实时世界模型中原生生成音频，包括环境声和可实时交互的人物对话。",
+      "source": "Google DeepMind：Blog（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-27T16:01:38.000Z",
+      "discovered_at": "2026-10-27T16:09:41.747Z",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "aihot_url": "https://aihot.news/items/l74eacnb38ytvm5hm8om7h7cs",
+      "reason": "官方完整说明了 Genie 4 的实时交互、原生音频和与 Gemini 协作机制，也坦陈当前在长时一致性和物理精度上的局限。",
+      "matched_by": [
+        "RL training"
+      ]
+    },
+    {
+      "title": "DeepMind 发布 Genie 4 世界模型，人物更真实、物理模拟更精确",
+      "original_title": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+      "summary": "Google DeepMind 发布 Genie 4 世界模型，在 Genie 3 基础上全面改进，标题强调模拟物理更真实、人物更逼真。模型无需预渲染环境或编程交互元素，可根据用户描述实时逐帧生成可探索的虚拟世界，并借助更新的 Gemini 模型提升模拟的准确性。",
+      "source": "Ars Technica：AI（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-27T16:00:22.000Z",
+      "discovered_at": "2026-10-27T16:52:41.613Z",
+      "url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+      "aihot_url": "https://aihot.news/items/ygu6eku7qnxfjxm6bo8bf16lp",
+      "reason": null,
+      "matched_by": [
+        "RL training"
+      ]
+    },
+    {
+      "title": "NVIDIA 与 Oracle 将 OCI Superclusters 扩展至多吉瓦规模并上线 Vera Rubin NVL72 与 Vera CPU",
+      "original_title": "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure",
+      "summary": "NVIDIA 与 Oracle 宣布将 OCI Superclusters 扩展至多吉瓦规模，NVIDIA Vera Rubin NVL72 与 Vera CPU 现已在 OCI 正式可用。",
+      "source": "NVIDIA：Newsroom（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-27T16:00:00.000Z",
+      "discovered_at": "2026-10-27T16:34:41.047Z",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure",
+      "aihot_url": "https://aihot.news/items/vfvxec7sxwbs6lvx7r1xkys9c",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster",
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "Google Play services 中的 LiteRT 升级：GPU 推理提速 1.4 倍、应用体积减小约 8 MB",
+      "original_title": "Smaller apps and faster GPU inference with LiteRT in Google Play services",
+      "summary": "Google 宣布 Google Play services 中的 LiteRT 迎来最大升级，GPU 推理速度约为旧版 GPU delegate 的 1.4 倍，由 ML Drift 引擎驱动，并通过新的 CompiledModel API 提供。",
+      "source": "Google Developers Blog（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-27T16:00:00.000Z",
+      "discovered_at": "2026-10-28T21:02:34.072Z",
+      "url": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
+      "aihot_url": "https://aihot.news/items/ahutkfpfx7c6xhqe0nd9omxtb",
+      "reason": null,
+      "matched_by": [
+        "agent memory"
+      ]
+    },
+    {
+      "title": "LlamaIndex 发布 Document Parsing Protocol 0.1 工作草案",
+      "original_title": "Introducing the Document Parsing Protocol",
+      "summary": "LlamaIndex 发布 Document Parsing Protocol（DPP）0.1 工作草案，为文档解析定义统一答案标准，包含覆盖文本、表格、表单、图表、示意图的 140 条规则，每条附示例页面和期望输出。",
+      "source": "LlamaIndex：产品、工程与评测",
+      "category": "ai-products",
+      "published_at": "2026-10-27T16:00:00.000Z",
+      "discovered_at": "2026-10-28T08:16:28.002Z",
+      "url": "https://www.llamaindex.ai/blog/introducing-the-document-parsing-protocol",
+      "aihot_url": "https://aihot.news/items/rnfgfbibceaspx7g958vxflf9",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Google 演示用 Agents CLI 评测闭环爬坡式提升 Agent 质量",
+      "original_title": "Hill-Climbing Agent Quality with Agents CLI Evaluation",
+      "summary": "Google Developers Blog 实操演示 Agents CLI 的 eval 命名空间如何支撑 Agent 质量的爬山式迭代，基于 Agents CLI v1.8.0 的 LangChain 模板，以 gemini-3.8-flash 作 LLM-as-judge 按 1-5 分评分。",
+      "source": "Google Developers Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-27T16:00:00.000Z",
+      "discovered_at": "2026-10-28T18:01:13.643Z",
+      "url": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
+      "aihot_url": "https://aihot.news/items/rv8durxtwokyuw3nepfr0heok",
+      "reason": null,
+      "matched_by": [
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "C-BRAIN 联合 NVIDIA 推出 OpenScientist 和 InsightEngine 加速阿尔茨海默病研究",
+      "original_title": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
+      "summary": "C-BRAIN 与 NVIDIA 合作，利用 AI 加速阿尔茨海默病研究，已推出两个开源工具 OpenScientist 和 InsightEngine，覆盖超过 200 个研究团队。",
+      "source": "NVIDIA Blog（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-27T15:00:20.000Z",
+      "discovered_at": "2026-10-27T16:01:39.275Z",
+      "url": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/",
+      "aihot_url": "https://aihot.news/items/hwifm9k4hp9rigb6q1r22ogob",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "Mirendil 发布首个模型 Fern 0.1，支持 10M token 上下文",
+      "original_title": "Mirendil Launches Fern 0.1, Its First Model, With 10M-Token Context",
+      "summary": "AI 实验室 Mirendil 发布首个编码模型 Fern 0.1，上下文窗口最高 10M token，约 23 MB 代码。其基座 Mirendil-Base 由 1 名研究员在 3.5 个月内完成预训练，总算力成本低于 1000 万美元，超过 99% 代码由 AI 智能体编写，训练数据仅来自公开来源。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-27T12:57:46.000Z",
+      "discovered_at": "2026-10-27T13:54:40.116Z",
+      "url": "https://www.marktechpost.com/2026/10/27/mirendil-fern-10m-token-context-model/",
+      "aihot_url": "https://aihot.news/items/w12c5os6ds6pfl606d2j9dwz8",
+      "reason": null,
+      "matched_by": [
+        "post-training"
+      ]
+    },
+    {
+      "title": "从 BigQuery 迁移到 Databricks：一份战略框架",
+      "original_title": "BigQuery to Databricks: A Strategic Framework",
+      "summary": "Databricks 发布从 BigQuery 迁移到 Databricks 的三支柱框架，涵盖流程、技术与人员。流程上先评估 BigQuery 资产，再按 BI 优先或 ETL 优先选择切入点，分批迁移并用 Lakehouse Federation 双轨验证，以 99.9% 一致性等标准触发旧管道下线。",
+      "source": "Databricks：Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-27T11:07:53.000Z",
+      "discovered_at": "2026-10-27T15:27:39.706Z",
+      "url": "https://www.databricks.com/blog/bigquery-databricks-strategic-framework",
+      "aihot_url": "https://aihot.news/items/lgn9ahstqv8ah8xzfkb75qkx5",
+      "reason": null,
+      "matched_by": [
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "廉价验证器 Jev 核查 RAG 声明准确率逼近 GPT-6 Astra",
+      "original_title": "This paper finds that a cheap verifier can match a frontier LLM's accuracy at checking RAG claims, while letting more unsupported claims ...",
+      "summary": "论文测试了仅输出标签和概率的 Jev 与 GPT-6 Astra 在 495 条人工标注声明上的核查表现，Jev 准确率与 Astra 相差 0.6 个百分点以内，成本低 187 倍。但 Jev 放行了 23.2% 的无依据声明，高于 Astra 的 14.1%。级联方案虽降低 Astra 费用，但随机分流同样比例的声明也能省下差不多的钱。",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "category": "paper",
+      "published_at": "2026-10-27T10:24:24.000Z",
+      "discovered_at": "2026-10-27T10:52:38.085Z",
+      "url": "https://x.com/rohanpaul_ai/status/2115026823377748246",
+      "aihot_url": "https://aihot.news/items/d1o6v8imgreb2o0ki0gb5pzq8",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "MiniCPM-V 4.7 iPhone 推理提速至 20.51 tokens/s",
+      "original_title": "Love this breakdown! 🔥 From 3.38 to 20.51 tokens/s on an iPhone — a great example of how inference optimizations can unlock powerful on-...",
+      "summary": "很喜欢这份拆解！🔥 在 iPhone 上从 3.38 提升到 20.51 tokens/s——这是推理优化如何释放强大端侧 AI 的一个绝佳例子。\n\n感谢重点介绍 MiniCPM-V 4.7 背后的工程工作！🚀💙",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "category": "tip",
+      "published_at": "2026-10-27T08:16:22.000Z",
+      "discovered_at": "2026-10-27T08:44:42.642Z",
+      "url": "https://x.com/OpenBMB/status/2114994601681633574",
+      "aihot_url": "https://aihot.news/items/tb3wzwnsitiuvwq7m0obfwld6",
+      "reason": null,
+      "matched_by": [
+        "quantization"
+      ]
+    },
+    {
+      "title": "Ai2 发布 Old Ideas, Novel Problems 研究与 benchmark，揭示 LLM 新颖性裁判不稳定",
+      "original_title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "summary": "Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。",
+      "source": "Ai2 / Allen Institute for AI（RSS）",
+      "category": "paper",
+      "published_at": "2026-10-27T08:00:00.000Z",
+      "discovered_at": "2026-10-27T16:38:42.978Z",
+      "url": "https://allenai.org/blog/novelty-bench",
+      "aihot_url": "https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
+      "reason": "原文给出了跨六个 LLM 裁判的敏感性实验数据，读者可据此判断现有新颖性评估在 AI 生成想法上的可靠性边界。",
+      "matched_by": [
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "vLLM Semantic Router 发布 27B 开源多模态决策模型 d3-ultra",
+      "original_title": "vLLM Semantic Router Releases d3-ultra: A 27B Open Multimodal Decision Model",
+      "summary": "vLLM Semantic Router 团队发布 Apache-2.0 开源的 27B 多模态决策模型 d3-ultra，属于 Decision 3.0 家族，不生成文本，而是单次读取输入后对每个问题返回概率，支持 Choice、Yes/No、Score、Box、Track 五类问题。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-27T05:50:57.000Z",
+      "discovered_at": "2026-10-27T07:49:37.765Z",
+      "url": "https://www.marktechpost.com/2026/10/26/vllm-semantic-router-d3-ultra-27b-multimodal-decision-model/",
+      "aihot_url": "https://aihot.news/items/oxqs7cc28mpxumkp8jdyvqh3m",
+      "reason": null,
+      "matched_by": [
+        "vLLM"
+      ]
+    },
+    {
+      "title": "蚂蚁 inclusionAI 发布 Ling-3.1-flash-1019：560B 总参数 MoE，1M 上下文",
+      "original_title": "inclusionAI/Ling-3.1-flash-1019",
+      "summary": "蚂蚁 inclusionAI 发布 Ling-3.1-flash-1019，为 Ling-3.1-flash 的升级版，总参数 560B、每 token 激活 25B、上下文窗口 1M token。",
+      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+      "category": "ai-models",
+      "published_at": "2026-10-27T05:46:51.000Z",
+      "discovered_at": "2026-10-27T11:51:36.175Z",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+      "aihot_url": "https://aihot.news/items/dcur4iv2y0dycugwr9qrnddyw",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang",
+        "post-training"
+      ]
+    },
+    {
+      "title": "百度开源 Unlimited OCR 2，面向数百页长文档解析",
+      "original_title": "Baidu Open-Sources Unlimited OCR 2 for Hundred-Page Document Parsing",
+      "summary": "百度开源 3.34B 参数的 OCR 模型 Unlimited OCR 2，MIT 许可，可单次请求解析数百页文档。核心是 SR-SWA 稀疏参考滑动窗口注意力，用 512 token 固定参考集加 128 token 局部窗口使每步解码开销基本不随页数增长。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-27T05:26:36.000Z",
+      "discovered_at": "2026-10-27T07:49:37.774Z",
+      "url": "https://www.marktechpost.com/2026/10/26/baidu-unlimited-ocr-2-open-source-long-document-ocr/",
+      "aihot_url": "https://aihot.news/items/j4dmqaeiwtwzepc2u2hzofhco",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang",
+        "KV cache"
+      ]
+    },
+    {
+      "title": "inclusionAI 发布 GLM-5.3-Flash-singprobe 流式安全探针",
+      "original_title": "inclusionAI/GLM-5.3-Flash-singprobe",
+      "summary": "inclusionAI 在 zai-org/GLM-5.3-Flash 上构建了内置流式护栏 SingProbe，复用基座模型隐藏状态，在每个 token 上对查询意图、回复不安全和幻觉风险打分，解码开销低于 0.5%。",
+      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+      "category": "ai-products",
+      "published_at": "2026-10-27T04:47:31.000Z",
+      "discovered_at": "2026-10-27T05:45:38.596Z",
+      "url": "https://huggingface.co/inclusionAI/GLM-5.3-Flash-singprobe",
+      "aihot_url": "https://aihot.news/items/pqg69wccqwr8wkw9nazkc7z08",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang"
+      ]
+    },
+    {
+      "title": "蚂蚁 inclusionAI 发布 SingProbe：基于 Qwen3.8-Flash-Next 的流式安全探针",
+      "original_title": "inclusionAI/Qwen3.8-Flash-Next-singprobe",
+      "summary": "蚂蚁 inclusionAI 在 HuggingFace 发布 SingProbe，一个基于 Qwen/Qwen3.8-Flash-Next 的流式安全探针，仅 5.18M 参数，复用基座模型隐藏状态逐 token 打分查询意图、回复安全性与幻觉风险，解码开销低于 0.5%。",
+      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+      "category": "ai-models",
+      "published_at": "2026-10-27T04:46:49.000Z",
+      "discovered_at": "2026-10-27T05:45:38.609Z",
+      "url": "https://huggingface.co/inclusionAI/Qwen3.8-Flash-Next-singprobe",
+      "aihot_url": "https://aihot.news/items/lizp1ycyv1dszvfnwt3h9hqoo",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "SGLang"
+      ]
+    },
+    {
+      "title": "Redwood Research 论证加速 AI 概念推理能力的重要性",
+      "original_title": "A basic case for accelerating conceptual reasoning capabilities",
+      "summary": "Redwood Research 发文论证应差异化加速 AI 的概念推理能力，即类似哲学、缺乏可验证标准、依赖非形式化先验论证的任务。该机构称基础提示技巧和小规模训练可让模型在其主概念推理基准上提升相当于 3 到 12 个月前沿进展的分数，且对通用能力外溢较小。团队已从直接做概念研究转向该方向，并称有可吸纳更多人的现成议程。",
+      "source": "Redwood Research：Blog（RSS）",
+      "category": "opinion",
+      "published_at": "2026-10-27T04:24:19.000Z",
+      "discovered_at": "2026-10-27T04:53:39.203Z",
+      "url": "https://blog.redwoodresearch.org/p/a-basic-case-for-accelerating-conceptual",
+      "aihot_url": "https://aihot.news/items/kvt4xdxc7fhwejvvv1680ixce",
+      "reason": null,
+      "matched_by": [
+        "RL training"
+      ]
+    },
+    {
+      "title": "Noam Brown 感慨 LLM 数学基准进步",
+      "original_title": "Only 2.5 years ago, AI labs would brag about their frontier LLM performance on grade school math benchmarks (GSM8K). I can't wait to see ...",
+      "summary": "仅仅 2.5 年前，AI 实验室还会炫耀其前沿 LLM 在小学水平数学基准（GSM8K）上的表现。我迫不及待想知道再过 2.5 年我们会走到哪一步。",
+      "source": "X：Noam Brown (@polynoamial)",
+      "category": "opinion",
+      "published_at": "2026-10-27T00:41:00.000Z",
+      "discovered_at": "2026-10-27T01:00:42.479Z",
+      "url": "https://x.com/polynoamial/status/2114880003989197166",
+      "aihot_url": "https://aihot.news/items/zw9wiawgjardt0qg3e1lxfryl",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Google Research 提出 sleep 框架：让 LLM 在持续学习中稳定保留知识",
+      "original_title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+      "summary": "Google Research 提出面向持续学习的 sleep 框架，让 LLM 在活跃交互与离线记忆巩固之间循环，把脆弱的短期上下文固化为长期参数。该框架结合 MoE 参数扩展、GKD 与 RL 模仿学习，可让模型持续习得新事实、保留最长 10M tokens 的长上下文知识并提升复杂推理。",
+      "source": "Google Research：Blog（网页）",
+      "category": "paper",
+      "published_at": "2026-10-27T00:00:00.000Z",
+      "discovered_at": "2026-10-27T18:36:40.024Z",
+      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "aihot_url": "https://aihot.news/items/a90vpr5eu15uecafkl71n2gwn",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "agent memory",
+        "RL training",
+        "post-training",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Together GPU 集群自动修复：从 GPU 故障到健康节点",
+      "original_title": "Auto repair for Together GPU Clusters: from GPU fault to healthy node",
+      "summary": "Together AI 详解其 GPU 集群自动修复系统：被动健康检查在 VM 内与宿主机两侧持续监测 Xid 错误、ECC 双比特错误、PCIe 掉卡和 InfiniBand 链路抖动，每项修复都附带证据。",
+      "source": "Together AI 研究与产品博客（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-27T00:00:00.000Z",
+      "discovered_at": "2026-10-27T21:10:06.275Z",
+      "url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
+      "aihot_url": "https://aihot.news/items/ec5jqb5pv0452p20kpmg3v0z4",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster"
+      ]
+    },
+    {
+      "title": "Databricks Lakeflow Connect 如何统一生产力工具与 AI 数据接入",
+      "original_title": "Unify your productivity and AI data with Lakeflow Connect",
+      "summary": "Databricks 介绍 Lakeflow Connect 的原生连接器，可把 Jira、Confluence、Notion、SharePoint、Google Drive、Outlook、Gmail、GitHub 以及 OpenAI、Anthropic 等来源的数据以受治理表形式接入 Unity Catalog。",
+      "source": "Databricks：Blog（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-26T23:20:12.000Z",
+      "discovered_at": "2026-10-27T01:15:37.674Z",
+      "url": "https://www.databricks.com/blog/unify-your-productivity-and-ai-data-lakeflow-connect",
+      "aihot_url": "https://aihot.news/items/e0ct1jmoapcqzaokvd54e9zg7",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Cloudflare 披露 GLM-5.3 Workers AI 跨请求 KV cache 泄露事件及修复细节",
+      "original_title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+      "summary": "Cloudflare 于 2026 年 10 月 26 日发布协同披露报告，说明 Workers AI 上的 GLM-5.3 模型因 prefill KV cache 池（681,280 tokens）小于上下文窗口（1,048,576 tokens）叠加 SGLang 分离式推理的拒绝路径缺陷，导致超长请求读到了之前其他用户请求的 KV cache 数据。",
+      "source": "Hacker News：AI 热帖",
+      "category": "industry",
+      "published_at": "2026-10-26T22:01:23.889Z",
+      "discovered_at": "2026-10-27T00:55:40.095Z",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "aihot_url": "https://aihot.news/items/wd1hh4quioa3b899yrq1bl8eu",
+      "reason": null,
+      "matched_by": [
+        "SGLang",
+        "LLM inference",
+        "KV cache",
+        "quantization"
+      ]
+    },
+    {
+      "title": "Google DeepMind 论文：4 个 Gemini 4 Argon 智能体无人干预击败 Minecraft 末影龙",
+      "original_title": "New Google DeepMind paper shows 4 general-purpose coding agents beating Minecraft with no human help, writing every program and splitting...",
+      "summary": "Google DeepMind 论文将 4 个 Gemini 4 Argon 智能体放入沙盒 Minecraft 生存世界，只给一个目标击败 Ender Dragon，未分配角色或预写游戏工具，智能体通过聊天和共享记忆自行组织分工。",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "category": "paper",
+      "published_at": "2026-10-26T21:44:50.000Z",
+      "discovered_at": "2026-10-26T21:58:42.502Z",
+      "url": "https://x.com/rohanpaul_ai/status/2114835672985113080",
+      "aihot_url": "https://aihot.news/items/efkvdzx01tprr40dwhz91iddm",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Baseten 推出 BDN Sealed Volumes：模型数据一次发布，随处挂载",
+      "original_title": "BDN Sealed Volumes: publish once, mount anywhere",
+      "summary": "Baseten 发布 BDN Sealed Volumes，可将只读模型数据发布一次并以 digest 固定版本，在任意部署中挂载。它支持从 Hugging Face、S3、GCS 等源同步，按内容哈希分块上传，仅传输变更部分，部署启动无需下载步骤。适用于模型权重、LoRA 适配器、TensorRT-LLM 引擎和嵌入索引等运行时只读文件。",
+      "source": "Baseten 工程博客（网页）",
+      "category": "ai-products",
+      "published_at": "2026-10-26T21:23:55.000Z",
+      "discovered_at": "2026-10-26T21:52:40.010Z",
+      "url": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/",
+      "aihot_url": "https://aihot.news/items/ubdxqrwdqr1w9gwonqbowm4xr",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "LLM serving",
+        "GPU cluster",
+        "RL training",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Peter Sellis 加入 X 领导产品",
+      "original_title": "Peter is not only a good human and product builder but also an above average shitposter",
+      "summary": "Peter 不仅是个好人、优秀的产品构建者，还是个中上水平的 shitposter\n\n这对这个 app 来说是天大的好消息！",
+      "source": "X：Alex Heath (@alexeheath)",
+      "category": "industry",
+      "published_at": "2026-10-26T20:05:27.000Z",
+      "discovered_at": "2026-10-26T20:25:37.591Z",
+      "url": "https://x.com/alexeheath/status/2114810663000486176",
+      "aihot_url": "https://aihot.news/items/xbff8iwwpjpcq6qoq3l1d0j40",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Databricks Free Edition 如何用于数据与 AI 教学",
+      "original_title": "How to teach with Databricks Free Edition",
+      "summary": "Databricks 介绍如何用永久免费的 Databricks Free Edition 在浏览器中开设完整的数据与 AI 课程，无需云合同、许可证或安装。学生可在这套与生产环境相同的平台上写 Spark 作业、跑 SQL、部署模型和构建智能体，课程覆盖数据工程、数据仓库、机器学习与 AI 智能体等方向。该版本面向全球学生和教育者，仅限学习与非商业用途。",
+      "source": "Databricks：Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-26T19:40:00.000Z",
+      "discovered_at": "2026-10-26T20:11:34.203Z",
+      "url": "https://www.databricks.com/blog/how-teach-databricks-free-edition",
+      "aihot_url": "https://aihot.news/items/sfuvjlfdiwq3mada9kasypc60",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "用 ExecuTorch 在 Arm 边缘设备上优化流式语音识别",
+      "original_title": "Optimizing Streaming Speech Recognition on Arm® Edge Devices with ExecuTorch",
+      "summary": "PyTorch 博客展示如何用 ExecuTorch 将多语言流式 ASR 模型 Nemotron 3.5 部署到 Google Pixel 11，并分析精度与分块大小对流式质量的影响。",
+      "source": "PyTorch：Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-26T18:27:27.000Z",
+      "discovered_at": "2026-10-26T18:33:20.190Z",
+      "url": "https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch/",
+      "aihot_url": "https://aihot.news/items/kfrilf2w8zipqybuzs1d3yzje",
+      "reason": null,
+      "matched_by": [
+        "quantization"
+      ]
+    },
+    {
+      "title": "Databricks AI Search 原生支持 Streaming Tables、Materialized Views 与 Iceberg Managed 表",
+      "original_title": "Building live intelligence: Databricks AI Search supports Streaming Tables, Materialized Views, and Managed tables using Iceberg",
+      "summary": "Databricks AI Search 在 Delta 表之外新增原生支持 Streaming Tables、Materialized Views 和基于 Iceberg v3+ 的 Managed 表，可直接从这些数据源建索引并同步。此前用户需另建 Delta 副本并维护同步管道，现在无需中间表和自定义同步逻辑。三种数据源分别对应实时事件、个性化聚合状态与开放格式数据场景。",
+      "source": "Databricks：Blog（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-26T18:03:59.000Z",
+      "discovered_at": "2026-10-26T20:11:34.214Z",
+      "url": "https://www.databricks.com/blog/building-live-intelligence-databricks-ai-search-supports-streaming-tables-materialized-views",
+      "aihot_url": "https://aihot.news/items/jhmbr5mz4s5qvgr5eddrg06kq",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "NYU 与 UT Austin 研究发现 AI 文本存在六种降低可读性的语言模式",
+      "original_title": "Researchers find six patterns that make AI text so exhausting to read",
+      "summary": "纽约大学与得克萨斯大学奥斯汀分校的研究分析了 14 个语言模型在 120 段对话、45 次编码会话和 980 篇议论文中的输出，发现模型系统性过度使用六种罕见于人类文本的句式，如名词堆叠、名词动用和主谓分离。",
+      "source": "The Decoder：AI News（RSS）",
+      "category": "paper",
+      "published_at": "2026-10-26T17:50:15.000Z",
+      "discovered_at": "2026-10-26T18:43:37.958Z",
+      "url": "https://the-decoder.com/researchers-find-six-patterns-that-make-ai-text-so-exhausting-to-read/",
+      "aihot_url": "https://aihot.news/items/yfzatmbvh4xj47uxrb7v1rybp",
+      "reason": null,
+      "matched_by": [
+        "RL training",
+        "post-training"
+      ]
+    },
+    {
+      "title": "Anthropic S-1 文件关键数据与要点整理",
+      "original_title": "Anthropic’s S-1: Key Data Points & Fun Facts for Venture Investors",
+      "summary": "Newcomer 梳理 Anthropic 递交的 S-1 文件中的关键数据与细节，面向风险投资人整理要点。文章指出该文件发布于科技行业敏感时刻，全美反 AI 情绪高涨且临近一场影响重大的选举，这些数字可能进一步加剧相关争论。",
+      "source": "Newcomer 新闻长文（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-26T17:44:56.000Z",
+      "discovered_at": "2026-10-26T18:50:35.951Z",
+      "url": "https://www.newcomer.co/p/anthropics-s-1-key-data-points-and",
+      "aihot_url": "https://aihot.news/items/yhz6w8o0n8dbz2if6d2djzim2",
+      "reason": null,
+      "matched_by": [
+        "RAG"
+      ]
+    },
+    {
+      "title": "Skyfall AI 的 SKY-001 工程世界模型演示",
+      "original_title": "World models are moving out of robotics and video and into engineering software.",
+      "summary": "Skyfall AI 演示了工程世界模型 SKY-001，可将文本提示或 2D 草图转成可直接在 Autodesk Fusion 打开的完整 CAD 构建序列。它靠视觉规划而非反复调用 LLM，先把物体拆成子装配与零件，再由构建世界模型预测有序草图和 3D 实体状态。每个案例耗时 3.9 秒，对比 GPT-6 Astra 的 199 秒。",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "category": "paper",
+      "published_at": "2026-10-26T17:39:35.000Z",
+      "discovered_at": "2026-10-26T17:51:25.275Z",
+      "url": "https://x.com/rohanpaul_ai/status/2114773953680154996",
+      "aihot_url": "https://aihot.news/items/l4drsmi9mk0vp7lv9j2c2wmax",
+      "reason": null,
+      "matched_by": [
+        "RL training"
+      ]
+    },
+    {
+      "title": "Nace AI 发布 Drex for Search：BrowseComp-Plus 达 92.05%，每题仅需 12.6 次搜索调用",
+      "original_title": "Nace AI Releases Drex for Search for AI Agents: 92.05% on BrowseComp-Plus With 12.6 Search Calls",
+      "summary": "Nace AI 发布面向智能体的检索层 Drex for Search，将 Drex 决策模型用于文档搜索，支持 Claude Code、Codex、Cursor 和 OpenCode 通过 CLI、SDK、MCP 或 REST 调用。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-26T16:46:09.000Z",
+      "discovered_at": "2026-10-26T17:38:19.437Z",
+      "url": "https://www.marktechpost.com/2026/10/26/nace-ai-releases-drex-for-search-for-ai-agents/",
+      "aihot_url": "https://aihot.news/items/hifec190jf1u59ohyvc7mgup9",
+      "reason": null,
+      "matched_by": [
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Meta 在 2026 OCP 全球峰会分享 scale-up、scale-out 与 scale-across AI 网络创新",
+      "original_title": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+      "summary": "Meta 在 2026 OCP 全球峰会分享支持其最新 AI 模型和 Prometheus 集群的网络创新，全部演讲视频和幻灯片已公开。",
+      "source": "Meta Engineering Blog（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-26T16:00:07.000Z",
+      "discovered_at": "2026-10-26T16:08:19.944Z",
+      "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+      "aihot_url": "https://aihot.news/items/f3glsbzkad2j3f8swqd3z8md9",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster"
+      ]
+    },
+    {
+      "title": "Liquid AI 发布 LFM3 多模态开源权重模型家族，2B 级覆盖文本、视觉、音频、omni 和决策模型",
+      "original_title": "Introducing LFM3: Every Modality for Specialized Intelligence",
+      "summary": "Liquid AI 发布新一代 LFM3 模型家族，以 LFM3-1.7B-Base 为共享骨干，首批开放六个 2B 级模型（文本、视觉、音频、omni 及两个决策模型）的开放权重，可在 Hugging Face、Playground 和 Liquid AI API 获取。",
+      "source": "Liquid AI 模型与工程博客（网页）",
+      "category": "ai-models",
+      "published_at": "2026-10-26T16:00:00.000Z",
+      "discovered_at": "2026-10-27T17:50:40.510Z",
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "aihot_url": "https://aihot.news/items/vx4t4ldzajj3lhb8luhg9dy9s",
+      "reason": "原文给出 LFM3 各模型的具体架构、基准和端侧性能数据，读者可以据此评估小参数量多模态模型在本地方案中的可行性。",
+      "matched_by": [
+        "vLLM",
+        "SGLang",
+        "LLM inference",
+        "KV cache",
+        "quantization",
+        "agent memory",
+        "RL training",
+        "post-training"
+      ]
+    },
+    {
+      "title": "NVIDIA 详解如何用 Nemotron 数据集微调模型掌握本地规则",
+      "original_title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+      "summary": "NVIDIA 发布 Nemotron-Personas-France 与 Nemotron-Personas-Belgium 数据集，用于将 Nemotron 开放模型后训练为贴合当地语言与文化的应用模型。",
+      "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
+      "category": "tip",
+      "published_at": "2026-10-26T16:00:00.000Z",
+      "discovered_at": "2026-10-27T16:10:41.070Z",
+      "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+      "aihot_url": "https://aihot.news/items/iux9l3vvjblsfzp92enfhxjy1",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "LLM serving",
+        "post-training",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "NVIDIA 实测三种优化将 Ling-3.0-flash 在 DGX Spark 上的解码吞吐提升 42.5%",
+      "original_title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
+      "summary": "NVIDIA 技术博客介绍在 DGX Spark 上加速 Ling-3.0-flash 推理的三种优化：Humming MXFP4 MoE 内核、LM head 在线 FP8 量化、以及用 NEXTN 做 MTP 投机解码。",
+      "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
+      "category": "tip",
+      "published_at": "2026-10-26T16:00:00.000Z",
+      "discovered_at": "2026-10-27T15:09:40.416Z",
+      "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
+      "aihot_url": "https://aihot.news/items/fyauml8k2saplee48r5xuoomy",
+      "reason": null,
+      "matched_by": [
+        "SGLang",
+        "KV cache",
+        "quantization",
+        "FP4"
+      ]
+    },
+    {
+      "title": "Google 用 LangGraph 与 Gemini 在 GCP 上构建 HappyDelivery 多智能体对话式商务原型",
+      "original_title": "Building Conversational Commerce with Multi-Agent Swarms on GCP: A Working Prototype",
+      "summary": "Google Developers 基于 此前发布的 3 层对话式商务架构蓝图，用 LangGraph、Gemini、FastAPI 和 Google Cloud 构建出可运行原型 HappyDelivery。",
+      "source": "Google Developers Blog（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-26T16:00:00.000Z",
+      "discovered_at": "2026-10-27T17:42:44.613Z",
+      "url": "https://developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype/",
+      "aihot_url": "https://aihot.news/items/ug0jeh0hgnqrbmp1vbue0uqg2",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "agent memory"
+      ]
+    },
+    {
+      "title": "Google A2UI 推出可切换推理格式，A2UI Express 将生成式 UI 延迟最多降低 3x",
+      "original_title": "Fast, reliable A2UI, with swappable inference formats",
+      "summary": "Google 为面向智能体的生成式 UI 协议 A2UI 推出可切换的推理格式，新增默认格式 A2UI Express，以类 Python 语法逐行描述组件树，生成同屏 UI 所需 token 最多减少 3x、延迟最多降低 3x，并由 Agent SDK 确定性编译为 JSON 传输协议。",
+      "source": "Google Developers Blog（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-26T16:00:00.000Z",
+      "discovered_at": "2026-10-27T15:40:44.332Z",
+      "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+      "aihot_url": "https://aihot.news/items/wrjfzia5zhfdvc3k2oftswe2z",
+      "reason": null,
+      "matched_by": [
+        "LLM inference"
+      ]
+    },
+    {
+      "title": "Nace AI 发布 Drex for Search：BrowseComp-Plus 达 92.05%，每题仅 12.6 次搜索调用",
+      "original_title": "Nace AI Releases Drex for Search for AI Agents: 92.05% on BrowseComp-Plus With 12.6 Search Calls",
+      "summary": "Nace AI 发布面向 AI 智能体的检索层 Drex for Search，将搜索建模为逐级决策，支持 Claude Code、Codex、Cursor、OpenCode 通过 CLI、SDK、MCP 或 REST 调用。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-26T15:32:33.000Z",
+      "discovered_at": "2026-10-26T16:37:19.180Z",
+      "url": "https://www.marktechpost.com/2026/10/26/nace-ai-drex-for-search-ai-agents/",
+      "aihot_url": "https://aihot.news/items/w77yyetonuizdsxiogl6urur0",
+      "reason": null,
+      "matched_by": [
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "面壁智能 PostTrainBench 分析 1338 条训练轨迹，Agent 几乎不会中途切换训练策略",
+      "original_title": "An agent that can run a full post-training pipeline almost never reconsiders its initial strategy.",
+      "summary": "面壁智能（OpenBMB）分析 PostTrainBench 的 1338 条完整后训练轨迹（7 个基准、4 个基座模型、Claude Code / Codex CLI / OpenCode、单张 H100 上 10 小时），将 Agent 能力拆分为执行与策略两层。",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "category": "paper",
+      "published_at": "2026-10-26T13:00:00.000Z",
+      "discovered_at": "2026-10-26T13:39:38.690Z",
+      "url": "https://x.com/OpenBMB/status/2114703594347725005",
+      "aihot_url": "https://aihot.news/items/niusz6yohnm4adhez8umksnax",
+      "reason": null,
+      "matched_by": [
+        "RL training",
+        "post-training"
+      ]
+    },
+    {
+      "title": "PyTorch 向新一类加速器开放 AI 生态：IBM Spyre 支持落地",
+      "original_title": "PyTorch opens the AI ecosystem to a new accelerator class",
+      "summary": "IBM 与 PyTorch 基金会兑现 2026 年 Spyre 深度支持计划，torch-spyre 后端、Spyre 的 vLLM 插件与编译器改进让常规 PyTorch 模型可直接跑在 Spyre 上。",
+      "source": "IBM Research：AI",
+      "category": "ai-products",
+      "published_at": "2026-10-26T12:00:00.000Z",
+      "discovered_at": "2026-10-26T12:27:36.591Z",
+      "url": "https://research.ibm.com/blog/pytorch-spyre-accelerator-software-ecosystem-updates?utm_medium=rss&utm_source=rss",
+      "aihot_url": "https://aihot.news/items/d7iqyvk48m9o1wf7lilj68rw9",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "LLM inference"
+      ]
+    },
+    {
+      "title": "Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中出现疑似回连行为",
+      "original_title": "Concerning behavior from a popular open-weight AI model",
+      "summary": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。",
+      "source": "Hacker News：AI 热帖",
+      "category": "paper",
+      "published_at": "2026-10-26T10:14:20.569Z",
+      "discovered_at": "2026-10-26T18:49:39.412Z",
+      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "aihot_url": "https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
+      "reason": "Cohere 沙箱实测给出触发条件、主机名单和防御清单，读者可据此重新评估自托管开源权重的边界。",
+      "matched_by": [
+        "post-training"
+      ]
+    },
+    {
+      "title": "推理卡时是训练的12倍，decode 阶段一块卡只跑出5%算力：YC Paper Club 聊 DeepSeek 推理成本",
+      "original_title": "训练 V3 花了 280 万个 H800 卡时，推理一年烧掉一千五百多万个，是训练的六倍，按两年模型寿命摊是 12 倍。更狠的是 decode 阶段，一块卡只跑出 5% 的算力，瓶颈不在算力，在显存带宽。 https://x.com/i/article/2114651658...",
+      "summary": "Saito 归纳 YC Paper Club 播客中四位推理从业者的讨论：DeepSeek 训练 V3 用了280万个 H800 卡时，推理每天烧4.3万个卡时，按两年模型寿命摊是训练的12倍，decode 阶段 MFU 仅5%，瓶颈在显存带宽而非算力。",
+      "source": "X：Saito 硬地骇客 (@SaitoWu)",
+      "category": "tip",
+      "published_at": "2026-10-26T09:34:32.000Z",
+      "discovered_at": "2026-10-26T09:36:37.731Z",
+      "url": "https://x.com/SaitoWu/status/2114651886712500477",
+      "aihot_url": "https://aihot.news/items/x1yfznnubwqw243ygiifolnkw",
+      "reason": null,
+      "matched_by": [
+        "KV cache",
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "清华与港中文团队开源 AKV：面向 LLM 智能体的 KV cache 工程服务系统",
+      "original_title": "Tsinghua AI Open-Sources AKV, a Cache Engineering Server for LLM Agents on SGLang",
+      "summary": "清华大学与 CUHK 研究者开源 AKV，一个构建在 SGLang 上的 KV cache 工程服务系统，让智能体通过 Drop 和 Repos（RoPE 旋转重定位）操作丢弃或重排 KV 条目而不改写文本历史。",
+      "source": "MarkTechPost（RSS）",
+      "category": "paper",
+      "published_at": "2026-10-26T07:56:45.000Z",
+      "discovered_at": "2026-10-26T08:31:35.233Z",
+      "url": "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/",
+      "aihot_url": "https://aihot.news/items/k93sy7d9xngi8yo7pqdz8yoo0",
+      "reason": null,
+      "matched_by": [
+        "LLM serving",
+        "KV cache"
+      ]
+    },
+    {
+      "title": "MiniMax 汇总 H3 开源生态进展：社区新增 11 项集成",
+      "original_title": "More reference control. Fewer denoising steps. More places to run H3.",
+      "summary": "MiniMax 官方汇总 H3 视频生成模型的社区生态进展，收录 11 项新增集成。贡献涵盖 8 步参考条件视频加音频生成、4 步蒸馏、稀疏注意力和参考 token 压缩，并在 GPU 服务器、TPU 和 Apple Silicon 等多种硬件上提供服务和工作流集成；官方认为开源模型在社区改进方法、适配运行时和构建工作流后会更实用。",
+      "source": "X：MiniMax (@MiniMax_AI)",
+      "category": "ai-products",
+      "published_at": "2026-10-25T23:48:12.000Z",
+      "discovered_at": "2026-10-26T00:10:22.465Z",
+      "url": "https://x.com/MiniMax_AI/status/2114504329499660419",
+      "aihot_url": "https://aihot.news/items/rf9bbjb1dcsfaen2soijrxs0v",
+      "reason": null,
+      "matched_by": [
+        "CXL"
+      ]
+    },
+    {
+      "title": "英国 AISI 实测 ESM-2 预训练数据过滤可削弱目标能力但约 80 美元算力即可恢复",
+      "original_title": "Pretraining data filtering in open-weight biological models",
+      "summary": "英国 AI Security Institute 的 Chem-Bio 团队从零预训练 8M 到 3B 参数的 ESM-2 蛋白质语言模型，测试预训练数据过滤对专业科学模型的效果。",
+      "source": "英国 AI Security Institute：Blog（网页）",
+      "category": "paper",
+      "published_at": "2026-10-25T23:00:00.000Z",
+      "discovered_at": "2026-10-26T15:13:21.485Z",
+      "url": "https://www.aisi.gov.uk/blog/pretraining-data-filtering-in-open-weight-biological-models",
+      "aihot_url": "https://aihot.news/items/xm6i4tcgyby0bditot3bz9x8x",
+      "reason": "原文给出实验数据说明预训练数据过滤能选择性削弱蛋白模型能力，但约 80 美元算力即可恢复，需配合数据访问控制。",
+      "matched_by": [
+        "LLM inference",
+        "post-training"
+      ]
+    },
+    {
+      "title": "AISI 发布 ReproBAIT 评测：AI 编码智能体可低成本复现部分生物 AI 工具",
+      "original_title": "Can AI coding agents rebuild biological AI tools from a paper?",
+      "summary": "英国 AI Security Institute 与 SecureBio 合作推出 ReproBAIT 评测，测试 AI 编码智能体能否依据论文等公开信息和训练数据复现生物 AI 工具（BAITs）。",
+      "source": "英国 AI Security Institute：Blog（网页）",
+      "category": "paper",
+      "published_at": "2026-10-25T23:00:00.000Z",
+      "discovered_at": "2026-10-26T15:13:21.496Z",
+      "url": "https://www.aisi.gov.uk/blog/can-ai-coding-agents-rebuild-biological-ai-tools-from-a-paper",
+      "aihot_url": "https://aihot.news/items/w5optivkpl1pchxn85qaknu3d",
+      "reason": "AISI 用 ReproBAIT 评测显示，仅凭公开论文和训练数据，部分生物 AI 工具能在几小时、几十美元内被编码智能体复现，数据治理或比藏代码更有效。",
+      "matched_by": [
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "Nanbeige 发布 33B 开源智能体编程模型 Nanbeige4.3-33B",
+      "original_title": "Nanbeige Releases Nanbeige4.3-33B, a 33B Open Agentic Coding Model",
+      "summary": "Nanbeige LLM Lab（BOSS 直聘旗下）在 Hugging Face 以 Apache 2.0 协议发布 33B 稠密模型 Nanbeige4.3-33B，主打智能体编程与办公协作任务，支持 524,288-token 上下文，同时开放 Base 版供自定义后训练。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-25T21:15:21.000Z",
+      "discovered_at": "2026-10-25T22:22:19.204Z",
+      "url": "https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/",
+      "aihot_url": "https://aihot.news/items/jwtivjvy2xmjcl81vm76l4apo",
+      "reason": null,
+      "matched_by": [
+        "vLLM",
+        "LLM inference",
+        "KV cache",
+        "quantization",
+        "post-training"
+      ]
+    },
+    {
+      "title": "SGLang 披露并修复 PD 分离服务中的跨请求 KVCache 竞态问题",
+      "original_title": "SGLang security update: improving request isolation",
+      "summary": "SGLang 团队与 Cloudflare 协调披露 2026 年 8 月 27 日至 9 月 9 日影响 Workers AI 上 @cf/zai-org/glm-5.3 的跨请求 KVCache 暴露问题。",
+      "source": "LMSYS Blog",
+      "category": "tip",
+      "published_at": "2026-10-25T16:00:00.000Z",
+      "discovered_at": "2026-10-26T22:37:38.350Z",
+      "url": "https://www.lmsys.org/blog/2026-10-26-cf-security",
+      "aihot_url": "https://aihot.news/items/bb39zcs7eu91fi0ze136tayg2",
+      "reason": "SGLang 团队复盘了异步 KVCache 传输中的跨请求泄漏机制、复现方法和修复方案，对运维长上下文 PD 部署有直接指导意义。",
+      "matched_by": [
+        "SGLang",
+        "KV cache"
+      ]
+    },
+    {
+      "title": "Evan Armstrong 解析 Anthropic S-1：2 万亿美元估值是否成立",
+      "original_title": "Is Anthropic Worth $2 Trillion?",
+      "summary": "The Leverage 创始人 Evan Armstrong 首次拆解 Anthropic 的 S-1 文件，评估其 2 万亿美元估值目标是否合理。核心数据包括累计融资 1411 亿美元、Q2 2026 收入 116 亿美元、约 900% 的净收入留存，以及 76% 的 2025 年收入来自约 1500 家年付费 10 万美元以上的企业客户。",
+      "source": "Every：最新文章（网页）",
+      "category": "opinion",
+      "published_at": "2026-10-25T16:00:00.000Z",
+      "discovered_at": "2026-10-26T18:32:23.280Z",
+      "url": "https://every.to/napkin-math/is-anthropic-worth-2-trillion",
+      "aihot_url": "https://aihot.news/items/kh57nu0a8qoi2iv6zxa905pry",
+      "reason": "作者基于 Anthropic S-1 数据拆解收入结构、毛利率口径与算力承诺，给出理解这家 2 万亿美元估值公司需相信什么的分析框架。",
+      "matched_by": [
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "LG AI Research 在 ICML 2026 提出 LOAM：用 LLM 设计强化学习的观测与动作空间",
+      "original_title": "[ICML2026] Observation and action design in reinforcement learning using LLMs",
+      "summary": "LG AI Research 在 ICML 2026 提出 LOAM，让 LLM 直接设计强化学习中的观测模型与动作模型，而非只设计奖励函数。该方法区分原始环境空间与智能体实际使用的空间，由 LLM 根据任务目标、终止条件、机器人结构及各变量含义生成观测与动作设计。研究源于 LG Chem 大山 NCC 工厂生产排程优化项目，团队发现观测与动作空间设计比奖励函数更困难。",
+      "source": "LG AI Research：官方研究博客",
+      "category": "paper",
+      "published_at": "2026-10-25T16:00:00.000Z",
+      "discovered_at": "2026-10-26T13:53:20.417Z",
+      "url": "https://www.lgresearch.ai/blog/view?seq=724",
+      "aihot_url": "https://aihot.news/items/ln6h2sdx1o0hw3pe6wkdpt037",
+      "reason": null,
+      "matched_by": [
+        "LLM serving",
+        "RL training",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "DeepSeek 传融资约 150 亿美元，月之暗面发布 Kimi K3.1 Pro，中国出台 AI 就业政策",
+      "original_title": "🗞️DeepSeek’s $15B Round, Moonshot launches K3.1 Pro, and China’s AI Jobs Policy",
+      "summary": "月之暗面发布 Kimi K3.1 Pro，支持 100 万 token 上下文窗口，并推出速度快 2-3 倍的 Highspeed 版本，Terminal-Bench 4.0 得分 65.7%，模型权重计划 11 月 4 日前开放。",
+      "source": "Recode China AI（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-25T14:46:37.000Z",
+      "discovered_at": "2026-10-25T15:24:23.978Z",
+      "url": "https://www.recodechinaai.com/p/deepseeks-15b-round-its-38gpu-hour",
+      "aihot_url": "https://aihot.news/items/cd07y2cta070sthy7b41i2ycc",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster",
+        "Blackwell",
+        "post-training"
+      ]
+    },
+    {
+      "title": "斯坦福与 UC Berkeley 推出 TokenGate：token 门控注意力让长上下文 prefill 最快提升 11.3 倍",
+      "original_title": "Researchers from Stanford and UC Berkeley Introduce TokenGate: Token-Gated Attention Makes Long-Context Prefill Up to 11.3x Faster",
+      "summary": "斯坦福和 UC Berkeley 研究者发布 TokenGate，一种给现有 LLM 加上可学习 token 剪枝的模块，在 Qwen3-1.7B 上实现 1.4x 至 11.3x 的 TTFT 加速，峰值 prefill 显存降低 1.5x 至 3.4x 且无精度损失。",
+      "source": "MarkTechPost（RSS）",
+      "category": "paper",
+      "published_at": "2026-10-25T12:12:18.000Z",
+      "discovered_at": "2026-10-25T13:13:21.548Z",
+      "url": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/",
+      "aihot_url": "https://aihot.news/items/b9a13c9a3uxo2qe2bwud0e129",
+      "reason": null,
+      "matched_by": [
+        "LLM inference"
+      ]
+    },
+    {
+      "title": "Interconnects 播客：Kimi K3.1 Pro 争议、开放权重与网络安全新现实",
+      "original_title": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
+      "summary": "Nathan Lambert 与 Florian Brand 在 Interconnects 播客中讨论 Kimi K3.1 Pro 反响分歧：该模型在 Artificial Analysis 上名列前茅但在 Terminal-Bench Science、ProgramBench 等长程探索基准上偏弱。",
+      "source": "Nathan Lambert：Interconnects（RSS）",
+      "category": "opinion",
+      "published_at": "2026-10-25T11:49:00.000Z",
+      "discovered_at": "2026-10-25T12:33:21.995Z",
+      "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
+      "aihot_url": "https://aihot.news/items/nnjd05wgq19lc9h8qpvxnjtka",
+      "reason": null,
+      "matched_by": [
+        "post-training"
+      ]
+    },
+    {
+      "title": "如何在 llama.cpp 中运行 Underdog Saluki 27B：2-bit Qwen3.8-27B 工具调用实测指南",
+      "original_title": "How to Run Underdog Saluki 27B: 2-Bit Qwen3.8-27B Tool-Calling Guide",
+      "summary": "教程在 llama.cpp 中对比运行 Underdog Saluki 27B（7.9 GB 的 Qwen3.8-27B 2-bit 量化版）与 ISTA-DASLab 的 GSQ-RCO 量化版，逐张量比对 GGUF 头并做字节级比较。两者在同一 GPU 上测内存与速度，并用 BFCL 官方 checker 在相同种子的 120 个任务上按严格与宽松解析评分。",
+      "source": "MarkTechPost（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-25T02:30:18.000Z",
+      "discovered_at": "2026-10-25T04:05:13.173Z",
+      "url": "https://www.marktechpost.com/2026/10/24/underdog-saluki-27b-coding-guide-llama-cpp/",
+      "aihot_url": "https://aihot.news/items/mvmew8r9de5k082wq57xqc6ix",
+      "reason": null,
+      "matched_by": [
+        "quantization"
+      ]
+    },
+    {
+      "title": "蚂蚁 inclusionAI 开源 Ling-3.1-flash-base 基座模型，560B 参数激活 25B",
+      "original_title": "inclusionAI/Ling-3.1-flash-base",
+      "summary": "蚂蚁 inclusionAI 在 Hugging Face 发布 Ling-3.1-flash-base，即 Ling-3.1-flash 的基座检查点，总参数 560B、每 token 激活 25B。",
+      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+      "category": "ai-models",
+      "published_at": "2026-10-25T02:15:27.000Z",
+      "discovered_at": "2026-10-27T12:51:41.759Z",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-base",
+      "aihot_url": "https://aihot.news/items/yt8rx52uzf3v5s51kmhvk5v2q",
+      "reason": null,
+      "matched_by": [
+        "post-training"
+      ]
+    },
+    {
+      "title": "字节 Seed 提出 Recycler：通过隐藏状态回收实现无额外成本的潜在推理",
+      "original_title": "Recycler: Cost-Free Latent Reasoning via Hidden State Recycling",
+      "summary": "字节 Seed 提出 Recycler 架构，把上一 token 的顶层隐藏状态经轻量适配器与当前 token 嵌入一起送入下一步，在解码开销几乎不变的情况下保留跨步连续语义。该架构覆盖预训练、SFT、继续预训练与 RL 全流程，在数学和推理任务上参数效率突出，后期引入仍可超越参数量多 2–3 倍的模型。",
+      "source": "字节 Seed：Research Papers（网页内嵌数据）",
+      "category": "paper",
+      "published_at": "2026-10-24T16:00:00.000Z",
+      "discovered_at": "2026-10-25T13:36:22.189Z",
+      "url": "https://lf3-static.bytednsdoc.com/obj/eden-cn/hyvsmeh7uhobf/recycler_arxiv%20(2).pdf",
+      "aihot_url": "https://aihot.news/items/dtv2x9u7nafgurzsmsfjy4cec",
+      "reason": null,
+      "matched_by": [
+        "LLM inference",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "title": "miniTE 技术报告：用原生 NVFP4 实现稳定高效的强化学习",
+      "original_title": "miniTE Technical Report: Stable and Efficient Reinforcement Learning with Native NVFP4",
+      "summary": "针对原生 NVFP4 强化学习在训练后期出现的不稳定问题，LMSYS 提出算法 TRIAGE 与工程方案 miniTE。在 8×B300 上，采用 BF16 反向传播的 miniTE 完整学习器更新速度约为 BF16 的 1.33–1.37 倍，单独的固定输出服务测试吞吐约为 BF16 的 1.64 倍。",
+      "source": "LMSYS Blog",
+      "category": "paper",
+      "published_at": "2026-10-24T16:00:00.000Z",
+      "discovered_at": "2026-10-27T17:54:41.466Z",
+      "url": "https://www.lmsys.org/blog/2026-10-25-minite",
+      "aihot_url": "https://aihot.news/items/p82bzax9oxnhir33af8gko1sd",
+      "reason": null,
+      "matched_by": [
+        "KV cache",
+        "Blackwell",
+        "quantization",
+        "FP4"
+      ]
+    },
+    {
+      "title": "Higgsfield 获 NVIDIA 与 TCV 投资 Series B 延长轮，年化收入突破 10 亿美元",
+      "original_title": "Jensen Huang: “… the founders of Higgsfield are visionary in the work that they do … but these are some of the brightest people in the wo...",
+      "summary": "AI 视频公司 Higgsfield 宣布 NVIDIA 和 TCV 加入其 Series B 延长轮投资。公司称自 8 月 Series B 以来年化收入突破 10 亿美元，企业合同增长 71%，用户从 3000 万增至超过 4000 万；NVIDIA 从 L40、A40 到 Hopper 和 Blackwell 一直为其提供算力，下一代将采用 Vera Rubin。",
+      "source": "X：Higgsfield AI (@higgsfield)",
+      "category": "industry",
+      "published_at": "2026-10-24T14:11:34.000Z",
+      "discovered_at": "2026-10-24T14:37:47.654Z",
+      "url": "https://x.com/higgsfield/status/2113996828379336979",
+      "aihot_url": "https://aihot.news/items/t2jkkvoa0kvjffq189dcaa8g8",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "Sebastian Raschka 发布从零构建推理模型的 8 集视频课程",
+      "original_title": "Building Reasoning Models from the Ground Up: A Full Video Course",
+      "summary": "Sebastian Raschka 发布 8 集共 11 小时的从零构建推理模型视频课程，基于预训练 Qwen3 0.6B 用 Python 和 PyTorch 实现推理方法。",
+      "source": "Ahead of AI（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-24T11:14:32.000Z",
+      "discovered_at": "2026-10-24T11:29:49.505Z",
+      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+      "aihot_url": "https://aihot.news/items/lweesn5y5myvq17k0hx17qg8m",
+      "reason": null,
+      "matched_by": [
+        "KV cache"
+      ]
+    },
+    {
+      "title": "Moonshot 发布 Kimi K3.1 Pro：2.8T 总参数、104B 激活，承诺 11 月 4 日开放权重",
+      "original_title": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
+      "summary": "Moonshot 发布 Kimi K3.1 Pro，为 K3 的大规模后训练版本，2.8T 总参数、104B 激活的多模态 MoE 模型，上下文窗口 1M token，API 已上线，权重承诺 2026 年 11 月 4 日开放，Highspeed 版输出速度快 2-3 倍、价格为标准版两倍。",
+      "source": "Latent Space（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-24T07:18:29.000Z",
+      "discovered_at": "2026-10-24T08:09:38.058Z",
+      "url": "https://latent.space/p/ainews-kimi-31/",
+      "aihot_url": "https://aihot.news/items/rvz06j1zal6q4kfqkusgp980a",
+      "reason": null,
+      "matched_by": [
+        "quantization"
+      ]
+    },
+    {
+      "title": "Artificial Analysis 公布 Meta Muse Spark Open 在 AA-AgentPerf 的推理吞吐实测结果",
+      "original_title": "Results from Muse Spark Open, Meta’s newly released 816B (42B active) open-weights model, are now live on AA-AgentPerf. In our initial te...",
+      "summary": "Artificial Analysis 将 Meta 新发布的开源权重模型 Muse Spark Open（816B，激活 42B）的测试结果上线 AA-AgentPerf。",
+      "source": "X：Artificial Analysis (@ArtificialAnlys)",
+      "category": "ai-models",
+      "published_at": "2026-10-23T23:19:42.000Z",
+      "discovered_at": "2026-10-23T23:47:35.951Z",
+      "url": "https://x.com/ArtificialAnlys/status/2113772381504438420",
+      "aihot_url": "https://aihot.news/items/fmiy7354owk8sx92qygn846jp",
+      "reason": null,
+      "matched_by": [
+        "KV cache"
+      ]
+    },
+    {
+      "title": "Martha Minow 在 MIT 谈 AI 时代如何维系民主",
+      "original_title": "At MIT, Martha Minow speaks on sustaining democracy, both by using and overcoming AI",
+      "summary": "哈佛法学教授 Martha Minow 在 MIT 发表 Compton 讲座，主题为“AI 时代的宪制民主”，指出 AI 正在削弱民主的四大要素——教育、可靠信息、安全与公平。",
+      "source": "MIT News（RSS）",
+      "category": "opinion",
+      "published_at": "2026-10-23T21:00:00.000Z",
+      "discovered_at": "2026-10-23T21:59:33.468Z",
+      "url": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023",
+      "aihot_url": "https://aihot.news/items/a1i0fr4lpcdvmxuisoadzcprw",
+      "reason": null,
+      "matched_by": [
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "SGLang 对比 DeepInfer：DeepSeek-V4.1-Flash 推理性能实测与完整服务能力",
+      "original_title": "More Than DeepInfer: What SGLang Delivers",
+      "summary": "SGLang 用 DeepInfer 官方 benchmark 在相同硬件上对比测试 DeepSeek-V4.1-Flash，4x GB300 和 4x B300 上 prefill 吞吐最高达 1.04x，64x GB300 上 decode 步长缩短 1.1% 至 7.4%。",
+      "source": "LMSYS Blog",
+      "category": "ai-products",
+      "published_at": "2026-10-23T16:00:00.000Z",
+      "discovered_at": "2026-10-24T19:52:43.586Z",
+      "url": "https://www.lmsys.org/blog/2026-10-24-dsv41-deepinfer",
+      "aihot_url": "https://aihot.news/items/rbi9zxq1u7ccvk8d2ltj8o4bn",
+      "reason": null,
+      "matched_by": [
+        "KV cache"
+      ]
+    },
+    {
+      "title": "Latent Space AINews：Black October 事件潮盘点 AI 加速漏洞披露与防御工具",
+      "original_title": "[AINews] Black October",
+      "summary": "Latent Space AINews 以 Black October 为题汇总 10/21-10/22 的 AI 要闻，称约 48 小时内密集出现一批严重漏洞与泄露。",
+      "source": "Latent Space（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-23T10:09:29.000Z",
+      "discovered_at": "2026-10-23T10:47:27.160Z",
+      "url": "https://latent.space/p/ainews-black-october/",
+      "aihot_url": "https://aihot.news/items/pxe4t9vaqqt0bly428v7milic",
+      "reason": null,
+      "matched_by": [
+        "KV cache",
+        "quantization"
+      ]
+    },
+    {
+      "title": "MiniMax 感谢 TokenSpeed 首日支持",
+      "original_title": "Thanks to @lightseekorg for Day-0 support with TokenSpeed!",
+      "summary": "感谢 @lightseekorg 对 TokenSpeed 的 Day-0 支持！",
+      "source": "X：MiniMax (@MiniMax_AI)",
+      "category": "ai-products",
+      "published_at": "2026-10-23T02:40:07.000Z",
+      "discovered_at": "2026-10-23T03:07:23.158Z",
+      "url": "https://x.com/MiniMax_AI/status/2113460430056349795",
+      "aihot_url": "https://aihot.news/items/x483lvnmom98uh1u5apl0epzy",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "NVIDIA 黄仁勋访问哈萨克斯坦，Firebird 获 4.5 万块 Grace Blackwell GPU 出口许可",
+      "original_title": "Kazakhstan Expands Compute for Its AI Future",
+      "summary": "NVIDIA CEO 黄仁勋访问阿斯塔纳，Firebird 与哈萨克斯坦政府签署投资协议，获得 4.5 万块 NVIDIA Grace Blackwell GPU 的美国出口许可，首期与 Kazakhtelecom 在 Data Center Valley 建设，目标 2027 年第三季度商用。",
+      "source": "NVIDIA Blog（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-23T02:00:13.000Z",
+      "discovered_at": "2026-10-23T02:25:22.768Z",
+      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "aihot_url": "https://aihot.news/items/sna2kv0kcjkdn1uddws3w8hib",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "MiniMax M3.1 Flash 获 SGLang 与 Miles 支持",
+      "original_title": "From inference to RL, ready from day one. 🐰",
+      "summary": "从推理到 RL，第一天就绪。🐰\n\n感谢 SGLang 背后的团队，以及 Miles @sgl_project 与 @NVIDIAAI 和 @AMD，对 MiniMax M3.1 Flash 的支持。合作愉快！",
+      "source": "X：MiniMax (@MiniMax_AI)",
+      "category": "ai-products",
+      "published_at": "2026-10-23T01:23:50.000Z",
+      "discovered_at": "2026-10-23T01:34:25.256Z",
+      "url": "https://x.com/MiniMax_AI/status/2113441235100942680",
+      "aihot_url": "https://aihot.news/items/hqih1agfbgi9pxb0lj5jsc59e",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "NVIDIA NeMo 提供 MiniMax-M3.1-Flash day-0 微调支持",
+      "original_title": "Thanks to the NVIDIA NeMo team for day-0 fine-tuning support for MiniMax-M3.1-Flash! 🐰",
+      "summary": "MiniMax 感谢 NVIDIA NeMo 团队为 MiniMax-M3.1-Flash 提供 day-0 微调支持。引用内容提到 Space Bunny 此前已处理 200T+ tokens，现已开放权重，NeMo-AutoModel 支持 FSDP2、专家、流水线和上下文并行，可扩展到 128 GPUs，NVFP4 checkpoint 可直接加载，并附 GitHub 文档链接。",
+      "source": "X：MiniMax (@MiniMax_AI)",
+      "category": "ai-products",
+      "published_at": "2026-10-23T01:21:09.000Z",
+      "discovered_at": "2026-10-23T01:34:25.263Z",
+      "url": "https://x.com/MiniMax_AI/status/2113440559385977075",
+      "aihot_url": "https://aihot.news/items/oytegvoeznpgowhmcwcsnkixi",
+      "reason": null,
+      "matched_by": [
+        "FP4"
+      ]
+    },
+    {
+      "title": "vLLM 在 GB300 NVL72 上规模化服务 DeepSeek-V4.1-Flash，解码吞吐与 DeepInfer 差距在 6% 以内",
+      "original_title": "Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Scales to GB300 NVL72",
+      "summary": "vLLM 用 P/D 分离与 Wide-EP 在单台 NVIDIA GB300 NVL72 上服务 DeepSeek-V4.1-Flash，在 SemiAnalysis AgentX 上达到每 GPU 954K tokens/s、单用户 P90 196 tokens/s，为早期单节点结果的 7.9 倍。",
+      "source": "vLLM 官方博客（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-23T00:00:00.000Z",
+      "discovered_at": "2026-10-24T18:32:46.123Z",
+      "url": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
+      "aihot_url": "https://aihot.news/items/ln25949991kg9sace8iafbn11",
+      "reason": null,
+      "matched_by": [
+        "LLM serving",
+        "KV cache",
+        "FP4"
+      ]
+    },
+    {
+      "title": "vLLM 详解 GLM-5.3 在 16 张 H200 上的优化：PCP、DCP 与 Hybrid HiSparse",
+      "original_title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s",
+      "summary": "vLLM 博客详解 GLM-5.3 在 16 张 H200 上拆分 prefill 与 decode 节点的长上下文优化：PCP 按 token 而非注意力头切分 prompt，DCP 按 token 分片 KV cache，使 1M 上下文仅需每 GPU 6.7 GiB。",
+      "source": "vLLM 官方博客（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-23T00:00:00.000Z",
+      "discovered_at": "2026-10-23T19:11:33.809Z",
+      "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
+      "aihot_url": "https://aihot.news/items/yjyltl2jtfh7a32uh9rsfzli2",
+      "reason": null,
+      "matched_by": [
+        "LLM serving",
+        "KV cache"
+      ]
+    },
+    {
+      "title": "vLLM 实现 MiniMax-M3.1-Flash Day-0 支持",
+      "original_title": "vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash",
+      "summary": "vLLM 在发布当天即支持 MiniMax-M3 系列新模型 MiniMax-M3.1-Flash，覆盖 NVIDIA Blackwell、Rubin 和 AMD MI350 系列 GPU。",
+      "source": "vLLM 官方博客（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-23T00:00:00.000Z",
+      "discovered_at": "2026-10-23T02:57:22.441Z",
+      "url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+      "aihot_url": "https://aihot.news/items/yzlcdxzpcg9rod2v0us6ecp8i",
+      "reason": null,
+      "matched_by": [
+        "LLM serving",
+        "Blackwell",
+        "quantization",
+        "FP4"
+      ]
+    },
+    {
+      "title": "PyTorch Conference North America 2026 落幕，TorchTPU 与 TorchNeuron 等多项生态更新发布",
+      "original_title": "PyTorch Conference North America 2026: Accelerating Open Intelligence Together",
+      "summary": "PyTorch Foundation 官方回顾 2026 年 10 月 20-21 日在 San Jose 举办的 PyTorch Conference North America 2026，超过 3,500 人参会。",
+      "source": "PyTorch：Blog（RSS）",
+      "category": "industry",
+      "published_at": "2026-10-22T23:52:11.000Z",
+      "discovered_at": "2026-10-23T00:09:21.542Z",
+      "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
+      "aihot_url": "https://aihot.news/items/xjsdhec6om59ariuo3bhqso2x",
+      "reason": null,
+      "matched_by": [
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "Microsoft 与 Hugging Face 用 ThinkingBox 把数据库评分变成 RL 奖励训练 Agent",
+      "original_title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "summary": "Microsoft 与 Hugging Face 发布 ThinkingBox-Training，将智能体任务终态数据库的可执行检查用作 RL 奖励，代码已在 GitHub 开源。",
+      "source": "Hugging Face 社区博客（混合发现）",
+      "category": "tip",
+      "published_at": "2026-10-22T22:24:34.000Z",
+      "discovered_at": "2026-10-22T22:29:24.536Z",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "aihot_url": "https://aihot.news/items/c1wb4w4ehhq5ig4m4hwv3kbbp",
+      "reason": null,
+      "matched_by": [
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "Latent Space 访谈 Modal CEO Erik Bernhardsson：AI 算力需求为何不是长方形",
+      "original_title": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
+      "summary": "Latent Space 在 Modal 完成 7.5 亿美元 Series D（估值 160 亿美元、年化收入超 10 亿美元）之际，专访 CEO Erik Bernhardsson，解释支撑增长的基础设施与经济逻辑。",
+      "source": "Latent Space（RSS）",
+      "category": "opinion",
+      "published_at": "2026-10-22T17:40:57.000Z",
+      "discovered_at": "2026-10-22T18:31:51.056Z",
+      "url": "https://www.latent.space/p/modal-d",
+      "aihot_url": "https://aihot.news/items/yw2nqxn2leyhre02s1qvx8s6j",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster"
+      ]
+    },
+    {
+      "title": "Liquid AI 发布 RIPL 实时推理引擎，LFM 端到端延迟低于 50 ms",
+      "original_title": "Liquid AI Launches RIPL, a Real-Time Inference Engine for Sub-50 ms LFMs",
+      "summary": "Liquid AI 发布实时推理管线 RIPL，可在实时请求路径中服务 230M 至 2.6B 参数的 LFM2.5 模型，端到端生成响应低于 50 ms。按其自测数据，RIPL 的 p95 延迟比 vLLM 上的 Qwen3.5 低 5.6 至 28.4 倍，其中 LFM2.5-1.2B 为 155.8 ms 对 4,431 ms。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-22T17:33:25.000Z",
+      "discovered_at": "2026-10-22T19:14:20.128Z",
+      "url": "https://www.marktechpost.com/2026/10/22/liquid-ai-ripl-real-time-inference-engine/",
+      "aihot_url": "https://aihot.news/items/srzx7lmgna55x6rsgezojwcmx",
+      "reason": null,
+      "matched_by": [
+        "LLM serving"
+      ]
+    },
+    {
+      "title": "Gradium 开源 31M 参数端侧 TTS 模型 Phonon 31m，采用 Apache 2.0 许可证",
+      "original_title": "Gradium Open-Sources Phonon, a 31M-Parameter On-Device TTS Model Under Apache 2.0",
+      "summary": "Gradium（从 Kyutai 分拆的巴黎语音 AI 公司）开源 Phonon 端侧 TTS 模型家族，其中英文 Phonon 31m 为 31M 参数、64.5 MB q8 GGUF，采用 Apache 2.0 许可证，无需 GPU 或云端调用即可在 CPU、手机、树莓派 5 和浏览器上运行。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-22T16:56:12.000Z",
+      "discovered_at": "2026-10-22T18:13:50.219Z",
+      "url": "https://www.marktechpost.com/2026/10/22/gradium-phonon-31m-on-device-tts/",
+      "aihot_url": "https://aihot.news/items/gtwenqg6kxfeufgvoakdo1zxo",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster"
+      ]
+    },
+    {
+      "title": "Sakana AI 如何在 Modal 上部署约 1 万亿参数 MoE 模型 Sakana Namazu",
+      "original_title": "Launching a trillion-parameter model at Sakana AI",
+      "summary": "Modal 工程团队与 Sakana AI 合作，将约 1 万亿参数的 MoE 模型 Sakana Namazu 部署到 Modal 上，通过定制 NVFP4 量化与自训练 DFlash 草稿模型支撑其公开 API 上线。",
+      "source": "Modal 官方工程博客（RSS）",
+      "category": "tip",
+      "published_at": "2026-10-22T16:00:00.000Z",
+      "discovered_at": "2026-10-28T16:47:31.573Z",
+      "url": "https://modal.com/blog/sakana-case-study",
+      "aihot_url": "https://aihot.news/items/afkg7t2spssdequkyudhx0xlz",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster",
+        "Blackwell",
+        "quantization",
+        "FP4"
+      ]
+    },
+    {
+      "title": "NVIDIA 演示用 AI 智能体训练 Microduck 机器人在仿真中行走",
+      "original_title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
+      "summary": "NVIDIA 技术博客介绍如何用 AI 智能体教 Microduck 机器人在仿真中学会越障行走：Hermes 和 Nemotron 3.5 Bolt 在 RTX Spark 上把提示词转为项目计划。",
+      "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
+      "category": "tip",
+      "published_at": "2026-10-22T16:00:00.000Z",
+      "discovered_at": "2026-10-23T15:45:31.221Z",
+      "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "aihot_url": "https://aihot.news/items/d5jvm8ej1nyuabqlel6eqg1e5",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "Prime Intellect 推出 Prime Mega MoE：面向训练的高速融合 MoE kernel",
+      "original_title": "Prime Mega MoE: Fast Fused MoE Kernels for Training",
+      "summary": "Prime Intellect 在 DeepSeek 开源 Mega MoE kernel 基础上补上快速重叠的反向传播，使其可用于训练，MoE kernel 相比默认 PyTorch 实现最高快 3.11×，端到端训练相比 Prime-RL 基线最高快 1.34×（吞吐提升 34%）。",
+      "source": "Prime Intellect（网页）",
+      "category": "ai-products",
+      "published_at": "2026-10-22T16:00:00.000Z",
+      "discovered_at": "2026-10-26T08:22:37.738Z",
+      "url": "https://www.primeintellect.ai/blog/prime-mega-moe",
+      "aihot_url": "https://aihot.news/items/kc4178b9g1a740b88aw67mvzk",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "NVIDIA 发布 Minerva：为 AI 工厂提供端到端可观测性",
+      "original_title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "summary": "NVIDIA 发布 AIOps 平台 Minerva，汇聚 GPU、网络、存储、调度器与工作负载的遥测数据，用专用 AI 模型将数据转化为可执行洞察。该平台每小时分析数十亿数据点，通过动态知识图谱定位影响训练任务的组件，并把告警风暴聚合为单一事件与可能根因。",
+      "source": "NVIDIA Blog（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-22T15:00:02.000Z",
+      "discovered_at": "2026-10-22T15:15:37.253Z",
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "aihot_url": "https://aihot.news/items/s8wznyl8xp888nqxx2z2gw0nc",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster"
+      ]
+    },
+    {
+      "title": "Recursive 发布首个自动化研究产出的开源模型 Flint",
+      "original_title": "Recursive shows first result of its AI-driven research process with Flint",
+      "summary": "AI 初创公司 Recursive 发布首个由 AI 系统 Eureka Machine 全程参与实验设计的开源语言模型 Flint，为面向本地智能体编码的 MoE 模型，总参数 40B、每 token 激活 2.5B，开发历时四个月。",
+      "source": "The Decoder：AI News（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-22T14:40:16.000Z",
+      "discovered_at": "2026-10-22T15:14:41.889Z",
+      "url": "https://the-decoder.com/recursive-shows-first-result-of-its-ai-driven-research-process-with-flint/",
+      "aihot_url": "https://aihot.news/items/i7eyiqjnqhr05b1czoxancghi",
+      "reason": null,
+      "matched_by": [
+        "quantization"
+      ]
+    },
+    {
+      "title": "SF Compute 的 Evan Conrad 谈 B300 推理 40 美元与市场 5 美元的算力定价错位",
+      "original_title": "一张 B300 卡跑推理一小时能收 40 美元，市场上买它一小时只要 5 到 6 美元。SF Compute 的 Evan Conrad 说，这两个数字里必须有一个要变。算力到现在还没被真正定过价。 https://x.com/i/article/2113243755272...",
+      "summary": "SF Compute 创始人 Evan Conrad 在 Latent Space 播客中指出，一张 B300 跑推理满负荷一小时可收约 40 美元，而市场买价仅 5 到 6 美元，两个数字必须有一个变，说明算力至今未被真正定价。",
+      "source": "X：Saito 硬地骇客 (@SaitoWu)",
+      "category": "opinion",
+      "published_at": "2026-10-22T12:21:17.000Z",
+      "discovered_at": "2026-10-22T12:44:51.499Z",
+      "url": "https://x.com/SaitoWu/status/2113244300008169729",
+      "aihot_url": "https://aihot.news/items/h2ga92f9iwkeiii9v35pmj66i",
+      "reason": null,
+      "matched_by": [
+        "Blackwell"
+      ]
+    },
+    {
+      "title": "Modal 发布开源 Tinker 兼容训练服务器 Spindle",
+      "original_title": "Introducing our Training API",
+      "summary": "Modal 发布开源、Tinker 兼容的训练服务器 Spindle，可在自己的 Modal 工作区部署，按 GPU 时间而非 token 计费，支持全参数训练与 multi-LoRA，可同时运行数百个训练任务。",
+      "source": "Modal 官方工程博客（RSS）",
+      "category": "ai-products",
+      "published_at": "2026-10-22T12:00:00.000Z",
+      "discovered_at": "2026-10-22T21:44:21.361Z",
+      "url": "https://modal.com/blog/introducing-training-api",
+      "aihot_url": "https://aihot.news/items/fydekkocvbnv2lcj6ffza0ixw",
+      "reason": null,
+      "matched_by": [
+        "GPU cluster"
+      ]
+    },
+    {
+      "title": "IBM 发布开源语音模型 Granite Speech 5.0 2B，支持 6 种语言转写与翻译",
+      "original_title": "IBM AI Releases Granite Speech 5.0 2B for Multilingual Transcription and Translation",
+      "summary": "IBM 发布开源语音语言模型 Granite Speech 5.0 2B，2B 参数、Apache 2.0 协议，支持 6 种语言的语音转写和 X-to-English 翻译，在 Open ASR Leaderboard 以 5.68% 平均英文 WER 位列开源模型第二，仅次于 Qwen3-ASR-1.7B（5.40%）。",
+      "source": "MarkTechPost（RSS）",
+      "category": "ai-models",
+      "published_at": "2026-10-22T07:00:56.000Z",
+      "discovered_at": "2026-10-22T08:05:33.819Z",
+      "url": "https://www.marktechpost.com/2026/10/22/ibm-granite-speech-5-0-2b-release/",
+      "aihot_url": "https://aihot.news/items/spydat1ssjrpzeotw4qj4bcdk",
+      "reason": null,
+      "matched_by": [
+        "quantization"
+      ]
+    },
+    {
+      "title": "Cerebras 如何用 59 片 WSE-3T 晶圆部署 3T 参数 Kimi K3",
+      "original_title": "How we deploy Trillion-parameter frontier models on Cerebras",
+      "summary": "Cerebras 详解如何把约 3T 参数的 Kimi K3 拆分到多片 WSE-3T 晶圆上运行，实现 1000-2000+ tokens/s 的多万亿参数模型推理。",
+      "source": "Cerebras：Blog（网页）",
+      "category": "tip",
+      "published_at": "2026-10-22T00:00:00.000Z",
+      "discovered_at": "2026-10-22T18:21:51.027Z",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "aihot_url": "https://aihot.news/items/ktau3ctjthpgliu51vc0s74zl",
+      "reason": null,
+      "matched_by": [
+        "quantization"
+      ]
+    },
+    {
+      "title": "NVIDIA 宣布支持八节点 DGX Spark 集群，统一内存扩展至 1 TB",
+      "original_title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+      "summary": "NVIDIA 在 GTC Berlin 宣布官方支持八节点 DGX Spark 集群，统一内存从单节点 128 GB 扩展到 1 TB，可本地运行完整 GLM 5.3 (753B) 等前沿模型，GLM 5.3 Flash 生成速度约 80 TPS。",
+      "source": "NVIDIA Technical Blog：Agentic AI / Generative AI",
+      "category": "ai-products",
+      "published_at": "2026-10-21T16:00:00.000Z",
+      "discovered_at": "2026-10-22T16:26:38.285Z",
+      "url": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
+      "aihot_url": "https://aihot.news/items/a79cxsghdtft0g6wttnr4853u",
+      "reason": null,
+      "matched_by": [
+        "LLM serving",
+        "GPU cluster"
+      ]
+    },
+    {
+      "title": "SGLang 发布 AWS Trainium 插件 Beta",
+      "original_title": "Announcing the SGLang AWS Trainium Plugin Beta",
+      "summary": "SGLang 与 AWS 合作推出基于 TorchNeuron 的 Trainium 插件 Beta，支持在 Trainium2 和 Trainium3 上进行 LLM 推理服务与 RL rollout 生成。",
+      "source": "LMSYS Blog",
+      "category": "ai-products",
+      "published_at": "2026-10-21T16:00:00.000Z",
+      "discovered_at": "2026-10-22T16:07:37.535Z",
+      "url": "https://www.lmsys.org/blog/2026-10-22-sglang-trainium-beta",
+      "aihot_url": "https://aihot.news/items/rjehqt4eb3p01ry9m5v6ipgre",
+      "reason": null,
+      "matched_by": [
+        "LLM serving",
+        "GPU cluster"
+      ]
+    }
+  ],
+  "x_by_account": {
+    "vllm_project": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 1,
+      "tracked_by_aihot": false
+    },
+    "lmsysorg": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 1,
+      "tracked_by_aihot": false
+    },
+    "flashinfer_ai": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 0,
+      "tracked_by_aihot": false
+    },
+    "PyTorch": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 15,
+      "tracked_by_aihot": false
+    },
+    "tri_dao": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 1,
+      "tracked_by_aihot": false
+    },
+    "cHHillee": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 1,
+      "tracked_by_aihot": false
+    },
+    "UnslothAI": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [
+        {
+          "title": "Unsloth 让本地 LLM 自主操控浏览器",
+          "original_title": "Your local LLM can now take control of a browser and complete tasks autonomously via Unsloth!",
+          "summary": "你的本地 LLM 现在可以通过 Unsloth 接管浏览器并自主完成任务！\n\nQwen3.8-27B 成功操控浏览器完成了下棋、绘画等任务，全程无需人工干预。\n\nGitHub：https://github.com/unslothai/unsloth\n指南：https://unsloth.ai/docs/basics/browser-use",
+          "source": "X：Unsloth (@UnslothAI)",
+          "category": "ai-products",
+          "published_at": "2026-10-28T14:38:19.000Z",
+          "discovered_at": "2026-10-28T14:40:30.979Z",
+          "url": "https://x.com/UnslothAI/status/2115453111208919472",
+          "aihot_url": "https://aihot.news/items/rwosr1j8i0j3c6yxornmjeeht",
+          "reason": null
+        }
+      ],
+      "mention_count": 1,
+      "tracked_by_aihot": true
+    },
+    "danielhanchen": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 0,
+      "tracked_by_aihot": false
+    },
+    "ray_project": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 0,
+      "tracked_by_aihot": false
+    },
+    "togethercompute": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 3,
+      "tracked_by_aihot": false
+    },
+    "fireworksai_hq": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 2,
+      "tracked_by_aihot": false
+    },
+    "basetenco": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 0,
+      "tracked_by_aihot": false
+    },
+    "modal_labs": {
+      "group": "推理 / 训练基础设施",
+      "own_posts": [],
+      "mention_count": 0,
+      "tracked_by_aihot": false
+    },
+    "deepseek_ai": {
+      "group": "模型厂（国内）",
+      "own_posts": [],
+      "mention_count": 4,
+      "tracked_by_aihot": false
+    },
+    "Alibaba_Qwen": {
+      "group": "模型厂（国内）",
+      "own_posts": [],
+      "mention_count": 0,
+      "tracked_by_aihot": false
+    },
+    "Kimi_Moonshot": {
+      "group": "模型厂（国内）",
+      "own_posts": [
+        {
+          "title": "https://x.com/Kimi_Moonshot/status/2113445757185606062",
+          "original_title": "https://x.com/Kimi_Moonshot/status/2113445757185606062",
+          "summary": null,
+          "source": "X：Kimi.ai (@Kimi_Moonshot)",
+          "category": null,
+          "published_at": "2026-10-23T01:41:49.000Z",
+          "discovered_at": "2026-10-23T02:04:21.647Z",
+          "url": "https://x.com/Kimi_Moonshot/status/2113445757185606062",
+          "aihot_url": "https://aihot.news/items/n00wf14p85wg0z3zmle603ilc",
+          "reason": null
+        }
+      ],
+      "mention_count": 13,
+      "tracked_by_aihot": true
+    },
+    "Zai_org": {
+      "group": "模型厂（国内）",
+      "own_posts": [],
+      "mention_count": 0,
+      "tracked_by_aihot": false
+    },
+    "MiniMax__AI": {
+      "group": "模型厂（国内）",
+      "own_posts": [],
+      "mention_count": 0,
+      "tracked_by_aihot": false
+    },
+    "OpenBMB": {
+      "group": "模型厂（国内）",
+      "own_posts": [
+        {
+          "title": "OpenBMB 智能体4小时逼近前沿",
+          "original_title": "Within only 4 hours, our agent is getting really close to the frontier from scratch.",
+          "summary": "仅仅 4 个小时，我们的智能体就从零开始，已经非常接近前沿水平了。",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": null,
+          "published_at": "2026-10-29T06:31:05.000Z",
+          "discovered_at": "2026-10-29T06:36:46.419Z",
+          "url": "https://x.com/OpenBMB/status/2115692881134616951",
+          "aihot_url": "https://aihot.news/items/wxxktckmaivqgkyfc2dkeyd9t",
+          "reason": null
+        },
+        {
+          "title": "面壁智能 MiniCPM-OCR 登陆更多芯片平台",
+          "original_title": "Huge thanks to the FlagOS team! 💙 Excited to bring MiniCPM-OCR to more chip platforms together. Can't wait to see what the community bui...",
+          "summary": "非常感谢 FlagOS 团队！💙 很高兴能一起将 MiniCPM-OCR 带到更多芯片平台。迫不及待想看到社区会构建出什么！🚀",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-products",
+          "published_at": "2026-10-29T02:22:46.000Z",
+          "discovered_at": "2026-10-29T02:30:45.238Z",
+          "url": "https://x.com/OpenBMB/status/2115630390761423192",
+          "aihot_url": "https://aihot.news/items/c5a6oo6dvxr2dggoq0ebpr3us",
+          "reason": null
+        },
+        {
+          "title": "OpenBMB 回应 MiniCPM5 实测对比",
+          "original_title": "Love seeing these real-world comparisons! 💙 Thanks for including MiniCPM5 in your tests. Exciting to see how far small models have come! 🚀",
+          "summary": "很高兴看到这些真实场景的对比！💙 感谢你把 MiniCPM5 纳入测试。小模型能走到今天这一步，真令人兴奋！🚀",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-models",
+          "published_at": "2026-10-29T02:27:13.000Z",
+          "discovered_at": "2026-10-29T02:30:45.231Z",
+          "url": "https://x.com/OpenBMB/status/2115631509864694006",
+          "aihot_url": "https://aihot.news/items/zt19ak1nvsxx561dugcrgy1cy",
+          "reason": null
+        },
+        {
+          "title": "ForgeKernel Live 优化 DeepSeek 内核",
+          "original_title": "ForgeKernel Live: Optimising a kernel of DeepSeek https://x.com/i/broadcasts/2LPbqbgpZXaogj",
+          "summary": "ForgeKernel Live：优化 DeepSeek 的一个内核 https://x.com/i/broadcasts/2LPbqbgpZXaogj",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "tip",
+          "published_at": "2026-10-29T02:28:23.000Z",
+          "discovered_at": "2026-10-29T02:30:45.224Z",
+          "url": "https://x.com/OpenBMB/status/2115631804711415855",
+          "aihot_url": "https://aihot.news/items/tntja753ksc3u8jh8sk1zlp8z",
+          "reason": null
+        },
+        {
+          "title": "ForgeKernel 登顶 NVIDIA SOL Bench FIB 赛道",
+          "original_title": "ForgeKernel has topped the FIB track of NVIDIA's SOL Bench and Huawei's CANNBench. Currently, ForgeKernel aims to surpass top human exper...",
+          "summary": "ForgeKernel 已登顶 NVIDIA SOL Bench 的 FIB 赛道以及华为 CANNBench。目前，ForgeKernel 的目标是在 DeepSeek 最复杂的算子之一上超越顶尖人类专家。\nhttps://x.com/i/broadcasts/2LPbqbgpZXaogj",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-models",
+          "published_at": "2026-10-29T02:28:59.000Z",
+          "discovered_at": "2026-10-29T02:30:45.206Z",
+          "url": "https://x.com/OpenBMB/status/2115631957564608554",
+          "aihot_url": "https://aihot.news/items/xyfhdo71llvzhnrg12827zjzi",
+          "reason": null
+        },
+        {
+          "title": "面壁智能发布 MiniCPM-OCR 1.0，支持在 iPhone 和 iPad 本地运行",
+          "original_title": "🎬 MiniCPM-OCR in action — running locally on iPhone Duo and iPad.",
+          "summary": "面壁智能 OpenBMB 发布 MiniCPM-OCR 1.0，主打 1B 规模下的 SOTA OCR 性能与速度，在 Real5-OmniDocBench 得 93.68、OCRBench v2 得 54.7，并演示在 iPhone 和 iPad 上本地运行。",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-models",
+          "published_at": "2026-10-28T15:59:44.000Z",
+          "discovered_at": "2026-10-28T16:09:36.411Z",
+          "url": "https://x.com/OpenBMB/status/2115473600836964838",
+          "aihot_url": "https://aihot.news/items/vlhz5p8p7oyu6h3fp8pbdiplf",
+          "reason": null
+        },
+        {
+          "title": "MiniCPM-OCR 登陆 Apple Silicon",
+          "original_title": "MiniCPM-OCR 1.0 (1.3B) and MiniCPM-OCR Jev (2B) now run on Apple Silicon, thanks to our partnership with the @neywalabs team! 🚀",
+          "summary": "MiniCPM-OCR 1.0（1.3B）和 MiniCPM-OCR Jev（2B）现已可在 Apple Silicon 上运行，这得益于我们与 @neywalabs 团队的合作！🚀\n\n在 M5 Max 上，OCR 1.0 达到 6,339 tok/s 的 prefill 和 220–235 tok/s 的 decode，而 Jev 仅以 62.9 ms 的中位延迟完成 OCR 结果。\n\n查看博客：https://runnativ.ai/blog/minicpm-ocr-on-mlx-vlm",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-products",
+          "published_at": "2026-10-28T16:05:10.000Z",
+          "discovered_at": "2026-10-28T16:09:36.403Z",
+          "url": "https://x.com/OpenBMB/status/2115474966674358444",
+          "aihot_url": "https://aihot.news/items/p7jeovpk5j93fdf3i59p3bn5b",
+          "reason": null
+        },
+        {
+          "title": "AtomicChat 实测 MiniCPM-OCR 1.0 在 MacBook 上本地解析 Anthropic 全部 415 页 S-1 文件",
+          "original_title": "Huge thanks to @atomic_chat_hq for the awesome demo! 🙌",
+          "summary": "OpenBMB 转发并感谢 @atomic_chat_hq 的演示：该演示在 M5 Max MacBook 上本地运行 MiniCPM-OCR 1.0，处理 Anthropic S-1 文件全部 415 页，1.2GB 模型约每页 4 秒，数据全程不离开设备。GGUF 权重已发布在 huggingface.co/AtomicChat/MiniCPM-OCR-1.0-GGUF。",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-models",
+          "published_at": "2026-10-28T13:19:46.000Z",
+          "discovered_at": "2026-10-28T14:37:20.253Z",
+          "url": "https://x.com/OpenBMB/status/2115433341226745861",
+          "aihot_url": "https://aihot.news/items/ru6d25zqm13kc8i2f7e33j4ao",
+          "reason": null
+        },
+        {
+          "title": "面壁智能发布 LES 推理系统，让 MiniCPM-V 4.7 的 35B-A3B MoE 模型在手机上实时推理",
+          "original_title": "📱 35B parameters. Real-time inference. On a phone.",
+          "summary": "OpenBMB 发布 Lookahead Expert Scheduling（LES）推理系统，用于在端侧运行 MiniCPM-V 4.7 的 35B-A3B MoE 模型。",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-products",
+          "published_at": "2026-10-28T14:00:42.000Z",
+          "discovered_at": "2026-10-28T14:37:20.247Z",
+          "url": "https://x.com/OpenBMB/status/2115443643800825938",
+          "aihot_url": "https://aihot.news/items/om6ecr204riamm4jukwwpbpsn",
+          "reason": null
+        },
+        {
+          "title": "面壁智能开源 MiniCPM-OCR 系列，文档解析与 OCR 结果可靠性评估配套",
+          "original_title": "📄 Parsing documents is only half the job. Knowing which outputs need a second look matters too. 🔍",
+          "summary": "OpenBMB 开源 MiniCPM-OCR 系列模型，把文档解析与 OCR 结果可靠性评估配套提供。MiniCPM-OCR 1.0 是 1.3B 参数的中英文文档解析模型，支持扫描页、拍照文档、倾斜和弯曲页面，可处理表格、公式、PDF 和关键信息抽取，并支持查看 Markdown 源码与预览解析结果；MiniCPM-OCR Jev 是独立模型，用于评估 OCR 结果可靠性，帮助识别需要人工复核的输出。模型权重开放在 GitHub 和 Hugging Face，支持多种部署方式。",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-models",
+          "published_at": "2026-10-28T14:02:00.000Z",
+          "discovered_at": "2026-10-28T14:37:20.240Z",
+          "url": "https://x.com/OpenBMB/status/2115443971338207396",
+          "aihot_url": "https://aihot.news/items/qoa3na27yq9gjy95xwwaopsk7",
+          "reason": null
+        },
+        {
+          "title": "面壁 MiniCPM-OCR 1.0 在 Mac 本地处理 Anthropic S-1 全 415 页",
+          "original_title": "📄 Long documents, local processing.Great to see @atomic_chat_hq putting MiniCPM-OCR 1.0 to work on a Mac and sharing GGUFs with the comm...",
+          "summary": "面壁智能 OpenBMB 转发 @atomic_chat_hq 的实测演示：1.2GB 的 MiniCPM-OCR 1.0 在 M5 Max MacBook 上以每页约 4 秒的速度处理完 Anthropic S-1 全部 415 页，全程数据不离开本地。演示者已将 GGUF 版本分享至 Hugging Face（https://huggingface.co/AtomicChat/MiniCPM-OCR-1.0-GGUF）。",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-products",
+          "published_at": "2026-10-28T14:06:33.000Z",
+          "discovered_at": "2026-10-28T14:37:20.233Z",
+          "url": "https://x.com/OpenBMB/status/2115445117540868297",
+          "aihot_url": "https://aihot.news/items/nfbjc9vk011buvk2qm57fxzf2",
+          "reason": null
+        },
+        {
+          "title": "MiniCPM5-2B 改造为结构化决策模型 Jev",
+          "original_title": "What if your model could make a structured choice instead of writing another paragraph? 🎯",
+          "summary": "开发者基于 OpenBMB 的 MiniCPM5-2B 微调出 System 1 决策模型 MiniCPM5-2B-Jev，输入文档和问题后直接返回预定义选项的概率，不生成自由文本。",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-products",
+          "published_at": "2026-10-28T13:01:19.000Z",
+          "discovered_at": "2026-10-28T13:05:33.272Z",
+          "url": "https://x.com/OpenBMB/status/2115428701982908585",
+          "aihot_url": "https://aihot.news/items/v2nseardpkyqdl3gnnyi8ff06",
+          "reason": null
+        },
+        {
+          "title": "面壁智能 OpenBMB 回应第三方对 MiniCPM-OCR 的评测",
+          "original_title": "Love seeing MiniCPM-OCR put to the test! 🔥",
+          "summary": "面壁智能 OpenBMB 转评 @wikiwayne 对 MiniCPM-OCR 的评测，感谢其透明对比并分享了结果与注意事项，表示期待该模型在 GX10 上的本地测试表现，称这类真实反馈会推动模型持续改进。引用内容提到 MiniCPM-OCR 1.0 为开源 13 亿参数 OCR 模型，与评估结果可靠性的 MiniCPM-OCR Jev 配套，权重已开放于 GitHub 和 Hugging Face。",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-models",
+          "published_at": "2026-10-28T06:03:08.000Z",
+          "discovered_at": "2026-10-28T06:23:30.800Z",
+          "url": "https://x.com/OpenBMB/status/2115323459173806210",
+          "aihot_url": "https://aihot.news/items/a9uxxjazluqxrcsu2vvedo4k6",
+          "reason": null
+        },
+        {
+          "title": "面壁智能推出自进化内核优化框架ForgeKernel",
+          "original_title": "From JustGoal to a self-evolving optimization harness, excited to see what comes next. Looking forward to the paper and more results from...",
+          "summary": "从 JustGoal 到自进化的优化框架，期待接下来的进展。期待论文以及 Forge 系列更多成果！@_LiYuXuan_",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "ai-products",
+          "published_at": "2026-10-28T05:43:02.000Z",
+          "discovered_at": "2026-10-28T05:53:18.300Z",
+          "url": "https://x.com/OpenBMB/status/2115318402273394964",
+          "aihot_url": "https://aihot.news/items/d438uqg2aga6hifvfferx1uwj",
+          "reason": null
+        },
+        {
+          "title": "面壁智能回应 MiniCPM-OCR 实测对比",
+          "original_title": "Love seeing MiniCPM-OCR put to the test! 🔥",
+          "summary": "很高兴看到 MiniCPM-OCR 接受实测！🔥\n\n非常感谢 @wikiwayne 做了详尽、透明的对比，并分享了结果和注意事项。💙\n\n期待你在 GX10 上跑完本地测试后的表现。这样的真实反馈正是我们持续改进的动力！🚀",
+          "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "category": "opinion",
+          "published_at": "2026-10-28T04:05:19.000Z",
+          "discovered_at": "2026-10-28T04:21:10.416Z",
+          "url": "https://x.com/OpenBMB/status/2115293809936339048",
+          "aihot_url": "https://aihot.news/items/e0cnf0wwhpazvsop3z9k8ofor",
+          "reason": null
+        }
+      ],
+      "mention_count": 0,
+      "tracked_by_aihot": true
+    },
+    "AntLingAGI": {
+      "group": "模型厂（国内）",
+      "own_posts": [],
+      "mention_count": 3,
+      "tracked_by_aihot": false
+    },
+    "TencentHunyuan": {
+      "group": "模型厂（国内）",
+      "own_posts": [],
+      "mention_count": 1,
+      "tracked_by_aihot": false
+    }
+  },
+  "hn": [],
+  "blog_feeds": {
+    "https://claude.dev/rss.xml": {
+      "group": "Anthropic 必看",
+      "must": true,
+      "posts": [],
+      "skipped_no_date": 0
+    },
+    "page:anthropic-engineering": {
+      "group": "Anthropic 必看",
+      "must": true,
+      "posts": [],
+      "skipped_no_date": 0
+    },
+    "https://vllm.ai/blog/rss.xml": {
+      "group": "vLLM 必看",
+      "must": true,
+      "posts": [],
+      "skipped_no_date": 0
+    },
+    "https://huggingface.co/blog/feed.xml": {
+      "group": "Hugging Face 必看",
+      "must": true,
+      "posts": [
+        {
+          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+          "summary": "",
+          "published_at": "2026-10-28T14:58:17+00:00"
+        },
+        {
+          "title": "Build specialized multimodal models with LFM3",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+          "summary": "",
+          "published_at": "2026-10-27T17:16:52+00:00"
+        },
+        {
+          "title": "Can we trust LLMs to judge whether a research idea is novel?",
+          "url": "https://huggingface.co/blog/allenai/novelty-bench",
+          "summary": "",
+          "published_at": "2026-10-27T16:12:42+00:00"
+        }
+      ],
+      "skipped_no_date": 0
+    },
+    "https://openai.com/news/rss.xml": {
+      "group": "OpenAI 必看",
+      "must": true,
+      "posts": [
+        {
+          "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+          "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+          "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+          "published_at": "2026-10-28T13:15:00+00:00"
+        },
+        {
+          "title": "The future of the firm",
+          "url": "https://openai.com/index/the-future-of-the-firm",
+          "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+          "published_at": "2026-10-28T10:00:00+00:00"
+        },
+        {
+          "title": "Legora is building the agentic operating system for legal work",
+          "url": "https://openai.com/index/legora",
+          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+          "published_at": "2026-10-28T09:30:00+00:00"
+        },
+        {
+          "title": "Retell uses OpenAI models to help power 100M monthly calls",
+          "url": "https://openai.com/index/retell-ai",
+          "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+          "published_at": "2026-10-27T15:00:00+00:00"
+        },
+        {
+          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+          "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+          "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+          "published_at": "2026-10-27T07:00:00+00:00"
+        },
+        {
+          "title": "How Check Point accelerates vulnerability research with Daybreak",
+          "url": "https://openai.com/index/check-point-daybreak",
+          "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.",
+          "published_at": "2026-10-27T00:00:00+00:00"
+        }
+      ],
+      "skipped_no_date": 0
+    },
+    "https://deepmind.google/blog/rss.xml": {
+      "group": "DeepMind 必看",
+      "must": true,
+      "posts": [
+        {
+          "title": "Gemini 4 Carbon: Our next frontier model",
+          "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+          "summary": "",
+          "published_at": "2026-10-28T17:00:58+00:00"
+        },
+        {
+          "title": "Genie 4: A new generation of world simulation",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+          "published_at": "2026-10-27T16:01:38+00:00"
+        }
+      ],
+      "skipped_no_date": 0
+    },
+    "https://developer.nvidia.com/blog/feed": {
+      "group": "NVIDIA Developer 必看",
+      "must": true,
+      "posts": [
+        {
+          "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
+          "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+          "summary": "<img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/CUDAMemoryKV-768x432.webp\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"\" style=\"display: block; m",
+          "published_at": "2026-10-27T20:50:45+00:00"
+        },
+        {
+          "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
+          "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
+          "summary": "<img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image6-2-768x432.png\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"\" style=\"display: block; margin",
+          "published_at": "2026-10-28T14:12:08+00:00"
+        },
+        {
+          "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+          "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+          "summary": "<img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/agentic-promo-nemotron-models-eu-gtc-berlin-press-1600x900-5811620-768x432.png\" class=\"webfeedsFeatured",
+          "published_at": "2026-10-28T18:54:54+00:00"
+        },
+        {
+          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+          "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+          "summary": "<img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/Nemotron-3-5-Super-VL-e1792075881894-768x432.webp\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"Il",
+          "published_at": "2026-10-28T21:11:44+00:00"
+        }
+      ],
+      "skipped_no_date": 0
+    },
+    "https://pytorch.org/blog/rss/": {
+      "group": "PyTorch 必看",
+      "must": true,
+      "posts": [
+        {
+          "title": "PyTorch 2.15 Release Blog",
+          "url": "https://pytorch.org/blog/pytorch-2-15-release-blog/",
+          "summary": "<p>We are excited to announce the release of PyTorch® 2.15 (release notes)! The PyTorch 2.15 release features the following changes: Rewritten NCCL backend becomes the default, with a flight recorder.",
+          "published_at": "2026-10-28T17:44:20+00:00"
+        }
+      ],
+      "skipped_no_date": 0
+    },
+    "https://qwenlm.github.io/blog/index.xml": {
+      "group": "Qwen 被动",
+      "must": false,
+      "posts": [],
+      "skipped_no_date": 0
+    },
+    "https://together.ai/blog/rss.xml": {
+      "group": "Together AI 被动",
+      "must": false,
+      "posts": [
+        {
+          "title": "Auto repair for Together GPU Clusters: from GPU fault to healthy node",
+          "url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
+          "summary": "Together GPU Clusters auto repair detects GPU, host and fabric faults, picks the lightest fix, and lets you decide per fault and per Xid code which repairs run automatically. Here is how it works.",
+          "published_at": "2026-10-27T00:00:00+00:00"
+        }
+      ],
+      "skipped_no_date": 0
+    },
+    "https://magazine.sebastianraschka.com/feed/": {
+      "group": "Sebastian Raschka 被动",
+      "must": false,
+      "posts": [],
+      "skipped_no_date": 0
+    },
+    "https://huyenchip.com/feed.xml": {
+      "group": "Chip Huyen 被动",
+      "must": false,
+      "posts": [],
+      "skipped_no_date": 0
+    },
+    "https://lilianweng.github.io/index.xml": {
+      "group": "Lilian Weng 被动",
+      "must": false,
+      "posts": [],
+      "skipped_no_date": 0
+    }
+  },
+  "errors": [
+    "blog page:anthropic-engineering: anthropic engineering 页解析到 0 篇文章，页面结构可能变了"
+  ]
+}

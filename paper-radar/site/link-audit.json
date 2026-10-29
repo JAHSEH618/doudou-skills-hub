@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T00:42:00.141407+00:00",
+  "checked_at": "2026-10-29T14:46:49.323735+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -20,6 +20,26 @@
       "title": "Anthropic files S-1 with the SEC for proposed initial public offering \\ Anthropic",
       "sources": [
         "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://arXiv.org/abs/2610.36511",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arXiv.org/abs/2610.36511",
+      "title": "[2610.36511] Do AI Scientists Know What's New?",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://arXiv.org/abs/2610.36767",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arXiv.org/abs/2610.36767",
+      "title": "[2610.36767] Can LLMs Reliably Grade Olympiad Proofs? A Study of Mathematical Verification with LLMs",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -814,6 +834,76 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2610.34731",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.34731",
+      "title": "[2610.34731] MCF: A Memory- and Communication-Aware Co-Designed Framework for Long-Context LLM Inference",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.34907",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.34907",
+      "title": "[2610.34907] When and Why to Use TMA: A Workload-Grounded Characterization of Tensor Memory Acceleration on NVIDIA Hopper GPUs",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.34915",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.34915",
+      "title": "[2610.34915] End-to-End MXFP8 Reinforcement Learning on Blackwell: What Matching Buys, When It Pays Off, and How It Fails",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35303",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.35303",
+      "title": "[2610.35303] InterQ-RL: Interaction-Aware Correction of Execution Mismatch in Quantized Agentic RL",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35497",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.35497",
+      "title": "[2610.35497] When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.36355",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.36355",
+      "title": "[2610.36355] WAKMan: Workload Aware KVCache Manager",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.36767",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.36767",
+      "title": "[2610.36767] Can LLMs Reliably Grade Olympiad Proofs? A Study of Mathematical Verification with LLMs",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
       "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
       "status": "reachable",
       "http": 200,
@@ -832,6 +922,16 @@
       "title": "AI Agent Memory: How Production AI Agents Remember and Learn",
       "sources": [
         "reports/2026-09-10.md"
+      ]
+    },
+    {
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang | Cloudflare Blog",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -955,6 +1055,26 @@
       ]
     },
     {
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "title": "Introducing Gemini 4 Carbon",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "title": "Genie 4: A new generation of world simulation — Google DeepMind",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
       "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
       "status": "reachable",
       "http": 200,
@@ -975,6 +1095,16 @@
       ]
     },
     {
+      "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark",
+      "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
       "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
       "status": "reachable",
       "http": 200,
@@ -992,6 +1122,16 @@
       "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+      "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -1032,6 +1172,16 @@
       "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+      "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4 | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -1205,6 +1355,16 @@
       ]
     },
     {
+      "url": "https://github.com/aziksh-ospanov/TROJAN",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/aziksh-ospanov/TROJAN",
+      "title": "GitHub - aziksh-ospanov/TROJAN · GitHub",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
       "url": "https://github.com/casparil/chunking-eval",
       "status": "reachable",
       "http": 200,
@@ -1233,6 +1393,16 @@
       "sources": [
         "reports/2026-10-22.md",
         "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://github.com/emmatliu/claimnov",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/emmatliu/claimnov",
+      "title": "GitHub - emmatliu/claimnov: ClaimNov: claim-level novelty checks for AI-scientist pipelines (code and data for 'Do AI Scientists Know What's New?') · GitHub",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -1316,6 +1486,16 @@
       ]
     },
     {
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "title": "Build specialized multimodal models with LFM3",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
       "url": "https://huggingface.co/blog/allenai/litpivot",
       "status": "reachable",
       "http": 200,
@@ -1323,6 +1503,16 @@
       "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
       "sources": [
         "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -1393,6 +1583,16 @@
       "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -1483,6 +1683,16 @@
       "title": "Codex Memory Internals: What It Remembers, Who Decides, and How It Compares to OpenCode",
       "sources": [
         "reports/2026-09-10.md"
+      ]
+    },
+    {
+      "url": "https://leizhao7.github.io/videoedit/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://leizhao7.github.io/videoedit/",
+      "title": "VideoEdit · When Fine-Grained Credit Assignment Helps and Hurts",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -1824,6 +2034,16 @@
       "title": "Optimizing Streaming Speech Recognition on Arm® Edge Devices with ExecuTorch - PyTorch",
       "sources": [
         "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://pytorch.org/blog/pytorch-2-15-release-blog/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://pytorch.org/blog/pytorch-2-15-release-blog/",
+      "title": "PyTorch 2.15 Release Blog - PyTorch",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -2197,6 +2417,16 @@
       ]
     },
     {
+      "url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "title": "How AI agents shape experts’ judgment calls \\ Anthropic",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
       "url": "https://www.anthropic.com/research/attack-surface-reduction",
       "status": "reachable",
       "http": 200,
@@ -2204,6 +2434,16 @@
       "title": "Using Claude to reduce the attack surface of code \\ Anthropic",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+      "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude \\ Anthropic",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -2327,6 +2567,16 @@
       ]
     },
     {
+      "url": "https://www.lmsys.org/blog/2026-10-26-cf-security/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.lmsys.org/blog/2026-10-26-cf-security/",
+      "title": "SGLang security update: improving request isolation - LMSYS Org",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
       "url": "https://www.marktechpost.com/2026-10-16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
       "status": "restricted",
       "http": 403,
@@ -2364,6 +2614,16 @@
       "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost - MiniMax Research | MiniMax",
       "sources": [
         "reports/2026-10-20.md"
+      ]
+    },
+    {
+      "url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
+      "title": "Auto repair for Together GPU Clusters: from GPU fault to healthy node",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {
@@ -2414,7 +2674,7 @@
       "status": "x-original",
       "http": 200,
       "final_url": "https://x.com/BSPK_/status/2096582455860015508",
-      "title": "BSPK on X: \"https://t.co/FhJ6Q5NQxe\" / X",
+      "title": "BSPK on X: \"The Next AI Race Is About Inference Efficiency: Two Ways to Break the Memory Bottleneck\" / X",
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-08.md"
@@ -2425,7 +2685,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://x.com/GitHub_Daily",
-      "title": "GitHubDaily (@GitHub_Daily) / X",
+      "title": "GitHubDaily (@GitHub_Daily) / XGitHubDaily (@GitHub_Daily) / X",
       "sources": [
         "reports/2026-10-21-30u30.md"
       ]
@@ -2486,11 +2746,44 @@
       ]
     },
     {
+      "url": "https://x.com/OpenBMB/status/2115318402273394964",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenBMB/status/2115318402273394964",
+      "title": "OpenBMB on X: \"From JustGoal to a self-evolving optimization harness, excited to see what comes next. Looking forward to the paper and more results from the Forge series! @_LiYuXuan_\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://x.com/OpenBMB/status/2115443643800825938",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenBMB/status/2115443643800825938",
+      "title": "OpenBMB on X: \"📱 35B parameters. Real-time inference. On a phone.\n\nMeet Lookahead Expert Scheduling (LES), the inference system powering MiniCPM-V 4.7’s 35B-A3B MoE model on edge devices.\n\n🚀 On an iPhone 18 Pro Max, the full system reaches 20.51 tokens per second, a 6.07× speedup over loading exp… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://x.com/OpenBMB/status/2115631957564608554",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenBMB/status/2115631957564608554",
+      "title": "OpenBMB on X: \"ForgeKernel has topped the FIB track of NVIDIA's SOL Bench and Huawei's CANNBench. Currently, ForgeKernel aims to surpass top human experts on one of DeepSeek's most complex operators.\nhttps://t.co/vYaS4apNIB\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-29.md"
+      ]
+    },
+    {
       "url": "https://x.com/SaitoWu/status/2113244300008169729",
       "status": "x-original",
       "http": 200,
       "final_url": "https://x.com/SaitoWu/status/2113244300008169729",
-      "title": "Saito on X: \"一张 B300 卡跑推理一小时能收 40 美元，市场上买它一小时只要 5 到 6 美元。SF Compute 的 Evan Conrad 说，这两个数字里必须有一个要变。算力到现在还没被真正定过价。 https://t.co/V7Ydq2NAhf\" / X",
+      "title": "Saito on X: \"B300 跑推理一小时赚 40 美元，买它一小时只要 5 美元\" / X",
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-10-27.md"
@@ -2501,7 +2794,7 @@
       "status": "x-original",
       "http": 200,
       "final_url": "https://x.com/SaitoWu/status/2114651886712500477",
-      "title": "Saito on X: \"训练 V3 花了 280 万个 H800 卡时，推理一年烧掉一千五百多万个，是训练的六倍，按两年模型寿命摊是 12 倍。更狠的是 decode 阶段，一块卡只跑出 5% 的算力，瓶颈不在算力，在显存带宽。 https://t.co/Qz98sCSsvr\" / X",
+      "title": "Saito on X: \"推理是训练的 12 倍，可一块卡生成时只跑出 5% 的算力\" / X",
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-10-27.md"
@@ -2561,6 +2854,17 @@
       "sources": [
         "reports/2026-09-10-weekly.md",
         "reports/2026-09-28.md"
+      ]
+    },
+    {
+      "url": "https://x.com/UnslothAI/status/2115453111208919472",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/UnslothAI/status/2115453111208919472",
+      "title": "Unsloth AI on X: \"Your local LLM can now take control of a browser and complete tasks autonomously via Unsloth!\n\nQwen3.8-27B successfully controlled the browser to complete tasks like chess, painting, with no human intervention.\n\nGitHub: https://t.co/aZWYAtakBP  \nGuide: https://t.co/bhq8pHfAL2\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-10-29.md"
       ]
     },
     {

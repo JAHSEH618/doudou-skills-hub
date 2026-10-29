@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-29",
+  "mode": "每日推送",
+  "window": "10-27 → 10-29",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {"full": 1, "abstract": 0},
+    "模型": {"full": 1, "abstract": 1},
+    "软件系统": {"full": 0, "abstract": 3},
+    "工程方法": {"full": 1, "abstract": 1}
+  },
+  "practice_full": 3,
+  "practice_abstract": 8,
+  "news": 2,
+  "flash": 4,
+  "pool": 5,
+  "commentary": 0,
+  "judgments": 27,
+  "judgments_updated": 2,
+  "graph": {
+    "sources": [
+      {"id": "MXF", "label": "MXFP8 权重同步\n2610.34915", "type": "论文"},
+      {"id": "CF", "label": "CF×SGLang KV 泄漏\n联合披露 10-26", "type": "一方博客"},
+      {"id": "WAK", "label": "WAKMan 淘汰策略\n2610.36355", "type": "论文"}
+    ],
+    "judgments": [
+      {"id": "J19", "label": "量化无损只在\n任务精度层成立"},
+      {"id": "J26", "label": "KV 管理是\n一等公民"}
+    ],
+    "edges": [
+      {"from": "MXF", "to": "J19", "kind": "印证"},
+      {"from": "CF", "to": "J26", "kind": "辅助"},
+      {"from": "WAK", "to": "J26", "kind": "边界"}
+    ]
+  }
+}
