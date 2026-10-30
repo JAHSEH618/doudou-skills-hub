@@ -52,4 +52,7 @@
 - 其余 restricted / unverified 属历史报告记录，本期未改历史内容。
 
 ## 构建与发布
-- 构建与 push 结果见本笔记末行（运行后回填）。
+- 构建：build_site.py + check_site.py ../_site（Hermes venv python3）→ **PASS**（17 HTML 页，链接/锚点/标题/SVG/编辑边界全过）。
+- 同步：report + assets 7 件 + 两账本 + site/link-audit.json → ~/Downloads/doudou-skills-hub/paper-radar/，commit 8dc16c7（身份：了可以），push origin master 成功。
+- GitHub Actions「Publish Paper Radar」run 41015162000 → **success**（2026-10-30T06:37 UTC）。
+- 页面验证：https://jahseh618.github.io/doudou-skills-hub/reports/2026-10-30.html → 200，正文关键内容在位（34.3 KB）。
