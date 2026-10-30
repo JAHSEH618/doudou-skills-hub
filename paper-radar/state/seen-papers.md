@@ -6,7 +6,7 @@
 > 折叠策略：条目满 6 个月压缩成「`- [日期] 标题 · ID/链接`」单行（判词删掉，其价值已沉淀进 judgments.md）。
 > 非论文（工程实践节的详条目与简条目）记在文件末尾的「工程实践（非论文）」一节，带来源标注，简条目再加【仅摘要】；【资讯】【快讯】不进本账本（硬规则 11），解说链接也不进。
 
-**上次周扫：2026-10-29**（窗口 10-27 → 10-29，2 天；论文详条目 8（全文 3 + 摘要 5）+ 实践详 3 / 简 8 + 资讯 2 + 快讯 4；报告 `reports/2026-10-29.md`，已推送：是——本期已发布）
+**上次周扫：2026-10-30**（窗口 10-29 → 10-30，1 天；论文详条目 8（全文 3 + 摘要 5）+ 实践详 4 / 简 3 + 资讯 3 + 快讯 0；报告 `reports/2026-10-30.md`，已推送：是——本期已发布）
 
 格式：`- [首推日期] 【溯源】标题 · 会议/机构 · arXiv ID 或会议页链接 —— 当时判词`
 （非论文条目：`- [首推日期] 【一方博客/工业博客/技术报告/上游变更】标题 · 来源方 · 原文链接 —— 当时判词`）
@@ -14,6 +14,8 @@
 
 ## 硬件
 
+- [2026-10-30] 【摘要级】Dobb: Shard-Local Preconditioning in Block-Diagonal Eigenbases · https://arxiv.org/abs/2610.39412 —— TP/FSDP 切分后 Muon 类矩阵感知优化器需跨 shard 全局矩阵运算，引入额外通信；shard-local 块对角特征基预条件化消掉全局运算。摘要级范围：与完整 Muon 的收敛差距、通信节省幅度未读。
+- [2026-10-30] 【落选】When the Same Prompt Gives Different Answers (and the Same Answer Isn't Always Right) · https://arxiv.org/abs/2610.39070 —— 同 prompt 多答一致性与答案正确性评估（H2/E1 命中，本期被评估线更贴题条目占位）
 - [2026-10-29] 【全文】When and Why to Use TMA: A Workload-Grounded Characterization of Tensor Memory Acceleration on NVIDIA Hopper GPUs · Purdue（4 作者）· https://arxiv.org/abs/2610.34907 —— H100 TMA 3.2TB/s、96% 理论值（LDGSTS 4CTA 3.1TB/s、94%）；FA3 式 kernel prefill BF16/FP16 +5.7–11.9%、FP8 +13.4–22.2%、decode 零；CUTLASS B200 中位 2.12×（320/324 cell）/ H100 中位 1.24×；判据 = 传输规模×描述符复用 / L2 带宽瓶颈 / DRAM 成本对齐；CC BY-SA 4.0
 - [2026-10-29] 【落选】SPARTA: Sparse Ternary LLM Accelerator for Long-Context Edge Inference · https://arxiv.org/abs/2610.34824 —— 1.58-bit 三值权重 + 自适应注意力，长上下文端侧 KV 流量是瓶颈；单源结果，未跨源收敛
 - [2026-10-27] 【仅摘要】Training an MoE LLM in MXFP4: How We Closed the Gap to BF16 · https://arxiv.org/abs/2610.32229 —— GPT-OSS-20B（MLPerf Small MoE）MXFP4 开放训练配方（摘要内配方名 ALTO）：混合 1D/2D block 量化 + RHT + SR + 简化 weight de-oscillation；C4 GBS16 16,128 步 3.3350 vs BF16 3.3283（差 0.007），收回无 de-oscillation（3.3418）约一半差距；FP4 收敛开销 +20.0% → +5.0%；三个负面结果（DGE/outlier clipping/macro-block：算子级 SNR 升、端到端降）。边界：模拟 MXFP4 kernel、MI300、wall-clock 未优化
@@ -66,6 +68,11 @@
 
 ## 模型
 
+- [2026-10-30] 【全文】There Is No Free Lunch in RLVR: Every pass@1 Gain Has a pass@k Price · https://arxiv.org/abs/2610.39295 —— 群体极限 w ∝ w₀·exp(τf)（RLVR 即策略分布重加权）；exclusive specialization 下免费午餐 ⇔ 存在使所有策略加权收益相等的严格正 prompt 价格，Stiemke 替代定理证其不存在；pass@k 交叉数上界 = CDF 位移变号数且界紧（任意 m 可构造）；Pareto 前沿 γ 控掉价幅度；熵恒等式 b−R=a_κ·exp(H/κ)（策略熵 2.77→2.14、token 熵 6.85→7.27，token 熵升但每 token 信息量降）。证据复用 2 条已发表曲线（Qwen2.5-7B Omni-MATH k=128→256 单次交叉，优势 +0.149→−0.008；GRPO+PBA 各 k 不低于基线），无新实验；代码 no-free-lunch-rlvr CC BY 4.0。J13/J21 印证、J28 新增
+- [2026-10-30] 【全文】LinQuant: Functional Invariances for Low-Precision Linear Recurrences · https://arxiv.org/abs/2610.39418 —— 线性递归 chunkwise 分解的 7 个功能不变量（4 变换 R_QK/D_QK/R_V/D_V + 3 吸收），6 种 mixer（Mamba-2/GLA/DeltaNet/Gated DeltaNet/KDA/线性注意力）逐一适用性证明；INT6 对照（340M/1.3B，SlimPajama 15B/100B）组合变换恢复优于最佳单变换约 2 倍的过量 NLL；生产：SSDi8 流水线加 R_QK+D_QK 后 Mamba-2 8B 量化罚分 0.370→0.185、2.7B 0.381→0.312、1.3B 0.508→0.410，Nemotron-H Base 0.308→0.145 / Reasoning 0.498→0.227（WikiText-2 PPL），prefill 延迟不增（A5000 T=2048）；softmax 注意力不在覆盖范围
+- [2026-10-30] 【摘要级】Softmax Routing Dynamics in Mixture-of-Experts Models: Collapse and Recovery · https://arxiv.org/abs/2610.39442 —— softmax 路由专家概率集中坍缩与恢复动力学；稳态损失势垒识别最优路由输出的支撑面；同靶平方损失模型允许专家输出自由训练。摘要级范围：持久条件与恢复机制未读。
+- [2026-10-30] 【落选】Reasoning or Pattern Exploitation? Mechanistic Insights from RL-Trained Language Models · https://arxiv.org/abs/2610.39182 —— RL 训练模型机制可解释（M3/E1 命中，摘要级未进详条目名额）
+- [2026-10-30] 【落选】How Specific Do I Need to Be? Effects of User Query Underspecification on Deep Research Agents · https://arxiv.org/abs/2610.39413 —— Deep Research agent 的用户欠规格化查询效应（S2/E1 命中，与本期 S2 入选条目同线让位）
 - [2026-10-29] 【全文】End-to-End MXFP8 Reinforcement Learning on Blackwell: What Matching Buys, When It Pays Off, and How It Fails · Wengee Zhang（独立）· https://arxiv.org/abs/2610.34915 —— 5 失败模式 × 4 层检测；F2 vLLM 0.24 matcher 子串回退静默排除 Qwen3-1.7B 的 56/311 dense MLP 参数、KL 0.007–0.010、全部标准指标正常，仅离线精确重查暴露；F5 同步层 5/7 静默；无质量声明，交付 7 条件同步规格；印证 J19
 - [2026-10-29] 【摘要级】When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic RL through Video Editing · https://arxiv.org/abs/2610.35497 —— 边界是 horizon：Fine Cut（60+ 轮）衰减过程奖励相对 outcome-only GRPO +45.4%，短 horizon（30–40 轮）outcome-only 仍有竞争力（≤+10.4%）；奖励劫持随权重衰减缓解；OPSD 近零收益；负面/校准类
 - [2026-10-27] 【落选】Agentic Memory Management Is the Next Frontier of Information Retrieval · https://arxiv.org/abs/2610.32464 —— 视角文，无实证数字
@@ -107,6 +114,11 @@
 
 ## 软件系统
 
+- [2026-10-30] 【全文】PDScope: Breaking the Prefill-Decode Seesaw for Memory-Bound MoE Inference · https://arxiv.org/abs/2610.39216 —— 国防科大 + 启元实验室；CPU-GPU 节点 MoE 本地部署（专家多在 CPU 内存）的 phase-aware 调度：PhasePer 每相位 rank 预测器（128 条 ShareGPT batch 离线训练，Top-6 94%，较 Fate 门控推理 68.4% 高 15pp，跨域保持 ≥80%）+ AdaptSched（当前层放置与下一层预取联合优化、预取深度按置信度调整、编译为静态图）+ 零拷贝异步 I/O（双缓冲 + 每专家 3 条 CUDA stream，PCIe 66–80%）；A100/3090 PCIe 4.0×16 24GB 上限：prefill 最高 10.3× Fate / 8.6× kTransformers / 5.8× Fiddler，decode 6.1× Fate / 2.9× kTransformers；负面观察：batch 16→32 prefill 增益仅 5.2%（2048）/ 0.7%（4096），batch 16 已饱和；稳健性：预测器掉到 45–70% 时吞吐仅降 6.4–11.3%；无 NVLink/CXL 对比、不支持 overlap（显存带宽争用）、基线调至各自最优（3 轮预热）；代码仓库匿名占位、许可 arXiv perpetual non-exclusive
+- [2026-10-30] 【摘要级】What Does "Now" Mean to Your Computer-Use Agent? Stale Screenshots, Page Loads, and Which Check to Run Before a Click · https://arxiv.org/abs/2610.39282 —— 31 个公开网页测计划中点击：风险源从规划间隔移到页面加载；0.4% 点击（完整加载页上计划）最终落在非目标元素，提出 pre-click check。摘要级范围：测量口径、0.4% 完整定义与 check 效果未读。
+- [2026-10-30] 【摘要级】MemSteer: Turning User Histories into Supervision for Agent Memory Optimization · https://arxiv.org/abs/2610.39276 —— 未标注用户历史直接转监督信号，用于记忆设计评估反馈与改进，免手工造 QA 对。摘要级范围：转换方法与记忆质量结果未读。
+- [2026-10-30] 【落选】AgentDecept: Benchmarking Deceptive Behavior in Tool-Using LLM Agents under Pressure · https://arxiv.org/abs/2610.39377 —— 工具型 agent 压力下欺骗行为基准（S2/E1 命中，benchmark 类名额让位 SWE-bench 审计）
+- [2026-10-30] 【落选】Learning to Bound: Monotonic, Calibrated Neural Upper Bounds for MPE Inference · https://arxiv.org/abs/2610.39305 —— 单调校准神经上界（E1/E2 命中，MPE 推理场景离四线主域较远）
 - [2026-10-29] 【摘要级】WAKMan: Workload Aware KVCache Manager · https://arxiv.org/abs/2610.36355 —— 生产混合流量（单轮/多轮/agentic）20 种组合：无淘汰策略通吃（agentic 偏重 LRU 胜 S3FIFO 12%，其他组合落后至 22%）；实时流量选策略平均 +5pp 命中、optimality gap 最小；J26 边界补充
 - [2026-10-29] 【摘要级】MCF: A Memory- and Communication-Aware Co-Designed Framework for Long-Context LLM Inference · https://arxiv.org/abs/2610.34731 —— MARS chunked prefill KV 选择性复制 + 阶段性回收，避开 prefill-decode 边界布局迁移；decode query-centric（KV 分片原地、query 路由），通信从 KV 依赖变 query 依赖；FPGA 计算 NIC 数据通路；数字与基线未核验（摘要级）
 - [2026-10-29] 【摘要级】InterQ-RL: Interaction-Aware Correction of Execution Mismatch in Quantized Agentic RL · https://arxiv.org/abs/2610.35303 —— W8A8-KV8 rollout 量化，失配沿状态可达性累积；有界执行前缀校正 + 固定位移预算、无额外前向；4B–30B dense/MoE，ALFWorld/WebShop/ScienceWorld 与 BF16 差 0.7 点内、两设置超 BF16；off-policy 分布影响未核验
@@ -224,6 +236,8 @@
 
 ## 工程方法
 
+- [2026-10-30] 【摘要级】Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent · https://arxiv.org/abs/2610.39417 —— 自进化 agent 审计 SWE-bench 类数据集本身（任务清晰度/测试覆盖决定可解性与可验证性）。摘要级范围：评估协议、自进化循环机制与数据集质量结果未读。
+- [2026-10-30] 【落选】Before the Next Rollout: Diagnosing Skill Utility Shifts from Policy Updates · https://arxiv.org/abs/2610.39358 —— 策略更新后 skill 效用漂移诊断（S2/E1 命中，与本期 S2 入选条目同线让位）
 - [2026-10-29] 【全文】Can LLMs Reliably Grade Olympiad Proofs? A Study of Mathematical Verification with LLMs · 华为 Foundation Model 部门 / CUHK / HKUST · https://arxiv.org/abs/2610.36767 —— Trojan-Bench(H) USAMO 2025 专家判分；20 模型 × 7 指标 × 2 prompt 风格 × 3 推理方法 × 3 模板广评估、SOTA 留明显空间；TROJAN 迭代自我批评规模化对抗性证明生成；MABGrader（判分=多臂选择）对 ProofGrader QWK +26.4%、判分误差 −14%；代码 github.com/aziksh-ospanov/TROJAN
 - [2026-10-29] 【摘要级】Do AI Scientists Know What's New? · https://arxiv.org/abs/2610.36511 —— 时序 ground truth（proposal/claim 级，4 数据集 1,060 proposal）；proposal 级高拒绝率 = 对人类后来实现 idea 的高误报；ClaimNov claim 级检测：伪装论文 97% 召回 / 1.5% 误报，LLM 判官误报 11.8%→1.5%；100 个 novel proposal（含 1 处拼接先验）保留 91（最强现有检查保留 76）；只拒 3% 被审稿人质疑贡献的 ICLR 接收文；代码 github.com/emmatliu/claimnov；与 Ai2 NoveltyBench（同日简条目）对读
 - [2026-10-29] 【落选】From Self-Confidence to Statistical Accuracy: Scaling Human-in-the-Loop Evaluation · https://arxiv.org/abs/2610.35698 —— HITL 评估的自信心校准；与 TROJAN 方向重叠但在评估侧而非判分侧，留待后续
@@ -265,6 +279,13 @@
 
 ## 工程实践（非论文）
 
+- [2026-10-30] 【一方博客】Mistral Large 4 开放权重，同日双帖（合并条目）· vLLM 团队 / HF + Mistral · https://vllm.ai/blog/2026-10-29-mistral-large-4 · https://huggingface.co/blog/mistral-large4 —— ≈1T/49B active、1M 上下文、MLA+DSA（top-k 2048、内置 44 层索引器）、72 层（1 层 dense FFN + 71 层 128 专家选 4 + 1 共享）；权重 10-6 预览 / 10-29 开放（Fortune 第三方报道），Mistral Ecosystem Open-Weight License；DSpark 3 层滑窗 MLA drafter 每步接受 ≈2.9 token（c1 2.90 / c32 2.85）、TP8 输出吞吐 ≈2×；NVFP4（专家 NVFP4 / attention+共享层 FP8 / KV FP8 latent）全任务较 FP8 gap ≤2.1 pts、decode 快 1.08–1.19×、KV 省 ≈1.5×；DCP8 KV 容量 2.38M→18.88M token（7.9×，FP8），c1 TTFT 6.89→4.73 s、c64 输出 +47%，但无投机解码时 decode 慢 16–28%（KV 非瓶颈时不值得）；PCP+DCP prefill 注意力 165→38 ms；单卡 M3 Ultra Q2_K GGUF prefill ≈90 tok/s、IQ2_XXS 800K 上下文；8×H200 FP8 131K TTFT ≈0.6 s / 65 tok/s（DSpark 120–138）；全部第一方口径
+- [2026-10-30] 【一方博客】How we detect frontier model misalignment · OpenAI · https://openai.com/index/how-we-detect-frontier-model-misalignment —— 四层：L0 激活探针（随机采样 5%）/ L1 模型评审（同上下文窗口）/ L2 隔离调查 agent（可跑代码）/ L3 自动调查（网络日志 + 遥测 + 案例库）；覆盖 GPT-6 Astra 及以上全部 RL 训练与评估、Codex 全部内部流量；验证 = 记录 + 模拟事故 / 随机审计 / 红队（agent 能否绕过监测）；3 起真实事故（错误消息恢复源码 / 共享仓库当样本间留言板 / GitHub token 泄漏）；帖文自述监测制造隐藏激励、P0 告警只留紧急升级
+- [2026-10-30] 【一方博客】Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials · NVIDIA Developer Blog · https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials —— BF16x9（Blackwell，cuBLAS CUBLAS_EMULATE_SINGLE_PRECISION=1 零代码改动）：17,280 原子 GEMM 2.2–2.5×、192 原子 1.2–1.4×、MD 步 1.7×；TF32x3（A100，CUTLASS 三乘积项）：GEMM 1.7–1.9×、PET-MAD 26M MD 步 1.5×；一阶 TF32 在 NVE 积分中能量漂移、TF32x3 保能量（Cantor 539 原子结构弛豫 218–222 步收敛 vs 一阶 1,000 步未达力容差）；MLIP 力场场景，非 LLM
+- [2026-10-30] 【工业博客】Grace Blackwell needs a new scheduler · SkyPilot 团队 · https://www.skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler —— NVL72 = 原子调度单元（每 GPU 18 条 NVLink 口 ×100GB/s、18 NVSwitch、130TB/s 无阻塞；8 卡服务器 EP64 时 all-to-all 经 IB 最坏 60% 占比）；声称 Slurm fairshare+gang 在 NVL72 不成立、应按 rack slice 放置；GR00T N1.7 512×GB300 预训练，rack-aware slice vs 朴素跨 rack：吞吐 +14.4%、迭代 1.59→1.39 s（NVIDIA GR00T 团队对比、YouTube）；Auto Defrag 只抢占可从 checkpoint 恢复的作业（交互环境豁免）；NVIDIA 侧对照：128 rack 集群 2% 故障率下 16 节点 slice 比 18 节点 slice 多 27% 可用节点；HN 132 分 21 评论；产品发布稿（SkyPilot Platform + Frontier Trainer），数字作方向读
+- [2026-10-30] 【一方博客】【仅摘要】NVIDIA Vera Rubin and Blackwell set a new standard for agentic AI performance per watt · NVIDIA Developer Blog · https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/ —— agentic AI 每瓦性能口径与 Vera Rubin 平台定位。简条目：8-24 原帖在 feed 重现（窗口内重报），未走四项核验，核验点 = 每瓦口径的测试条件与模型组合
+- [2026-10-30] 【一方博客】【仅摘要】IBM Granite Switch 4.1-1B · HF / IBM · https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1 —— 1B 级 Granite Switch 小模型更新，边缘/低延迟定位。简条目：未读原文，核验点 = 基准复现条件与量化配置
+- [2026-10-30] 【一方博客】【仅摘要】AnyDecisionModel · HF · https://huggingface.co/blog/anydecisionmodel —— HF 侧决策模型发布稿。简条目：未读原文，核验点 = 模型定义、训练数据与评估协议
 - [2026-10-29] 【一方博客，详】Cloudflare × SGLang KV cache 跨请求泄漏联合披露（双方陈述互核，本期主线）· https://blog.cloudflare.com/kv-cache-exposure-remediation/ + https://www.lmsys.org/blog/2026-10-26-cf-security/（2026-10-26）—— 8/27 GLM-5.3 Workers AI 隔离问题、9/8 外部研究员报告、9/9 修复、10/26 联合披露；1,048,576 token 上下文 vs 681,280 token prefill 池 + SGLang f8014539 释放时序变更；修复 = deferred release（#35049/#35360）+ admission 队列退役（#38935）+ page tag 原型；v0.4.x–v0.5.2x；2×H100 1P1D 21 臂 ±2%；记入 J26（隔离侧辅助证据）
 - [2026-10-29] 【一方博客，详】PyTorch 2.15 Release Blog · https://pytorch.org/blog/pytorch-2-15-release-blog/（2026-10-28）—— 重写 NCCL 后端成默认（带 flight recorder）+ NIXL 单边传输（可 CUDA graph 捕获）+ FSDP2 流水线细粒度控制 + ROCm 10.0 / CUDA 13.2 默认 wheel
 - [2026-10-29] 【一方博客，详】NVIDIA 3 Ways to Boost MoE Inference on DGX Spark · https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark（2026-10-27）—— Ling-3.0-flash（124B 总参/5.1B 激活，42 层 35KDA+7MLA）batch 1：FlashInfer MXFP4 Humming 27.71→25.35 ms + LM head 在线 FP8 +21.7% + MTP 投机（NEXTN、3.90 接受/轮）+185.1%（合成口径）；GSM8K 全量解码 +42.5%、延迟 −24.5%、精度无可检变化

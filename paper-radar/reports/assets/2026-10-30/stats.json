@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-30",
+  "mode": "每日推送",
+  "window": "10-29 → 10-30",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {"full": 0, "abstract": 1},
+    "模型": {"full": 2, "abstract": 1},
+    "软件系统": {"full": 1, "abstract": 2},
+    "工程方法": {"full": 0, "abstract": 1}
+  },
+  "practice_full": 4,
+  "practice_abstract": 3,
+  "news": 3,
+  "flash": 0,
+  "pool": 5,
+  "commentary": 0,
+  "judgments": 28,
+  "judgments_updated": 6,
+  "graph": {
+    "sources": [
+      {"id": "RLVR", "label": "RLVR 无免费午餐\n2610.39295", "type": "论文"},
+      {"id": "PDS", "label": "PDScope 相位感知调度\n2610.39216", "type": "论文"},
+      {"id": "ML4", "label": "Mistral Large 4\nNVFP4+DSpark+DCP", "type": "一方博客"}
+    ],
+    "judgments": [
+      {"id": "J1", "label": "并发分布决定\n收益可见性"},
+      {"id": "J4", "label": "NVFP4 attention\n稳定占优"},
+      {"id": "J12", "label": "互联带宽\n反向约束架构"},
+      {"id": "J13", "label": "差分指标配\n冻结对照臂"},
+      {"id": "J21", "label": "数字必须\n带条件集读"},
+      {"id": "J28", "label": "pass@1 收益\n带 pass@k 代价"}
+    ],
+    "edges": [
+      {"from": "RLVR", "to": "J13", "kind": "印证"},
+      {"from": "RLVR", "to": "J21", "kind": "印证"},
+      {"from": "RLVR", "to": "J28", "kind": "新增"},
+      {"from": "PDS", "to": "J1", "kind": "印证"},
+      {"from": "PDS", "to": "J12", "kind": "印证"},
+      {"from": "ML4", "to": "J4", "kind": "辅助"}
+    ]
+  }
+}

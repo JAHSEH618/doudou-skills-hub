@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-30",
+  "mode": "每日推送",
+  "window": [
+    "2026-10-29",
+    "2026-10-30"
+  ],
+  "searches": [
+    {
+      "id": "scan-aihot",
+      "source": "AIHot",
+      "query": "fetch_sources.py scan --since 2026-10-29",
+      "status": "ok",
+      "note": "136 条 + 热点 10 条"
+    },
+    {
+      "id": "scan-hn",
+      "source": "Hacker News",
+      "query": "fetch_sources.py scan（Algolia since 2026-10-29, score>=30）",
+      "status": "ok",
+      "note": "1 条高分帖：SkyPilot Grace Blackwell 调度（进工程实践详条目）"
+    },
+    {
+      "id": "scan-x",
+      "source": "X 固定账号",
+      "query": "fetch_sources.py scan（x-accounts.txt，21 账号）",
+      "status": "ok",
+      "note": "窗口内全部 0 帖，报告不设 X 讨论节"
+    },
+    {
+      "id": "scan-blogs",
+      "source": "一方工程博客 feed",
+      "query": "fetch_sources.py scan（13 源）",
+      "status": "partial",
+      "note": "窗口内 10 条：vLLM 1 / HF 4 / OpenAI 3 / NVIDIA Dev 2；claude.dev、DeepMind、PyTorch 与被动组 5 源均 0；anthropic-engineering 页解析失败（0 篇，连续第二期）"
+    },
+    {
+      "id": "exa-h1",
+      "source": "Exa",
+      "query": "硬件线 1（GPU 微架构/精度）",
+      "status": "failed",
+      "line": "hardware",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "exa-h2",
+      "source": "Exa",
+      "query": "硬件线 2（互联/CXL/集群）",
+      "status": "failed",
+      "line": "hardware",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "exa-m1",
+      "source": "Exa",
+      "query": "模型线 1（架构/注意力）",
+      "status": "failed",
+      "line": "model",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "exa-m2",
+      "source": "Exa",
+      "query": "模型线 2（量化压缩）",
+      "status": "failed",
+      "line": "model",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "exa-m3",
+      "source": "Exa",
+      "query": "模型线 3（微调/RL 配方）",
+      "status": "failed",
+      "line": "model",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "exa-s1",
+      "source": "Exa",
+      "query": "软件系统线 1（推理服务/KV cache）",
+      "status": "failed",
+      "line": "system",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "exa-s2",
+      "source": "Exa",
+      "query": "软件系统线 2（Agent/RAG/检索）",
+      "status": "failed",
+      "line": "system",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "exa-e1",
+      "source": "Exa",
+      "query": "工程方法线 1（评估/实证）",
+      "status": "failed",
+      "line": "method",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "exa-e2",
+      "source": "Exa",
+      "query": "工程方法线 2（benchmark 批判/负面结果）",
+      "status": "failed",
+      "line": "method",
+      "note": "exceeded your credits limit"
+    },
+    {
+      "id": "arxiv-h1",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "硬件线 1 关键词",
+      "status": "ok",
+      "line": "hardware",
+      "note": "6 条"
+    },
+    {
+      "id": "arxiv-h2",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "硬件线 2 关键词",
+      "status": "ok",
+      "line": "hardware",
+      "note": "3 条"
+    },
+    {
+      "id": "arxiv-m1",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "模型线 1 关键词",
+      "status": "ok",
+      "line": "model",
+      "note": "2 条"
+    },
+    {
+      "id": "arxiv-m2",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "模型线 2 关键词",
+      "status": "ok",
+      "line": "model",
+      "note": "2 条"
+    },
+    {
+      "id": "arxiv-m3",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "模型线 3 关键词",
+      "status": "ok",
+      "line": "model",
+      "note": "12 条"
+    },
+    {
+      "id": "arxiv-s1",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "软件系统线 1 关键词",
+      "status": "ok",
+      "line": "system",
+      "note": "2 条"
+    },
+    {
+      "id": "arxiv-s2",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "软件系统线 2 关键词",
+      "status": "ok",
+      "line": "system",
+      "note": "26 条"
+    },
+    {
+      "id": "arxiv-e1",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "工程方法线 1 关键词",
+      "status": "ok",
+      "line": "method",
+      "note": "60 条（多为四线外，筛选后入候选池）"
+    },
+    {
+      "id": "arxiv-e2",
+      "source": "arXiv API（exa 降级后备）",
+      "query": "工程方法线 2 关键词",
+      "status": "ok",
+      "line": "method",
+      "note": "9 条"
+    },
+    {
+      "id": "arxiv-dedupe",
+      "source": "arXiv API 汇总去重",
+      "query": "9 条查询合并 + 账本查重",
+      "status": "ok",
+      "note": "原始 122 条 → 窗口内独特新文 85 篇 → 入选 8 篇（全文 3 + 摘要 5）+ 落选池 5"
+    },
+    {
+      "id": "lookup-1",
+      "source": "fetch_sources.py lookup（硬规则 16）",
+      "query": "SkyPilot Grace Blackwell 调度",
+      "status": "ok",
+      "note": "HN 132 分 21 评论，进正文"
+    },
+    {
+      "id": "lookup-2",
+      "source": "fetch_sources.py lookup（硬规则 16）",
+      "query": "OpenAI How we detect frontier model misalignment",
+      "status": "ok",
+      "note": "HN 讨论 + Latent Space（细薄）"
+    },
+    {
+      "id": "lookup-3",
+      "source": "fetch_sources.py lookup（硬规则 16）",
+      "query": "There Is No Free Lunch in RLVR",
+      "status": "ok",
+      "note": "无现成第三方解说"
+    },
+    {
+      "id": "lookup-4",
+      "source": "fetch_sources.py lookup（硬规则 16）",
+      "query": "PDScope",
+      "status": "ok",
+      "note": "无现成第三方解说"
+    },
+    {
+      "id": "lookup-5",
+      "source": "fetch_sources.py lookup（硬规则 16）",
+      "query": "LinQuant",
+      "status": "ok",
+      "note": "无现成第三方解说"
+    },
+    {
+      "id": "lookup-6",
+      "source": "fetch_sources.py lookup（硬规则 16）",
+      "query": "vLLM Day 0 support for Mistral Large 4",
+      "status": "ok",
+      "note": "无合格解说"
+    },
+    {
+      "id": "lookup-7",
+      "source": "fetch_sources.py lookup（硬规则 16）",
+      "query": "NVIDIA Unlocking Tensor Core Performance for MLIP",
+      "status": "ok",
+      "note": "无合格解说"
+    },
+    {
+      "id": "websearch-fallback-1",
+      "source": "内置 web_search（exa 解说槽降级）",
+      "query": "RLVR pass@1 pass@k 同族工作",
+      "status": "ok",
+      "note": "识别同族前作 3 篇：2511.16231 / 2607.20543 / 2609.22547"
+    },
+    {
+      "id": "websearch-fallback-2",
+      "source": "内置 web_search（exa 解说槽降级）",
+      "query": "Mistral Large 4 开放权重发布",
+      "status": "ok",
+      "note": "10-06 预览 + 10-29 开放权重确认"
+    },
+    {
+      "id": "websearch-news-1",
+      "source": "内置 web_search（资讯第一方链接定稿）",
+      "query": "Anthropic S-1 SEC",
+      "status": "ok",
+      "note": "anthropic.com/news/s1-sec"
+    },
+    {
+      "id": "websearch-news-2",
+      "source": "内置 web_search（资讯第一方链接定稿）",
+      "query": "OpenAI Pro usage limits doubled",
+      "status": "ok",
+      "note": "help.openai.com release note（403，标访问受限）"
+    }
+  ]
+}

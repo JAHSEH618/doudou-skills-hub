@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-29T14:46:49.323735+00:00",
+  "checked_at": "2026-10-30T06:19:36.603040+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -40,6 +40,38 @@
       "title": "[2610.36767] Can LLMs Reliably Grade Olympiad Proofs? A Study of Mathematical Verification with LLMs",
       "sources": [
         "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.16231",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2511.16231",
+      "title": "[2511.16231] Pass@k Metric for RLVR: A Diagnostic Tool of Exploration, But Not an Objective",
+      "sources": [
+        "reports/2026-10-30.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.07685",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2603.07685",
+      "title": "[2603.07685] Scalable Training of Mixture-of-Experts Models with Megatron Core",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.20543",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2607.20543",
+      "title": "[2607.20543] When RLVR Shrinks the Reasoning Boundary: Diagnosing Pass@k Inversion",
+      "sources": [
+        "reports/2026-10-30.md",
+        "state/judgments.md"
       ]
     },
     {
@@ -538,6 +570,16 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2609.22547",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2609.22547",
+      "title": "[2609.22547] RLVR is a Kernel, Not a Function: Statistical Inference for pass@$k$ Crossovers",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
       "url": "https://arxiv.org/abs/2609.22978",
       "status": "reachable",
       "http": 200,
@@ -714,10 +756,10 @@
     },
     {
       "url": "https://arxiv.org/abs/2610.26131",
-      "status": "reachable",
-      "http": 200,
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://arxiv.org/abs/2610.26131",
-      "title": "[2610.26131] A Hybrid GPU and Processing-Near-Memory Architecture with Shared DRAM for Efficient Prefill-Decode Disaggregation",
+      "title": "",
       "sources": [
         "reports/2026-10-22.md"
       ]
@@ -904,11 +946,93 @@
       ]
     },
     {
-      "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+      "url": "https://arxiv.org/abs/2610.39216",
       "status": "reachable",
       "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39216",
+      "title": "[2610.39216] PDScope: Breaking the Prefill-Decode Seesaw for Memory-Bound MoE Inference",
+      "sources": [
+        "reports/2026-10-30.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39276",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39276",
+      "title": "[2610.39276] MemSteer: Turning User Histories into Supervision for Agent Memory Optimization",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39282",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39282",
+      "title": "[2610.39282] What Does \"Now\" Mean to Your Computer-Use Agent? Stale Screenshots, Page Loads, and Which Check to Run Before a Click",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39295",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39295",
+      "title": "[2610.39295] There Is No Free Lunch in RLVR: Every pass@1 Gain Has a pass@k Price",
+      "sources": [
+        "reports/2026-10-30.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39412",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39412",
+      "title": "[2610.39412] Dobb: Shard-Local Preconditioning in Block-Diagonal Eigenbases",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39417",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39417",
+      "title": "[2610.39417] Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39418",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39418",
+      "title": "[2610.39418] LinQuant: Functional Invariances for Low-Precision Linear Recurrences",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39442",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39442",
+      "title": "[2610.39442] Softmax Routing Dynamics in Mixture-of-Experts Models: Collapse and Recovery",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
-      "title": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM | Artificial Intelligence\n                      x\n                     \n                      facebook\n                     \n                      linkedin\n                     \n                      instagram\n                     \n                      twitch\n                     \n                      youtube\n                     \n                      podcasts\n                     \n                      email\n                     \n                      California Consumer Privacy Act (CCPA) Opt-Out Icon",
+      "title": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM | Artificial Intelligence",
       "sources": [
         "reports/2026-10-20.md",
         "state/judgments.md"
@@ -1029,7 +1153,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://cohere.com/blog/megakernels",
-      "title": "Cohere's North Mini Code Megakernel Serving Engine | Cohere",
+      "title": "Cohere's North Mini Code Megakernel Serving Engine | CohereCohere's North Mini Code Megakernel Serving Engine | Cohere",
       "sources": [
         "reports/2026-09-10-weekly.md"
       ]
@@ -1066,18 +1190,18 @@
     },
     {
       "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "status": "reachable",
+      "status": "unverified",
       "http": 200,
       "final_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "title": "Genie 4: A new generation of world simulation — Google DeepMind",
+      "title": "",
       "sources": [
         "reports/2026-10-29.md"
       ]
     },
     {
       "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-      "status": "reachable",
-      "http": 200,
+      "status": "unverified",
+      "http": 302,
       "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "title": "Gemini 4 Argon is now available for everyone",
       "sources": [
@@ -1099,7 +1223,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark",
-      "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark | NVIDIA Technical Blog",
+      "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark | NVIDIA Technical Blog3 Ways to Boost MoE Inference on NVIDIA DGX Spark | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-29.md"
       ]
@@ -1109,7 +1233,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
-      "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile | NVIDIA Technical Blog",
+      "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile | NVIDIA Technical BlogAccelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-20.md"
       ]
@@ -1139,7 +1263,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
-      "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield | NVIDIA Technical Blog",
+      "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield | NVIDIA Technical BlogHow NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-27.md"
       ]
@@ -1189,7 +1313,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning | NVIDIA Technical Blog",
+      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning | NVIDIA Technical BlogNVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-18.md"
       ]
@@ -1202,6 +1326,16 @@
       "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/",
+      "title": "NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-30.md"
       ]
     },
     {
@@ -1232,6 +1366,16 @@
       "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2 | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
+      "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-10-30.md"
       ]
     },
     {
@@ -1289,7 +1433,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://github.com/Kesav2k04/ugaa-research",
-      "title": "GitHub - Kesav2k04/ugaa-research: Companion code and data for: Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation (VLM4RWD @ NeurIPS 2026, arXiv:2610.25964) · GitHub",
+      "title": "GitHub - Kesav2k04/ugaa-research: Companion code and data for: Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation (VLM4RWD @ NeurIPS 2026, arXiv:2610.25964) · GitHubGitHub - Kesav2k04/ugaa-research: Companion code and data for: Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation (VLM4RWD @ NeurIPS 2026, arXiv:2610.25964) · GitHub",
       "sources": [
         "reports/2026-10-22.md"
       ]
@@ -1319,7 +1463,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://github.com/OpenBMB/Meshy",
-      "title": "GitHub - OpenBMB/Meshy · GitHub",
+      "title": "GitHub - OpenBMB/Meshy · GitHubGitHub - OpenBMB/Meshy · GitHub",
       "sources": [
         "reports/2026-09-10-weekly.md"
       ]
@@ -1349,7 +1493,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://github.com/awslabs/keys_values",
-      "title": "GitHub - awslabs/keys_values · GitHub",
+      "title": "GitHub - awslabs/keys_values · GitHubGitHub - awslabs/keys_values · GitHub",
       "sources": [
         "reports/2026-08-23.md"
       ]
@@ -1426,9 +1570,19 @@
       ]
     },
     {
-      "url": "https://github.com/openai/codex/commit/8444cf63b50a8a88521e0d2970d49f659b48eac7",
+      "url": "https://github.com/nezha-Anonymous/PDScope",
       "status": "reachable",
       "http": 200,
+      "final_url": "https://github.com/nezha-Anonymous/PDScope",
+      "title": "GitHub - nezha-Anonymous/PDScope: (PPoPP '27) PDScope: Breaking the Prefill-Decode Seesaw for Memory-Bound MoE Inference · GitHub",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://github.com/openai/codex/commit/8444cf63b50a8a88521e0d2970d49f659b48eac7",
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://github.com/openai/codex/commit/8444cf63b50a8a88521e0d2970d49f659b48eac7",
       "title": "Derive sandbox contexts from turn environments (#40551) · openai/codex@8444cf6 · GitHub",
       "sources": [
@@ -1467,12 +1621,32 @@
     },
     {
       "url": "https://github.com/vllm-project/vllm/commit/82a85dc1",
-      "status": "reachable",
-      "http": 200,
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://github.com/vllm-project/vllm/commit/82a85dc1",
       "title": "[Attention] Add Triton/FlashInfer composite for multimodal prefix att… · vllm-project/vllm@82a85dc · GitHub",
       "sources": [
         "reports/2026-09-28.md"
+      ]
+    },
+    {
+      "url": "https://github.com/yliusci/no-free-lunch-rlvr",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/yliusci/no-free-lunch-rlvr",
+      "title": "GitHub - yliusci/no-free-lunch-rlvr: There Is No Free Lunch in RLVR: the pass@k price of reinforcement. A solvable theory (no free lunch, the crossing bound, the price frontier) with a verification package (34/34) and a diagnostic you run on any eval log. · GitHub",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+      "title": "",
+      "sources": [
+        "reports/2026-10-30.md"
       ]
     },
     {
@@ -1487,8 +1661,8 @@
     },
     {
       "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "status": "reachable",
-      "http": 200,
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://huggingface.co/blog/LiquidAI/lfm3",
       "title": "Build specialized multimodal models with LFM3",
       "sources": [
@@ -1516,6 +1690,16 @@
       ]
     },
     {
+      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/anydecisionmodel",
+      "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
       "url": "https://huggingface.co/blog/funes",
       "status": "reachable",
       "http": 200,
@@ -1537,12 +1721,22 @@
     },
     {
       "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-      "status": "reachable",
-      "http": 200,
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-      "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "title": "",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "title": "Granite Switch 4.1.1 — Update models like you update software",
+      "sources": [
+        "reports/2026-10-30.md"
       ]
     },
     {
@@ -1563,6 +1757,16 @@
       "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
       "sources": [
         "reports/2026-10-18.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/mistral-large4",
+      "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+      "sources": [
+        "reports/2026-10-30.md"
       ]
     },
     {
@@ -1846,6 +2050,16 @@
       ]
     },
     {
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "title": "",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
       "url": "https://openai.com/index/introducing-gpt-6-1-terra",
       "status": "restricted",
       "http": 403,
@@ -1903,6 +2117,16 @@
       "title": "",
       "sources": [
         "reports/2026-09-10-weekly.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "title": "",
+      "sources": [
+        "reports/2026-10-30.md"
       ]
     },
     {
@@ -1997,10 +2221,10 @@
     },
     {
       "url": "https://pytorch.org/blog/introducing-torchtpu/",
-      "status": "reachable",
-      "http": 200,
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://pytorch.org/blog/introducing-torchtpu/",
-      "title": "Introducing TorchTPU - PyTorch",
+      "title": "",
       "sources": [
         "reports/2026-10-22.md"
       ]
@@ -2128,10 +2352,10 @@
     },
     {
       "url": "https://thenewstack.io/anthropic-scion-git-replacement/",
-      "status": "reachable",
-      "http": 200,
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://thenewstack.io/anthropic-scion-git-replacement/",
-      "title": "Anthropic built its own git replacement for AI-scale coding. But you can’t have it. - The New StackGroup",
+      "title": "",
       "sources": [
         "reports/2026-10-19.md"
       ]
@@ -2170,8 +2394,8 @@
     },
     {
       "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
-      "status": "reachable",
-      "http": 200,
+      "status": "unverified",
+      "http": 0,
       "final_url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
       "title": "Exploring Speculative Decoding in vLLM on AMD GPUs | vLLM Blog",
       "sources": [
@@ -2354,6 +2578,17 @@
       ]
     },
     {
+      "url": "https://vllm.ai/blog/2026-10-29-mistral-large-4",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-10-29-mistral-large-4",
+      "title": "Day 0 support for Mistral Large 4 on vLLM | vLLM Blog",
+      "sources": [
+        "reports/2026-10-30.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://www.aiincontext.com/articles/google-open-sources-harness2-framework-that-improves-agents-without-touching-mod-26bc8a57",
       "status": "reachable",
       "http": 200,
@@ -2401,7 +2636,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.anthropic.com/research/contextual-retrieval",
-      "title": "Contextual retrieval in AI systems \\ Anthropic",
+      "title": "Contextual retrieval in AI systems \\ AnthropicContextual retrieval in AI systems \\ Anthropic",
       "sources": [
         "reports/2026-08-24.md"
       ]
@@ -2414,6 +2649,16 @@
       "title": "Investing in the public benefit \\ Anthropic",
       "sources": [
         "reports/2026-10-19.md"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/news/s1-sec",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering \\ Anthropic",
+      "sources": [
+        "reports/2026-10-30.md"
       ]
     },
     {
@@ -2478,10 +2723,10 @@
     },
     {
       "url": "https://www.federalregister.gov/public-inspection/2026-21447",
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://unblock.federalregister.gov/",
-      "title": "Federal Register :: Request Access",
+      "status": "unverified",
+      "http": 0,
+      "final_url": "https://www.federalregister.gov/public-inspection/2026-21447",
+      "title": "",
       "sources": [
         "reports/2026-10-20.md"
       ]
@@ -2571,7 +2816,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.lmsys.org/blog/2026-10-26-cf-security/",
-      "title": "SGLang security update: improving request isolation - LMSYS Org",
+      "title": "SGLang security update: improving request isolation - LMSYS OrgSGLang security update: improving request isolation - LMSYS Org",
       "sources": [
         "reports/2026-10-29.md"
       ]
@@ -2617,11 +2862,21 @@
       ]
     },
     {
+      "url": "https://www.skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+      "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks | SkyPilot",
+      "sources": [
+        "reports/2026-10-30.md"
+      ]
+    },
+    {
       "url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
-      "title": "Auto repair for Together GPU Clusters: from GPU fault to healthy node",
+      "title": "Auto repair for Together GPU Clusters: from GPU fault to healthy nodeAuto repair for Together GPU Clusters: from GPU fault to healthy node",
       "sources": [
         "reports/2026-10-29.md"
       ]
@@ -2674,7 +2929,7 @@
       "status": "x-original",
       "http": 200,
       "final_url": "https://x.com/BSPK_/status/2096582455860015508",
-      "title": "BSPK on X: \"The Next AI Race Is About Inference Efficiency: Two Ways to Break the Memory Bottleneck\" / X",
+      "title": "BSPK on X: \"The Next AI Race Is About Inference Efficiency: Two Ways to Break the Memory Bottleneck\" / XBSPK on X: \"The Next AI Race Is About Inference Efficiency: Two Ways to Break the Memory Bottleneck\" / X",
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-08.md"

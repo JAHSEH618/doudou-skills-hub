@@ -18,7 +18,9 @@
 - **支撑追加（2026-09-28）**：[AgentKV](https://arxiv.org/abs/2609.14872) 的最高 1.80× 绑定 H100 NVL、Qwen3-32B、32K 输入/1K 输出及固定显存预算；紧 KV 预算仍损失任务分数。[vLLM Kimi K3](https://vllm.ai/blog/2026-09-13-kimi-k3-performance-optimization)（一方博客，辅助证据）固定 B300、TP8、CUDA 13.3 与提交 82a85dc1，相对 v0.27.1 在并发 1/4/16 吞吐 2.2/2.5/2.8×；两端关闭 prefix caching。报告倍率需保留版本、负载与缓存条件。
 - **支撑追加（2026-10-18）**：[VenusRL](https://arxiv.org/abs/2610.03286) 的 4.24× 是 agentic RL 负载上的 up to 值，区间下界 1.06×——调度收益强依赖负载形状；其生产剖析（沙箱内存平均利用 8%、环境沙箱占非 GPU 成本 >60%）为作者自报（Infrawaves 即系统运行方），按方向性证据读。[vLLM K3 megakernel](https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel)（一方博客，辅助证据）842+ tok/s 绑定 16×GB300、batch 1、合成验收长度；AgentX 1.8× 的比较基线是 8 卡旧结果而非同卡对照。[MI355X 报告](https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x)（一方博客，辅助证据）的 24.4% 只在 50 tok/s/user P90 交互性点成立，且随并发放大（c70 28.9%）——负载点是必带限定。
 - **支撑追加（2026-10-20）**：[Acceptance Is Not Speed](https://arxiv.org/abs/2610.23818)（全文，J25 主证据）360 配置全部带 target/drafter/规则/硬件/seed 条件，跨服务器可复现性明写「round 比可复现、time 比不可，原因逐条列出」；[Helion × CompileIQ](https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/)（一方博客，辅助证据）4.7% 带 p 值与两次独立运行；[BaGuaLu-2](https://arxiv.org/abs/2610.23064)（仅摘要）1.14×/1.13× 绑定 12,288 卡 / 35% MFU 持续值
-- **更新**：2026-10-20
+- **支撑追加（2026-10-30）**：[PDScope](https://arxiv.org/abs/2610.39216)（全文）prefill 10.3× / decode 6.1× 全部绑定 PCIe 4.0×16 + 24GB 上限 + batch 分布；负面观察：batch 16→32 时 prefill 增益仅 5.2%（2048）/ 0.7%（4096）——论文自己的 batch 分布下调度收益的边际可见度已经很低，只看标题数字会高估改进空间
+
+- **更新**：2026-10-30
 
 ### J2 · 约束和数据不要写在 tool/skill description 里——那个位置生效权重垫底，工具的「存在」本身就是压过指令的强信号
 
@@ -40,7 +42,9 @@
 - **支撑**：Attn-QAT、Search Your Block Floating Point Scales、Diagnosing FP4 Inference 多篇一致；机制上 NVFP4 的 E4M3 scale（16 值组）比 MXFP4 的 E8M0（32 值组）表达力强
 - **支撑追加（2026-09-08）**：Hardware-Aware FP4 FlashAttention-4（arXiv 2609.04105，Graphcore Research）给出**训练侧**证据——匹配的分布式训练必须保留 FP8 的 probability 与 value，因为**每一条测过的 MXFP4 P/V 训练轨迹都发散**；OCGQuant（arXiv 2609.00066，EMNLP 2026）从机制侧印证 NVFP4 的 block scale 被离群值主导确实是真实误差来源（定义为 Collateral Quantization Error），并给出不牺牲 prefill 速度与峰值解码显存的修法
 - **边界**：结论限 attention 量化；权重 PTQ 另议。**训练侧比推理侧更严**：推理上 MXFP4 是「更差」，训练上 MXFP4 的 P/V 是「直接发散」——两者不是同一档风险。**边界追加（2026-10-27）**："Training an MoE LLM in MXFP4" 2610.32229（仅摘要）—— GPT-OSS-20B 上 MXFP4 开放训练配方（混合 1D/2D block 量化 + RHT + SR + 简化 weight de-oscillation）把与 BF16 的差距收到 0.007、收敛开销 +20.0% → +5.0%：训练权重/激活层面 MXFP4 付配方成本后能收敛，对象不同于本条的 attention 量化，不构成反驳，但「MXFP4 更差」不能照搬到训练权重侧。
-- **更新**：2026-10-27
+- **支撑追加（2026-10-30）**：[Mistral Large 4 完整 serving 套件](https://vllm.ai/blog/2026-10-29-mistral-large-4)（一方博客，辅助证据）给出 NVFP4 的大规模部署样本：专家 NVFP4 + attention/共享层 FP8，全任务较 FP8 基线 gap ≤2.1 pts、decode 快 1.08–1.19×、KV 省 ≈1.5×——对象是 MoE 专家而非 attention（attention 仍走 FP8 路径），落在本条边界内；大规模可部署性与本条方向一致
+
+- **更新**：2026-10-30
 
 ### J5 · 单 agent 起步，多 agent 当作需要实证证明的优化假设；工作状态装得下一个 context window 时，协调是纯开销
 
@@ -105,7 +109,9 @@
 - **边界**：读任何服务架构论文先查它假设的互联；你租到的实例网络决定架构能不能抄。追加一条操作项：**「配了 NVLink」不等于「走了 NVLink」——要在启动路径上断言，而不是靠配置文件相信**
 - **支撑追加（2026-09-10）**：vLLM x AgentX（一方博客，辅助证据）两条生产侧样本。① 并行策略随 scale-up 域翻转：Kimi K3 在单机上 DCP8 赢 TP8，到 NVL72 级系统上每 rank batch >3 后 DEP16 反超，多节点 DCP 的 attention 集合通信开销盖过它省下的算力；DeepSeek V4 上 DCP 投入大量优化后也只打平 DEP。② 按队列深度 / KV 占用做负载均衡的路由全部输给 session 粘性路由，因为 agent 会话轮间间隔短、前缀还在原 GPU 上，迁移 KV 虽异步但占目标 rank 的 KV 容量，「队列更均衡但并发更少」。操作项：路由决策要看 worker 上已驻留的状态，不只看排队量
 - **边界印证（2026-09-28）**：[mKernel](https://arxiv.org/abs/2609.13585) 在两套 2×8 H200 测试床比较 IB 与 AWS EFA，均约 400Gbps/GPU；说明“同一融合思路在两种高速网络可行”，没有覆盖低带宽以太网。IBGDA 相比 host-assisted GPU-initiated 路径无一致优势；不能仅凭控制面含 CPU 判定慢，也不能把单机 8 H100 自适应 SM 结果当多节点结论。
-- **更新**：2026-09-28
+- **支撑追加（2026-10-30）**：[PDScope](https://arxiv.org/abs/2610.39216)（全文）是本条在「CPU-GPU」形态的极端样本——专家放置与预取深度全部由 PCIe 4.0×16 约束（I/O 利用率 66–80% 是上限），整套系统设计（每相位 rank 预测 + 按置信度调预取深度 + 零拷贝异步 I/O）围绕这一约束展开；论文明写无 NVLink/CXL 对比、不支持 overlap（显存带宽争用）——更强互联下该设计空间的收益未验证
+
+- **更新**：2026-10-30
 
 ### J13 · 逐题/逐项的差分类指标（transition、expansion、pass@k）必须配单独测量的 null 或冻结对照臂——否则冻结模型自己就能刷出「能力变化」
 
@@ -115,7 +121,9 @@
 - **支撑追加（2026-09-08）**：Clean Engineering, Unstable Measurement · arXiv 2609.04198（把问题推到上游一层——见新增的 J15）；Judging LLM-as-a-Judge: Rubric Artifacts · arXiv 2609.02942（EMNLP 2026：**只用 rubric 文本训练、完全看不到被评回答的分类器就能非平凡地预测 judge 输出**——rubric 措辞本身编码了可回收的评价信号；且反事实扰动下把候选回答或 rubric 判据反转，judge 常不更新决定。这是「保义扰动是低成本高区分度探针」那条实操的又一个变体：先跑「只喂 rubric 不喂回答」）；**同族污染新样本**：Post-Training Science for SFT · arXiv 2609.01244 的训练数据由迭代 SFT「改到通过评测为止」生成，而下游打分用的就是同一个判据——生成器与评判器同源，作者把它当优点写（监督目标内部一致），但「判定质量不随 epoch 提升」这类结论在该设置下天然偏保守
 - **支撑追加（2026-09-10）**：Benchmark Scores Are Pipeline-Dependent（arXiv 2609.08765，仅摘要）把「仪器」从模型判断扩到整条评测流水线：8 个网络安全基准 × 10 模型，15 种系统性失败模式，单个流水线选项能让一个模型动 >80 个百分点，两对语义相近任务因评测约定不兼容给出不同排名；在保留任务语义、统一流水线选项的 harness 下 10 个模型里 9 个至少一处移 ≥3 名。可操作：报告分数时把流水线选项当元数据写出来，跨基准比较前先核约定是否兼容
 - **支撑追加（2026-10-22）**：[Token-Set Choice Confounds POPE](https://arxiv.org/abs/2610.25964)（全文）是「分数由管线参数决定而非模型」的新样本：POPE 系 VLM 幻觉抽取环节的词元集合与模型真实输出可能不匹配（LLaVA-1.5-7B NF4、9k 题、9 种推理时修正全部失败）；读幻觉率先核抽取代码的词元集合——这是管线参数，不是模型属性
-- **更新**：2026-10-22
+- **支撑追加（2026-10-30）**：[There Is No Free Lunch in RLVR](https://arxiv.org/abs/2610.39295)（全文）从机制侧印证：pass@k 是同一策略分布上的逐 k 差分读数（群体极限 w ∝ w₀·exp(τf) 只有一个自由参数）；k=128→256 单次交叉、优势 +0.149→−0.008 展示差分指标符号随读数点移动——pass@k 下跌是结构性重加权而非测量伪影，冻结的基座模型曲线正是对照物。实操①（每个 k 独立读数、冻结臂 = 基座）获得机制解释，成为正面范例
+
+- **更新**：2026-10-30
 
 ### J14 · 读任何 kernel/量化加速比，先查它测的是哪张卡的算力-带宽配比；中国特供 SKU（H20/L20）算力被砍而带宽基本保留，会系统性放大「省算力」类优化的收益
 
@@ -175,7 +183,9 @@
 - **可操作**：① 引用加速数字时列全五要素：对比基线、负载、并发点、卡数、是否 up to；② 标题级"N×"先找区间下界或最小配置条件；③ 采购 / SLO 决策前在自己的负载上复测
 - **支撑追加（2026-10-20）**：本期一方三件套条件集都写在文内：[Helion × CompileIQ](https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/)（一方博客，辅助证据）1.047× 绑定 GB200/B200 + CUDA 13.3 ptxas 控制面；[vLLM Elastic EP](https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime)（一方博客，辅助证据）0.82s 停机绑定 16↔20 GPU DEP 拓扑；[AWS 双向 KV](https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/)（一方博客，辅助证据）TTFT 1.6×/3.3× 绑定 1P1D P5en+EFA + 两模型
 - **支撑追加（2026-10-22）**：DeepSeek 开源 [DeepInfer](https://github.com/deepseek-ai/DeepInfer)（官方发布 + 官方 Q&A，非论文）：单集群 155T tokens/天 与 $38/GPU·小时（off-peak 计价口径）未绑定 GPU 型号（生产 GPU 型号未披露）、未绑定负载形状、未绑定并发点；第三方 ~82% 毛利估算（Databricks 员工帖，按 B300 租金 $7/GPU·小时）是单点测算。条件集不完整样本——采购/SLO 前按本条 ① 先问 GPU 型号、负载与并发点
-- **更新**：2026-10-22
+- **支撑追加（2026-10-30）**：[There Is No Free Lunch in RLVR](https://arxiv.org/abs/2610.39295)（全文）——pass@1 优势 +0.149 与 pass@256 优势 −0.008 是同一模型（Qwen2.5-7B）、同一训练、只换 k 读数点；读数点换一次符号翻转，是「数字必须带条件集读」的最强形态。本条五要素在此的实例 = 模型 + 数据集（Omni-MATH）+ 训练配置（GRPO）+ k 读数点 + 曲线来源（已发表曲线转录、未重训）
+
+- **更新**：2026-10-30
 
 ### J22 · posttraining 数据管线（采样 / 改写 / 混合比例）与参考模型强耦合；换参考模型后跨模型复用数据或 checkpoint 必须先验证 vanilla 基线是否被反超
 
@@ -220,3 +230,10 @@
 - **支撑**："Tool-Calling LLM Agents Under Realistic MCP Faults" 2610.32555（论文，主证据）—— MCP-Injector 协议感知故障注入（持久/瞬时/间歇，种子可复现）；故障分布校准自 1,774 个开源 MCP 仓库 57,240 条 issue/PR；1,350 格（gpt-oss 20B/120B × 3 栈 × 3 故障条件）：持久重故障 profile 下完成分 8.08 → 3.23，120B 在故障条件下的完成率反而略低于 20B（91.1% vs 95.6%，CI [−0.2, 9.3]），resilience ratio p=0.96。
 - **边界**：骨干限 gpt-oss 两个尺寸、故障分布来自 issue 挖掘而非生产监控、3 个栈；「不由规模决定」不等价「没有提升空间」——论文暗示投入应指向框架的故障处理路径（重试/降级/错误呈现），不是换更大模型。
 - **更新**：2026-10-27
+
+### J28 · pass@1 收益带 pass@k 代价：RLVR 类方法对策略分布重加权，收益与代价是同一机制的两面
+
+- **支撑**：[There Is No Free Lunch in RLVR](https://arxiv.org/abs/2610.39295)（全文，主证据）——群体极限 w ∝ w₀·exp(τf) 即对策略分布的重要性重加权；exclusive specialization 下「pass@1 严格改善且 pass@k 不降」不可能（Stiemke 替代定理：必要条件是存在使所有策略加权收益相等的严格正 prompt 价格，证其不存在）；pass@k 交叉数上界 = CDF 位移变号数且界紧（任意 m 可构造）；实证：Qwen2.5-7B Omni-MATH k=128→256 单次交叉、优势 +0.149→−0.008（转录已发表曲线、未重训）；Pareto 前沿 γ 控掉价幅度。同族前作：[2511.16231](https://arxiv.org/abs/2511.16231)（摘要级）最早观察到反转并解释为分布重加权；[2607.20543](https://arxiv.org/abs/2607.20543)（摘要级）诊断反转并提出 PBA——与主证据跨来源收敛（三篇论文，两篇前作摘要级）
+- **边界**：定理前提是 exclusive specialization（策略正确集互斥）；实证单模型（Qwen2.5-7B）× 单数据集（Omni-MATH），「单次交叉」是界下的观测而非普适交叉数；同期手稿 2609.22547 被其作者显式划界，不作支撑。本条不是「RLVR 不值得做」，是 k 读数点成为设计决策——需要 pass@k 的场景要显式报 γ 与 k 区间
+- **可操作**：① 读 RLVR 类论文先问 pass@k 轴发生了什么；② 标题只报 pass@1 提升的，检查是否给出 pass@k 读数点与 k 范围；③ 选型时区分下游是单答（k=1）还是多样本投票，后者读 Pareto 前沿
+- **更新**：2026-10-30
