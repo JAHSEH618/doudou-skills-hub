@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-30T06:19:36.603040+00:00",
+  "checked_at": "2026-11-10T21:19:24.522044+00:00",
   "method": "HTTP GET; X original posts supplemented by official oEmbed",
   "links": [
     {
@@ -574,7 +574,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://arxiv.org/abs/2609.22547",
-      "title": "[2609.22547] RLVR is a Kernel, Not a Function: Statistical Inference for pass@$k$ Crossovers",
+      "title": "[2609.22547] When Pass@$k$ Crossovers Are Real - and Why: Paired Inference and the Markov Kernel of RLVR",
       "sources": [
         "reports/2026-10-30.md"
       ]
@@ -714,6 +714,16 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2610.24161",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.24161",
+      "title": "[2610.24161] TorchTPU - A Hybrid Eager/Compiled Architecture for Native PyTorch Execution on TPU",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
       "url": "https://arxiv.org/abs/2610.25012",
       "status": "reachable",
       "http": 200,
@@ -756,10 +766,10 @@
     },
     {
       "url": "https://arxiv.org/abs/2610.26131",
-      "status": "unverified",
-      "http": 0,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://arxiv.org/abs/2610.26131",
-      "title": "",
+      "title": "[2610.26131] A Hybrid GPU and Processing-Near-Memory Architecture with Shared DRAM for Efficient Prefill-Decode Disaggregation",
       "sources": [
         "reports/2026-10-22.md"
       ]
@@ -946,6 +956,38 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2610.38095",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.38095",
+      "title": "[2610.38095] Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.38691",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.38691",
+      "title": "[2610.38691] Beyond fabrication: Misattributed numbers in papers written by AI research agents",
+      "sources": [
+        "reports/2026-11-02.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.38981",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.38981",
+      "title": "[2610.38981] Why Speculative Decoding Works Better Than Predicted on Sparse MoE Models",
+      "sources": [
+        "reports/2026-11-02.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://arxiv.org/abs/2610.39216",
       "status": "reachable",
       "http": 200,
@@ -998,6 +1040,17 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2610.39415",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39415",
+      "title": "[2610.39415] Accuracy is not compatibility: two Evo 2 checkpoints hinge on one FP8 matrix multiplication",
+      "sources": [
+        "reports/2026-11-02.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://arxiv.org/abs/2610.39417",
       "status": "reachable",
       "http": 200,
@@ -1028,11 +1081,152 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2610.39790",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39790",
+      "title": "[2610.39790] Long-Term Agent Memory through Complementary Curation and Consolidation",
+      "sources": [
+        "reports/2026-11-02.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39852",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39852",
+      "title": "[2610.39852] DWISE: Denoising Workload-Informed Scheduling Engine",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39854",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.39854",
+      "title": "[2610.39854] Attention, Dynamic Wave and Hybrid Sequence Mixers in Language Models",
+      "sources": [
+        "reports/2026-11-02.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40039",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.40039",
+      "title": "[2610.40039] How Far Are We From On-Device VLM Inference? A Measurement Study on Edge NPUs",
+      "sources": [
+        "reports/2026-11-02.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40287",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2610.40287",
+      "title": "[2610.40287] Only Accepted Tokens Count: An Energy Accounting of Speculative Decoding Under Latency Targets",
+      "sources": [
+        "reports/2026-11-02.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.04264",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2611.04264",
+      "title": "[2611.04264] Reliability Stress Testing of RAG Retrieval under Query-Relevant Corpus Poisoning",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.04380",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2611.04380",
+      "title": "[2611.04380] Twice as Fast, Until It Isn't: Quantized Serving of Mid-Size Open LLMs",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.04887",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2611.04887",
+      "title": "[2611.04887] FourSight: Stable FP4 RL Post-Training via Sequence Filtering and Sparse Channel Compensation",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.06828",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2611.06828",
+      "title": "[2611.06828] Systolic Linear Attention: Co-Designing Tile-Grouped Gated Delta Attention for TPUs",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.08453",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2611.08453",
+      "title": "[2611.08453] Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.09825",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2611.09825",
+      "title": "[2611.09825] BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.10240",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2611.10240",
+      "title": "[2611.10240] PACE: Keeping the Right Tokens in the KV Cache Is Not Enough for Long-Horizon LLM Agents",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.11450",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://arxiv.org/abs/2611.11450",
+      "title": "[2611.11450] How Much Training-Inference Mismatch Can On-Policy Distillation Tolerate?",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
-      "status": "unverified",
-      "http": 0,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
-      "title": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM | Artificial Intelligence",
+      "title": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM | Artificial Intelligence\n                      x\n                     \n                      facebook\n                     \n                      linkedin\n                     \n                      instagram\n                     \n                      twitch\n                     \n                      youtube\n                     \n                      podcasts\n                     \n                      email\n                     \n                      California Consumer Privacy Act (CCPA) Opt-Out Icon",
       "sources": [
         "reports/2026-10-20.md",
         "state/judgments.md"
@@ -1056,6 +1250,16 @@
       "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang | Cloudflare Blog",
       "sources": [
         "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "title": "Introducing TPU 8tx and TPU 8i Max",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -1129,6 +1333,16 @@
       ]
     },
     {
+      "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
+      "title": "Safely scaling multi-agent teams with Claude Fable 5.2 / claude.dev Blog",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
       "status": "reachable",
       "http": 200,
@@ -1153,7 +1367,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://cohere.com/blog/megakernels",
-      "title": "Cohere's North Mini Code Megakernel Serving Engine | CohereCohere's North Mini Code Megakernel Serving Engine | Cohere",
+      "title": "Cohere's North Mini Code Megakernel Serving Engine | Cohere",
       "sources": [
         "reports/2026-09-10-weekly.md"
       ]
@@ -1179,6 +1393,16 @@
       ]
     },
     {
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "title": "Gemini 4 Carbon is now available",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
       "status": "reachable",
       "http": 200,
@@ -1190,18 +1414,28 @@
     },
     {
       "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "status": "unverified",
+      "status": "reachable",
       "http": 200,
       "final_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "title": "",
+      "title": "Genie 4: A new generation of world simulation — Google DeepMind",
       "sources": [
         "reports/2026-10-29.md"
       ]
     },
     {
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "title": "Formal Verification of Signal’s Protocol with Gemini — Google DeepMind",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-      "status": "unverified",
-      "http": 302,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "title": "Gemini 4 Argon is now available for everyone",
       "sources": [
@@ -1223,7 +1457,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark",
-      "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark | NVIDIA Technical Blog3 Ways to Boost MoE Inference on NVIDIA DGX Spark | NVIDIA Technical Blog",
+      "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-29.md"
       ]
@@ -1233,9 +1467,39 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
-      "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile | NVIDIA Technical BlogAccelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile | NVIDIA Technical Blog",
+      "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-20.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+      "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
+      "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+      "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-02.md"
       ]
     },
     {
@@ -1246,6 +1510,16 @@
       "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+      "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -1263,7 +1537,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
-      "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield | NVIDIA Technical BlogHow NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield | NVIDIA Technical Blog",
+      "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-27.md"
       ]
@@ -1289,6 +1563,16 @@
       ]
     },
     {
+      "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
+      "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
       "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
       "status": "reachable",
       "http": 200,
@@ -1309,11 +1593,21 @@
       ]
     },
     {
+      "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+      "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
       "status": "reachable",
       "http": 200,
       "final_url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning | NVIDIA Technical BlogNVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning | NVIDIA Technical Blog",
+      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-18.md"
       ]
@@ -1336,6 +1630,16 @@
       "title": "NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "title": "Run AI Models for Edge Application Development with Just a Few Commands | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-02.md"
       ]
     },
     {
@@ -1369,6 +1673,16 @@
       ]
     },
     {
+      "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+      "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
       "status": "reachable",
       "http": 200,
@@ -1376,6 +1690,16 @@
       "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials | NVIDIA Technical Blog",
       "sources": [
         "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
+      "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes | NVIDIA Technical Blog",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -1429,11 +1753,22 @@
       ]
     },
     {
+      "url": "https://github.com/Inferact/zero-mismatch-rl",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/Inferact/zero-mismatch-rl",
+      "title": "GitHub - Inferact/zero-mismatch-rl: Bitwise-identical token probabilities between RL rollout (vLLM) and training · GitHub",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://github.com/Kesav2k04/ugaa-research",
       "status": "reachable",
       "http": 200,
       "final_url": "https://github.com/Kesav2k04/ugaa-research",
-      "title": "GitHub - Kesav2k04/ugaa-research: Companion code and data for: Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation (VLM4RWD @ NeurIPS 2026, arXiv:2610.25964) · GitHubGitHub - Kesav2k04/ugaa-research: Companion code and data for: Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation (VLM4RWD @ NeurIPS 2026, arXiv:2610.25964) · GitHub",
+      "title": "GitHub - Kesav2k04/ugaa-research: Companion code and data for: Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation (VLM4RWD @ NeurIPS 2026, arXiv:2610.25964) · GitHub",
       "sources": [
         "reports/2026-10-22.md"
       ]
@@ -1463,9 +1798,19 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://github.com/OpenBMB/Meshy",
-      "title": "GitHub - OpenBMB/Meshy · GitHubGitHub - OpenBMB/Meshy · GitHub",
+      "title": "GitHub - OpenBMB/Meshy · GitHub",
       "sources": [
         "reports/2026-09-10-weekly.md"
+      ]
+    },
+    {
+      "url": "https://github.com/OpenBitSys/BitDecoding-FP4",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/OpenBitSys/BitDecoding-FP4",
+      "title": "GitHub - OpenBitSys/BitDecoding-FP4: Accurate, fast FP4 KV-cache decoding through algorithm-system co-design. · GitHub",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -1476,6 +1821,16 @@
       "title": "GitHub - ZIB-IOL/KV-Surgeon · GitHub",
       "sources": [
         "reports/2026-10-22.md"
+      ]
+    },
+    {
+      "url": "https://github.com/apple/ml-amips",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/apple-aiml-research/ml-amips",
+      "title": "GitHub - apple-aiml-research/ml-amips: Amortizing Maximum Inner Product Search with Learned Support Functions (AMIPS) · GitHub",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -1493,7 +1848,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://github.com/awslabs/keys_values",
-      "title": "GitHub - awslabs/keys_values · GitHubGitHub - awslabs/keys_values · GitHub",
+      "title": "GitHub - awslabs/keys_values · GitHub",
       "sources": [
         "reports/2026-08-23.md"
       ]
@@ -1506,6 +1861,16 @@
       "title": "GitHub - aziksh-ospanov/TROJAN · GitHub",
       "sources": [
         "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://github.com/benyucong/train-inference-mismatch-opd",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/benyucong/train-inference-mismatch-opd",
+      "title": "GitHub - benyucong/train-inference-mismatch-opd · GitHub",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -1537,6 +1902,16 @@
       "sources": [
         "reports/2026-10-22.md",
         "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "title": "GitHub - deepseek-ai/dsh-superagent-prototype: Towards a More Autonomous Agent System · GitHub",
+      "sources": [
+        "reports/2026-11-02.md"
       ]
     },
     {
@@ -1581,8 +1956,8 @@
     },
     {
       "url": "https://github.com/openai/codex/commit/8444cf63b50a8a88521e0d2970d49f659b48eac7",
-      "status": "unverified",
-      "http": 0,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://github.com/openai/codex/commit/8444cf63b50a8a88521e0d2970d49f659b48eac7",
       "title": "Derive sandbox contexts from turn environments (#40551) · openai/codex@8444cf6 · GitHub",
       "sources": [
@@ -1620,9 +1995,19 @@
       ]
     },
     {
+      "url": "https://github.com/verl-project/verl/pull/8505",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://github.com/verl-project/verl/pull/8505",
+      "title": "[hardware, recipe, rollout, worker] feat: DeepSeek-V4-Flash true on-policy GRPO on ROCm (MI355X) by indianspeedster · Pull Request #8505 · verl-project/verl · GitHub",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://github.com/vllm-project/vllm/commit/82a85dc1",
-      "status": "unverified",
-      "http": 0,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://github.com/vllm-project/vllm/commit/82a85dc1",
       "title": "[Attention] Add Triton/FlashInfer composite for multimodal prefix att… · vllm-project/vllm@82a85dc · GitHub",
       "sources": [
@@ -1637,6 +2022,16 @@
       "title": "GitHub - yliusci/no-free-lunch-rlvr: There Is No Free Lunch in RLVR: the pass@k price of reinforcement. A solvable theory (no free lunch, the crossing bound, the price frontier) with a verification package (34/34) and a diagnostic you run on any eval log. · GitHub",
       "sources": [
         "reports/2026-10-30.md"
+      ]
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "title": "",
+      "sources": [
+        "reports/2026-11-02.md"
       ]
     },
     {
@@ -1661,8 +2056,8 @@
     },
     {
       "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "status": "unverified",
-      "http": 0,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://huggingface.co/blog/LiquidAI/lfm3",
       "title": "Build specialized multimodal models with LFM3",
       "sources": [
@@ -1687,6 +2082,16 @@
       "title": "Can we trust LLMs to judge whether a research idea is novel?",
       "sources": [
         "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -1721,10 +2126,10 @@
     },
     {
       "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-      "status": "unverified",
-      "http": 0,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-      "title": "",
+      "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
       "sources": [
         "reports/2026-10-22.md"
       ]
@@ -1790,6 +2195,16 @@
       ]
     },
     {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "title": "nemotron-halloween",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
       "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
       "status": "reachable",
       "http": 200,
@@ -1850,6 +2265,16 @@
       ]
     },
     {
+      "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+      "title": "meituan-longcat/LongCat-2.5 · Hugging Face",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
       "status": "reachable",
       "http": 200,
@@ -1890,6 +2315,16 @@
       ]
     },
     {
+      "url": "https://kimi.ai/blog/kimi-k3-1-pro",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "title": "Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
       "url": "https://leizhao7.github.io/videoedit/",
       "status": "reachable",
       "http": 200,
@@ -1897,6 +2332,27 @@
       "title": "VideoEdit · When Fine-Grained Credit Assignment Helps and Hurts",
       "sources": [
         "reports/2026-10-29.md"
+      ]
+    },
+    {
+      "url": "https://liuzhao09.github.io/papers/foursight-fp4-rl.html",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://liuzhao09.github.io/papers/foursight-fp4-rl.html",
+      "title": "FourSight：以轨迹过滤和稀疏通道补偿稳定FP4强化学习 | liuzhao09",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "title": "Faster Retrieval for Better, More Efficient RAG - Apple Machine Learning Research",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
       ]
     },
     {
@@ -2050,6 +2506,16 @@
       ]
     },
     {
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "title": "",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
       "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
       "status": "restricted",
       "http": 403,
@@ -2067,6 +2533,16 @@
       "title": "",
       "sources": [
         "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "title": "",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -2107,6 +2583,16 @@
       "title": "",
       "sources": [
         "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://openai.com/index/openai-to-acquire-pierre",
+      "title": "",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -2221,10 +2707,10 @@
     },
     {
       "url": "https://pytorch.org/blog/introducing-torchtpu/",
-      "status": "unverified",
-      "http": 0,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://pytorch.org/blog/introducing-torchtpu/",
-      "title": "",
+      "title": "Introducing TorchTPU - PyTorch",
       "sources": [
         "reports/2026-10-22.md"
       ]
@@ -2248,6 +2734,16 @@
       "sources": [
         "reports/2026-10-20.md",
         "state/judgments.md"
+      ]
+    },
+    {
+      "url": "https://pytorch.org/blog/optimizing-muse-spark-open-on-tpu-v7-with-sglang-torchtpu/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://pytorch.org/blog/optimizing-muse-spark-open-on-tpu-v7-with-sglang-torchtpu/",
+      "title": "Optimizing Muse Spark Open on TPU v7 with SGLang-TorchTPU - PyTorch",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -2331,6 +2827,16 @@
       ]
     },
     {
+      "url": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan",
+      "title": "What is the Ultra plan? | Claude Help Center",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
       "url": "https://tasklet.ai/blog/2026-08-12-agent-memory",
       "status": "reachable",
       "http": 200,
@@ -2352,10 +2858,10 @@
     },
     {
       "url": "https://thenewstack.io/anthropic-scion-git-replacement/",
-      "status": "unverified",
-      "http": 0,
+      "status": "restricted",
+      "http": 403,
       "final_url": "https://thenewstack.io/anthropic-scion-git-replacement/",
-      "title": "",
+      "title": "Just a moment...",
       "sources": [
         "reports/2026-10-19.md"
       ]
@@ -2383,6 +2889,16 @@
       ]
     },
     {
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "title": "Introducing Inkling 2 Small - Thinking Machines Lab",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://uccl-project.github.io/posts/mkernel/",
       "status": "reachable",
       "http": 200,
@@ -2394,8 +2910,8 @@
     },
     {
       "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
-      "status": "unverified",
-      "http": 0,
+      "status": "reachable",
+      "http": 200,
       "final_url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
       "title": "Exploring Speculative Decoding in vLLM on AMD GPUs | vLLM Blog",
       "sources": [
@@ -2589,6 +3105,57 @@
       ]
     },
     {
+      "url": "https://vllm.ai/blog/2026-11-04-introducing-kinference",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-11-04-introducing-kinference",
+      "title": "Introducing Kinference: An Open Source Inference Control Plane for vLLM and Kubernetes | vLLM Blog",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-11-04-kimi-k31-pro",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-11-04-kimi-k31-pro",
+      "title": "vLLM Delivers Day-0 Support for Kimi K3.1 Pro | vLLM Blog",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-11-06-stable-abi-cuda",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-11-06-stable-abi-cuda",
+      "title": "Migrating vLLM to the LibTorch Stable ABI | vLLM Blog",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-11-06-verl-omni-v0-3-0",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-11-06-verl-omni-v0-3-0",
+      "title": "VeRL-Omni v0.3.0: Async Training and Broader Multimodal Post-Training | vLLM Blog",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://vllm.ai/blog/2026-11-06-zero-mismatch-async-rl",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://vllm.ai/blog/2026-11-06-zero-mismatch-async-rl",
+      "title": "Zero Mismatch, Simple Async RL: REINFORCE Zero, DeepSeek-V4.1 and Kimi K3.1 | vLLM Blog",
+      "sources": [
+        "reports/2026-11-11.md",
+        "state/judgments.md"
+      ]
+    },
+    {
       "url": "https://www.aiincontext.com/articles/google-open-sources-harness2-framework-that-improves-agents-without-touching-mod-26bc8a57",
       "status": "reachable",
       "http": 200,
@@ -2636,7 +3203,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.anthropic.com/research/contextual-retrieval",
-      "title": "Contextual retrieval in AI systems \\ AnthropicContextual retrieval in AI systems \\ Anthropic",
+      "title": "Contextual retrieval in AI systems \\ Anthropic",
       "sources": [
         "reports/2026-08-24.md"
       ]
@@ -2682,6 +3249,16 @@
       ]
     },
     {
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "title": "The components of agent memory \\ Anthropic",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
       "status": "reachable",
       "http": 200,
@@ -2723,12 +3300,32 @@
     },
     {
       "url": "https://www.federalregister.gov/public-inspection/2026-21447",
-      "status": "unverified",
-      "http": 0,
-      "final_url": "https://www.federalregister.gov/public-inspection/2026-21447",
-      "title": "",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://unblock.federalregister.gov/",
+      "title": "Federal Register :: Request Access",
       "sources": [
         "reports/2026-10-20.md"
+      ]
+    },
+    {
+      "url": "https://www.ft.com/content/bb564eb1-79d4-4694-aa24-1155202a9abc",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://www.ft.com/content/bb564eb1-79d4-4694-aa24-1155202a9abc",
+      "title": "Security Verification",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
+      "url": "https://www.ithome.com/1/022/502.htm",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.ithome.com/1/022/502.htm",
+      "title": "华为宣布昇腾 0 Day 支持 Kimi K3.1 Pro 推理部署，2.8 万亿级 MoE 模型能力再进阶 - IT之家",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -2816,7 +3413,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.lmsys.org/blog/2026-10-26-cf-security/",
-      "title": "SGLang security update: improving request isolation - LMSYS OrgSGLang security update: improving request isolation - LMSYS Org",
+      "title": "SGLang security update: improving request isolation - LMSYS Org",
       "sources": [
         "reports/2026-10-29.md"
       ]
@@ -2852,6 +3449,16 @@
       ]
     },
     {
+      "url": "https://www.marktechpost.com/2026-11-01/deepseek-dsh-superagent-router-worker-coding-agent/",
+      "status": "restricted",
+      "http": 403,
+      "final_url": "https://www.marktechpost.com/2026-11-01/deepseek-dsh-superagent-router-worker-coding-agent/",
+      "title": "Just a moment...",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
       "url": "https://www.minimax.io/blog/minimax-m31f",
       "status": "reachable",
       "http": 200,
@@ -2876,7 +3483,7 @@
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
-      "title": "Auto repair for Together GPU Clusters: from GPU fault to healthy nodeAuto repair for Together GPU Clusters: from GPU fault to healthy node",
+      "title": "Auto repair for Together GPU Clusters: from GPU fault to healthy node",
       "sources": [
         "reports/2026-10-29.md"
       ]
@@ -2889,6 +3496,26 @@
       "title": "Fixing Tool-Call Accuracy in vLLM",
       "sources": [
         "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+      "status": "restricted",
+      "http": 401,
+      "final_url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+      "title": "wsj.com",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
+      "url": "https://www.zyphra.com/our-work/zyfa",
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://www.zyphra.com/our-work/zyfa",
+      "title": "ZYFA: Fast and Accurate FP8 Attention on AMD MI355X | Zyphra",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -2925,11 +3552,22 @@
       ]
     },
     {
+      "url": "https://x.com/ArtificialAnlys/status/2118804058672869629",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/ArtificialAnlys/status/2118804058672869629",
+      "title": "Artificial Analysis on X: \"DeepSeek V4.1 Flash speeds on GB300 NVL72 have increased by up to 1.5x tok/s per agent over the past month on AA-AgentPerf, our benchmark of datacenter systems running realistic agentic coding workloads\n\nThis improvement comes from a newer vLLM version, new vLLM kernels f… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://x.com/BSPK_/status/2096582455860015508",
       "status": "x-original",
       "http": 200,
       "final_url": "https://x.com/BSPK_/status/2096582455860015508",
-      "title": "BSPK on X: \"The Next AI Race Is About Inference Efficiency: Two Ways to Break the Memory Bottleneck\" / XBSPK on X: \"The Next AI Race Is About Inference Efficiency: Two Ways to Break the Memory Bottleneck\" / X",
+      "title": "BSPK on X: \"The Next AI Race Is About Inference Efficiency: Two Ways to Break the Memory Bottleneck\" / X",
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-08.md"
@@ -3034,6 +3672,39 @@
       ]
     },
     {
+      "url": "https://x.com/OpenBMB/status/2116007834064400693",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenBMB/status/2116007834064400693",
+      "title": "OpenBMB on X: \"ForgeKernel Live has wrapped up with a 9.8% speedup over the FlashMLA baseline on DeepSeek V4.1 FlashMLA Prefill, measured on NVIDIA B200. Now, we’re open-sourcing ForgeKernel! 🚀\n\nA quick recap:\n⌛️ Around 22 hours of autonomous optimization\n🛠️ 32 kernel versions across 42 iteration… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-02.md"
+      ]
+    },
+    {
+      "url": "https://x.com/OpenBMB/status/2119682129491837379",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenBMB/status/2119682129491837379",
+      "title": "OpenBMB on X: \"Love this idea! 💙 Giving agents a way to organize their memories offline with MiniCPM is such a creative use case. Excited to see minicpm-dream in Spark S2! 🚀\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://x.com/OpenBMB/status/2119784600088330523",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/OpenBMB/status/2119784600088330523",
+      "title": "OpenBMB on X: \"🔧 Can an LLM agent debug a broken RL training run?\n\nIntroducing AutoRLBench — a unified benchmark putting 10 frontier agents to the test on real-world, failed RL runs.\n\nFull code, configs, logs, and metrics are kept intact. No synthetic bugs. The goal? Pinpoint the exact root cause… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://x.com/SaitoWu/status/2113244300008169729",
       "status": "x-original",
       "http": 200,
@@ -3135,6 +3806,17 @@
       ]
     },
     {
+      "url": "https://x.com/arcprize/status/2119836548162347452",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/arcprize/status/2119836548162347452",
+      "title": "ARC Prize on X: \"ARC Prize Research Summit - @alexisxfox\n\nOn programatic memory for long-horizon agents. Alexis and her team made key contributions to the early ARC-AGI-3 red teaming efforts.\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://x.com/dair_ai/status/2096985097450999839",
       "status": "x-original",
       "http": 200,
@@ -3154,6 +3836,17 @@
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-10-27.md"
+      ]
+    },
+    {
+      "url": "https://x.com/haoailab/status/2117704077773881434",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/haoailab/status/2117704077773881434",
+      "title": "Hao AI Lab on X: \"(3/6) 4-bit without the quality hit.\n\nNVFP4 QAD distills against BF16 Flex and lands 14-17% closer to it than plain quantization.\n\nLong clips are attention-bound, so FP4 attention cuts 768p 15 s from 101.8 s to 85.3 s.\" / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-11.md"
       ]
     },
     {
@@ -3247,6 +3940,39 @@
       ]
     },
     {
+      "url": "https://x.com/rohanpaul_ai/status/2118409056121659820",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/rohanpaul_ai/status/2118409056121659820",
+      "title": "Rohan Paul on X: \"New Google paper on RAG poisoning.\n\nShows that poisoning a RAG system mostly depends on copying the query, since adding an attack payload barely changed which documents got retrieved.\n\nfake documents only need to repeat a user’s question to be picked up by AI systems that search b… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://x.com/rohanpaul_ai/status/2119222842332271059",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/rohanpaul_ai/status/2119222842332271059",
+      "title": "Rohan Paul on X: \"New Salesforce paper finds that distilling from a big external teacher usually costs more compute than plain RL, while merging RL-trained domain experts saves 42%.\n\nOn-policy distillation lets a student learn from a teacher's per-token feedback on its own outputs, and many expect… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
+      "url": "https://x.com/rohanpaul_ai/status/2120013219066753159",
+      "status": "x-original",
+      "http": 200,
+      "final_url": "https://x.com/rohanpaul_ai/status/2120013219066753159",
+      "title": "Rohan Paul on X: \"New Nvidia + other labs paper shows that irrelevant text hurts mainly by weakening the model's use of the question, not by directly pushing against the right answer.\n\nPrompts in RAG, tool use, and long-context apps often carry text that has nothing to do with the question. Even a… / X",
+      "evidence": "Original X page includes author and post text",
+      "sources": [
+        "reports/2026-11-11.md"
+      ]
+    },
+    {
       "url": "https://x.com/shao__meng/status/2112740048299082127",
       "status": "x-original",
       "http": 200,
@@ -3273,7 +3999,7 @@
       "status": "x-original",
       "http": 200,
       "final_url": "https://x.com/steipete/status/2096208734666309999",
-      "title": "Peter Steinberger 🦞 on X: \"this one weird trick to make compaction and long running goals way better.\" / X",
+      "title": "Peter Steinberger on X: \"this one weird trick to make compaction and long running goals way better.\" / X",
       "evidence": "Original X page includes author and post text",
       "sources": [
         "reports/2026-09-10.md"

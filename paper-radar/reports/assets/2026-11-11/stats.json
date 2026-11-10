@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-11",
+  "mode": "每日推送",
+  "window": "11-02 → 11-11",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {"full": 1, "abstract": 0},
+    "模型": {"full": 1, "abstract": 1},
+    "软件系统": {"full": 1, "abstract": 3},
+    "工程方法": {"full": 0, "abstract": 1}
+  },
+  "practice_full": 6,
+  "practice_abstract": 8,
+  "news": 8,
+  "flash": 8,
+  "pool": 1,
+  "commentary": 1,
+  "judgments": 30,
+  "judgments_updated": 7,
+  "graph": {
+    "sources": [
+      {"id": "SLA", "label": "Systolic Linear Attention\n2611.06828", "type": "论文"},
+      {"id": "FS", "label": "FourSight FP4 RL\n2611.04887", "type": "论文"},
+      {"id": "PACE", "label": "PACE KV 保留\n2611.10240", "type": "论文"},
+      {"id": "RAGP", "label": "RAG 投毒压力测试\n2611.04264", "type": "论文"},
+      {"id": "TIM", "label": "OPD 失配预算\n2611.11450", "type": "论文"},
+      {"id": "TWICE", "label": "量化 serving 审计\n2611.04380", "type": "论文"},
+      {"id": "BFP4", "label": "BitDecoding-FP4 KV\n2611.09825", "type": "论文"},
+      {"id": "ZM", "label": "REINFORCE Zero（vLLM 博客）", "type": "一方博客"},
+      {"id": "AMIPS", "label": "Apple MIPS 1.9×（博客+论文）", "type": "一方博客"}
+    ],
+    "judgments": [
+      {"id": "J1", "label": "并发分布决定\n收益可见性"},
+      {"id": "J14", "label": "加速比必须\n带卡型读"},
+      {"id": "J16", "label": "更多记忆\n不单调有益"},
+      {"id": "J18", "label": "写入准入与检索边界\n是防线"},
+      {"id": "J19", "label": "量化无损只在\n任务准确率层"},
+      {"id": "J29", "label": "亚二次注意力效率\n实现受限"},
+      {"id": "J30", "label": "失配是一级变量"}
+    ],
+    "edges": [
+      {"from": "SLA", "to": "J29", "kind": "印证"},
+      {"from": "SLA", "to": "J14", "kind": "印证"},
+      {"from": "FS", "to": "J19", "kind": "印证"},
+      {"from": "FS", "to": "J30", "kind": "印证"},
+      {"from": "PACE", "to": "J16", "kind": "印证"},
+      {"from": "RAGP", "to": "J18", "kind": "印证"},
+      {"from": "TIM", "to": "J30", "kind": "印证"},
+      {"from": "ZM", "to": "J30", "kind": "印证"},
+      {"from": "TWICE", "to": "J1", "kind": "印证"},
+      {"from": "AMIPS", "to": "J1", "kind": "印证"},
+      {"from": "BFP4", "to": "J14", "kind": "印证"}
+    ]
+  }
+}

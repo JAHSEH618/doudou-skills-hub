@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="583.65" height="610" viewBox="0 0 583.65 610" role="img" aria-label="判断账本关系">
+
+  <style>
+    .bg   { fill: #ffffff; }
+    .fg   { fill: #24292f; }
+    .mut  { fill: #6b7280; }
+    .grid { stroke: #e5e7eb; }
+    .box  { fill: #f6f8fa; }
+    text  { font-family: -apple-system, 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #1e1f22; }
+      .fg   { fill: #e6e6e6; }
+      .mut  { fill: #9aa0a6; }
+      .grid { stroke: #3a3d42; }
+      .box  { fill: #2a2c31; }
+    }
+  </style>
+
+<rect class="bg" width="583.65" height="610" rx="6"/>
+<text class="fg" x="22" y="24" font-size="14" font-weight="600">判断账本动态 · 2026-11-11</text>
+<path d="M208.2,71.0 C283.2,71.0 283.2,127.0 358.2,127.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,71.0 C283.2,71.0 283.2,295.0 358.2,295.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,127.0 C283.2,127.0 283.2,183.0 358.2,183.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,127.0 C283.2,127.0 283.2,407.0 358.2,407.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,183.0 C283.2,183.0 283.2,239.0 358.2,239.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,239.0 C283.2,239.0 283.2,351.0 358.2,351.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,295.0 C283.2,295.0 283.2,407.0 358.2,407.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,463.0 C283.2,463.0 283.2,407.0 358.2,407.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,351.0 C283.2,351.0 283.2,463.0 358.2,463.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,519.0 C283.2,519.0 283.2,463.0 358.2,463.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<path d="M208.2,407.0 C283.2,407.0 283.2,295.0 358.2,295.0" fill="none" stroke="#8a5fbf" stroke-width="1.6" opacity="0.9"/>
+<text class="mut" x="22" y="40" font-size="11">左列本期来源，右列被动到的判断；边的样式见图例</text>
+<rect class="box" x="22.0" y="50.0" width="186.2" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="69.0" font-size="11.5">Systolic Linear Attention</text>
+<text class="fg" x="30.0" y="84.0" font-size="11.5">2611.06828</text>
+<text class="mut" x="200.2" y="87.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="106.0" width="186.2" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="125.0" font-size="11.5">FourSight FP4 RL</text>
+<text class="fg" x="30.0" y="140.0" font-size="11.5">2611.04887</text>
+<text class="mut" x="200.2" y="143.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="162.0" width="186.2" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="181.0" font-size="11.5">PACE KV 保留</text>
+<text class="fg" x="30.0" y="196.0" font-size="11.5">2611.10240</text>
+<text class="mut" x="200.2" y="199.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="218.0" width="186.2" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="237.0" font-size="11.5">RAG 投毒压力测试</text>
+<text class="fg" x="30.0" y="252.0" font-size="11.5">2611.04264</text>
+<text class="mut" x="200.2" y="255.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="274.0" width="186.2" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="293.0" font-size="11.5">OPD 失配预算</text>
+<text class="fg" x="30.0" y="308.0" font-size="11.5">2611.11450</text>
+<text class="mut" x="200.2" y="311.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="330.0" width="186.2" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="349.0" font-size="11.5">量化 serving 审计</text>
+<text class="fg" x="30.0" y="364.0" font-size="11.5">2611.04380</text>
+<text class="mut" x="200.2" y="367.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="386.0" width="186.2" height="42" rx="5" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="405.0" font-size="11.5">BitDecoding-FP4 KV</text>
+<text class="fg" x="30.0" y="420.0" font-size="11.5">2611.09825</text>
+<text class="mut" x="200.2" y="423.0" font-size="9" text-anchor="end">论文</text>
+<rect class="box" x="22.0" y="442.0" width="186.2" height="42" rx="5" stroke="#c07830" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="461.0" font-size="11.5">REINFORCE Zero（vLLM 博客）</text>
+<text class="mut" x="200.2" y="479.0" font-size="9" text-anchor="end">一方博客</text>
+<rect class="box" x="22.0" y="498.0" width="186.2" height="42" rx="5" stroke="#c07830" stroke-width="1.6"/>
+<text class="fg" x="30.0" y="517.0" font-size="11.5">Apple MIPS 1.9×（博客+论文）</text>
+<text class="mut" x="200.2" y="535.0" font-size="9" text-anchor="end">一方博客</text>
+<rect class="box" x="358.2" y="106.0" width="203.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="366.2" y="125.0" font-size="11.5" font-weight="600">J29 · 亚二次注意力效率</text>
+<text class="fg" x="366.2" y="140.0" font-size="11.5">实现受限</text>
+<rect class="box" x="358.2" y="162.0" width="203.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="366.2" y="181.0" font-size="11.5" font-weight="600">J19 · 量化无损只在</text>
+<text class="fg" x="366.2" y="196.0" font-size="11.5">任务准确率层</text>
+<rect class="box" x="358.2" y="218.0" width="203.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="366.2" y="237.0" font-size="11.5" font-weight="600">J16 · 更多记忆</text>
+<text class="fg" x="366.2" y="252.0" font-size="11.5">不单调有益</text>
+<rect class="box" x="358.2" y="274.0" width="203.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="366.2" y="293.0" font-size="11.5" font-weight="600">J14 · 加速比必须</text>
+<text class="fg" x="366.2" y="308.0" font-size="11.5">带卡型读</text>
+<rect class="box" x="358.2" y="330.0" width="203.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="366.2" y="349.0" font-size="11.5" font-weight="600">J18 · 写入准入与检索边界</text>
+<text class="fg" x="366.2" y="364.0" font-size="11.5">是防线</text>
+<rect class="box" x="358.2" y="386.0" width="203.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="366.2" y="405.0" font-size="11.5" font-weight="600">J30 · 失配是一级变量</text>
+<rect class="box" x="358.2" y="442.0" width="203.4" height="42" rx="5" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="fg" x="366.2" y="461.0" font-size="11.5" font-weight="600">J1 · 并发分布决定</text>
+<text class="fg" x="366.2" y="476.0" font-size="11.5">收益可见性</text>
+<line x1="22" y1="580" x2="48" y2="580" stroke="#c0392b" stroke-width="2.4"/>
+<text class="mut" x="54" y="584" font-size="11">新增</text>
+<line x1="98" y1="580" x2="124" y2="580" stroke="#8a5fbf" stroke-width="1.6"/>
+<text class="mut" x="130" y="584" font-size="11">印证</text>
+<line x1="174" y1="580" x2="200" y2="580" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="6,4"/>
+<text class="mut" x="206" y="584" font-size="11">存疑</text>
+<line x1="250" y1="580" x2="276" y2="580" stroke="#8a8a94" stroke-width="1.3" stroke-dasharray="2,3"/>
+<text class="mut" x="282" y="584" font-size="11">辅助</text>
+<rect x="326" y="573" width="12" height="12" rx="2" class="box" stroke="#3b6fd4" stroke-width="1.6"/>
+<text class="mut" x="343" y="584" font-size="11">论文</text>
+<rect x="381" y="573" width="12" height="12" rx="2" class="box" stroke="#c07830" stroke-width="1.6"/>
+<text class="mut" x="398" y="584" font-size="11">非论文</text>
+</svg>

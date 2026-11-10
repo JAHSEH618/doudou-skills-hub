@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-11",
+  "mode": "每日推送",
+  "window": [
+    "2026-11-02",
+    "2026-11-11"
+  ],
+  "searches": [
+    {
+      "id": "scan-aihot",
+      "source": "AIHot",
+      "query": "fetch_sources.py scan --since 2026-11-02（首扫 8 feed 报错，rescan 为权威）",
+      "status": "ok",
+      "note": "134 条（7 天窗口，窗口前 2 天无 AIHot 覆盖，靠 HN 与网页搜索补）"
+    },
+    {
+      "id": "scan-hn",
+      "source": "Hacker News",
+      "query": "fetch_sources.py scan（Algolia since 2026-11-02, score>=100）",
+      "status": "ok",
+      "note": "2 条高分帖，均为 Agent memory 主题（与 Anthropic 一方博客同事件）"
+    },
+    {
+      "id": "scan-x",
+      "source": "X 固定账号",
+      "query": "fetch_sources.py scan（x-accounts.txt）+ fetch_sources.py x（oEmbed 验证）",
+      "status": "ok",
+      "note": "oEmbed 验证 18 帖 + 2 帖重验；8 条进 X 讨论（Anthropic 官方帖、OpenBMB、rohanpaul_ai 等）"
+    },
+    {
+      "id": "scan-blogs",
+      "source": "一方工程博客 feed",
+      "query": "fetch_sources.py scan（13 源）",
+      "status": "ok",
+      "note": "窗口内 87 条：claude.dev 2 / anthropic-engineering 1 / vLLM 5 / HF 11 / OpenAI 32 / DeepMind 5 / NVIDIA Dev 25 / PyTorch 4 / Together 2；Qwen、Raschka、Huyen、Weng 均 0；anthropic-engineering 页面改版，抓取器已重写（解析 24 条，窗口内 1 条）"
+    },
+    {
+      "id": "exa-all",
+      "source": "Exa",
+      "query": "四线 12 角度论文检索 + 资讯/解说补搜（scripts/exa_api.py）",
+      "status": "error",
+      "note": "全部 402 NO_MORE_CREDITS（exa-papers.jsonl 为空）；按硬规则 3 已向用户披露，降级方案 = arXiv 官方 API + 内置 web_search（无 key）"
+    },
+    {
+      "id": "arxiv-window",
+      "source": "arXiv 官方 API",
+      "query": "arxiv_scan.py（四线 12 关键词簇 × submittedDate:[202611020000 TO 202611120000]，https export.arxiv.org）",
+      "status": "ok",
+      "note": "窗口内 370 篇（arxiv-candidates.json）；标题去重 + 账本对账后 55 篇初筛"
+    },
+    {
+      "id": "arxiv-abs",
+      "source": "arXiv 官方 API",
+      "query": "id_list 批量摘要（12 条 + 14 条两批）",
+      "status": "ok",
+      "note": "8 篇报告论文 + 落选池 1 篇的元数据权威来源（papers_dump.txt）"
+    },
+    {
+      "id": "ws-1",
+      "source": "内置 web_search（无 key 免费档）",
+      "query": "定向定位 arXiv 池外真实论文（RAG 投毒 / OPD / Apple MIPS / intrusion heads）",
+      "status": "ok",
+      "note": "命中 2611.04264、2611.08453、Apple MIPS（ICML 2026，arXiv 2603.08001，代码 apple/ml-amips）、2611.07778（落选池）"
+    },
+    {
+      "id": "ws-2",
+      "source": "内置 web_search（无 key 免费档）",
+      "query": "FourSight 开源状态与解说定位",
+      "status": "ok",
+      "note": "未发现官方代码仓库；合格解说 1 条（liuzhao09.github.io，2026-11-05，第三方人写）"
+    },
+    {
+      "id": "extract-full",
+      "source": "web_extract + 本地 curl（fetch_pages.py）",
+      "query": "论文全文与博客原文抓取",
+      "status": "ok",
+      "note": "3 篇 PDF 全文（arxiv.org/pdf/，合计 25,900 字，arxiv.org/html 缺节、ar5iv 只返 abs 页）；6 篇博客详条目原文全读；5 篇摘要级论文 arXiv HTML 补读"
+    },
+    {
+      "id": "lookup",
+      "source": "fetch_sources.py lookup",
+      "query": "14 次解说 lookup（每篇论文/实践详条目一次，硬规则 16 封顶）",
+      "status": "ok",
+      "note": "10 条有结果；合格解说 1 条（FourSight）；其余为自动聚合站或无合格人写解读，只记内部笔记"
+    },
+    {
+      "id": "oembed",
+      "source": "fetch_sources.py x",
+      "query": "X 快讯 oEmbed 批量验证（18 帖）+ 重验（2 帖）",
+      "status": "ok",
+      "note": "全部验证通过（含作者与日期）；失败 0"
+    }
+  ]
+}

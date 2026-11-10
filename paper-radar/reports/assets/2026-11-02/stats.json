@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-02",
+  "mode": "每日推送",
+  "window": "10-30 → 11-02",
+  "paper_cap": 8,
+  "lines": {
+    "硬件": {"full": 0, "abstract": 1},
+    "模型": {"full": 1, "abstract": 1},
+    "软件系统": {"full": 2, "abstract": 2},
+    "工程方法": {"full": 0, "abstract": 1}
+  },
+  "practice_full": 3,
+  "practice_abstract": 4,
+  "news": 6,
+  "flash": 1,
+  "pool": 5,
+  "commentary": 0,
+  "judgments": 29,
+  "judgments_updated": 8,
+  "graph": {
+    "sources": [
+      {"id": "MOESD", "label": "MoE 投机解码\n2610.38981", "type": "论文"},
+      {"id": "ENRG", "label": "投机解码能量核算\n2610.40287", "type": "论文"},
+      {"id": "FP8", "label": "FP8 可移植性·Evo 2\n2610.39415", "type": "论文"},
+      {"id": "AMEM", "label": "互补型 Agent 记忆\n2610.39790", "type": "论文"},
+      {"id": "MIX", "label": "混合 Sequence Mixer\n2610.39854", "type": "论文"},
+      {"id": "NPU", "label": "边缘 NPU VLM 测量\n2610.40039", "type": "论文"},
+      {"id": "AUD", "label": "论文数字审计\n2610.38691", "type": "论文"}
+    ],
+    "judgments": [
+      {"id": "J1", "label": "并发分布决定\n收益可见性"},
+      {"id": "J25", "label": "接受率\n不是吞吐"},
+      {"id": "J14", "label": "加速比必须\n带卡型读"},
+      {"id": "J19", "label": "量化无损只在\n任务准确率层"},
+      {"id": "J16", "label": "更多记忆\n不单调有益"},
+      {"id": "J10", "label": "负面/校准结论\n更可信"},
+      {"id": "J13", "label": "差分指标配\n冻结对照臂"},
+      {"id": "J29", "label": "亚二次注意力效率\n实现受限"}
+    ],
+    "edges": [
+      {"from": "MOESD", "to": "J1", "kind": "印证"},
+      {"from": "MOESD", "to": "J25", "kind": "印证"},
+      {"from": "ENRG", "to": "J1", "kind": "印证"},
+      {"from": "ENRG", "to": "J25", "kind": "印证"},
+      {"from": "FP8", "to": "J14", "kind": "印证"},
+      {"from": "FP8", "to": "J19", "kind": "印证"},
+      {"from": "AMEM", "to": "J16", "kind": "印证"},
+      {"from": "MIX", "to": "J29", "kind": "新增"},
+      {"from": "NPU", "to": "J29", "kind": "新增"},
+      {"from": "AUD", "to": "J10", "kind": "印证"},
+      {"from": "AUD", "to": "J13", "kind": "印证"}
+    ]
+  }
+}
